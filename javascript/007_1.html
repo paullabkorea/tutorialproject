@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //지역변수와 전역변수
+      //함수선언(또는 함수정의)
+      var z = 100; //z는 전역 변수(global variable)
+      function sum(x){ // x는 매개변수(parameter)
+        let y = 50; // y는 지역변수(local variable)
+        z = z + y;
+        return x + y; // return이 없을 경우 undefined
+      }
+      // 아래 20이라는 값은 전달인자(argument)
+      document.write(sum(20), '<br>'); //함수호출
+    // Template literals 사용
+    //   document.write(`x는 ${x}`, '<br>'); // 지역변수
+    //   document.write(`y는 ${y}`, '<br>'); // 지역변수
+      document.write(`z는 ${z}`, '<br>'); // 전역변수
+    </script>
+</body>
+</html>

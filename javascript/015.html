@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //최댓값 구하기
+    var value = [100, 200, 50, 400, 900];
+    function maximum(value){
+      var max = 0;
+      for(var i=0; i<value.length; i++){
+        if(max < value[i]){
+          max = value[i];
+        }
+      }
+      return max;
+    }
+    document.write(maximum(value)); //900
+    document.write('<br>');
+
+    //Math.max.apply() 사용해서 최댓값 구하기
+    var max2 = Math.max.apply(null, value);
+    document.write(max2); //900
+  </script>
+</body>
+</html>

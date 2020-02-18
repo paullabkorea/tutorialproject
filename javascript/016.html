@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <button id="click_btn" type="button">클릭해주세요!</button>
+
+  <script>
+    //이벤트 - click
+
+    var click_btn = document.getElementById('click_btn');
+
+    click_btn.addEventListener('click', click_event);
+
+    //클릭 이벤트
+    function click_event(){
+      alert('클릭 이벤트 발생!');
+    }
+
+
+    /* 이벤트 종류
+    onchange : HTML의 요소 값을 변경할 경우 사용하는 이벤트
+    onclick : 사용자가 마우스를 눌렀다 뗀 경우 발생하는 이벤트
+    onblur : 요소가 포커스를 잃었을 경우 발생하는 이벤트
+    onmouseover : 마우스를 요소 위로 움직일 때 사용하는 이벤트
+    onmouseout : 마우스를 요소 밖으로 움직일 때 사용하는 이벤트
+    onkeydown : 키보드의 키를 누른 경우  발생하는 이벤트
+    onload : 브라우저에서 페이지의 로딩이 끝났을 경우 발생하는 이벤트 */
+  </script>
+</body>
+</html>

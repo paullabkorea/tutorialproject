@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<style>
+  div{
+    border : solid 1px #dbdbdb;
+    width: 150px;
+    height: 150px;
+  }
+  #box {
+
+  }
+
+</style>
+<body>
+  <div id="box">
+  </div>
+
+  <script>
+    //이벤트 - mouseover, mouseout
+    var box = document.getElementById('box');
+
+    box.addEventListener('mouseover', over);
+    box.addEventListener('mouseout', out);
+
+    function over(){
+      box.style.backgroundColor = 'blue';
+    }
+
+    function out(){
+      box.style.backgroundColor = 'white';
+    }
+
+  </script>
+</body>
+</html>

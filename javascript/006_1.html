@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>006_1.html</title>
+</head>
+<body>
+  <script>
+    // 타입의 형 변환 (https://ko.javascript.info/type-conversions 참고)
+
+    let one = '1'
+    document.write(one + one, '<br>');
+    document.write(Number(one) + Number(one), '<br>');
+
+    let two = 2
+    document.write(two + two, '<br>');
+    document.write(String(two) + String(two), '<br>');
+
+    document.write(one + two, '<br>');     //자동 스트링 변환 : 12
+
+    let three = one + two;
+    document.write(typeof(three), '<br>'); //string
+
+    let four = 'leehojun' + two;           //leehojun2
+    document.write(four);
+
+    //boolean 형변환
+    document.write(Boolean(1), '<br>');      // true
+    document.write(Boolean(0), '<br>');      // false
+    document.write(Boolean('0'), '<br>');    // true (문자열 있음)
+
+    document.write(Boolean("hello"), '<br>'); // true
+    document.write(Boolean(""), '<br>');      // false (빈문자열)
+
+  </script>
+</body>
+</html>

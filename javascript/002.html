@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>002.html</title>
+</head>
+<body>
+
+  <script>
+    //변수
+
+    //변수명은 문자와 숫자, 기호 $와 _(언더바)만 사용.
+    //첫 글자는 숫자가 될 수 없음.
+    //대소문자 구별, 예약어 안됨
+
+    var 변수하나 = 20; //var은 오래된 방식이긴 하나, 지금 차이점을 설명하진 않습니다.
+    var 변수둘 = 10;
+
+    document.write(변수하나 + 변수둘, '<br>');
+    document.write(변수하나 * 변수둘, '<br>');
+    document.write(변수하나 / 변수둘, '<br>');
+
+    document.write(변수둘**2, '<br>');
+
+    //ES6
+    const 이름 = '이호준';
+    const 소속 = '바울랩 대표입니다.';
+
+    let 주소 = '서울';
+    주소 = '제주';
+
+    //const : 수정은 가능하나 값의 재할당이 불가능하다.
+    //let : 변경이 가능한 변수
+
+    document.write(이름, '<br>');
+    document.write(소속, '<br>');
+    document.write(주소, '<br>');
+
+    document.write(소속[0], '<br>');
+    document.write(소속[1], '<br>');
+    document.write(소속[2], '<br>');
+
+
+  </script>
+</body>
+</html>

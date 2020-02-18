@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<style>
+  div{
+    border : solid 1px #dbdbdb;
+    width: 150px;
+    height: 150px;
+  }
+  #one {
+    background-color: blue;
+  }
+  #one.on {
+    position: fixed;
+  }
+  #two {
+    background-color: red;
+  }
+
+</style>
+<body>
+  <div id="one">
+  </div>
+
+  <div id="two"></div>
+  <div id="two"></div>
+  <div id="two"></div>
+  <div id="two"></div>
+  <div id="two"></div>
+  <div id="two"></div>
+
+  <script>
+  //이벤트 - scroll
+    //요소를 선택하는 또 다른 방법 : querySelector
+    var one = document.querySelector('#one');
+
+    //스크롤 시 파란색 박스만 고정
+    function scroll() {
+      //pageYOffset : 스크롤바의 offset 반환
+      //console.log(pageYOffset);
+
+      if(pageYOffset >= 10){
+        one.classList.add('on');
+
+      } else {
+        one.classList.remove('on');
+      }
+    }
+
+    window.addEventListener('scroll', scroll);
+  </script>
+</body>
+</html>

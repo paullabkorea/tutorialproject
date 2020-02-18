@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<style>
+  #box {
+    width: 100px;
+    height: 100px;
+    border: solid 1px #dbdbdb;
+  }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<body>
+  <div id="box"></div>
+
+  <script>
+  //JQuery - animate
+  //hover - 색 변경하기
+  $("#box").hover(function(){
+    $(this).css("background-color", "yellow");
+  }, function(){
+    $(this).css("background-color", "blue");
+  });
+
+
+  </script>
+</body>
+</html>

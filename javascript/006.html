@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>006.html</title>
+</head>
+<body>
+  <script>
+    // 타입 (https://ko.javascript.info/types 참고)
+
+    document.write(typeof(5), '<br>');             //number
+    document.write(typeof(5.5), '<br>');           //number
+    document.write(typeof('js100제'), '<br>');     //string
+    document.write(typeof('1'), '<br>');           //string
+    document.write(typeof(x), '<br>');             //undefined
+    document.write(typeof(undefined), '<br>');     //undefined
+    document.write(typeof([1, 2, 3, 4]), '<br>');  //object
+    document.write(typeof({'one':'하나', 'two':'둘'}), '<br>'); //object
+    document.write(typeof(js), '<br>');            //function
+    function js(){
+      return 0;
+    }
+    document.write("안녕?" / 2, '<br>');            //NaN
+    document.write(typeof("안녕?" / 2), '<br>');    //number
+    //number에는 일반적인 숫자 외 Infinity, -Infinity, NaN 포함
+    document.write(typeof(true), '<br>');           //boolean(true, false)
+
+    let test = null;
+    document.write(typeof(test), '<br>');           //object
+    //null은 'object'로 표시되지만 특수 값을 가지는 객체가 아닙니다.
+    //해당 오류는 호환성 유지를 위해 수정하지 않고 남겨둔 상황입니다.
+  </script>
+</body>
+</html>

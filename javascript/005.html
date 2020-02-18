@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>005.html</title>
+</head>
+<body>
+  <script>
+    // 논리 연산(and, or, not)
+
+    document.write(true || true, '<br>');    //true
+    document.write(true || false, '<br>');   //true
+    document.write(false || true, '<br>');   //true
+    document.write(false || false, '<br>');  //false
+
+    document.write(true && true, '<br>');    //true
+    document.write(true && false, '<br>');   //false
+    document.write(false && true, '<br>');   //false
+    document.write(false && false, '<br>');  //false
+
+    document.write(!true, '<br>');           //false
+    document.write(!false, '<br>');          //true
+
+    var x = 5;
+    var y = 20;
+    document.write(x < 25 && y < 25, '<br>');     //true
+    document.write(x === 5 || y === 5, '<br>');   //true
+    document.write(!(x < y), '<br>');             //false
+
+  </script>
+</body>
+</html>

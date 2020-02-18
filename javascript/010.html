@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //배열 내장함수
+    var 배열하나 = ['사과', '수박', '복숭아', '딸기', '바나나'];
+    var 배열둘 = ['메론', '체리', '한라봉'];
+
+    document.write(배열하나, '<br>');
+    배열하나.pop();
+    document.write(배열하나, '<br>');
+    배열하나.push('감귤');
+    document.write(배열하나, '<br>');
+
+    document.write(배열하나.toString(), '<br>');
+    document.write(배열하나.join('*'), '<br>');
+    document.write(배열하나.shift(), '<br>');
+    document.write(배열하나.slice(0, 2), '<br>');
+    document.write(배열하나.concat(배열둘), '<br>');
+    document.write(배열하나.reverse(), '<br>');
+    document.write(배열하나.sort(), '<br>');
+  </script>
+</body>
+</html>

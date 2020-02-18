@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="test()">클릭 One!!</button>
+  <button onclick="document.write('hello world Two')">클릭 Two!!</button>
+  <script>
+    // 함수
+    // 참고 : function은 python에 def과 같습니다.
+    // 읽어볼만한 문헌 : https://ko.javascript.info/function-basics
+
+    //함수선언
+    function sum(x, y){
+      return x + y;
+    }
+    document.write(sum(20, 40));//함수호출
+
+    function test(){
+      document.write('hello world One');
+    }
+
+
+  </script>
+</body>
+</html>
