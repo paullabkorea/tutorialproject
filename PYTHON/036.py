@@ -1,0 +1,5 @@
+t = (100, 100, 200, 300, 400)
+print(type(t))
+print(dir(t))
+print(t.count(100))
+print(t.index(200))
