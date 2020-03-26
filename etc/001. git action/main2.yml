@@ -1,0 +1,19 @@
+name: Hello world2
+
+on: [push]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run a one-line script
+      run: echo Hello, world!
+
+    - name: Run ls -l
+      run: ls -l
+
+    - name: Run ls -al
+      run: ls -al
