@@ -1,0 +1,913 @@
+@font-face {
+  font-family: 'CookieRunOTF-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CookieRunOTF-Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff')
+  format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: #7ccad5;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h4 {
+  font-family: 'CookieRunOTF-Bold', 'serif';
+  color: #fff;
+}
+
+#main_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.jeju-img {
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#home {
+  position: absolute;
+  height: auto;
+  left: 0;
+  top: 0;
+  padding: 30px 40px;
+  font-family: 'CookieRunOTF-Black';
+}
+
+#home .home-btn {
+  position: relative;
+}
+
+#home .home-btn p {
+  font-size:40px;
+  transition: all .3s;
+  color: #000;
+}
+
+#home .home-btn:hover p {
+  transform: scale(1.05);
+}
+
+/* 새소식 */
+.news {
+  width: 245px;
+  height: 125px;
+  position: absolute;
+  left: 74vw;
+  top: 0;
+  animation: move 2s;
+  transition: ease;
+}
+.news:hover div{
+  animation-play-state: paused;
+  transition: transform 0.5s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@keyframes move {
+  0% {
+    /* transform : translate(0, 0); */
+    opacity: 0;
+    left: 100vw;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    /* transform : translate(-100px, 0); */
+  }
+}
+@keyframes bird {
+  100% {
+    background-position: -1342.5px 0;
+  }
+}
+
+.bird {
+  width: 245px;
+  height: 125px;
+  background: url('../images/bird_frame2.png') no-repeat 0 0 / 1342.5px 125px;
+  animation : bird 1s infinite steps(6);
+  position: relative;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+/* 한라산 */
+@keyframes hallasan {
+  0%{
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0.6);
+  }
+}
+
+.hallasan {
+  transition: all .4s;
+  position: absolute;
+  left: 40vw;
+  top: 31vh;
+}
+
+.hallasan img {
+  animation: hallasan 1s infinite;
+}
+
+/* menu class 효과 */
+.menu h4 {
+  position: absolute;
+}
+.menu div:hover {
+  animation-play-state: paused;
+  transition: transform 0.5s;
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.menu:hover h4 {
+  color: #DD3B3E;
+  text-shadow: 0 0 5px #fff;
+}
+
+/* 바울랩 - about */
+.paullab {
+  position: absolute;
+  left: 50vw;
+  top: 12vh;
+  width: 97.5px;
+  height: auto;
+}
+
+@keyframes paullab {
+  100% {
+    background-position: -4096px 0;
+  }
+}
+
+.paullab-frame {
+  width: 97.5px;
+  height: 145px;
+  background: url('../images/paullab-frame.png') no-repeat 0 0 / 4096px 145px;
+  animation: paullab 3.3s infinite steps(42);
+  position: absolute;
+  transform: scale(0.8);
+  transition: all .4s;
+}
+
+.paullab h4 {
+  left: 70px;
+  top: 145px;
+}
+
+/* 파이와 썬 - 유튜브 */
+.youtube {
+  position: absolute;
+  left: 31vw;
+  top: 22vh;
+  width: 125px;
+  height: 125px;
+  transition: all .4s;
+}
+
+.youtube h4{
+  left: 50px;
+  top: 130px;
+}
+
+@keyframes py_thon {
+  100% {
+    background-position: -500px 0;
+  }
+}
+
+.python {
+  width: 125px;
+  height: 125px;
+  background: url('../images/python_frame.png') no-repeat 0 0 / 500px 125px;
+  animation: py_thon 1s infinite steps(4);
+  position: absolute;
+  transform: scale(0.8);
+  transition: all .4s;
+}
+
+/* 뮤라 - 출판정보 */
+.book {
+  position: absolute;
+  left: 17vw;
+  top: 30vh;
+  width: 167px;
+  height: 167px;
+  transition: all .4s;
+}
+
+.book h4 {
+  left: 95px;
+  top: 150px;
+}
+
+@keyframes mura {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+.mura {
+  width: 167px;
+  height: 167px;
+  background: url('../images/mura_frame.png') no-repeat 0 0 / 667px 167px;
+  animation: mura 0.7s infinite steps(4);
+  position: relative;
+  transform: scale(0.8);
+  transition: all .4s;
+}
+
+/* 개리 - Q&A */
+.q_a {
+  position: absolute;
+  left: 18vw;
+  top: 50vh;
+  width: 167px;
+  height: 167px;
+  transition: all .4s;
+}
+
+.q_a h4 {
+  left: 120px;
+  top: 120px;
+}
+
+
+@keyframes gary {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+.gary {
+  width: 167px;
+  height: 167px;
+  background: url('../images/gary_frame.png') no-repeat 0 0 / 667px 167px;
+  animation: gary 1s infinite steps(4);
+  transform: scale(0.8);
+  position: relative;
+  transition: all .4s;
+}
+
+/* 소울곰 - 인프런 */
+.online_lec {
+  width: 167px;
+  height: 167px;
+  position: absolute;
+  left: 45vw;
+  bottom: 25vh;
+}
+
+.online_lec h4 {
+  left: -10px;
+  top: 130px;
+}
+
+@keyframes soulgom {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+.soulgom {
+  width: 167px;
+  height: 167px;
+  background: url('../images/soulgom_frame.png') no-repeat 0 0/ 667px 167px;
+  animation: soulgom 1s infinite steps(4);
+  transform: scale(0.8);
+  position: relative;
+  transition: all .4s;
+}
+
+/* 라이캣 - 팀원소개 */
+.intro {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 62vw;
+  bottom: 38vh;
+}
+
+.intro h4 {
+  left: -30px;
+  top: 170px;
+}
+
+.intro:hover img {
+  animation-play-state: paused;
+}
+
+.intro div:hover {
+  transform: scale(1);
+}
+
+@keyframes licat {
+  0% {
+    transform: rotate(-11deg);
+  }
+  50% {
+    transform: rotate(23deg);
+  }
+  100% {
+    transform: rotate(-11deg);
+  }
+}
+
+.licat {
+  transform: scale(0.9);
+  position: relative;
+  transition: all .4s;
+}
+
+.licat .hand{
+  position: relative;
+  animation: licat 1s infinite linear;
+  width: 70px;
+  height: 70px;
+  left: 58px;
+  top: -121px;
+  transition: all .4s;
+}
+
+/* 자바독 - 바울랩 wiki */
+.wiki {
+  width: 167px;
+  height: 167px;
+  position: absolute;
+  left: 71vw;
+  top: 24vh;
+}
+@keyframes javadog {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+.javadog {
+  width: 167px;
+  height: 167px;
+  background: url('../images/javadog_frame.png') no-repeat 0 0 / 667px 167px;
+  animation: javadog 0.5s infinite steps(4);
+  transform: scale(0.8);
+  position: relative;
+  transition: all .4s;
+}
+
+/* 빙키 - 커리큘럼 */
+.curriculum {
+  width: 167px;
+  height: 167px;
+  position: absolute;
+  left: 63vw;
+  top: 13vh;
+}
+
+.curriculum h4 {
+  left: 0;
+  top: 170px;
+}
+
+
+@keyframes binky {
+  100% {
+    background-position: -667px 0;
+  }
+}
+.binky {
+  width: 167px;
+  height: 167px;
+  background: url('../images/binky_frame.png') no-repeat 0 0 / 667px 167px;
+  animation: binky 1s infinite steps(4);
+  transform: scale(0.8);
+  position: relative;
+  transition: all .4s;
+}
+
+
+/* etc
+- 풍차, 파라솔, 한라봉, 돌하르방
+*/
+.windmill {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 57vw;
+  top: 17vh;
+}
+
+.wind-base {
+  height: 90px;
+}
+
+@keyframes windmill {
+  0% {
+
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wind {
+  display: flex;
+}
+.wind img{
+  width: 100px;
+  height: 100px;
+  animation: windmill 2s infinite linear;
+  position: relative;
+}
+
+.wind1 {
+  left: -25px;
+  top: -100px;
+}
+.wind2 {
+  left: -80px;
+  top: -92px;
+}
+.parasol {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  left: 14vw;
+  top: 50vh;
+}
+
+.hallabong {
+  width: 45px;
+  height: auto;
+  position: absolute;
+  left: 37vw;
+  top: 42vh;
+}
+
+.dolharbang {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  left: 16.2vw;
+  bottom: 13vh;
+}
+
+/* 좌우반전 */
+.etc:hover img {
+  transform:rotate(0deg);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/* sns */
+.sns {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 19.4vw;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  padding: 3.4vw 9.8vw;
+}
+.sns .instagram {
+  width: 1.7vw;
+  height: auto;
+}
+.sns .naver {
+  width: 2.2vw;
+  height: auto;
+}
+
+.sns .facebook {
+  width: 1vw;
+  height: auto;
+}
+.sns .tistory {
+  width: 1.5vw;
+  height: auto;
+}
+
+
+/* 모달 */
+#modal {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  transition: all .4s;
+}
+
+#modal.on {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+#modal .wrapmodal {
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 1%;
+  margin-top: 50px;
+  max-height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.wrapmodal {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.wrapmodal::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+#modal .window {
+  width: 40vw;
+  height: 100%;
+}
+
+#modal .window .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: solid 1px #dbdbdb;
+}
+
+#modal .window .header .title {
+  font-size: 2vw;
+  font-family: 'CookieRunOTF-Bold', 'serif';
+}
+
+#modal .window .header .close-btn {
+  cursor: pointer;
+}
+
+#modal .window .header .close-btn i {
+  color:#dbdbdb;
+  font-size:2vw;
+  transition: all .5s;
+}
+
+#modal .window .header .close-btn:hover i {
+  -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Safari 3-8 */
+  transform: rotate(360deg);
+}
+
+#modal .content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+#modal .content .post {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dcdddd;
+  margin-bottom: 20px;
+}
+
+#modal .content .post_img {
+  margin: 0 auto;
+}
+
+.post-item {
+  padding-bottom: 35px;
+}
+.post-title {
+  font-size: 1.5vw;
+  padding: 10px 0;
+  color: #55A79A;
+  font-weight: bold;
+}
+
+.post-title:hover > a{
+  text-decoration: underline;
+}
+
+.post-explanation {
+  font-size: 1.2vw;
+  line-height: 1.3;
+  padding-bottom: 10px;
+}
+
+.readmore-btn {
+  font-size: 1.2vw;
+  align-items: center;
+}
+
+/* 메시지 */
+#message {
+  display: none;
+}
+
+#message .msg-img {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#message p {
+  font-size: 15px;
+  font-family: 'CookieRunOTF-Bold';
+}
+
+/* 반응형 */
+/* 세로모드 */
+@media only screen and (orientation:portrait) {
+  #main_container {
+    height: 100vw;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: none;
+  }
+  #message {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 30vh;
+  }
+}
+
+@media all and (min-width:480px) and (max-width:767px) {
+  h4 {
+    font-size: 5px;
+  }
+
+  .scale {
+    transform: scale(0.4);
+  }
+
+  .etc {
+    transform: scale(0.5);
+  }
+
+  .youtube, .q_a, .wiki, .curriculum {
+    width: 105px;
+    height: auto;
+  }
+
+  @keyframes hallasan {
+    0%{
+      transform: scale(0.2);
+    }
+    100% {
+      transform: scale(0.3);
+    }
+  }
+
+  #home {
+    padding: 15px 25px;
+  }
+
+  #home .home-btn p {
+    font-size: 23px;
+  }
+
+  .hallasan {
+    left: 30vw;
+    top: 20vh;
+  }
+
+  .paullab {
+    left: 46vw;
+    top: 3vh;
+  }
+
+  .paullab h4 {
+    left: 62px;
+    top: 112px;
+  }
+
+  .youtube{
+    left: 22vw;
+    top: 15vh;
+  }
+
+  .youtube h4 {
+    left: 85px;
+    top: 95px;
+  }
+
+  .book {
+    left: 8vw;
+    top: 20vh;
+  }
+
+  .book h4 {
+    left: 97px;
+    top: 110px;
+  }
+
+  .q_a {
+    left: 10vw;
+    top: 41vh;
+  }
+
+  .q_a h4 {
+    left: 110px;
+    top: 100px;
+  }
+
+  .online_lec {
+    left: 37vw;
+    bottom: 13vh;
+  }
+
+  .online_lec h4{
+    left: 40px;
+    top: 105px;
+  }
+
+  .intro {
+    left: 56vw;
+    bottom: 38vh;
+  }
+
+  .intro h4 {
+    left: 20px;
+    top: 160px;
+  }
+
+  .wiki {
+    left: 64vw;
+    top: 16vh;
+  }
+
+  .wiki h4 {
+    left: 50px;
+    top: 110px;
+  }
+
+  .curriculum {
+    left: 57vw;
+    top: 2vh;
+  }
+
+  .curriculum h4 {
+    left: 40px;
+    top: 125px;
+  }
+
+  .windmill {
+    left: 53vw;
+    top: 12vh;
+  }
+
+  .parasol {
+    left: 12vw;
+  }
+
+  .dolharbang {
+    left: 95px;
+    bottom: 25px;
+  }
+
+  .sns{
+    right: 0;
+    bottom: 5px;
+  }
+
+  .news {
+    left: 65vw;
+    top: -20px;
+  }
+
+  .news:hover div{
+    transform: scale(0.5);
+  }
+
+  #modal .window .header {
+    padding: 10px 20px;
+  }
+}
+
+
+@media all and (min-width:768px) and (max-width:1024px){
+  h4{
+    font-size: 15px;
+  }
+  #home .home-btn p {
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width:1920px) and (max-width:2048px) {
+  h4{
+    font-size: 20px;
+  }
+
+  @keyframes hallasan {
+    0%{
+      transform: scale(0.7);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+
+  .scale {
+    transform: scale(1.1);
+  }
+
+  .menu div:hover {
+    transform: scale(1.2);
+  }
+
+  .news:hover div{
+    transform: scale(1.3);
+  }
+
+  .paullab {
+    top: 13vh;
+  }
+  .paullab h4 {
+    top: 180px;
+  }
+  .youtube h4 {
+    top: 170px;
+  }
+
+  .curriculum h4 {
+    top: 200px;
+  }
+  .book {
+    width: 300px;
+  }
+  .book h4 {
+    left: 130px;
+  }
+
+  .q_a h4{
+    left: 140px;
+  }
+
+  .intro h4 {
+    left: -50px;
+  }
+
+  .wiki h4 {
+    top: 200px;
+  }
+}

@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'CookieRunOTF-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body { font-family: 'Nanum Gothic', sans-serif; }
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#home {
+  position: relative;
+}
+#home .wrapper {
+  padding: 20px 30px;
+}
+
+#home .home-btn {
+  position: relative;
+}
+
+#home .home-btn i {
+  font-size: 35px;
+  color: #000;
+  transition: all .3s;
+}
+
+#home .home-btn:hover i {
+  -ms-transform: rotate(360deg) scale(1.2); /* IE 9 */
+  -webkit-transform: rotate(360deg) scale(1.2); /* Safari 3-8 */
+  transform: rotate(360deg) scale(1.2);
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'CookieRunOTF-Bold', 'serif';
+}
+
+#title .title {
+  font-size: 70px;
+  padding-bottom: 20px;
+  padding-right: 0;
+}
+#title .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+/* 빙키 -title 옆 이미지 */
+@keyframes binky {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+#title .title-img {
+  width: 167px;
+  height: 167px;
+  background: url('../images/binky_frame.png') no-repeat 0 0 / 667px 167px;
+  animation: binky 1s infinite steps(4);
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: scale(0.8);
+}
+
+/* 메인컨텐츠 */
+#main_contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_contents .wrapper {
+  display: flex;
+  flex-direction:column;
+  width: 900px;
+  height: auto;
+  padding: 30px 0;
+}
+
+#main_contents .jejucoding {
+  padding-bottom: 40px;
+  border-bottom: dashed 1px #dcdddd;
+}
+
+#main_contents .lec-title {
+  font-size: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  font-weight: bold;
+}
+#main_contents p {
+  line-height: 1.6;
+  padding-bottom: 30px;
+}
+
+#main_contents .roadmap {
+  width: 800px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+}
+
+#main_contents .roadmap img {
+  width: 100%;
+  height: auto;
+}
+
+.roadmap .inner {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 42px;
+  width: 720px;
+  left: 0;
+  top: 385px;
+}
+
+.roadmap .inner div {
+  left: 0;
+  top: 0;
+}
+
+.roadmap .inner .lec {
+  width: 100px;
+  height: auto;
+  padding-bottom: 61px;
+  transition: all .4s;
+}
+
+.roadmap .inner .lec:hover {
+  transform: scale(1.1);
+}
+
+.lec img {
+  transition: all .4s;
+}
+.roadmap .inner .lec:hover img{
+  box-shadow:5px 5px 15px #000;
+  transform: translateX(-5px) translateY(-5px);
+}
+
+@keyframes blink {
+  0% {
+    box-shadow: 0px 0px 30px #edff14;
+    transform: scale(1.2);
+  }
+  50% {
+    box-shadow: 0px 0px 15px #edff14;
+  }
+  100% {
+    box-shadow: 0px 0px 5px #edff14;
+    transform: scale(1);
+  }
+}
+
+.jejucoding-lec img {
+  animation: blink 1s linear infinite;
+  transition: all .4s;
+  transition-delay: 1s;
+}
+
+.jejucoding-lec:hover img {
+  animation: none;
+}
+
+#main_contents .live-lec{
+  padding : 40px 0;
+}
+
+
+#footer {
+  background-color: #606060;
+  color: #fff;
+  overflow: hidden;
+}
+
+#footer .wrapper{
+  margin: 0;
+  padding: 30px 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#footer .contact {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+#footer .contact-title {
+  display: flex;
+  font-size: 2vw;
+  font-family: 'CookieRunOTF-Bold', 'serif';
+}
+.contact-item {
+  padding-top: 20px;
+}
+
+.contact-item div {
+  padding-bottom: 10px;
+}
+
+.about {
+  width: 30vw;
+  line-height: 1.5;
+}
+
+#footer .copyright {
+  background-color: #3a3939;
+  margin: 0;
+  padding: 15px 200px;
+}

@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'CookieRunOTF-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body { font-family: 'Nanum Gothic', sans-serif; }
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#home {
+  position: relative;
+}
+#home .wrapper {
+  padding: 20px 30px;
+}
+
+#home .home-btn {
+  position: relative;
+}
+
+#home .home-btn i {
+  font-size: 2.5vw;
+  color: #000;
+  transition: all .3s;
+}
+
+#home .home-btn:hover i {
+  -ms-transform: rotate(360deg) scale(1.2); /* IE 9 */
+  -webkit-transform: rotate(360deg) scale(1.2); /* Safari 3-8 */
+  transform: rotate(360deg) scale(1.2);
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'CookieRunOTF-Bold', 'serif';
+
+}
+
+#title .title {
+  font-size: 5vw;
+  padding-right: 20px;
+}
+#title .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+/* paullab */
+#title .title-img {
+  width: 80px;
+  height: auto;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.title-img img {
+  width: 100%;
+  height: auto;
+}
+
+#main_contents {
+  display: flex;
+  justify-content: center;
+}
+
+#main_contents .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: auto;
+  padding: 30px 0;
+}

@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'CookieRunOTF-Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CookieRunOTF-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CookieRun-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#main_contents {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#main_contents .bg{
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: url('../images/weniv-bg.png') no-repeat 0 0 / 100vw 100vh;
+}
+
+#home {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px 30px;
+  z-index: 999;
+}
+
+#home .home-btn i {
+  font-size:2.5vw;
+  color:#fff;
+  transition: all .3s;
+}
+
+#home .home-btn:hover i {
+  -ms-transform: rotate(360deg) scale(1.2); /* IE 9 */
+  -webkit-transform: rotate(360deg) scale(1.2); /* Safari 3-8 */
+  transform: rotate(360deg) scale(1.2);
+}
+
+.cloud-sun {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: auto;
+  padding: 40px 50px;
+}
+
+.text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  transition: all .4s;
+  animation: fadeIn 1s ease;
+}
+
+.text .inner {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+}
+
+.text h2 {
+  font-family: 'CookieRunOTF-Black';
+  font-size: 40px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.text p {
+  font-family: 'CookieRun-Regular';
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  font-size: 30px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+#wenivs {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  position: relative;
+  left: 0;
+  bottom: 350px;
+}
+
+#wenivs .wrapper{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#wenivs .wrapper li {
+  transition: all .4s ease;
+}
+
+#wenivs img {
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+#wenivs li:hover > img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #fff);
+}
+
+#wenivs .licat {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: auto;
+}
+
+#wenivs .gary {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: auto;
+}
+
+#wenivs .javadog {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: auto;
+}
+
+#wenivs .soulgom {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: auto;
+}
+
+#wenivs .sun, .pie{
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 70px;
+  height: auto;
+}
+
+#wenivs .binky {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 130px;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+#wenivs .mura {
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 160px;
+  height: auto;
+}
+
+#intro {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  width: 50vw;
+  height: auto;
+}
+
+#intro div {
+  display: none;
+  flex-direction: column;
+  animation: fadeIn .8s ease;
+}
+
+#intro h2 {
+  font-family: 'CookieRunOTF-Black';
+  font-size: 35px;
+  padding-bottom: 25px;
+}
+#intro span {
+  font-family: 'CookieRun-Regular';
+  color: #fff;
+  font-size: 25px;
+  padding-bottom: 25px;
+}
+
+#intro p{
+  font-family: 'CookieRun-Regular';
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+@media all and (min-width:1920px) and (max-width:2048px) {
+  .text {
+    top: 50px;
+  }
+  #wenivs {
+    bottom: 400px;
+  }
+  #wenivs li {
+    padding-right: 15px;
+  }
+  #wenivs img {
+    transform: scale(1.1);
+  }
+  #wenivs li:hover > img {
+    transform: scale(1.2);
+  }
+
+  #intro {
+    top: 200px;
+  }
+}
