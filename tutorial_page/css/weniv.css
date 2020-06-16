@@ -21,6 +21,7 @@
 
 body {
   font-family: 'Nanum Gothic', sans-serif;
+  background-color: #7ccad5;
 }
 
 a {
@@ -69,7 +70,7 @@ img {
 }
 
 #home .home-btn i {
-  font-size:2.5vw;
+  font-size: 35px;
   color:#fff;
   transition: all .3s;
 }
@@ -243,7 +244,305 @@ img {
   line-height: 1.4;
 }
 
+/* 메시지 */
+#message {
+  display: none;
+}
+
+#message .msg-img {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#message p {
+  font-size: 15px;
+  font-family: 'CookieRunOTF-Bold';
+}
+
+@media only screen and (orientation:portrait) {
+  #main_contents {
+    height: 100vw;
+    width: auto;
+    display: none;
+  }
+
+  #message {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 30vh;
+  }
+}
+
+@media all and (min-width:480px) and (max-width:568px) {
+  #home {
+    padding: 15px 20px;
+  }
+
+  #home .home-btn i {
+    font-size: 27px;
+  }
+
+  .cloud-sun {
+    width: 120px;
+    height: auto;
+    padding: 20px 20px;
+  }
+
+  .text {
+    top: 50px;
+  }
+
+  .text .inner {
+    padding-top: 0;
+  }
+
+  .text h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  #wenivs {
+    bottom: 45vh;
+  }
+
+  #wenivs .licat {
+    width: 90px;
+  }
+
+  #wenivs .gary {
+    width: 60px;
+  }
+
+  #wenivs .javadog {
+    width: 90px;
+  }
+
+  #wenivs .soulgom {
+    width: 90px;
+  }
+
+  #wenivs .sun, .pie{
+    width: 40px;
+  }
+
+  #wenivs .binky {
+    width: 60px;
+    padding-bottom: 10px;
+  }
+
+  #wenivs .mura {
+    width: 80px;
+  }
+
+  #intro {
+    left: 20vw;
+    top: 10vh;
+  }
+
+  #intro h2 {
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  #intro span {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+
+  #intro p{
+    font-size: 5px;
+    line-height: 1.3;
+  }
+}
+
+@media all and (min-width:569px) and (max-width:864px) {
+  #home {
+    padding: 15px 20px;
+  }
+
+  #home .home-btn i {
+    font-size: 27px;
+  }
+
+  .cloud-sun {
+    width: 120px;
+    height: auto;
+    padding: 20px 20px;
+  }
+
+  .text {
+    top: 50px;
+  }
+
+  .text .inner {
+    padding-top: 0;
+  }
+
+  .text h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  #wenivs {
+    bottom: 45vh;
+  }
+
+  #wenivs .licat {
+    width: 100px;
+  }
+
+  #wenivs .gary {
+    width: 70px;
+  }
+
+  #wenivs .javadog {
+    width: 100px;
+  }
+
+  #wenivs .soulgom {
+    width: 100px;
+  }
+
+  #wenivs .sun, .pie{
+    width: 40px;
+  }
+
+  #wenivs .binky {
+    width: 70px;
+    padding-bottom: 10px;
+  }
+
+  #wenivs .mura {
+    width: 90px;
+  }
+
+  #intro {
+    left: 20vw;
+    top: 10vh;
+  }
+
+  #intro h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  #intro span {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+
+  #intro p{
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  #message .msg-img {
+    width: 300px;
+  }
+
+  #message p {
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width:865px) and (max-width:1024px) {
+  .cloud-sun {
+    width: 200px;
+  }
+  .text {
+    top: 50px;
+  }
+
+  #wenivs {
+    bottom: 40vh;
+  }
+
+  #wenivs .licat {
+    width: 150px;
+  }
+
+  #wenivs .gary {
+    width: 100px;
+  }
+
+  #wenivs .javadog {
+    width: 150px;
+  }
+
+  #wenivs .soulgom {
+    width: 150px;
+  }
+
+  #wenivs .sun, .pie{
+    width: 60px;
+  }
+
+  #wenivs .binky {
+    width: 90px;
+    padding-bottom: 15px;
+  }
+
+  #wenivs .mura {
+    width: 110px;
+  }
+
+  #intro {
+    left: 17vw;
+    top: 15vh;
+  }
+
+  #intro h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  #intro span {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  #intro p{
+    font-size: 15px;
+  }
+
+  #message .msg-img {
+    width: 400px;
+  }
+
+  #message p {
+    font-size: 35px;
+  }
+}
+
+@media all and (min-width:1025px) and (max-width:1366px) {
+  #home .home-btn i {
+    font-size: 40px;
+  }
+  .text {
+    top: 70px;
+  }
+
+  #intro {
+    left: 17vw;
+    top: 20vh;
+  }
+}
+
 @media all and (min-width:1920px) and (max-width:2048px) {
+  #home .home-btn i {
+    font-size: 40px;
+  }
+
   .text {
     top: 50px;
   }
@@ -261,6 +560,7 @@ img {
   }
 
   #intro {
+    left: 270px;
     top: 200px;
   }
 }

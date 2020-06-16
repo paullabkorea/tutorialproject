@@ -39,22 +39,20 @@ a {
 #title {
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
   font-family: 'CookieRunOTF-Bold', 'serif';
+}
+
+#title .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  padding: 20px 0;
 }
 
 #title .title {
   font-size: 70px;
   padding-bottom: 25px;
-}
-#title .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin:0;
-  padding-top: 0;
-  padding-bottom: 20px;
 }
 
 /* title 옆 이미지 */
@@ -69,10 +67,8 @@ a {
   height: 167px;
   background: url('../images/gary_frame.png') no-repeat 0 0 / 667px 167px;
   animation: gary 1s infinite steps(4);
-  position: relative;
-  left: 0;
-  top: 0;
   transform: scale(0.8);
+  padding-bottom: 80px;
 }
 
 /* 메인컨텐츠 */
@@ -84,7 +80,7 @@ a {
 #main_contents .wrapper {
   display: flex;
   flex-direction:column;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .answer  {
@@ -108,8 +104,6 @@ a {
 }
 
 .img-wrap{
-  /* border-radius: 50%;
-  border: 1px solid #dbdbdb; */
   width: 100px;
   height: 100px;
   align-items: center;
@@ -189,12 +183,11 @@ a {
 #footer {
   background-color: #606060;
   color: #fff;
-  overflow: hidden;
 }
 
 #footer .wrapper{
   margin: 0;
-  padding: 30px 200px;
+  padding: 30px 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -202,7 +195,7 @@ a {
 #footer .contact {
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 500px;
 }
 
 #footer .contact-title {
@@ -219,12 +212,187 @@ a {
 }
 
 .about {
-  width: 30vw;
+  width: 500px;
   line-height: 1.5;
 }
 
 #footer .copyright {
   background-color: #3a3939;
   margin: 0;
-  padding: 15px 200px;
+  padding: 15px 60px;
+}
+
+@media all and (min-width:320px) and (max-width:639px) {
+  #home .wrapper {
+    padding: 15px 20px;
+  }
+
+  #home .home-btn i {
+    font-size: 25px;
+  }
+
+  #title .wrapper {
+    height: 100px;
+    padding: 5px 0;
+  }
+
+  #title .title {
+    font-size: 35px;
+  }
+
+  #title .title-img {
+    display: none;
+  }
+
+  .answer  {
+    width: 280px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .question {
+    width: 280px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .img-wrap{
+    width: 100px;
+    height: 100px;
+  }
+
+  .answer .img-wrap {
+    margin-right: 40px;
+  }
+
+  .answer .img-wrap img {
+    padding-top: 30px;
+  }
+
+  .question .img-wrap {
+    margin-left: 40px;
+  }
+
+  .speech-a {
+    width: 300px;
+    padding: 15px 0;
+  }
+
+  .speech-q {
+    width: 300px;
+    padding: 0;
+  }
+
+  .speech-a, .speech-q p {
+    font-size: 12px;
+    padding: 15px 20px;
+    line-height: 1.3;
+  }
+
+
+  #footer .wrapper{
+    flex-direction: column;
+    padding: 15px 15px;
+  }
+
+  #footer .contact {
+    width: 300px;
+    padding-bottom: 10px;
+  }
+
+  #footer .contact-title {
+    font-size: 10px;
+  }
+
+  .contact-item {
+    font-size: 5px;
+    padding-top: 5px;
+  }
+
+  .contact-item div {
+    padding-bottom: 5px;
+  }
+
+  .about {
+    width: 90vw;
+  }
+
+  .about-item {
+    font-size: 5px;
+  }
+
+  #footer .copyright {
+    font-size: 5px;
+    padding: 10px 15px;
+  }
+}
+
+@media all and (min-width:640px) and (max-width:1023px) {
+  #home .wrapper {
+    padding: 20px 25px;
+  }
+
+  #title .title {
+    font-size: 60px;
+  }
+
+  #title .title-img {
+    transform: scale(0.7);
+  }
+
+  .answer, .question {
+    width: 60vw;
+  }
+
+  .answer .img-wrap img {
+    padding-left: 10px;
+    padding-top: 30px;
+  }
+
+  .speech-a {
+    padding: 15px 0;
+  }
+
+  .speech-q {
+    padding: 0;
+  }
+
+  .speech-a, .speech-q p {
+    padding: 20px 20px;
+  }
+
+  #footer .wrapper{
+    padding: 20px 30px;
+  }
+
+  #footer .contact {
+    width: 35vw;
+  }
+
+  #footer .contact-title {
+    font-size: 20px;
+  }
+
+  .contact-item {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+
+  .contact-item div {
+    padding-bottom: 5px;
+  }
+
+  .about {
+    width: 35vw;
+  }
+
+  .about-item {
+    font-size: 5px;
+    padding-top: 5px;
+  }
+
+
+  #footer .copyright {
+    padding: 10px 30px;
+  }
 }

@@ -55,7 +55,7 @@ h4 {
 .jeju-img {
   position: absolute;
   left: 0;
-  height: 0;
+  top: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -103,14 +103,12 @@ h4 {
 }
 @keyframes move {
   0% {
-    /* transform : translate(0, 0); */
     opacity: 0;
     left: 100vw;
     top: 0;
   }
   100% {
     opacity: 1;
-    /* transform : translate(-100px, 0); */
   }
 }
 @keyframes bird {
@@ -131,7 +129,7 @@ h4 {
 
 /* 한라산 */
 @keyframes hallasan {
-  0%{
+  0% {
     transform: scale(0.5);
   }
   100% {
@@ -147,7 +145,9 @@ h4 {
 }
 
 .hallasan img {
-  animation: hallasan 1s infinite;
+  animation: hallasan .5s infinite;
+  animation-direction: alternate;
+  transition: all .4s;
 }
 
 /* menu class 효과 */
@@ -217,7 +217,7 @@ h4 {
   }
 }
 
-.python {
+.python{
   width: 125px;
   height: 125px;
   background: url('../images/python_frame.png') no-repeat 0 0 / 500px 125px;
@@ -378,13 +378,14 @@ h4 {
   left: 71vw;
   top: 24vh;
 }
+
 @keyframes javadog {
   100% {
     background-position: -667px 0;
   }
 }
 
-.javadog {
+.javadog{
   width: 167px;
   height: 167px;
   background: url('../images/javadog_frame.png') no-repeat 0 0 / 667px 167px;
@@ -508,32 +509,16 @@ h4 {
 .sns {
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 19.4vw;
-  height: auto;
-  right: 0;
-  bottom: 0;
-  padding: 3.4vw 9.8vw;
+  right: 9.4vw;
+  bottom: 6.2vh;
 }
-.sns .instagram {
-  width: 1.7vw;
+.sns div {
+  width: 40px;
   height: auto;
+  padding-left: 3.3vw;
 }
-.sns .naver {
-  width: 2.2vw;
-  height: auto;
-}
-
-.sns .facebook {
-  width: 1vw;
-  height: auto;
-}
-.sns .tistory {
-  width: 1.5vw;
-  height: auto;
-}
-
 
 /* 모달 */
 #modal {
@@ -553,7 +538,6 @@ h4 {
   display: flex;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
 
 #modal .wrapmodal {
   left: 0;
@@ -652,6 +636,10 @@ h4 {
   align-items: center;
 }
 
+.readmore-btn:hover {
+  text-decoration: underline;
+}
+
 /* 메시지 */
 #message {
   display: none;
@@ -673,11 +661,11 @@ h4 {
 @media only screen and (orientation:portrait) {
   #main_container {
     height: 100vw;
-    -webkit-transform: rotate(90deg);
+    /* -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+    transform: rotate(90deg); */
     display: none;
   }
   #message {
@@ -690,7 +678,15 @@ h4 {
   }
 }
 
-@media all and (min-width:480px) and (max-width:767px) {
+@media all and (min-width:480px) and (max-width:864px) {
+  #message .msg-img {
+    width: 300px;
+  }
+
+  #message p {
+    font-size: 30px;
+  }
+
   h4 {
     font-size: 5px;
   }
@@ -706,6 +702,10 @@ h4 {
   .youtube, .q_a, .wiki, .curriculum {
     width: 105px;
     height: auto;
+  }
+
+  .bird {
+    transform: scale(0.4);
   }
 
   @keyframes hallasan {
@@ -824,11 +824,6 @@ h4 {
     bottom: 25px;
   }
 
-  .sns{
-    right: 0;
-    bottom: 5px;
-  }
-
   .news {
     left: 65vw;
     top: -20px;
@@ -841,19 +836,187 @@ h4 {
   #modal .window .header {
     padding: 10px 20px;
   }
+
+  .sns {
+    right: 9.2vw;
+    bottom: 6vh;
+  }
+  .sns div {
+    width: 20px;
+    height: auto;
+    padding-left: 3vw;
+  }
 }
 
+@media all and (min-width:768px) and (max-width:1023px){
+}
 
-@media all and (min-width:768px) and (max-width:1024px){
+@media all and (min-width:1024px) and (max-width:1365px) {
   h4{
     font-size: 15px;
   }
+
   #home .home-btn p {
-    font-size: 30px;
+    font-size: 35px;
+  }
+
+  @keyframes hallasan {
+    0%{
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(0.6);
+    }
+  }
+
+  .hallasan {
+    left: 38vw;
+    top: 32vh;
+  }
+
+  .scale {
+    transform: scale(0.8);
+  }
+
+  .menu div:hover {
+    transform: scale(0.9);
+  }
+
+  .etc {
+    transform: scale(0.8);
+  }
+
+  .paullab {
+    top: 13vh;
+  }
+
+  .paullab h4 {
+    left: 50px;
+  }
+
+  .youtube {
+    left: 29vw;
+    top: 23vh;
+  }
+
+  .book h4 {
+    left: 40px;
+  }
+
+  .online_lec {
+    left: 41vw;
+  }
+
+  .q_a {
+    left: 15vw;
+    top: 52vh;
+  }
+
+  .dolharbang {
+    left: 15.5vw;
+    top: 79vh;
+  }
+
+  .sns {
+    right: 9vw;
+  }
+  .sns div {
+    width: 35px;
+    height: auto;
+    padding-left: 2.5vw;
+  }
+
+  #message .msg-img {
+    width: 400px;
+  }
+
+  #message p {
+    font-size: 35px;
   }
 }
 
-@media all and (min-width:1920px) and (max-width:2048px) {
+@media all and (min-width:1366px) and (max-width:1535px){
+  h4{
+    font-size: 20px;
+  }
+
+  #home .home-btn p {
+    font-size: 45px;
+  }
+
+  @keyframes hallasan {
+    0%{
+      transform: scale(0.6);
+    }
+    100% {
+      transform: scale(0.7);
+    }
+  }
+
+  .hallasan {
+    left: 39vw;
+    top: 37vh;
+  }
+
+  .scale {
+    transform: scale(0.8);
+  }
+
+  .menu div:hover {
+    transform: scale(0.9);
+  }
+
+  .paullab {
+    top: 16vh;
+  }
+
+  .paullab h4 {
+    top: 170px;
+  }
+
+  .youtube {
+    left: 30vw;
+    top: 27vh;
+  }
+
+  .book {
+    left: 17vw;
+    top: 34vh;
+  }
+
+  .book h4 {
+    left: 70px;
+  }
+
+  .q_a {
+    top: 55vh;
+  }
+
+  .wiki {
+    top: 30vh;
+  }
+
+  .curriculum {
+    top: 19vh;
+  }
+
+  .windmill {
+    top: 20vh;
+  }
+
+  .sns {
+    right: 8.8vw;
+    bottom: 6.5vh;
+  }
+
+  .sns div {
+    width: 50px;
+    height: auto;
+    padding-left: 2.3vw;
+  }
+}
+
+@media all and (min-width:1600px) and (max-width:2048px) {
   h4{
     font-size: 20px;
   }
@@ -909,5 +1072,15 @@ h4 {
 
   .wiki h4 {
     top: 200px;
+  }
+  .sns {
+    right: 9.3vw;
+    bottom: 6.2vh;
+  }
+
+  .sns div {
+    width: 50px;
+    height: auto;
+    padding-left: 3.35vw;
   }
 }

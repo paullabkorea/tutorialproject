@@ -44,7 +44,6 @@ strong {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   font-family: 'CookieRunOTF-Bold', 'serif';
 }
 
@@ -126,10 +125,10 @@ strong {
   position: absolute;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 42px;
-  width: 720px;
+  padding-left: 42.5px;
+  width: 719px;
   left: 0;
-  top: 385px;
+  top: 400px;
 }
 
 .roadmap .inner div {
@@ -171,7 +170,8 @@ strong {
 }
 
 .jejucoding-lec img {
-  animation: blink 1s linear infinite;
+  animation: blink .5s linear infinite;
+  animation-direction: alternate-reverse;
   transition: all .4s;
   transition-delay: 1s;
 }
@@ -184,16 +184,14 @@ strong {
   padding : 40px 0;
 }
 
-
 #footer {
   background-color: #606060;
   color: #fff;
-  overflow: hidden;
 }
 
 #footer .wrapper{
   margin: 0;
-  padding: 30px 200px;
+  padding: 30px 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -201,7 +199,7 @@ strong {
 #footer .contact {
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 500px;
 }
 
 #footer .contact-title {
@@ -218,12 +216,204 @@ strong {
 }
 
 .about {
-  width: 30vw;
+  width: 500px;
   line-height: 1.5;
 }
 
 #footer .copyright {
   background-color: #3a3939;
   margin: 0;
-  padding: 15px 200px;
+  padding: 15px 60px;
+}
+
+@media all and (min-width:320px) and (max-width:639px) {
+  #home .wrapper {
+    padding: 15px 20px;
+  }
+  #home .home-btn i {
+    font-size: 25px;
+  }
+  #title .title {
+    font-size: 35px;
+    padding: 0;
+  }
+  #title .wrapper {
+    padding-bottom: 5px;
+  }
+
+  #title .title-img {
+    display: none;
+  }
+
+  #main_contents .wrapper {
+    width: 300px;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  #main_contents .jejucoding {
+    padding-bottom: 40px;
+  }
+
+  #main_contents .lec-title {
+    font-size: 10px;
+  }
+  #main_contents p {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  #main_contents .roadmap {
+    width: 300px;
+    height: auto;
+  }
+
+  .roadmap .inner {
+    padding-left: 16px;
+    width: 269px;
+    left: 0;
+    top: 150px;
+  }
+  .roadmap .inner .lec {
+    width: 37px;
+    height: auto;
+    padding-bottom: 21.2px;
+  }
+
+  .roadmap .inner .lec:hover img{
+    box-shadow:1px 1px 5px #000;
+    transform: translateX(-1px) translateY(-1px);
+  }
+
+  #footer .wrapper{
+    flex-direction: column;
+    padding: 15px 15px;
+  }
+
+  #footer .contact {
+    width: 300px;
+    padding-bottom: 10px;
+  }
+
+  #footer .contact-title {
+    font-size: 10px;
+  }
+
+  .contact-item {
+    font-size: 5px;
+    padding-top: 5px;
+  }
+
+  .contact-item div {
+    padding-bottom: 5px;
+  }
+
+  .about {
+    width: 90vw;
+  }
+
+  .about-item {
+    font-size: 5px;
+  }
+
+  #footer .copyright {
+    font-size: 5px;
+    padding: 10px 15px;
+  }
+}
+
+@media all and (min-width:640px) and (max-width:1023px) {
+  #home .wrapper {
+    padding: 20px 25px;
+  }
+
+  #title .wrapper {
+    margin-left: 20px;
+  }
+
+  #title .title {
+    font-size: 60px;
+    margin: 0;
+    padding-bottom : 30px;
+  }
+
+  #title .title-img {
+    margin: 0;
+    padding: 0;
+    transform: scale(0.7);
+  }
+
+  #main_contents .wrapper {
+    width: 620px;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  #main_contents .jejucoding {
+    padding-bottom: 40px;
+  }
+
+  #main_contents .lec-title {
+    font-size: 20px;
+  }
+  #main_contents p {
+    font-size: 15px;
+  }
+
+  #main_contents .roadmap {
+    width: 620px;
+    height: auto;
+  }
+
+  .roadmap .inner {
+    padding-left: 34px;
+    width: 555px;
+    top: 310px;
+  }
+
+  .roadmap .inner .lec {
+    width: 75px;
+    height: auto;
+    padding-bottom: 48.5px;
+  }
+
+  .roadmap .inner .lec:hover img{
+    box-shadow:2px 2px 7px #000;
+    transform: translateX(-2px) translateY(-2px);
+  }
+
+  #footer .wrapper{
+    padding: 20px 30px;
+  }
+
+  #footer .contact {
+    width: 35vw;
+  }
+
+  #footer .contact-title {
+    font-size: 20px;
+  }
+
+  .contact-item {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+
+  .contact-item div {
+    padding-bottom: 5px;
+  }
+
+  .about {
+    width: 35vw;
+  }
+
+  .about-item {
+    font-size: 5px;
+    padding-top: 5px;
+  }
+
+
+  #footer .copyright {
+    padding: 10px 30px;
+  }
 }
