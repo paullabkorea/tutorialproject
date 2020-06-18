@@ -252,7 +252,7 @@ h4 {
   width: 167px;
   height: 167px;
   background: url('../images/mura_frame.png') no-repeat 0 0 / 667px 167px;
-  animation: mura 0.7s infinite steps(4);
+  animation: mura 0.5s infinite steps(4);
   position: relative;
   transform: scale(0.8);
   transition: all .4s;
