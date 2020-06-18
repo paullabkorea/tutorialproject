@@ -49,6 +49,12 @@ strong {
 }
 
 #title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,6 +68,12 @@ strong {
 }
 
 #title .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -88,12 +100,22 @@ strong {
 
 /* 메인컨텐츠 */
 #main_contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #main_contents .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
   display: flex;
   flex-direction:column;
   width: 900px;
@@ -130,6 +152,12 @@ strong {
 }
 
 .roadmap .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   display: flex;
   position: absolute;
   flex-direction: row;
@@ -202,17 +230,29 @@ strong {
 #footer .wrapper{
   margin: 0;
   padding: 30px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 #footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
   display: flex;
   flex-direction: column;
   width: 500px;
 }
 
 #footer .contact-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 2vw;
   font-family: 'CookieRunOTF-Bold', 'serif';
@@ -300,6 +340,8 @@ strong {
   }
 
   #footer .wrapper{
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 15px 15px;
   }

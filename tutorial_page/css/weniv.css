@@ -56,6 +56,12 @@ img {
   top: 0;
   width: 100vw;
   height: 100vh;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+
   display: flex;
   justify-content: center;
   background: url('../images/weniv-bg.png') no-repeat 0 0 / 100vw 100vh;
@@ -103,6 +109,12 @@ img {
   width: 100vw;
   height: auto;
   position: absolute;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+
   display: flex;
   flex-direction: column;
   padding-top: 120px;
@@ -127,6 +139,9 @@ img {
 #wenivs {
   width: 100vw;
   height: auto;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   left: 0;
@@ -136,6 +151,14 @@ img {
 #wenivs .wrapper{
   width: 100vw;
   height: auto;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -156,6 +179,8 @@ img {
 }
 
 #wenivs .licat {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   left: 0;
   top: 0;
@@ -164,6 +189,8 @@ img {
 }
 
 #wenivs .gary {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   left: 0;
   top: 0;
@@ -172,6 +199,8 @@ img {
 }
 
 #wenivs .javadog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   left: 0;
   top: 0;
@@ -180,6 +209,8 @@ img {
 }
 
 #wenivs .soulgom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   left: 0;
   top: 0;
@@ -188,6 +219,8 @@ img {
 }
 
 #wenivs .sun, .pie{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   left: 0;
   top: 0;
@@ -196,6 +229,8 @@ img {
 }
 
 #wenivs .binky {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   left: 0;
   top: 0;
@@ -205,6 +240,8 @@ img {
 }
 
 #wenivs .mura {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   left: 0;
   top: 0;
@@ -221,6 +258,11 @@ img {
 }
 
 #intro div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+
   display: none;
   flex-direction: column;
   animation: fadeIn .8s ease;
