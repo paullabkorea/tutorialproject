@@ -5,12 +5,48 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CookieRunOTF-Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff')
+  format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CookieRun-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body { font-family: 'Nanum Gothic', sans-serif; }
 
 a {
   color: inherit;
   cursor: pointer;
   text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+strong {
+  font-weight: bold;
+}
+
+hr {
+  width: 50px;
+  border-top: 3px solid #2B68A4;
 }
 
 #home {
@@ -41,12 +77,11 @@ a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  font-family: 'CookieRunOTF-Bold', 'serif';
-
+  font-family: 'CookieRunOTF-Black';
 }
 
 #title .title {
-  font-size: 5vw;
+  font-size: 80px;
   padding-right: 20px;
 }
 #title .wrapper {
@@ -57,16 +92,20 @@ a {
 }
 
 /* paullab */
-#title .title-img {
-  width: 80px;
-  height: auto;
+@keyframes paullab {
+  100% {
+    background-position: -4096px 0;
+  }
+}
+
+.title-img {
+  width: 97.5px;
+  height: 145px;
+  background: url('../images/paullab-frame.png') no-repeat 0 0 / 4096px 145px;
+  animation: paullab 3.3s infinite steps(42);
   position: relative;
   left: 0;
   top: 0;
-}
-.title-img img {
-  width: 100%;
-  height: auto;
 }
 
 #main_contents {
@@ -76,9 +115,257 @@ a {
 
 #main_contents .wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60vw;
-  height: auto;
+  padding: 40px 10px;
+}
+
+.section {
+  text-align: center;
+  font-family: 'CookieRunOTF-Bold';
+  font-size: 30px;
+}
+
+/* about us */
+.about-paullab {
   padding: 30px 0;
+}
+
+.about-paullab .saying {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.about-paullab .saying h4 {
+  font-size: 20px;
+  padding: 30px 0;
+  font-family: 'CookieRunOTF-Bold';
+}
+
+.about-paullab .saying p {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  line-height: 1.5;
+  padding: 30px 0;
+}
+
+.about-paullab .intro {
+  margin-top: 30px;
+  padding: 35px 0;
+}
+
+.about-paullab .company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'NEXON Lv1 Gothic OTF';
+}
+
+.about-paullab .company .inner_1 {
+  width:120px;
+  height: auto;
+  padding-right: 150px;
+}
+
+.about-paullab .company img {
+  padding-bottom: 30px;
+}
+
+.about-paullab .company .inner_1:after {
+  content: '바울랩';
+  font-size: 15px;
+}
+
+.about-paullab .company .inner_2 {
+  padding-right: 120px;
+}
+
+.about-paullab .company .inner_2 p {
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: 4px 4px 0px #bdbdbd;
+  padding: 45px 0;
+}
+
+.about-paullab .company .inner_2 span {
+  font-size: 15px;
+  font-family: 'NEXON Lv1 Gothic OTF';
+}
+
+.about-paullab .company .inner_3 {
+  width:200px;
+  height:auto;
+}
+
+.about-paullab .company .inner_3:after {
+  content: '제주코딩베이스캠프';
+  font-size: 15px;
+}
+
+.about-paullab .intro .intro-contents {
+  width: 1000px;
+  height: auto;
+  padding-top: 80px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.about-paullab .intro-contents h4 {
+  font-family: 'CookieRunOTF-Bold';
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.about-paullab .intro-contents p {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  font-size: 17px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  line-height: 1.5;
+}
+
+.about-paullab .intro-contents span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* ceo */
+.about-ceo {
+  padding: 30px 0;
+}
+
+.about-ceo .intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 0;
+}
+
+.about-ceo .intro .intro-img {
+  padding-right: 200px;
+}
+
+.about-ceo .intro .intro-img img {
+  width: 350px;
+  height: auto;
+}
+
+.about-ceo .intro .intro-saying {
+  font-family: 'CookieRunOTF-Bold';
+  margin: 0 auto;
+  padding-top: 20px;
+  line-height: 1.3;
+}
+
+.about-ceo .intro .intro-contents {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.about-ceo .intro .intro-contents .name {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 0;
+  border-bottom: 2px dashed rgb(131, 131, 131);
+}
+
+.about-ceo .intro .intro-contents .name h4 {
+  font-family: 'CookieRunOTF-Bold';
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.about-ceo .intro .intro-contents .name span {
+  font-family: 'CookieRunOTF-Bold';
+  font-size: 20px;
+  color: rgb(124, 124, 124);
+}
+
+.about-ceo .intro .intro-contents .intro-text{
+  font-family: 'NEXON Lv1 Gothic OTF';
+  padding: 20px 0;
+  line-height: 1.6;
+}
+
+.about-ceo .intro .intro-contents .intro-text span{
+  font-size: 10px;
+}
+
+/* contact */
+#contact {
+  padding: 30px 0;
+}
+
+#contact .contact-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  padding: 35px 0;
+  font-family: 'NEXON Lv1 Gothic OTF';
+  font-size: 17px;
+}
+
+#contact .contact-items .contact-item {
+  padding: 30px;
+}
+
+#contact .contact-items .contact-item div {
+  padding-bottom: 15px;
+}
+
+#contact .contact-items .map {
+  margin: 0 auto;
+}
+
+
+
+/* footer */
+#footer {
+  background-color: #606060;
+  color: #fff;
+}
+
+#footer .wrapper{
+  margin: 0;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#footer .contact {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+#footer .contact-title {
+  display: flex;
+  font-size: 2vw;
+  font-family: 'CookieRunOTF-Bold', 'serif';
+}
+#footer .contact-item {
+  padding-top: 20px;
+}
+
+#footer .contact-item div {
+  padding-bottom: 10px;
+}
+
+#footer .about {
+  width: 500px;
+  line-height: 1.5;
+}
+
+#footer .about-item {
+  padding-top: 10px;
+}
+
+#footer .copyright {
+  background-color: #3a3939;
+  margin: 0;
+  padding: 15px 60px;
 }

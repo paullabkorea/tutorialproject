@@ -543,8 +543,6 @@ h4 {
   left: 0;
   top: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: #fff;
   border-radius: 1%;
   margin-top: 50px;
@@ -562,7 +560,7 @@ h4 {
 
 #modal .window {
   width: 40vw;
-  height: 100%;
+  /* height: 100vh; */
 }
 
 #modal .window .header {
@@ -846,9 +844,6 @@ h4 {
     height: auto;
     padding-left: 3vw;
   }
-}
-
-@media all and (min-width:768px) and (max-width:1023px){
 }
 
 @media all and (min-width:1024px) and (max-width:1365px) {
