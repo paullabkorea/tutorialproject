@@ -193,6 +193,7 @@ strong {
   padding : 40px 0;
 }
 
+/* footer */
 #footer {
   background-color: #606060;
   color: #fff;
@@ -216,17 +217,21 @@ strong {
   font-size: 2vw;
   font-family: 'CookieRunOTF-Bold', 'serif';
 }
-.contact-item {
+#footer .contact-item {
   padding-top: 20px;
 }
 
-.contact-item div {
+#footer .contact-item div {
   padding-bottom: 10px;
 }
 
-.about {
+#footer .about {
   width: 500px;
   line-height: 1.5;
+}
+
+#footer .about-item {
+  padding-top: 10px;
 }
 
 #footer .copyright {
