@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- 구글 Analytics 스크립트 삽입 -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72047520-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-72047520-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- 네이버 추적코드 삽입 -->
+  <meta name="naver-site-verification" content="f6051afcd291f3ccef7b8f01128dfc92d14563a4"/>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="바울랩, 위니브">
+  <meta name="description" content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사, 미디어">
+  <meta property="og:description" content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사, 미디어">
+  <meta property="og:image" content="http://paullab.co.kr/images/jejucoding.png">
+  <meta property="og:url" content="http://paullab.co.kr">
 
   <!-- favicon -->
   <link rel="shortcut icon" href="favicon.ico">
@@ -113,7 +133,10 @@
         </div>
         <div class="intro">
           <div class="intro-img">
-            <img src="images/ceo.png" alt="">
+            <img src="images/ceo.png" alt="" usemap="#secret">
+            <map name="secret">
+             <area shape="rect" coords="500, 300, 750, 600" href="./jejuoncoding.html" target="_blank">
+            </map>
             <div class="intro-saying">
               "디딤돌, 전환점이 되어 드리겠습니다."
             </div>
@@ -218,5 +241,16 @@
       <p>Copyright 2017 &copy; <a href="index.html" class="footer-link">Paul Lab</a></p>
     </div>
   </section>
+
+  <!--jQuery 1.12.4 via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+  <script>
+  (function($){
+  $(document).ready(function(e) {
+  $('img[usemap]').rwdImageMaps();
+  });
+  })(jQuery);
+  </script>
 </body>
 </html>
