@@ -39,6 +39,7 @@
   <title>JejuCodingBaseCamp</title>
 </head>
 <body>
+
   <!-- 모바일 세로모드일 경우에 표시 -->
   <div id="message">
     <div class="msg-img">
@@ -46,128 +47,142 @@
     </div>
     <p>해당 웹 페이지는 가로모드만 지원합니다.</p>
   </div>
+
   <!-- 전체 화면 및 메뉴 -->
   <section id="main_container">
+
+    <!-- 배경 이미지  -->
     <div class="back">
       <img src="images/bg-new.png" alt="">
-    </div>
-    <div class="jeju-img">
-      <img src="images/no-mountain.png" alt="">
-    </div>
-    <div class="wrapper">
-      <div id="home">
-        <a href="index.html" class="home-btn">
-          <p>JEJU CODING BASECAMP</p>
-        </a>
-      </div>
-      <div class="hallasan">
-        <a href="http://www.jejucodingcamp.com/">
-          <img src="images/hallasan.png" alt="">
-        </a>
-      </div>
-      <div class="menu paullab">
-        <a href="about.html">
-          <div class="paullab-frame scale"></div>
-        </a>
-        <h4>About</h4>
-      </div>
-      <div class="news" onclick="openModal()">
-        <div class="bird"></div>
-      </div>
-      <div class="menu youtube">
-        <a href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ" target="_blank">
-          <div class="python scale">
+
+      <!-- 섬 이미지 -->
+      <div class="jeju-img">
+        <img src="images/no-mountain.png" alt="">
+
+        <!-- 캐릭터별 요소 이미지 -->
+        <div class="wrapper">
+          <div id="home">
+            <a href="index.html" class="home-btn">
+              <p>JEJU CODING BASECAMP</p>
+            </a>
           </div>
-        </a>
-        <h4>유튜브</h4>
-      </div>
-      <div class="menu book">
-        <a href="https://ridibooks.com/search/?q=사도출판" target="_blank">
-          <div class="mura scale"></div>
-        </a>
-        <h4>출판정보</h4>
-      </div>
-      <div class="menu q_a">
-        <a href="QnA.html">
-          <div class="gary scale"></div>
-        </a>
-        <h4>Q&A</h4>
-      </div>
-      <div class="menu online_lec">
-        <a href="https://www.inflearn.com/instructors/170213/courses" target="_blank">
-          <div class="soulgom scale"></div>
-        </a>
-        <h4>온라인 강의</h4>
-      </div>
-      <div class="menu intro">
-        <a href="weniv.html">
-          <div class="licat scale">
-            <img src="images/licat-no-hand2.png" alt="">
-            <img src="images/licat-hand.png" alt="" class="hand">
+          <div class="hallasan">
+            <a href="http://www.jejucodingcamp.com/">
+              <img src="images/hallasan.png" alt="">
+            </a>
           </div>
-        </a>
-        <h4>캐릭터 소개</h4>
-      </div>
-      <div class="menu wiki">
-        <a href="http://paullabedu.synology.me/dokuwiki/doku.php" target="_blank">
-          <div class="javadog scale">
-
+          <div class="menu paullab">
+            <a href="about.html">
+              <div class="paullab-frame scale"></div>
+            </a>
+            <h4>About</h4>
           </div>
-        </a>
-        <h4>WIKI</h4>
-      </div>
-      <div class="menu curriculum">
-        <a href="curriculum.html">
-          <div class="binky scale"></div>
-        </a>
-        <h4>커리큘럼</h4>
-      </div>
+          <div class="news" onclick="openModal()">
+            <div class="bird"></div>
+          </div>
+          <div class="menu youtube">
+            <a href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ" target="_blank">
+              <div class="python scale">
+              </div>
+            </a>
+            <h4>유튜브</h4>
+          </div>
+          <div class="menu book">
+            <a href="https://ridibooks.com/search/?q=사도출판" target="_blank">
+              <div class="mura scale"></div>
+            </a>
+            <h4>출판정보</h4>
+          </div>
+          <div class="menu q_a">
+            <a href="QnA.html">
+              <div class="gary scale"></div>
+            </a>
+            <h4>Q&A</h4>
+          </div>
+          <div class="menu online_lec">
+            <a href="https://www.inflearn.com/instructors/170213/courses" target="_blank">
+              <div class="soulgom scale"></div>
+            </a>
+            <h4>온라인 강의</h4>
+          </div>
+          <div class="menu intro">
+            <a href="weniv.html">
+              <div class="licat scale">
+                <img src="images/licat-no-hand2.png" alt="">
+                <img src="images/licat-hand.png" alt="" class="hand">
+              </div>
+            </a>
+            <h4>캐릭터 소개</h4>
+          </div>
+          <div class="menu wiki">
+            <a href="http://paullabedu.synology.me/dokuwiki/doku.php" target="_blank">
+              <div class="javadog scale">
 
-      <!-- etc -->
-      <div class="windmill scale">
-        <div class="wind-base">
-          <img src="images/windmill_base.png" alt="">
-        </div>
-        <div class="wind">
-          <img src="images/wind1.png" alt="" class="wind1">
-          <img src="images/wind1.png" alt="" class="wind2">
-        </div>
-      </div>
+              </div>
+            </a>
+            <h4>WIKI</h4>
+          </div>
+          <div class="menu curriculum">
+            <a href="curriculum.html">
+              <div class="binky scale"></div>
+            </a>
+            <h4>커리큘럼</h4>
+          </div>
 
-      <div class="parasol etc">
-        <a href="http://paullab.co.kr/codefestival.html">
-          <img src="images/parasol.png" alt="">
-        </a>
-      </div>
+          <!-- etc -->
+          <div class="windmill scale">
+            <div class="wind-base">
+              <img src="images/windmill_base.png" alt="">
+            </div>
+            <div class="wind">
+              <img src="images/wind1.png" alt="" class="wind1">
+              <img src="images/wind1.png" alt="" class="wind2">
+            </div>
+          </div>
 
-      <div class="hallabong etc">
-        <a href="http://paullab.co.kr/stock.html">
-          <img src="images/hallabong.png" alt="">
-        </a>
-      </div>
+          <div class="parasol etc">
+            <a href="http://paullab.co.kr/codefestival.html">
+              <img src="images/parasol.png" alt="">
+            </a>
+          </div>
 
-      <div class="dolharbang etc">
-        <a href="#">
-          <img src="images/dolharbang.png" alt="">
-        </a>
-      </div>
+          <div class="hallabong etc">
+            <a href="http://paullab.co.kr/stock.html">
+              <img src="images/hallabong.png" alt="">
+            </a>
+          </div>
 
-      <!-- sns -->
-      <div class="sns">
-        <div class="instagram">
-          <a href="https://www.instagram.com/paullab_official/?hl=ko" target="_blank"><img src="images/instagram.png" alt=""></a>
+          <div class="dolharbang etc">
+            <a href="#">
+              <img src="images/dolharbang.png" alt="">
+            </a>
+          </div>
+
+          <!-- sns -->
+          <div class="sns">
+            <div class="instagram">
+              <a href="https://www.instagram.com/paullab_official/?hl=ko" target="_blank"><img src="images/instagram.png" alt=""></a>
+            </div>
+            <div class="facebook">
+              <a href="https://www.facebook.com/제주-코딩-베이스캠프-1512494142177634/" target="_blank"><img src="images/facebook.png" alt=""></a>
+            </div>
+            <div class="naver">
+              <a href="https://blog.naver.com/paul-lab" target="_blank"><img src="images/naver.png" alt=""></a>
+            </div>
+            <div class="tistory">
+              <a href="https://paullab.tistory.com" target="_blank"><img src="images/tistory.png" alt=""></a>
+            </div>
+          </div>
+          <!-- //sns -->
+
         </div>
-        <div class="facebook">
-          <a href="https://www.facebook.com/제주-코딩-베이스캠프-1512494142177634/" target="_blank"><img src="images/facebook.png" alt=""></a>
-        </div>
-        <div class="naver">
-          <a href="https://blog.naver.com/paul-lab" target="_blank"><img src="images/naver.png" alt=""></a>
-        </div>
-        <div class="tistory">
-          <a href="https://paullab.tistory.com" target="_blank"><img src="images/tistory.png" alt=""></a>
-        </div>
+        <!-- //캐릭터별 요소 이미지 -->
+
       </div>
+      <!-- //섬 이미지 -->
+
     </div>
+    <!-- //배경 이미지  -->
   </section>
 
 
@@ -275,6 +290,7 @@
       </div>
     </div>
   </div>
+  <!-- //모달 -->
 
   <script type="text/javascript">
     const bird = document.querySelector('.bird');

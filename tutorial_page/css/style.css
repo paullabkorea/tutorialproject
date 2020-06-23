@@ -27,7 +27,17 @@ a {
 img {
   width: 100%;
   height: auto;
+
+  /* 1안 :
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  */
+
+  /* 2안 :
   object-fit: contain;
+  */
+
 }
 
 h4 {
