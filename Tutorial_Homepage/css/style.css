@@ -220,6 +220,7 @@ h4 {
   color: #dd3b3e;
   text-shadow: 0 0 5px #fff;
 }
+/* 바울랩 - about */
 .paullab {
   position: absolute;
   left: 50vw;
@@ -256,6 +257,7 @@ h4 {
   left: 70px;
   top: 145px;
 }
+/* 파이와 썬 - 유튜브 */
 .youtube {
   position: absolute;
   left: 31vw;
@@ -296,6 +298,7 @@ h4 {
     background-position: -500px 0;
   }
 }
+/* 뮤라 - 출판정보 */
 .book {
   position: absolute;
   left: 17vw;
@@ -336,6 +339,7 @@ h4 {
     background-position: -667px 0;
   }
 }
+/* 개리 - Q&A */
 .qna {
   position: absolute;
   left: 18vw;
@@ -365,6 +369,7 @@ h4 {
     background-position: -667px 0;
   }
 }
+/* 소울곰 - 인프런 */
 .online_lec {
   width: 167px;
   height: 167px;
@@ -401,6 +406,7 @@ h4 {
     background-position: -667px 0;
   }
 }
+/* 라이캣 - 팀원소개 */
 .intro {
   width: 150px;
   height: 150px;
@@ -470,7 +476,7 @@ h4 {
     transform: rotate(-11deg);
   }
 }
-
+/* 자바독 - 바울랩 wiki */
 .wiki {
   width: 167px;
   height: 167px;
@@ -498,6 +504,7 @@ h4 {
     background-position: -667px 0;
   }
 }
+/* 빙키 - 커리큘럼 */
 .curriculum {
   width: 167px;
   height: 167px;
@@ -562,6 +569,9 @@ h4 {
     transform: rotate(360deg);
   }
 }
+/* etc
+- 풍차, 파라솔, 한라봉, 돌하르방
+*/
 .wind {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,7 +655,7 @@ h4 {
   width: 50px;
   height: auto;
 }
-
+/* 모달 */
 #modal {
   position: fixed;
   display: none;
@@ -693,7 +703,6 @@ h4 {
 }
 .modal_window {
   width: 40vw;
-  /* height: 100vh; */
 }
 .modal_header {
   display: -webkit-box;
