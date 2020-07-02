@@ -1,0 +1,1422 @@
+@font-face {
+  font-family: "CookieRunOTF-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CookieRunOTF-Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #7ccad5;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+
+  /* 1안 :
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  */
+
+  /* 2안 :
+  object-fit: contain;
+  */
+}
+
+h4 {
+  font-family: "CookieRunOTF-Bold", "serif";
+  color: #fff;
+}
+
+#main_container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.back {
+  position: absolute;
+  background: url("../images/back-no-sns.png") no-repeat center center;
+  width: 100vw;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.jeju-img {
+  background: url("../images/no-mountain.png") no-repeat center center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#home {
+  position: absolute;
+  height: auto;
+  left: 0;
+  top: 0;
+  padding: 30px 40px;
+  font-family: "CookieRunOTF-Black";
+}
+
+#home .home-btn {
+  position: relative;
+}
+
+#home .home-btn p {
+  font-size: 40px;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #000;
+}
+
+#home .home-btn:hover p {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* 새소식 */
+.news {
+  width: 245px;
+  height: 125px;
+  position: absolute;
+  left: 74vw;
+  top: 0;
+  -webkit-animation: move 2s;
+  animation: move 2s;
+  -moz-transition: ease;
+  -ms-transition: ease;
+  -o-transition: ease;
+  transition: ease;
+}
+.news:hover div {
+  -webkit-animation-play-state: paused;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  animation-play-state: paused;
+  transition: transform 0.5s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@-webkit-keyframes move {
+  0% {
+    opacity: 0;
+    left: 100vw;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    left: 100vw;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bird {
+  100% {
+    background-position: -1342.5px 0;
+  }
+}
+
+@keyframes bird {
+  100% {
+    background-position: -1342.5px 0;
+  }
+}
+
+.bird {
+  width: 245px;
+  height: 125px;
+  background: url("../images/bird_frame2.png") no-repeat 0 0 / 1342.5px 125px;
+  -webkit-animation: bird 1s infinite steps(6);
+  animation: bird 1s infinite steps(6);
+  position: relative;
+  cursor: pointer;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* 한라산 */
+@-webkit-keyframes hallasan {
+  0% {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+  }
+}
+
+@keyframes hallasan {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0.6);
+  }
+}
+
+.hallasan {
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  position: absolute;
+  left: 40vw;
+  top: 33vh;
+}
+
+.hallasan img {
+  -webkit-animation: hallasan 0.5s infinite;
+  -webkit-animation-direction: alternate;
+  animation: hallasan 0.5s infinite;
+  animation-direction: alternate;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* menu class 효과 */
+.menu h4 {
+  position: absolute;
+}
+.menu div:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.menu:hover h4 {
+  color: #dd3b3e;
+  text-shadow: 0 0 5px #fff;
+}
+
+/* 바울랩 - about */
+.paullab {
+  position: absolute;
+  left: 50vw;
+  top: 13vh;
+  width: 97.5px;
+  height: auto;
+}
+
+@-webkit-keyframes paullab {
+  100% {
+    background-position: -4096px 0;
+  }
+}
+
+@keyframes paullab {
+  100% {
+    background-position: -4096px 0;
+  }
+}
+
+.paullab-frame {
+  width: 97.5px;
+  height: 145px;
+  background: url("../images/paullab-frame.png") no-repeat 0 0 / 4096px 145px;
+  -webkit-animation: paullab 3.3s infinite steps(42);
+  animation: paullab 3.3s infinite steps(42);
+  position: absolute;
+  -webkit-ransform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.paullab h4 {
+  left: 70px;
+  top: 145px;
+}
+
+/* 파이와 썬 - 유튜브 */
+.youtube {
+  position: absolute;
+  left: 31vw;
+  top: 22vh;
+  width: 125px;
+  height: 125px;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.youtube h4 {
+  left: 50px;
+  top: 130px;
+}
+
+@-webkit-keyframes py_thon {
+  100% {
+    background-position: -500px 0;
+  }
+}
+
+@keyframes py_thon {
+  100% {
+    background-position: -500px 0;
+  }
+}
+
+.python {
+  width: 125px;
+  height: 125px;
+  background: url("../images/python_frame.png") no-repeat 0 0 / 500px 125px;
+  -webkit-animation: py_thon 1s infinite steps(4);
+  animation: py_thon 1s infinite steps(4);
+  position: absolute;
+  -webkit-ransform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* 뮤라 - 출판정보 */
+.book {
+  position: absolute;
+  left: 17vw;
+  top: 30vh;
+  width: 167px;
+  height: 167px;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.book h4 {
+  left: 95px;
+  top: 150px;
+}
+
+@-webkit-keyframes mura {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+@keyframes mura {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+.mura {
+  width: 167px;
+  height: 167px;
+  background: url("../images/mura_frame.png") no-repeat 0 0 / 667px 167px;
+  -webkit-animation: mura 0.5s infinite steps(4);
+  animation: mura 0.5s infinite steps(4);
+  position: relative;
+  -webkit-ransform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* 개리 - Q&A */
+.q_a {
+  position: absolute;
+  left: 18vw;
+  top: 50vh;
+  width: 167px;
+  height: 167px;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.q_a h4 {
+  left: 120px;
+  top: 120px;
+}
+
+@keyframes gary {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+.gary {
+  width: 167px;
+  height: 167px;
+  background: url("../images/gary_frame.png") no-repeat 0 0 / 667px 167px;
+  animation: gary 1s infinite steps(4);
+  transform: scale(0.8);
+  position: relative;
+  transition: all 0.4s;
+}
+
+/* 소울곰 - 인프런 */
+.online_lec {
+  width: 167px;
+  height: 167px;
+  position: absolute;
+  left: 45vw;
+  bottom: 25vh;
+}
+
+.online_lec h4 {
+  left: -10px;
+  top: 130px;
+}
+
+@-webkit-keyframes soulgom {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+@keyframes soulgom {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+.soulgom {
+  width: 167px;
+  height: 167px;
+  background: url("../images/soulgom_frame.png") no-repeat 0 0/ 667px 167px;
+  -webkit-animation: soulgom 1s infinite steps(4);
+  animation: soulgom 1s infinite steps(4);
+  position: relative;
+  -webkit-ransform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* 라이캣 - 팀원소개 */
+.intro {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 62vw;
+  bottom: 38vh;
+}
+
+.intro h4 {
+  left: -30px;
+  top: 170px;
+}
+
+.intro:hover img {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.intro div:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@-webkit-keyframes licat {
+  0% {
+    -webkit-transform: rotate(-11deg);
+    -ms-transform: rotate(-11deg);
+  }
+  50% {
+    -webkit-transform: rotate(23deg);
+    -ms-transform: rotate(23deg);
+  }
+  100% {
+    -webkit-transform: rotate(-11deg);
+    -ms-transform: rotate(-11deg);
+  }
+}
+
+@keyframes licat {
+  0% {
+    transform: rotate(-11deg);
+  }
+  50% {
+    transform: rotate(23deg);
+  }
+  100% {
+    transform: rotate(-11deg);
+  }
+}
+
+.licat {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  position: relative;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.licat .hand {
+  position: relative;
+  -webkit-animation: licat 1s infinite linear;
+  animation: licat 1s infinite linear;
+  width: 70px;
+  height: 70px;
+  left: 58px;
+  top: -121px;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* 자바독 - 바울랩 wiki */
+.wiki {
+  width: 167px;
+  height: 167px;
+  position: absolute;
+  left: 71vw;
+  top: 24vh;
+}
+
+@keyframes javadog {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+.javadog {
+  width: 167px;
+  height: 167px;
+  background: url("../images/javadog_frame.png") no-repeat 0 0 / 667px 167px;
+  -webkit-animation: javadog 0.5s infinite steps(4);
+  animation: javadog 0.5s infinite steps(4);
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  position: relative;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* 빙키 - 커리큘럼 */
+.curriculum {
+  width: 167px;
+  height: 167px;
+  position: absolute;
+  left: 63vw;
+  top: 13vh;
+}
+
+.curriculum h4 {
+  left: 0;
+  top: 170px;
+}
+
+@-webkit-keyframes binky {
+  100% {
+    background-position: -667px 0;
+  }
+}
+
+@keyframes binky {
+  100% {
+    background-position: -667px 0;
+  }
+}
+.binky {
+  width: 167px;
+  height: 167px;
+  background: url("../images/binky_frame.png") no-repeat 0 0 / 667px 167px;
+  -webkit-animation: binky 1s infinite steps(4);
+  animation: binky 1s infinite steps(4);
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  position: relative;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* etc
+- 풍차, 파라솔, 한라봉, 돌하르방
+*/
+.windmill {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 57vw;
+  top: 17vh;
+}
+
+.wind-base {
+  height: 90px;
+}
+
+@-webkit-keyframes windmill {
+  50% {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@keyframes windmill {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wind img {
+  width: 100px;
+  height: 100px;
+  -webkit-animation: windmill 2s infinite linear;
+  animation: windmill 2s infinite linear;
+  position: relative;
+}
+
+.wind1 {
+  left: -25px;
+  top: -100px;
+}
+.wind2 {
+  left: -80px;
+  top: -92px;
+}
+.parasol {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  left: 14vw;
+  top: 50vh;
+}
+
+.hallabong {
+  width: 45px;
+  height: auto;
+  position: absolute;
+  left: 37vw;
+  top: 42vh;
+}
+
+.dolharbang {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  left: 16.2vw;
+  bottom: 13vh;
+}
+
+/* 좌우반전 */
+.etc:hover img {
+  transform: rotate(0deg);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+/* sns */
+.sns {
+  width: 665px;
+  height: 102px;
+  position: absolute;
+  background: url("../images/sns-set.png") no-repeat;
+  background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  right: 9.4vw;
+  bottom: 6.2vh;
+  transform: scale(0.7);
+}
+
+.snswrap {
+  padding-top: 10px;
+  width: 452px;
+  float: right;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sns .snswrap div {
+  width: 50px;
+  height: auto;
+  /* padding-left: 3.3vw; */
+}
+
+/* 모달 */
+#modal {
+  position: fixed;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#modal.on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#modal .wrapmodal {
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border-radius: 1%;
+  margin-top: 50px;
+  max-height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.wrapmodal {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.wrapmodal::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+#modal .window {
+  width: 40vw;
+  /* height: 100vh; */
+}
+
+#modal .window .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: solid 1px #dbdbdb;
+}
+
+#modal .window .header .title {
+  font-size: 2vw;
+  font-family: "CookieRunOTF-Bold", "serif";
+}
+
+#modal .window .header .close-btn {
+  cursor: pointer;
+}
+
+#modal .window .header .close-btn i {
+  color: #dbdbdb;
+  font-size: 2vw;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#modal .window .header .close-btn:hover i {
+  -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Safari 3-8 */
+  transform: rotate(360deg);
+}
+
+#modal .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+#modal .content .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dcdddd;
+  margin-bottom: 20px;
+}
+
+#modal .content .post_img {
+  margin: 0 auto;
+}
+
+.post-item {
+  padding-bottom: 35px;
+}
+.post-title {
+  font-size: 1.5vw;
+  padding: 10px 0;
+  color: #55a79a;
+  font-weight: bold;
+}
+
+.post-title:hover > a {
+  text-decoration: underline;
+}
+
+.post-explanation {
+  font-size: 1.2vw;
+  line-height: 1.7;
+  padding-bottom: 15px;
+}
+
+.readmore-btn {
+  font-size: 1.2vw;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.readmore-btn:hover {
+  text-decoration: underline;
+}
+
+/* 메시지 */
+#message {
+  display: none;
+}
+
+#message .msg-img {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#message p {
+  font-size: 15px;
+  font-family: "CookieRunOTF-Bold";
+}
+
+/* 반응형 */
+/* 세로모드 */
+@media only screen and (orientation: portrait) {
+  #main_container {
+    height: 100vw;
+    /* -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); */
+    display: none;
+  }
+  #message {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 30vh;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 864px) {
+  #message .msg-img {
+    width: 300px;
+  }
+
+  #message p {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 5px;
+  }
+
+  .scale {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+
+  .etc {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  .youtube,
+  .q_a,
+  .wiki,
+  .curriculum {
+    width: 105px;
+    height: auto;
+  }
+
+  .bird {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
+  }
+
+  @-webkit-keyframes hallasan {
+    0% {
+      -webkit-transform: scale(0.2);
+      -moz-transform: scale(0.2);
+      -o-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+    }
+    100% {
+      -webkit-transform: scale(0.3);
+      -moz-transform: scale(0.3);
+      -o-transform: scale(0.3);
+      -ms-transform: scale(0.3);
+    }
+  }
+
+  @keyframes hallasan {
+    0% {
+      transform: scale(0.2);
+    }
+    100% {
+      transform: scale(0.3);
+    }
+  }
+
+  #home {
+    padding: 15px 25px;
+  }
+
+  #home .home-btn p {
+    font-size: 23px;
+  }
+
+  .hallasan {
+    left: 30vw;
+    top: 20vh;
+  }
+
+  .paullab {
+    left: 46vw;
+    top: 3vh;
+  }
+
+  .paullab h4 {
+    left: 62px;
+    top: 112px;
+  }
+
+  .youtube {
+    left: 22vw;
+    top: 15vh;
+  }
+
+  .youtube h4 {
+    left: 85px;
+    top: 95px;
+  }
+
+  .book {
+    left: 8vw;
+    top: 20vh;
+  }
+
+  .book h4 {
+    left: 97px;
+    top: 110px;
+  }
+
+  .q_a {
+    left: 10vw;
+    top: 41vh;
+  }
+
+  .q_a h4 {
+    left: 110px;
+    top: 100px;
+  }
+
+  .online_lec {
+    left: 37vw;
+    bottom: 13vh;
+  }
+
+  .online_lec h4 {
+    left: 40px;
+    top: 105px;
+  }
+
+  .intro {
+    left: 56vw;
+    bottom: 38vh;
+  }
+
+  .intro h4 {
+    left: 20px;
+    top: 160px;
+  }
+
+  .wiki {
+    left: 64vw;
+    top: 16vh;
+  }
+
+  .wiki h4 {
+    left: 50px;
+    top: 110px;
+  }
+
+  .curriculum {
+    left: 57vw;
+    top: 2vh;
+  }
+
+  .curriculum h4 {
+    left: 40px;
+    top: 125px;
+  }
+
+  .windmill {
+    left: 53vw;
+    top: 12vh;
+  }
+
+  .parasol {
+    left: 12vw;
+  }
+
+  .dolharbang {
+    left: 95px;
+    bottom: 25px;
+  }
+
+  .news {
+    left: 65vw;
+    top: -20px;
+  }
+
+  .news:hover div {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  #modal .window .header {
+    padding: 10px 20px;
+  }
+
+  .sns {
+    transform: scale(0.2);
+    right: 9.2vw;
+    bottom: 6vh;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1365px) {
+  h4 {
+    font-size: 15px;
+  }
+
+  #home .home-btn p {
+    font-size: 35px;
+  }
+
+  @-webkit-keyframes hallasan {
+    0% {
+      -webkit-transform: scale(0.5);
+      -moz-transform: scale(0.5);
+      -o-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(0.6);
+      -moz-transform: scale(0.6);
+      -o-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+    }
+  }
+
+  @keyframes hallasan {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(0.6);
+    }
+  }
+
+  .hallasan {
+    left: 38vw;
+    top: 32vh;
+  }
+
+  .scale {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .menu div:hover {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  .etc {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .paullab {
+    top: 13vh;
+  }
+
+  .paullab h4 {
+    left: 50px;
+  }
+
+  .youtube {
+    left: 29vw;
+    top: 23vh;
+  }
+
+  .book h4 {
+    left: 40px;
+  }
+
+  .online_lec {
+    left: 41vw;
+  }
+
+  .q_a {
+    left: 15vw;
+    top: 52vh;
+  }
+
+  .dolharbang {
+    left: 15.5vw;
+    top: 79vh;
+  }
+
+  .sns {
+    right: 9vw;
+  }
+  #message .msg-img {
+    width: 400px;
+  }
+
+  #message p {
+    font-size: 35px;
+  }
+}
+
+@media all and (min-width: 1366px) and (max-width: 1535px) {
+  h4 {
+    font-size: 20px;
+  }
+
+  #home .home-btn p {
+    font-size: 45px;
+  }
+
+  @-webkit-keyframes hallasan {
+    0% {
+      -webkit-transform: scale(0.6);
+      -moz-transform: scale(0.6);
+      -o-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+    }
+    100% {
+      -webkit-transform: scale(0.7);
+      -moz-transform: scale(0.7);
+      -o-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+    }
+  }
+
+  @keyframes hallasan {
+    0% {
+      transform: scale(0.6);
+    }
+    100% {
+      transform: scale(0.7);
+    }
+  }
+
+  .hallasan {
+    left: 39vw;
+    top: 37vh;
+  }
+
+  .scale {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  .menu div:hover {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  .paullab {
+    top: 16vh;
+  }
+
+  .paullab h4 {
+    top: 170px;
+  }
+
+  .youtube {
+    left: 30vw;
+    top: 27vh;
+  }
+
+  .book {
+    left: 17vw;
+    top: 34vh;
+  }
+
+  .book h4 {
+    left: 70px;
+  }
+
+  .q_a {
+    top: 55vh;
+  }
+
+  .wiki {
+    top: 30vh;
+  }
+
+  .curriculum {
+    top: 19vh;
+  }
+
+  .windmill {
+    top: 20vh;
+  }
+
+  .sns {
+    right: 8.8vw;
+    bottom: 6.5vh;
+  }
+}
+
+@media all and (min-width: 1600px) and (max-width: 2048px) {
+  h4 {
+    font-size: 20px;
+  }
+
+  @-webkit-keyframes hallasan {
+    0% {
+      -webkit-transform: scale(0.7);
+      -moz-transform: scale(0.7);
+      -o-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+    }
+    100% {
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+    }
+  }
+
+  @keyframes hallasan {
+    0% {
+      transform: scale(0.7);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+
+  .scale {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  .menu div:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .news:hover div {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  .paullab {
+    top: 13vh;
+  }
+  .paullab h4 {
+    top: 180px;
+  }
+  .youtube h4 {
+    top: 170px;
+  }
+
+  .curriculum h4 {
+    top: 200px;
+  }
+  .book {
+    width: 300px;
+  }
+  .book h4 {
+    left: 130px;
+  }
+
+  .q_a h4 {
+    left: 140px;
+  }
+
+  .intro h4 {
+    left: -50px;
+  }
+
+  .wiki h4 {
+    top: 200px;
+  }
+  .sns {
+    transform: scale(0.9);
+    right: 9.3vw;
+    bottom: 6.2vh;
+  }
+}
