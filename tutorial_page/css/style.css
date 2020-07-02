@@ -1,20 +1,21 @@
 @font-face {
-  font-family: 'CookieRunOTF-Bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+  font-family: "CookieRunOTF-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'CookieRunOTF-Black';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff')
-  format('woff');
+  font-family: "CookieRunOTF-Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   background-color: #7ccad5;
 }
 
@@ -37,11 +38,10 @@ img {
   /* 2안 :
   object-fit: contain;
   */
-
 }
 
 h4 {
-  font-family: 'CookieRunOTF-Bold', 'serif';
+  font-family: "CookieRunOTF-Bold", "serif";
   color: #fff;
 }
 
@@ -59,10 +59,17 @@ h4 {
 }
 .back {
   position: absolute;
-  left: 0;
-  top: 0;
+  background: url("../images/back-no-sns.png") no-repeat center center;
   width: 100vw;
   height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,9 +79,11 @@ h4 {
 }
 
 .jeju-img {
-  position: absolute;
-  left: 0;
-  top: 0;
+  background: url("../images/no-mountain.png") no-repeat center center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -91,7 +100,7 @@ h4 {
   left: 0;
   top: 0;
   padding: 30px 40px;
-  font-family: 'CookieRunOTF-Black';
+  font-family: "CookieRunOTF-Black";
 }
 
 #home .home-btn {
@@ -100,10 +109,10 @@ h4 {
 
 #home .home-btn p {
   font-size: 40px;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   color: #000;
 }
 
@@ -127,7 +136,7 @@ h4 {
   -o-transition: ease;
   transition: ease;
 }
-.news:hover div{
+.news:hover div {
   -webkit-animation-play-state: paused;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -176,15 +185,15 @@ h4 {
 .bird {
   width: 245px;
   height: 125px;
-  background: url('../images/bird_frame2.png') no-repeat 0 0 / 1342.5px 125px;
-  -webkit-animation : bird 1s infinite steps(6);
-  animation : bird 1s infinite steps(6);
+  background: url("../images/bird_frame2.png") no-repeat 0 0 / 1342.5px 125px;
+  -webkit-animation: bird 1s infinite steps(6);
+  animation: bird 1s infinite steps(6);
   position: relative;
   cursor: pointer;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /* 한라산 */
@@ -209,24 +218,24 @@ h4 {
 }
 
 .hallasan {
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   position: absolute;
   left: 40vw;
-  top: 31vh;
+  top: 33vh;
 }
 
 .hallasan img {
-  -webkit-animation: hallasan .5s infinite;
+  -webkit-animation: hallasan 0.5s infinite;
   -webkit-animation-direction: alternate;
-  animation: hallasan .5s infinite;
+  animation: hallasan 0.5s infinite;
   animation-direction: alternate;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /* menu class 효과 */
@@ -247,7 +256,7 @@ h4 {
 }
 
 .menu:hover h4 {
-  color: #DD3B3E;
+  color: #dd3b3e;
   text-shadow: 0 0 5px #fff;
 }
 
@@ -255,7 +264,7 @@ h4 {
 .paullab {
   position: absolute;
   left: 50vw;
-  top: 12vh;
+  top: 13vh;
   width: 97.5px;
   height: auto;
 }
@@ -275,17 +284,17 @@ h4 {
 .paullab-frame {
   width: 97.5px;
   height: 145px;
-  background: url('../images/paullab-frame.png') no-repeat 0 0 / 4096px 145px;
+  background: url("../images/paullab-frame.png") no-repeat 0 0 / 4096px 145px;
   -webkit-animation: paullab 3.3s infinite steps(42);
   animation: paullab 3.3s infinite steps(42);
   position: absolute;
   -webkit-ransform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .paullab h4 {
@@ -300,13 +309,13 @@ h4 {
   top: 22vh;
   width: 125px;
   height: 125px;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.youtube h4{
+.youtube h4 {
   left: 50px;
   top: 130px;
 }
@@ -323,20 +332,20 @@ h4 {
   }
 }
 
-.python{
+.python {
   width: 125px;
   height: 125px;
-  background: url('../images/python_frame.png') no-repeat 0 0 / 500px 125px;
+  background: url("../images/python_frame.png") no-repeat 0 0 / 500px 125px;
   -webkit-animation: py_thon 1s infinite steps(4);
   animation: py_thon 1s infinite steps(4);
   position: absolute;
   -webkit-ransform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /* 뮤라 - 출판정보 */
@@ -346,10 +355,10 @@ h4 {
   top: 30vh;
   width: 167px;
   height: 167px;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .book h4 {
@@ -372,17 +381,17 @@ h4 {
 .mura {
   width: 167px;
   height: 167px;
-  background: url('../images/mura_frame.png') no-repeat 0 0 / 667px 167px;
+  background: url("../images/mura_frame.png") no-repeat 0 0 / 667px 167px;
   -webkit-animation: mura 0.5s infinite steps(4);
   animation: mura 0.5s infinite steps(4);
   position: relative;
   -webkit-ransform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /* 개리 - Q&A */
@@ -392,17 +401,16 @@ h4 {
   top: 50vh;
   width: 167px;
   height: 167px;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .q_a h4 {
   left: 120px;
   top: 120px;
 }
-
 
 @keyframes gary {
   100% {
@@ -413,11 +421,11 @@ h4 {
 .gary {
   width: 167px;
   height: 167px;
-  background: url('../images/gary_frame.png') no-repeat 0 0 / 667px 167px;
+  background: url("../images/gary_frame.png") no-repeat 0 0 / 667px 167px;
   animation: gary 1s infinite steps(4);
   transform: scale(0.8);
   position: relative;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 /* 소울곰 - 인프런 */
@@ -449,17 +457,17 @@ h4 {
 .soulgom {
   width: 167px;
   height: 167px;
-  background: url('../images/soulgom_frame.png') no-repeat 0 0/ 667px 167px;
+  background: url("../images/soulgom_frame.png") no-repeat 0 0/ 667px 167px;
   -webkit-animation: soulgom 1s infinite steps(4);
   animation: soulgom 1s infinite steps(4);
   position: relative;
   -webkit-ransform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /* 라이캣 - 팀원소개 */
@@ -519,13 +527,13 @@ h4 {
   -ms-transform: scale(0.9);
   transform: scale(0.9);
   position: relative;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.licat .hand{
+.licat .hand {
   position: relative;
   -webkit-animation: licat 1s infinite linear;
   animation: licat 1s infinite linear;
@@ -533,10 +541,10 @@ h4 {
   height: 70px;
   left: 58px;
   top: -121px;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /* 자바독 - 바울랩 wiki */
@@ -554,20 +562,20 @@ h4 {
   }
 }
 
-.javadog{
+.javadog {
   width: 167px;
   height: 167px;
-  background: url('../images/javadog_frame.png') no-repeat 0 0 / 667px 167px;
+  background: url("../images/javadog_frame.png") no-repeat 0 0 / 667px 167px;
   -webkit-animation: javadog 0.5s infinite steps(4);
   animation: javadog 0.5s infinite steps(4);
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
   position: relative;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /* 빙키 - 커리큘럼 */
@@ -598,19 +606,18 @@ h4 {
 .binky {
   width: 167px;
   height: 167px;
-  background: url('../images/binky_frame.png') no-repeat 0 0 / 667px 167px;
+  background: url("../images/binky_frame.png") no-repeat 0 0 / 667px 167px;
   -webkit-animation: binky 1s infinite steps(4);
   animation: binky 1s infinite steps(4);
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
   position: relative;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
-
 
 /* etc
 - 풍차, 파라솔, 한라봉, 돌하르방
@@ -651,7 +658,7 @@ h4 {
   display: -ms-flexbox;
   display: flex;
 }
-.wind img{
+.wind img {
   width: 100px;
   height: 100px;
   -webkit-animation: windmill 2s infinite linear;
@@ -693,7 +700,7 @@ h4 {
 
 /* 좌우반전 */
 .etc:hover img {
-  transform:rotate(0deg);
+  transform: rotate(0deg);
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -704,7 +711,24 @@ h4 {
 
 /* sns */
 .sns {
+  width: 665px;
+  height: 102px;
   position: absolute;
+  background: url("../images/sns-set.png") no-repeat;
+  background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  right: 9.4vw;
+  bottom: 6.2vh;
+  transform: scale(0.7);
+}
+
+.snswrap {
+  padding-top: 10px;
+  width: 452px;
+  float: right;
+  height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   -webkit-box-pack: center;
@@ -712,15 +736,13 @@ h4 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  right: 9.4vw;
-  bottom: 6.2vh;
 }
-.sns div {
-  width: 40px;
+.sns .snswrap div {
+  width: 50px;
   height: auto;
-  padding-left: 3.3vw;
+  /* padding-left: 3.3vw; */
 }
 
 /* 모달 */
@@ -738,10 +760,10 @@ h4 {
   bottom: 0;
   right: 0;
   z-index: 3;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 #modal.on {
@@ -765,11 +787,11 @@ h4 {
   overflow-y: scroll;
 }
 .wrapmodal {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .wrapmodal::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 #modal .window {
@@ -793,7 +815,7 @@ h4 {
 
 #modal .window .header .title {
   font-size: 2vw;
-  font-family: 'CookieRunOTF-Bold', 'serif';
+  font-family: "CookieRunOTF-Bold", "serif";
 }
 
 #modal .window .header .close-btn {
@@ -801,12 +823,12 @@ h4 {
 }
 
 #modal .window .header .close-btn i {
-  color:#dbdbdb;
-  font-size:2vw;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
+  color: #dbdbdb;
+  font-size: 2vw;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #modal .window .header .close-btn:hover i {
@@ -846,18 +868,18 @@ h4 {
 .post-title {
   font-size: 1.5vw;
   padding: 10px 0;
-  color: #55A79A;
+  color: #55a79a;
   font-weight: bold;
 }
 
-.post-title:hover > a{
+.post-title:hover > a {
   text-decoration: underline;
 }
 
 .post-explanation {
   font-size: 1.2vw;
-  line-height: 1.3;
-  padding-bottom: 10px;
+  line-height: 1.7;
+  padding-bottom: 15px;
 }
 
 .readmore-btn {
@@ -884,12 +906,12 @@ h4 {
 
 #message p {
   font-size: 15px;
-  font-family: 'CookieRunOTF-Bold';
+  font-family: "CookieRunOTF-Bold";
 }
 
 /* 반응형 */
 /* 세로모드 */
-@media only screen and (orientation:portrait) {
+@media only screen and (orientation: portrait) {
   #main_container {
     height: 100vw;
     /* -webkit-transform: rotate(90deg);
@@ -909,7 +931,7 @@ h4 {
   }
 }
 
-@media all and (min-width:480px) and (max-width:864px) {
+@media all and (min-width: 480px) and (max-width: 864px) {
   #message .msg-img {
     width: 300px;
   }
@@ -938,7 +960,10 @@ h4 {
     transform: scale(0.5);
   }
 
-  .youtube, .q_a, .wiki, .curriculum {
+  .youtube,
+  .q_a,
+  .wiki,
+  .curriculum {
     width: 105px;
     height: auto;
   }
@@ -952,7 +977,7 @@ h4 {
   }
 
   @-webkit-keyframes hallasan {
-    0%{
+    0% {
       -webkit-transform: scale(0.2);
       -moz-transform: scale(0.2);
       -o-transform: scale(0.2);
@@ -967,7 +992,7 @@ h4 {
   }
 
   @keyframes hallasan {
-    0%{
+    0% {
       transform: scale(0.2);
     }
     100% {
@@ -998,7 +1023,7 @@ h4 {
     top: 112px;
   }
 
-  .youtube{
+  .youtube {
     left: 22vw;
     top: 15vh;
   }
@@ -1033,7 +1058,7 @@ h4 {
     bottom: 13vh;
   }
 
-  .online_lec h4{
+  .online_lec h4 {
     left: 40px;
     top: 105px;
   }
@@ -1087,7 +1112,7 @@ h4 {
     top: -20px;
   }
 
-  .news:hover div{
+  .news:hover div {
     -webkit-transform: scale(0.5);
     -moz-transform: scale(0.5);
     -o-transform: scale(0.5);
@@ -1100,18 +1125,19 @@ h4 {
   }
 
   .sns {
+    transform: scale(0.2);
     right: 9.2vw;
     bottom: 6vh;
   }
-  .sns div {
-    width: 20px;
-    height: auto;
-    padding-left: 3vw;
+  .sns .snswrap div {
+    /* width: 20px; */
+    /* height: auto; */
+    /* padding-left: 3vw; */
   }
 }
 
-@media all and (min-width:1024px) and (max-width:1365px) {
-  h4{
+@media all and (min-width: 1024px) and (max-width: 1365px) {
+  h4 {
     font-size: 15px;
   }
 
@@ -1120,7 +1146,7 @@ h4 {
   }
 
   @-webkit-keyframes hallasan {
-    0%{
+    0% {
       -webkit-transform: scale(0.5);
       -moz-transform: scale(0.5);
       -o-transform: scale(0.5);
@@ -1135,7 +1161,7 @@ h4 {
   }
 
   @keyframes hallasan {
-    0%{
+    0% {
       transform: scale(0.5);
     }
     100% {
@@ -1206,10 +1232,10 @@ h4 {
   .sns {
     right: 9vw;
   }
-  .sns div {
-    width: 35px;
-    height: auto;
-    padding-left: 2.5vw;
+  .sns .snswrap div {
+    /* width: 35px;
+    height: auto; */
+    /* padding-left: 2.5vw; */
   }
 
   #message .msg-img {
@@ -1221,8 +1247,8 @@ h4 {
   }
 }
 
-@media all and (min-width:1366px) and (max-width:1535px){
-  h4{
+@media all and (min-width: 1366px) and (max-width: 1535px) {
+  h4 {
     font-size: 20px;
   }
 
@@ -1231,7 +1257,7 @@ h4 {
   }
 
   @-webkit-keyframes hallasan {
-    0%{
+    0% {
       -webkit-transform: scale(0.6);
       -moz-transform: scale(0.6);
       -o-transform: scale(0.6);
@@ -1246,7 +1272,7 @@ h4 {
   }
 
   @keyframes hallasan {
-    0%{
+    0% {
       transform: scale(0.6);
     }
     100% {
@@ -1318,20 +1344,20 @@ h4 {
     bottom: 6.5vh;
   }
 
-  .sns div {
-    width: 50px;
-    height: auto;
-    padding-left: 2.3vw;
+  .sns .snswrap div {
+    /* width: 50px;
+    height: auto; */
+    /* padding-left: 2.3vw; */
   }
 }
 
-@media all and (min-width:1600px) and (max-width:2048px) {
-  h4{
+@media all and (min-width: 1600px) and (max-width: 2048px) {
+  h4 {
     font-size: 20px;
   }
 
   @-webkit-keyframes hallasan {
-    0%{
+    0% {
       -webkit-transform: scale(0.7);
       -moz-transform: scale(0.7);
       -o-transform: scale(0.7);
@@ -1346,7 +1372,7 @@ h4 {
   }
 
   @keyframes hallasan {
-    0%{
+    0% {
       transform: scale(0.7);
     }
     100% {
@@ -1370,7 +1396,7 @@ h4 {
     transform: scale(1.2);
   }
 
-  .news:hover div{
+  .news:hover div {
     -webkit-transform: scale(1.3);
     -moz-transform: scale(1.3);
     -o-transform: scale(1.3);
@@ -1398,7 +1424,7 @@ h4 {
     left: 130px;
   }
 
-  .q_a h4{
+  .q_a h4 {
     left: 140px;
   }
 
@@ -1410,13 +1436,14 @@ h4 {
     top: 200px;
   }
   .sns {
+    transform: scale(0.9);
     right: 9.3vw;
     bottom: 6.2vh;
   }
 
-  .sns div {
-    width: 50px;
-    height: auto;
-    padding-left: 3.35vw;
+  .sns .snswrap div {
+    /* width: 50px;
+    height: auto; */
+    /* padding-left: 3.35vw; */
   }
 }
