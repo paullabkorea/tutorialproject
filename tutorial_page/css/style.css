@@ -66,10 +66,6 @@ h4 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1129,11 +1125,6 @@ h4 {
     right: 9.2vw;
     bottom: 6vh;
   }
-  .sns .snswrap div {
-    /* width: 20px; */
-    /* height: auto; */
-    /* padding-left: 3vw; */
-  }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1365px) {
@@ -1232,12 +1223,6 @@ h4 {
   .sns {
     right: 9vw;
   }
-  .sns .snswrap div {
-    /* width: 35px;
-    height: auto; */
-    /* padding-left: 2.5vw; */
-  }
-
   #message .msg-img {
     width: 400px;
   }
@@ -1343,12 +1328,6 @@ h4 {
     right: 8.8vw;
     bottom: 6.5vh;
   }
-
-  .sns .snswrap div {
-    /* width: 50px;
-    height: auto; */
-    /* padding-left: 2.3vw; */
-  }
 }
 
 @media all and (min-width: 1600px) and (max-width: 2048px) {
@@ -1439,11 +1418,5 @@ h4 {
     transform: scale(0.9);
     right: 9.3vw;
     bottom: 6.2vh;
-  }
-
-  .sns .snswrap div {
-    /* width: 50px;
-    height: auto; */
-    /* padding-left: 3.35vw; */
   }
 }
