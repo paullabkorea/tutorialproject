@@ -1,19 +1,22 @@
 @font-face {
-  font-family: 'CookieRunOTF-Bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+  font-family: "CookieRunOTF-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'CookieRunOTF-Black';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff')
-  format('woff');
+  font-family: "CookieRunOTF-Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-body { font-family: 'Nanum Gothic', sans-serif; }
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
 
 a {
   color: inherit;
@@ -35,7 +38,7 @@ a {
 #home .home-btn i {
   font-size: 35px;
   color: #000;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 #home .home-btn:hover i {
@@ -52,7 +55,7 @@ a {
 
   display: flex;
   justify-content: center;
-  font-family: 'CookieRunOTF-Black';
+  font-family: "CookieRunOTF-Black";
 }
 
 #title .wrapper {
@@ -85,7 +88,7 @@ a {
 #title .title-img {
   width: 167px;
   height: 167px;
-  background: url('../images/gary_frame.png') no-repeat 0 0 / 667px 167px;
+  background: url("../images/gary_frame.png") no-repeat 0 0 / 667px 167px;
   animation: gary 1s infinite steps(4);
   transform: scale(0.8);
   padding-bottom: 80px;
@@ -109,11 +112,11 @@ a {
   -ms-flex-direction: column;
 
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   padding: 20px 0;
 }
 
-.answer  {
+.answer {
   width: 50vw;
   height: auto;
 
@@ -149,7 +152,7 @@ a {
   padding-bottom: 40px;
 }
 
-.img-wrap{
+.img-wrap {
   width: 100px;
   height: 100px;
   -webkit-box-align: center;
@@ -169,9 +172,9 @@ a {
   height: auto;
 }
 .speech-a {
-	position: relative;
-	background: #c1dadc;
-	border-radius: .4em;
+  position: relative;
+  background: #c1dadc;
+  border-radius: 0.4em;
   width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,7 +187,8 @@ a {
   align-items: center;
   padding: 20px 0;
 }
-.speech-a, .speech-q p {
+.speech-a,
+.speech-q p {
   font-weight: bold;
   padding-left: 20px;
   padding-right: 20px;
@@ -192,24 +196,24 @@ a {
 }
 
 .speech-a:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-right-color: #c1dadc;
-	border-left: 0;
-	border-top: 0;
-	margin-top: -10px;
-	margin-left: -20px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #c1dadc;
+  border-left: 0;
+  border-top: 0;
+  margin-top: -10px;
+  margin-left: -20px;
 }
 
 .speech-q {
-	position: relative;
-	background: #b6dda2;
-	border-radius: .4em;
+  position: relative;
+  background: #b6dda2;
+  border-radius: 0.4em;
   width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,20 +228,19 @@ a {
 }
 
 .speech-q:after {
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 20px solid transparent;
-	border-left-color: #b6dda2;
-	border-right: 0;
-	border-top: 0;
-	margin-top: -10px;
-	margin-right: -20px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: #b6dda2;
+  border-right: 0;
+  border-top: 0;
+  margin-top: -10px;
+  margin-right: -20px;
 }
-
 
 /* footer */
 #footer {
@@ -245,7 +248,7 @@ a {
   color: #fff;
 }
 
-#footer .wrapper{
+#footer .wrapper {
   margin: 0;
   padding: 30px 60px;
   display: -webkit-box;
@@ -268,12 +271,12 @@ a {
   width: 500px;
 }
 
-#footer .contact-title {
+#footer .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 2vw;
-  font-family: 'CookieRunOTF-Bold', 'serif';
+  font-family: "CookieRunOTF-Bold", "serif";
 }
 #footer .contact-item {
   padding-top: 20px;
@@ -298,7 +301,7 @@ a {
   padding: 15px 60px;
 }
 
-@media all and (min-width:320px) and (max-width:639px) {
+@media all and (min-width: 320px) and (max-width: 639px) {
   #home .wrapper {
     padding: 15px 20px;
   }
@@ -320,7 +323,7 @@ a {
     display: none;
   }
 
-  .answer  {
+  .answer {
     width: 280px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -332,7 +335,7 @@ a {
     padding-bottom: 20px;
   }
 
-  .img-wrap{
+  .img-wrap {
     width: 100px;
     height: 100px;
   }
@@ -359,14 +362,14 @@ a {
     padding: 0;
   }
 
-  .speech-a, .speech-q p {
+  .speech-a,
+  .speech-q p {
     font-size: 12px;
     padding: 15px 20px;
     line-height: 1.3;
   }
 
-
-  #footer .wrapper{
+  #footer .wrapper {
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -378,7 +381,7 @@ a {
     padding-bottom: 10px;
   }
 
-  #footer .contact-title {
+  #footer .title {
     font-size: 10px;
   }
 
@@ -405,7 +408,7 @@ a {
   }
 }
 
-@media all and (min-width:640px) and (max-width:1023px) {
+@media all and (min-width: 640px) and (max-width: 1023px) {
   #home .wrapper {
     padding: 20px 25px;
   }
@@ -418,7 +421,8 @@ a {
     transform: scale(0.7);
   }
 
-  .answer, .question {
+  .answer,
+  .question {
     width: 60vw;
   }
 
@@ -435,11 +439,12 @@ a {
     padding: 0;
   }
 
-  .speech-a, .speech-q p {
+  .speech-a,
+  .speech-q p {
     padding: 20px 20px;
   }
 
-  #footer .wrapper{
+  #footer .wrapper {
     padding: 20px 30px;
   }
 
@@ -447,7 +452,7 @@ a {
     width: 35vw;
   }
 
-  #footer .contact-title {
+  #footer .title {
     font-size: 20px;
   }
 
@@ -468,7 +473,6 @@ a {
     font-size: 5px;
     padding-top: 5px;
   }
-
 
   #footer .copyright {
     padding: 10px 30px;

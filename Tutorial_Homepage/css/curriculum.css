@@ -1,19 +1,22 @@
 @font-face {
-  font-family: 'CookieRunOTF-Bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+  font-family: "CookieRunOTF-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'CookieRunOTF-Black';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff')
-  format('woff');
+  font-family: "CookieRunOTF-Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-body { font-family: 'Nanum Gothic', sans-serif; }
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
 
 a {
   color: inherit;
@@ -39,7 +42,7 @@ strong {
 #home .home-btn i {
   font-size: 35px;
   color: #000;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 #home .home-btn:hover i {
@@ -58,7 +61,7 @@ strong {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'CookieRunOTF-Black';
+  font-family: "CookieRunOTF-Black";
 }
 
 #title .title {
@@ -90,7 +93,7 @@ strong {
 #title .title-img {
   width: 167px;
   height: 167px;
-  background: url('../images/binky_frame.png') no-repeat 0 0 / 667px 167px;
+  background: url("../images/binky_frame.png") no-repeat 0 0 / 667px 167px;
   animation: binky 1s infinite steps(4);
   position: relative;
   left: 0;
@@ -117,7 +120,7 @@ strong {
   -webkit-box-orient: vertical;
   -ms-flex-direction: column;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   width: 900px;
   height: auto;
   padding: 30px 0;
@@ -128,7 +131,7 @@ strong {
   border-bottom: dashed 1px #dcdddd;
 }
 
-#main_contents .lec-title {
+#main_contents .lec_title {
   font-size: 20px;
   padding-bottom: 20px;
   display: flex;
@@ -177,7 +180,7 @@ strong {
   width: 100px;
   height: auto;
   padding-bottom: 61px;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .roadmap .inner .lec:hover {
@@ -185,10 +188,10 @@ strong {
 }
 
 .lec img {
-  transition: all .4s;
+  transition: all 0.4s;
 }
-.roadmap .inner .lec:hover img{
-  box-shadow:5px 5px 15px #000;
+.roadmap .inner .lec:hover img {
+  box-shadow: 5px 5px 15px #000;
   transform: translateX(-5px) translateY(-5px);
 }
 
@@ -207,9 +210,9 @@ strong {
 }
 
 .jejucoding-lec img {
-  animation: blink .5s linear infinite;
+  animation: blink 0.5s linear infinite;
   animation-direction: alternate-reverse;
-  transition: all .4s;
+  transition: all 0.4s;
   transition-delay: 1s;
 }
 
@@ -217,8 +220,8 @@ strong {
   animation: none;
 }
 
-#main_contents .live-lec{
-  padding : 40px 0;
+#main_contents .live-lec {
+  padding: 40px 0;
 }
 
 /* footer */
@@ -227,7 +230,7 @@ strong {
   color: #fff;
 }
 
-#footer .wrapper{
+#footer .wrapper {
   margin: 0;
   padding: 30px 60px;
   display: -webkit-box;
@@ -250,18 +253,18 @@ strong {
   width: 500px;
 }
 
-#footer .contact-title {
+#footer .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 2vw;
-  font-family: 'CookieRunOTF-Bold', 'serif';
+  font-family: "CookieRunOTF-Bold", "serif";
 }
-#footer .contact-item {
+#footer .contact_item {
   padding-top: 20px;
 }
 
-#footer .contact-item div {
+#footer .contact_item div {
   padding-bottom: 10px;
 }
 
@@ -280,7 +283,7 @@ strong {
   padding: 15px 60px;
 }
 
-@media all and (min-width:320px) and (max-width:639px) {
+@media all and (min-width: 320px) and (max-width: 639px) {
   #home .wrapper {
     padding: 15px 20px;
   }
@@ -309,7 +312,7 @@ strong {
     padding-bottom: 40px;
   }
 
-  #main_contents .lec-title {
+  #main_contents .lec_title {
     font-size: 10px;
   }
   #main_contents p {
@@ -334,12 +337,12 @@ strong {
     padding-bottom: 21.2px;
   }
 
-  .roadmap .inner .lec:hover img{
-    box-shadow:1px 1px 5px #000;
+  .roadmap .inner .lec:hover img {
+    box-shadow: 1px 1px 5px #000;
     transform: translateX(-1px) translateY(-1px);
   }
 
-  #footer .wrapper{
+  #footer .wrapper {
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -351,16 +354,16 @@ strong {
     padding-bottom: 10px;
   }
 
-  #footer .contact-title {
+  #footer .title {
     font-size: 10px;
   }
 
-  .contact-item {
+  .contact_item {
     font-size: 5px;
     padding-top: 5px;
   }
 
-  .contact-item div {
+  .contact_item div {
     padding-bottom: 5px;
   }
 
@@ -378,7 +381,7 @@ strong {
   }
 }
 
-@media all and (min-width:640px) and (max-width:1023px) {
+@media all and (min-width: 640px) and (max-width: 1023px) {
   #home .wrapper {
     padding: 20px 25px;
   }
@@ -390,7 +393,7 @@ strong {
   #title .title {
     font-size: 60px;
     margin: 0;
-    padding-bottom : 30px;
+    padding-bottom: 30px;
   }
 
   #title .title-img {
@@ -409,7 +412,7 @@ strong {
     padding-bottom: 40px;
   }
 
-  #main_contents .lec-title {
+  #main_contents .lec_title {
     font-size: 20px;
   }
   #main_contents p {
@@ -433,12 +436,12 @@ strong {
     padding-bottom: 48.5px;
   }
 
-  .roadmap .inner .lec:hover img{
-    box-shadow:2px 2px 7px #000;
+  .roadmap .inner .lec:hover img {
+    box-shadow: 2px 2px 7px #000;
     transform: translateX(-2px) translateY(-2px);
   }
 
-  #footer .wrapper{
+  #footer .wrapper {
     padding: 20px 30px;
   }
 
@@ -446,16 +449,16 @@ strong {
     width: 35vw;
   }
 
-  #footer .contact-title {
+  #footer .title {
     font-size: 20px;
   }
 
-  .contact-item {
+  .contact_item {
     font-size: 10px;
     padding-top: 10px;
   }
 
-  .contact-item div {
+  .contact_item div {
     padding-bottom: 5px;
   }
 
@@ -467,7 +470,6 @@ strong {
     font-size: 5px;
     padding-top: 5px;
   }
-
 
   #footer .copyright {
     padding: 10px 30px;

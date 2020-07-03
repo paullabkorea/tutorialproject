@@ -1,33 +1,38 @@
 @font-face {
-  font-family: 'CookieRunOTF-Bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff');
+  font-family: "CookieRunOTF-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'CookieRunOTF-Black';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff')
-  format('woff');
+  font-family: "CookieRunOTF-Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'CookieRun-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+  font-family: "CookieRun-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NEXON Lv1 Gothic OTF';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-family: "NEXON Lv1 Gothic OTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-body { font-family: 'Nanum Gothic', sans-serif; }
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
 
 a {
   color: inherit;
@@ -46,7 +51,7 @@ strong {
 
 hr {
   width: 50px;
-  border-top: 3px solid #2B68A4;
+  border-top: 3px solid #2b68a4;
 }
 
 #home {
@@ -63,7 +68,7 @@ hr {
 #home .home-btn i {
   font-size: 35px;
   color: #000;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 #home .home-btn:hover i {
@@ -82,7 +87,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'CookieRunOTF-Black';
+  font-family: "CookieRunOTF-Black";
 }
 
 #title .wrapper {
@@ -113,7 +118,7 @@ hr {
 .title-img {
   width: 97.5px;
   height: 145px;
-  background: url('../images/paullab-frame.png') no-repeat 0 0 / 4096px 145px;
+  background: url("../images/paullab-frame.png") no-repeat 0 0 / 4096px 145px;
   animation: paullab 3.3s infinite steps(42);
   position: relative;
   left: 0;
@@ -149,7 +154,7 @@ hr {
 
 .section {
   text-align: center;
-  font-family: 'CookieRunOTF-Bold';
+  font-family: "CookieRunOTF-Bold";
   font-size: 30px;
 }
 
@@ -170,11 +175,11 @@ hr {
 .about-paullab .saying h4 {
   font-size: 20px;
   padding: 30px 0;
-  font-family: 'CookieRunOTF-Bold';
+  font-family: "CookieRunOTF-Bold";
 }
 
 .about-paullab .saying p {
-  font-family: 'NEXON Lv1 Gothic OTF';
+  font-family: "NEXON Lv1 Gothic OTF";
   line-height: 1.5;
   padding: 30px 0;
 }
@@ -196,11 +201,11 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'NEXON Lv1 Gothic OTF';
+  font-family: "NEXON Lv1 Gothic OTF";
 }
 
 .about-paullab .company .inner_1 {
-  width:120px;
+  width: 120px;
   height: auto;
   padding-right: 150px;
 }
@@ -210,7 +215,7 @@ hr {
 }
 
 .about-paullab .company .inner_1:after {
-  content: '바울랩';
+  content: "바울랩";
   font-size: 15px;
 }
 
@@ -227,44 +232,43 @@ hr {
 
 .about-paullab .company .inner_2 span {
   font-size: 15px;
-  font-family: 'NEXON Lv1 Gothic OTF';
+  font-family: "NEXON Lv1 Gothic OTF";
 }
 
 .about-paullab .company .inner_3 {
-  width:200px;
-  height:auto;
+  width: 200px;
+  height: auto;
 }
 
 .about-paullab .company .inner_3:after {
-  content: '제주코딩베이스캠프';
+  content: "제주코딩베이스캠프";
   font-size: 15px;
 }
 
-.about-paullab .intro .intro-contents {
+.about-paullab .intro .intro_contents {
   padding-top: 80px;
   padding-right: 30px;
   padding-left: 30px;
 }
 
-.about-paullab .intro-contents h4 {
-  font-family: 'CookieRunOTF-Bold';
+.about-paullab .intro_contents h4 {
+  font-family: "CookieRunOTF-Bold";
   font-size: 25px;
   padding-bottom: 20px;
 }
 
-.about-paullab .intro-contents p {
-  font-family: 'NEXON Lv1 Gothic OTF';
+.about-paullab .intro_contents p {
+  font-family: "NEXON Lv1 Gothic OTF";
   font-size: 17px;
   padding-left: 30px;
   padding-bottom: 50px;
   line-height: 1.5;
 }
 
-.about-paullab .intro-contents span {
+.about-paullab .intro_contents span {
   font-size: 20px;
   font-weight: bold;
 }
-
 
 /* ceo */
 .about-ceo {
@@ -285,24 +289,24 @@ hr {
   padding: 35px 25px;
 }
 
-.about-ceo .intro .intro-img {
+.about-ceo .intro .intro_img {
   padding-right: 200px;
 }
 
-.about-ceo .intro .intro-img img {
+.about-ceo .intro .intro_img img {
   width: 350px;
   height: auto;
 }
 
-.about-ceo .intro .intro-saying {
-  font-family: 'CookieRunOTF-Bold';
+.about-ceo .intro .intro_saying {
+  font-family: "CookieRunOTF-Bold";
   font-size: 15px;
   margin: 0 auto;
   padding-top: 20px;
   line-height: 1.3;
 }
 
-.about-ceo .intro .intro-contents {
+.about-ceo .intro .intro_contents {
   display: -webkit-box;
   display: -ms-flexbox;
   -webkit-box-orient: vertical;
@@ -313,7 +317,7 @@ hr {
   padding: 20px 10px;
 }
 
-.about-ceo .intro .intro-contents .name {
+.about-ceo .intro .intro_contents .name {
   display: -webkit-box;
   display: -ms-flexbox;
   -webkit-box-align: end;
@@ -325,25 +329,25 @@ hr {
   border-bottom: 2px dashed rgb(131, 131, 131);
 }
 
-.about-ceo .intro .intro-contents .name h4 {
-  font-family: 'CookieRunOTF-Bold';
+.about-ceo .intro .intro_contents .name h4 {
+  font-family: "CookieRunOTF-Bold";
   font-size: 30px;
   padding-right: 20px;
 }
 
-.about-ceo .intro .intro-contents .name span {
-  font-family: 'CookieRunOTF-Bold';
+.about-ceo .intro .intro_contents .name span {
+  font-family: "CookieRunOTF-Bold";
   font-size: 20px;
   color: rgb(124, 124, 124);
 }
 
-.about-ceo .intro .intro-contents .intro-text{
-  font-family: 'NEXON Lv1 Gothic OTF';
+.about-ceo .intro .intro_contents .intro_text {
+  font-family: "NEXON Lv1 Gothic OTF";
   padding: 20px 0;
   line-height: 1.6;
 }
 
-.about-ceo .intro .intro-contents .intro-text span{
+.about-ceo .intro .intro_contents .intro_text span {
   font-size: 10px;
 }
 
@@ -355,7 +359,7 @@ hr {
   padding: 30px 0;
 }
 
-#contact .contact-items {
+#contact .contact_items {
   display: -webkit-box;
   display: -ms-flexbox;
   -webkit-box-orient: vertical;
@@ -367,23 +371,23 @@ hr {
   flex-direction: column;
   justify-content: center;
   padding: 35px 0;
-  font-family: 'NEXON Lv1 Gothic OTF';
+  font-family: "NEXON Lv1 Gothic OTF";
   font-size: 17px;
 }
 
-#contact .contact-items .contact-item {
+#contact .contact_items .contact_item {
   padding: 30px;
 }
 
-#contact .contact-items .contact-item div {
+#contact .contact_items .contact_item div {
   padding-bottom: 15px;
 }
 
-#contact .contact-items .map {
+#contact .contact_items .map {
   margin: 0 auto;
 }
 
-#contact .contact-items .map iframe {
+#contact .contact_items .map iframe {
   width: 900px;
   height: 600px;
   border: 0;
@@ -395,7 +399,7 @@ hr {
   color: #fff;
 }
 
-#footer .wrapper{
+#footer .wrapper {
   margin: 0;
   padding: 30px 60px;
 
@@ -421,18 +425,18 @@ hr {
   width: 500px;
 }
 
-#footer .contact-title {
+#footer .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 2vw;
-  font-family: 'CookieRunOTF-Bold', 'serif';
+  font-family: "CookieRunOTF-Bold", "serif";
 }
-#footer .contact-item {
+#footer .contact_item {
   padding-top: 20px;
 }
 
-#footer .contact-item div {
+#footer .contact_item div {
   padding-bottom: 10px;
 }
 
@@ -451,7 +455,7 @@ hr {
   padding: 15px 60px;
 }
 
-@media all and (min-width:320px) and (max-width:639px) {
+@media all and (min-width: 320px) and (max-width: 639px) {
   #home .wrapper {
     padding: 15px 20px;
   }
@@ -469,7 +473,7 @@ hr {
   }
 
   #title .title-img {
-     display: none;
+    display: none;
   }
 
   #main_contents .wrapper {
@@ -537,36 +541,36 @@ hr {
   }
 
   .about-paullab .company .inner_3 {
-    width:70px;
+    width: 70px;
   }
-  .about-paullab .company .inner_3 img{
+  .about-paullab .company .inner_3 img {
     padding-bottom: 24px;
   }
 
   .about-paullab .company .inner_3:after {
-    content: '제코베';
+    content: "제코베";
     font-size: 8px;
   }
 
-  .about-paullab .intro .intro-contents {
+  .about-paullab .intro .intro_contents {
     padding-top: 50px;
     padding-right: 5px;
     padding-left: 5px;
   }
 
-  .about-paullab .intro-contents h4 {
+  .about-paullab .intro_contents h4 {
     font-size: 15px;
     padding-bottom: 10px;
   }
 
-  .about-paullab .intro-contents p {
+  .about-paullab .intro_contents p {
     font-size: 10px;
     padding-left: 30px;
     padding-bottom: 35px;
     line-height: 1.5;
   }
 
-  .about-paullab .intro-contents span {
+  .about-paullab .intro_contents span {
     font-size: 13px;
   }
 
@@ -585,7 +589,7 @@ hr {
     padding: 35px 10px;
   }
 
-  .about-ceo .intro .intro-img {
+  .about-ceo .intro .intro_img {
     display: -webkit-box;
     display: -ms-flexbox;
     -webkit-box-orient: vertical;
@@ -599,40 +603,40 @@ hr {
     padding-right: 0;
   }
 
-  .about-ceo .intro .intro-img img {
+  .about-ceo .intro .intro_img img {
     width: 200px;
     height: auto;
     margin: 0 auto;
   }
 
-  .about-ceo .intro .intro-saying {
+  .about-ceo .intro .intro_saying {
     font-size: 10px;
   }
 
-  .about-ceo .intro .intro-contents {
+  .about-ceo .intro .intro_contents {
     padding: 15px 5px;
   }
 
-  .about-ceo .intro .intro-contents .name {
+  .about-ceo .intro .intro_contents .name {
     padding: 15px 0;
   }
 
-  .about-ceo .intro .intro-contents .name h4 {
+  .about-ceo .intro .intro_contents .name h4 {
     font-size: 20px;
     padding-right: 15px;
   }
 
-  .about-ceo .intro .intro-contents .name span {
+  .about-ceo .intro .intro_contents .name span {
     font-size: 15px;
   }
 
-  .about-ceo .intro .intro-contents .intro-text{
+  .about-ceo .intro .intro_contents .intro_text {
     font-size: 10px;
     padding: 15px 0;
     line-height: 1.3;
   }
 
-  .about-ceo .intro .intro-contents .intro-text span{
+  .about-ceo .intro .intro_contents .intro_text span {
     font-size: 7px;
   }
 
@@ -643,25 +647,25 @@ hr {
     padding: 30px 0;
   }
 
-  #contact .contact-items {
+  #contact .contact_items {
     font-size: 10px;
   }
 
-  #contact .contact-items .contact-item {
+  #contact .contact_items .contact_item {
     padding: 30px 0;
     line-height: 1.3;
   }
 
-  #contact .contact-items .contact-item div {
+  #contact .contact_items .contact_item div {
     padding-bottom: 10px;
   }
 
-  #contact .contact-items .map iframe {
+  #contact .contact_items .map iframe {
     width: 300px;
     height: auto;
   }
 
-  #footer .wrapper{
+  #footer .wrapper {
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
 
@@ -674,16 +678,16 @@ hr {
     padding-bottom: 10px;
   }
 
-  #footer .contact-title {
+  #footer .title {
     font-size: 10px;
   }
 
-  #footer .contact-item {
+  #footer .contact_item {
     font-size: 5px;
     padding-top: 5px;
   }
 
-  #footer .contact-item div {
+  #footer .contact_item div {
     padding-bottom: 5px;
   }
 
@@ -701,7 +705,7 @@ hr {
   }
 }
 
-@media all and (min-width:640px) and (max-width:1023px) {
+@media all and (min-width: 640px) and (max-width: 1023px) {
   #home .wrapper {
     padding: 20px 25px;
   }
@@ -738,7 +742,7 @@ hr {
   }
 
   .about-paullab .company .inner_1 {
-    width:100px;
+    width: 100px;
     padding-right: 80px;
   }
 
@@ -756,20 +760,20 @@ hr {
   }
 
   .about-paullab .company .inner_3 {
-    width:150px;
+    width: 150px;
   }
 
-  .about-paullab .intro-contents h4 {
+  .about-paullab .intro_contents h4 {
     font-size: 20px;
   }
 
-  .about-paullab .intro-contents p {
+  .about-paullab .intro_contents p {
     font-size: 15px;
     padding-left: 20px;
     padding-bottom: 40px;
   }
 
-  .about-paullab .intro-contents span {
+  .about-paullab .intro_contents span {
     font-size: 17px;
     font-weight: bold;
   }
@@ -779,52 +783,52 @@ hr {
     padding: 35px 15px;
   }
 
-  .about-ceo .intro .intro-img {
+  .about-ceo .intro .intro_img {
     padding-right: 100px;
   }
 
-  .about-ceo .intro .intro-img img {
+  .about-ceo .intro .intro_img img {
     width: 250px;
   }
 
-  .about-ceo .intro .intro-saying {
+  .about-ceo .intro .intro_saying {
     font-size: 11px;
   }
 
-  .about-ceo .intro .intro-contents {
+  .about-ceo .intro .intro_contents {
     padding: 20px 10px;
   }
 
-  .about-ceo .intro .intro-contents .name h4 {
+  .about-ceo .intro .intro_contents .name h4 {
     font-size: 25px;
     padding-right: 20px;
   }
 
-  .about-ceo .intro .intro-contents .name span {
+  .about-ceo .intro .intro_contents .name span {
     font-size: 20px;
   }
 
-  .about-ceo .intro .intro-contents .intro-text{
+  .about-ceo .intro .intro_contents .intro_text {
     font-size: 15px;
     line-height: 1.4;
   }
 
-  .about-ceo .intro .intro-contents .intro-text span{
+  .about-ceo .intro .intro_contents .intro_text span {
     font-size: 9px;
   }
 
   /* contact */
-  #contact .contact-items {
+  #contact .contact_items {
     font-size: 15px;
     line-height: 1.4;
   }
 
-  #contact .contact-items .map iframe {
+  #contact .contact_items .map iframe {
     width: 600px;
     height: 400px;
   }
 
-  #footer .wrapper{
+  #footer .wrapper {
     padding: 20px 30px;
   }
 
@@ -832,16 +836,16 @@ hr {
     width: 35vw;
   }
 
-  #footer .contact-title {
+  #footer .title {
     font-size: 20px;
   }
 
-  #footer .contact-item {
+  #footer .contact_item {
     font-size: 10px;
     padding-top: 10px;
   }
 
-  #footer .contact-item div {
+  #footer .contact_item div {
     padding-bottom: 5px;
   }
 
@@ -853,7 +857,6 @@ hr {
     font-size: 5px;
     padding-top: 5px;
   }
-
 
   #footer .copyright {
     padding: 10px 30px;
