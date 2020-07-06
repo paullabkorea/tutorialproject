@@ -1,7 +1,13 @@
 # tutorial Hompage
 
-### code convention
+### code convention - css bem 방법론
 
-#### a-b : b는 a에 관련(a에 대한 b)
+#### BEM : Block Element Modifier
 
-#### a_b : b는 a의 요소(a의 b)
+#### .block\_\_element--modifier
+
+#### block: 전체를 감싸고 있는 블록요소
+
+#### element : 내부요소
+
+#### modifier : 기능

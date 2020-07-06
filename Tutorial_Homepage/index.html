@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <!-- 구글 Analytics 스크립트 삽입 -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -16,11 +16,9 @@
 
       gtag("config", "UA-72047520-1");
     </script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <!-- 네이버 추적코드 삽입 -->
     <meta
       name="naver-site-verification"
@@ -41,208 +39,188 @@
       content="http://paullab.co.kr/images/jejucoding.png"
     />
     <meta property="og:url" content="http://paullab.co.kr" />
-
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" />
-
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <title>JejuCodingBaseCamp</title>
+    <title>Jeju Coding BaseCamp</title>
   </head>
   <body>
     <!-- 모바일 세로모드일 경우에 표시 -->
     <div id="message">
-      <div class="msg-img">
+      <div class="message__img">
         <img src="images/licat-hi.png" alt="" />
       </div>
       <p>해당 웹 페이지는 가로모드만 지원합니다.</p>
     </div>
-
-    <!-- 전체 화면 및 메뉴 -->
-    <section id="main_container">
-      <!-- 배경 이미지  -->
+    <section id="main-container">
       <div id="background-img">
-        <!-- 섬 이미지 -->
         <div id="jeju-img">
-          <!-- 캐릭터별 요소 이미지 -->
-          <div class="wrapper">
-            <div id="home">
-              <a href="index.html" class="home-btn">
-                <p>JEJU CODING BASECAMP</p>
-              </a>
-            </div>
-            <div class="hallasan">
-              <a href="http://www.jejucodingcamp.com/" target="_blank">
-                <img src="images/hallasan.png" alt="" />
-              </a>
-            </div>
-            <div class="menu paullab">
-              <a href="about.html">
-                <div class="paullab-frame scale"></div>
-              </a>
-              <h4>About</h4>
-            </div>
-            <div class="news" onclick="openModal()">
-              <div class="bird"></div>
-            </div>
-            <div class="menu youtube">
-              <a
-                href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ"
-                target="_blank"
-              >
-                <div class="python scale"></div>
-              </a>
-              <h4>유튜브</h4>
-            </div>
-            <div class="menu book">
-              <a
-                href="https://ridibooks.com/search/?q=사도출판"
-                target="_blank"
-              >
-                <div class="mura scale"></div>
-              </a>
-              <h4>출판정보</h4>
-            </div>
-            <div class="menu qna">
-              <a href="QnA.html">
-                <div class="gary scale"></div>
-              </a>
-              <h4>Q&A</h4>
-            </div>
-            <div class="menu online_lec">
-              <a
-                href="https://www.inflearn.com/instructors/170213/courses"
-                target="_blank"
-              >
-                <div class="soulgom scale"></div>
-              </a>
-              <h4>온라인 강의</h4>
-            </div>
-            <div class="menu intro">
-              <a href="weniv.html">
-                <div class="licat scale">
-                  <img src="images/licat-no-hand2.png" alt="" />
-                  <img src="images/licat-hand.png" alt="" class="hand" />
-                </div>
-              </a>
-              <h4>캐릭터 소개</h4>
-            </div>
-            <div class="menu wiki">
-              <a
-                href="http://paullabedu.synology.me/dokuwiki/doku.php"
-                target="_blank"
-              >
-                <div class="javadog scale"></div>
-              </a>
-              <h4>자료실</h4>
-            </div>
-            <div class="menu curriculum">
-              <a href="curriculum.html">
-                <div class="binky scale"></div>
-              </a>
-              <h4>커리큘럼</h4>
-            </div>
-
-            <!-- etc -->
-            <div class="windmill scale">
-              <div class="wind_base">
-                <img src="images/windmill_base.png" alt="" />
-              </div>
-              <div class="wind">
-                <img src="images/wind1.png" alt="" class="wind1" />
-                <img src="images/wind1.png" alt="" class="wind2" />
-              </div>
-            </div>
-
-            <div class="parasol etc">
-              <a href="http://paullab.co.kr/codefestival.html">
-                <img src="images/parasol.png" alt="" />
-              </a>
-            </div>
-
-            <div class="hallabong etc">
-              <a href="http://paullab.co.kr/stock.html">
-                <img src="images/hallabong.png" alt="" />
-              </a>
-            </div>
-
-            <div class="dolharbang etc">
-              <a href="#">
-                <img src="images/dolharbang.png" alt="" />
-              </a>
-            </div>
-
-            <!-- sns -->
-            <div class="sns">
-              <div class="sns_wrap">
-                <div class="instagram">
-                  <a
-                    href="https://www.instagram.com/paullab_official/?hl=ko"
-                    target="_blank"
-                    ><img src="images/instagram.png" alt=""
-                  /></a>
-                </div>
-                <div class="facebook">
-                  <a
-                    href="https://www.facebook.com/제주-코딩-베이스캠프-1512494142177634/"
-                    target="_blank"
-                    ><img src="images/facebook.png" alt=""
-                  /></a>
-                </div>
-                <div class="naver">
-                  <a href="https://blog.naver.com/paul-lab" target="_blank"
-                    ><img src="images/naver.png" alt=""
-                  /></a>
-                </div>
-                <div class="tistory">
-                  <a href="https://paullab.tistory.com" target="_blank"
-                    ><img src="images/tistory.png" alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <!-- //sns -->
+          <div class="home">
+            <a href="index.html" class="home__btn">
+              <p>JEJU CODING BASECAMP</p>
+            </a>
           </div>
-          <!-- //캐릭터별 요소 이미지 -->
+          <div class="news" onclick="openModal()">
+            <div class="news__bird"></div>
+          </div>
+          <div class="menu__hallasan">
+            <a href="http://www.jejucodingcamp.com/" target="_blank">
+              <img
+                src="images/hallasan.png"
+                alt=""
+                class="menu__hallasan__img"
+              />
+            </a>
+          </div>
+          <div class="menu menu__paullab">
+            <a href="about.html">
+              <div class="menu__paullab--frame scale"></div>
+            </a>
+            <h4>About</h4>
+          </div>
+          <div class="menu menu__youtube">
+            <a
+              href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ"
+              target="_blank"
+            >
+              <div class="menu__youtube--python scale"></div>
+              <h4>유튜브</h4>
+            </a>
+          </div>
+          <div class="menu menu__book">
+            <a href="https://ridibooks.com/search/?q=사도출판" target="_blank">
+              <div class="menu__book--mura scale"></div>
+            </a>
+            <h4>출판정보</h4>
+          </div>
+          <div class="menu menu__qna">
+            <a href="QnA.html">
+              <div class="menu__qna--gary scale"></div>
+            </a>
+            <h4>Q&A</h4>
+          </div>
+          <div class="menu menu__online_lec">
+            <a
+              href="https://www.inflearn.com/instructors/170213/courses"
+              target="_blank"
+            >
+              <div class="menu__online_lec--soulgom scale"></div>
+            </a>
+            <h4>온라인 강의</h4>
+          </div>
+          <div class="menu menu__intro">
+            <a href="weniv.html">
+              <div class="menu__intro--licat scale">
+                <img src="images/licat-no-hand2.png" alt="" />
+                <img src="images/licat-hand.png" alt="" class="hand" />
+              </div>
+            </a>
+            <h4>캐릭터 소개</h4>
+          </div>
+          <div class="menu menu__wiki">
+            <a
+              href="http://paullabedu.synology.me/dokuwiki/doku.php"
+              target="_blank"
+            >
+              <div class="menu__wiki--javadog scale"></div>
+            </a>
+            <h4>자료실</h4>
+          </div>
+          <div class="menu menu__curriculum">
+            <a href="curriculum.html">
+              <div class="menu__curriculum--binky scale"></div>
+            </a>
+            <h4>커리큘럼</h4>
+          </div>
+          <!-- etc -->
+          <div class="windmill scale">
+            <div class="windmill_base">
+              <img src="images/windmill_base.png" alt="" />
+            </div>
+            <div class="windmill--wind">
+              <img src="images/wind1.png" alt="" class="wind1" />
+              <img src="images/wind1.png" alt="" class="wind2" />
+            </div>
+          </div>
+          <div class="parasol etc">
+            <a href="http://paullab.co.kr/codefestival.html">
+              <img src="images/parasol.png" alt="" />
+            </a>
+          </div>
+          <div class="hallabong etc">
+            <a href="http://paullab.co.kr/stock.html">
+              <img src="images/hallabong.png" alt="" />
+            </a>
+          </div>
+          <div class="dolharbang etc">
+            <a href="#">
+              <img src="images/dolharbang.png" alt="" />
+            </a>
+          </div>
         </div>
-        <!-- //섬 이미지 -->
+        <!-- sns -->
+        <div class="sns">
+          <div class="sns__wrap">
+            <div class="instagram">
+              <a
+                href="https://www.instagram.com/paullab_official/?hl=ko"
+                target="_blank"
+                ><img src="images/instagram.png" alt=""
+              /></a>
+            </div>
+            <div class="facebook">
+              <a
+                href="https://www.facebook.com/제주-코딩-베이스캠프-1512494142177634/"
+                target="_blank"
+                ><img src="images/facebook.png" alt=""
+              /></a>
+            </div>
+            <div class="naver">
+              <a href="https://blog.naver.com/paul-lab" target="_blank"
+                ><img src="images/naver.png" alt=""
+              /></a>
+            </div>
+            <div class="tistory">
+              <a href="https://paullab.tistory.com" target="_blank"
+                ><img src="images/tistory.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- //배경 이미지  -->
     </section>
 
     <!-- 모달 -->
     <div id="modal">
-      <div class="modal_wrap">
-        <div class="modal_window">
-          <div class="modal_header">
-            <div class="title">
+      <div class="modal__wrap">
+        <div class="modal__window">
+          <div class="modal__header">
+            <div class="modal__title">
               <p>
                 새 소 식
               </p>
             </div>
-            <div class="close-btn" onclick="closeModal()">
+            <div class="close__btn" onclick="closeModal()">
               <i class="fas fa-times"></i>
             </div>
           </div>
 
-          <div class="modal_content">
+          <div class="modal__content">
             <!-- 새로운 공지는 post 클래스 복사 -->
             <!-- post 1 -->
             <div class="post">
-              <div class="post_img">
+              <div class="post__img">
                 <a
                   href="https://www.wadiz.kr/web/wcomingsoon/rwd/66071"
                   target="_blank"
@@ -250,8 +228,8 @@
                   <img src="images/notice/wadiz_thumbnail.png" alt="" />
                 </a>
               </div>
-              <div class="post_item">
-                <h4 class="post-title">
+              <div class="post__item">
+                <h4 class="post__title">
                   <a
                     href="https://www.wadiz.kr/web/wcomingsoon/rwd/66071"
                     target="_blank"
@@ -259,7 +237,7 @@
                     데이터분석과 파이썬으로 내 인생 새로고침!🧚‍♀️
                   </a>
                 </h4>
-                <p class="post_explanation">
+                <p class="post__explanation">
                   <b>Python과 데이터 분석 강의!</b> 무엇을 들어야 할지도, 어떻게
                   시작해야 할지도 궁금한 점이 많으신가요?🤔 그래서 제코베에서
                   파이썬 강좌와 데이터 분석 강좌를 작심하고 준비했습니다!!!
@@ -273,7 +251,7 @@
                 </p>
                 <a
                   href="https://www.wadiz.kr/web/wcomingsoon/rwd/66071"
-                  class="readmore-btn"
+                  class="readmore__btn"
                 >
                   <i class="fa fa-arrow-circle-right"></i> Read more
                 </a>
@@ -282,18 +260,18 @@
 
             <!-- post 2 -->
             <div class="post">
-              <div class="post_img">
+              <div class="post__img">
                 <a href="#" target="_blank">
                   <img src="#" alt="" />
                 </a>
               </div>
-              <div class="post_item">
-                <h4 class="post_title">
+              <div class="post__item">
+                <h4 class="post__title">
                   <a href="#" target="_blank">
                     단체 카톡방 공지!🧚‍♀️
                   </a>
                 </h4>
-                <p class="post_explanation">
+                <p class="post__explanation">
                   제주 ICT관련 정보, 행사 정보, 전국 ICT 정보, 행사 정보,
                   채용정보, 개강정보 등을 단톡방을 통해 드리고 있습니다.<br />
                   대화는 하지 않는 단톡방이며, 혹시 단톡방 정보를 받지 못하신
@@ -306,7 +284,7 @@
 
             <!-- post 3 -->
             <div class="post">
-              <div class="post_img">
+              <div class="post__img">
                 <a href="https://forms.gle/deYHQhR39ZPEUR1W8" target="_blank">
                   <img
                     src="images\notice\오프라인 강의 카드뉴스-01.png"
@@ -330,13 +308,13 @@
                   />
                 </a>
               </div>
-              <div class="post_item">
-                <h4 class="post_title">
+              <div class="post__item">
+                <h4 class="post__title">
                   <a href="https://forms.gle/deYHQhR39ZPEUR1W8" target="_blank">
                     오프라인 강좌 공지!🧚‍♀️
                   </a>
                 </h4>
-                <p class="post_explanation">
+                <p class="post__explanation">
                   <b>프로그래밍, 무엇부터 해야 할지 고민이 많으신가요?</b
                   >🤔<br />
                   HTML, CSS, JS, JQuery, Bootstrap, Python, Django,
@@ -354,7 +332,7 @@
                 </p>
                 <a
                   href="https://www.inflearn.com/course/web_fullstack"
-                  class="readmore-btn"
+                  class="readmore__btn"
                 >
                   <i class="fa fa-arrow-circle-right"></i> Read more(설명 링크는
                   온라인 강좌입니다.) </a
@@ -372,16 +350,14 @@
         </div>
       </div>
     </div>
-    <!-- //모달 -->
 
+    <!-- //모달 -->
     <script type="text/javascript">
       const bird = document.querySelector(".bird");
       const modal = document.querySelector("#modal");
-
       function openModal() {
         modal.classList.add("on");
       }
-
       function closeModal() {
         modal.classList.remove("on");
       }
@@ -390,7 +366,6 @@
           modal.classList.remove("on");
         }
       };
-
       window.addEventListener("onclick", openModal);
       window.addEventListener("onclick", closeModal);
     </script>
