@@ -19,16 +19,18 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css"  />
   <link rel="stylesheet" type="text/css" href="css/style.css"  />
   <title>Jeju Coding BaseCamp</title>
-  <!-- 구글 Analytics 스크립트 삽입 -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!--
+  구글 Analytics 스크립트 삽입
+  Global site tag (gtag.js) - Google Analytics
+  -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72047520-1"></script>
   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-72047520-1");
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-72047520-1");
   </script>
   <!-- //구글 Analytics 스크립트 삽입 -->
 </head>
@@ -45,7 +47,9 @@
 
   <!-- main section -->
   <section id="main-container">
+    <!-- background-img -->
     <div id="background-img">
+      <!-- jeju-img -->
       <div id="jeju-img">
         <div class="home">
           <a href="index.html" class="home__btn">
@@ -58,7 +62,7 @@
         <!-- menu -->
         <div class="menu__hallasan">
           <a href="http://www.jejucodingcamp.com/" target="_blank">
-            <img src="images/hallasan.png" alt="" class="menu__hallasan__img" />
+            <img src="images/hallasan.png" class="menu__hallasan__img" alt="" />
           </a>
         </div>
         <div class="menu menu__paullab">
@@ -95,7 +99,7 @@
           <a href="weniv.html">
             <div class="menu__intro--licat scale">
               <img src="images/licat-no-hand2.png" alt="" />
-              <img src="images/licat-hand.png" alt="" class="hand" />
+              <img src="images/licat-hand.png" class="hand" alt="" />
             </div>
           </a>
           <h4>캐릭터 소개</h4>
@@ -112,6 +116,7 @@
           </a>
           <h4>커리큘럼</h4>
         </div>
+        <!-- //menu -->
         <!-- etc -->
         <div class="windmill scale">
           <div class="windmill_base">
@@ -137,6 +142,7 @@
             <img src="images/dolharbang.png" alt="" />
           </a>
         </div>
+        <!-- // etc -->
       </div>
       <!-- //jeju-img -->
 
@@ -163,6 +169,7 @@
       </div>
       <!-- //sns -->
     </div>
+    <!-- //background-img -->
   </section>
   <!-- //main section -->
 
@@ -180,10 +187,9 @@
             <i class="fas fa-times"></i>
           </div>
         </div>
-
         <div class="modal__content">
           <!-- 새로운 공지는 post 클래스 복사 -->
-          <!-- post 1 -->
+          <!-- post1 -->
           <div class="post">
             <div class="post__img">
               <a href="https://www.wadiz.kr/web/wcomingsoon/rwd/66071" target="_blank">
@@ -208,8 +214,9 @@
               </a>
             </div>
           </div>
+          <!-- //post1 -->
 
-          <!-- post 2 -->
+          <!-- post2 -->
           <div class="post">
             <div class="post__img">
               <a href="#" target="_blank">
@@ -231,6 +238,8 @@
               </p>
             </div>
           </div>
+          <!-- //post 2 -->
+
           <!-- post 3 -->
           <div class="post">
             <div class="post__img">
@@ -269,15 +278,16 @@
               </a>
             </div>
           </div>
+          <!-- post3 -->
         </div>
       </div>
     </div>
   </div>
   <!-- //모달 -->
+
   <script type="text/javascript">
     const bird = document.querySelector(".bird");
     const modal = document.querySelector("#modal");
-
     function openModal() {
       modal.classList.add("on");
     }
