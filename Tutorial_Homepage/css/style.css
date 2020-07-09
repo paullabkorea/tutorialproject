@@ -52,7 +52,7 @@ h4 {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: url("../images/no-mountain.png") no-repeat center center;
+  background: url("../images/no-mountain3.png") no-repeat center center;
   background-size: contain;
   background-size: contain;
   background-size: contain;
@@ -151,6 +151,7 @@ h4 {
   }
 }
 .menu h4 {
+  width:100px;
   position: absolute;
 }
 .menu div:hover {
@@ -209,8 +210,8 @@ h4 {
 /* 바울랩 - about */
 .menu__paullab {
   position: absolute;
-  left: 50vw;
-  top: 13vh;
+  left: 51vw;
+  top: 16vh;
   width: 97.5px;
   height: auto;
 }
@@ -240,7 +241,7 @@ h4 {
   transition: all 0.4s;
 }
 .menu__paullab h4 {
-  left: 70px;
+  left: 30px;
   top: 145px;
 }
 .menu__paullab div:hover{
@@ -250,8 +251,8 @@ h4 {
 /* 파이와 썬 - 유튜브 */
 .menu__youtube {
   position: absolute;
-  left: 31vw;
-  top: 22vh;
+  left: 32vw;
+  top: 27vh;
   width: 125px;
   height: 125px;
   -moz-transition: all 0.4s;
@@ -261,7 +262,7 @@ h4 {
 }
 .menu__youtube h4 {
   left: 50px;
-  top: 130px;
+  top: 110px;
 }
 .menu__youtube--python {
   width: 125px;
@@ -291,8 +292,8 @@ h4 {
 /* 뮤라 - 출판정보 */
 .menu__book {
   position: absolute;
-  left: 17vw;
-  top: 30vh;
+  left: 24vw;
+  top: 34vh;
   width: 167px;
   height: 167px;
   -moz-transition: all 0.4s;
@@ -301,7 +302,7 @@ h4 {
   transition: all 0.4s;
 }
 .menu__book h4 {
-  left: 95px;
+  left:57px;
   top: 150px;
 }
 .menu__book--mura {
@@ -332,8 +333,8 @@ h4 {
 /* 개리 - Q&A */
 .menu__qna {
   position: absolute;
-  left: 18vw;
-  top: 50vh;
+  left: 25vw;
+  top: 53vh;
   width: 167px;
   height: 167px;
   -moz-transition: all 0.4s;
@@ -364,12 +365,12 @@ h4 {
   width: 167px;
   height: 167px;
   position: absolute;
-  left: 45vw;
+  left: 40vw;
   bottom: 25vh;
 }
 .menu__online_lec h4 {
-  left: -50px;
-  top: 130px;
+  left: 50px;
+  top: 150px;
 }
 .menu__online_lec--soulgom {
   width: 167px;
@@ -401,8 +402,8 @@ h4 {
   width: 150px;
   height: 150px;
   position: absolute;
-  left: 62vw;
-  bottom: 38vh;
+  left: 55vw;
+  bottom: 35vh;
 }
 .menu__intro h4 {
   left: -30px;
@@ -470,9 +471,15 @@ h4 {
   width: 167px;
   height: 167px;
   position: absolute;
-  left: 71vw;
-  top: 24vh;
+  left: 64vw;
+  top: 36vh;
 }
+
+.menu__wiki h4 {
+  left: 50px;
+  top: 150px;
+}
+
 .menu__wiki--javadog {
   width: 167px;
   height: 167px;
@@ -498,12 +505,12 @@ h4 {
   width: 167px;
   height: 167px;
   position: absolute;
-  left: 63vw;
-  top: 13vh;
+  left: 60vw;
+  top: 19vh;
 }
 .menu__curriculum h4 {
-  left: 0;
-  top: 170px;
+  left: 130px;
+  top: 100px;
 }
 .menu__curriculum--binky {
   width: 167px;
@@ -585,21 +592,21 @@ h4 {
   width: 50px;
   height: auto;
   position: absolute;
-  left: 16vw;
-  top: 50vh;
+  left: 23vw;
+  top: 55vh;
 }
 .hallabong {
   width: 45px;
   height: auto;
   position: absolute;
-  left: 37vw;
-  top: 42vh;
+  left: 38vw;
+  top: 45vh;
 }
 .dolharbang {
   width: 40px;
   height: auto;
   position: absolute;
-  left: 16.2vw;
+  left: 20.5vw;
   bottom: 13vh;
 }
 
@@ -877,31 +884,31 @@ h4 {
   }
   .menu__paullab {
     left: 46vw;
-    top: 3vh;
+    top: 5vh;
   }
   .menu__paullab h4 {
-    left: 62px;
+    left: 50px;
     top: 112px;
   }
   .menu__youtube {
-    left: 22vw;
-    top: 15vh;
+    left: 26vw;
+    top: 20vh;
   }
   .menu__youtube h4 {
     left: 85px;
     top: 95px;
   }
   .menu__book {
-    left: 8vw;
-    top: 20vh;
+    left: 14vw;
+    top: 23vh;
   }
   .menu__book h4 {
     left: 97px;
     top: 110px;
   }
   .menu__qna {
-    left: 10vw;
-    top: 41vh;
+    left: 14vw;
+    top: 40vh;
   }
   .menu__qna h4 {
     left: 110px;
@@ -909,14 +916,14 @@ h4 {
   }
   .menu__online_lec {
     left: 37vw;
-    bottom: 13vh;
+    bottom: 15vh;
   }
   .menu__online_lec h4 {
     left: 20px;
     top: 105px;
   }
   .menu__intro {
-    left: 56vw;
+    left: 53vw;
     bottom: 38vh;
   }
   .menu__intro h4 {
@@ -925,26 +932,26 @@ h4 {
   }
   .menu__wiki {
     left: 64vw;
-    top: 16vh;
+    top: 18vh;
   }
   .menu__wiki h4 {
     left: 50px;
-    top: 110px;
+    top: 120px;
   }
   .menu__curriculum {
     left: 57vw;
-    top: 2vh;
+    top: 8vh;
   }
   .menu__curriculum h4 {
     left: 40px;
-    top: 125px;
+    top: 115px;
   }
   .windmill {
     left: 53vw;
     top: 12vh;
   }
   .parasol {
-    left: 12vw;
+    left: 15vw;
   }
   .dolharbang {
     left: 95px;
@@ -979,7 +986,7 @@ h4 {
   }
   .menu__hallasan {
     left: 38vw;
-    top: 32vh;
+    top: 36vh;
   }
   @-webkit-keyframes hallasan {
     0% {
@@ -1025,28 +1032,45 @@ h4 {
     transform: scale(0.8);
   }
   .menu__paullab {
-    top: 13vh;
+    /* top: 25vh; */
   }
   .menu__paullab h4 {
     left: 50px;
   }
   .menu__youtube {
     left: 29vw;
-    top: 23vh;
+    top: 28vh;
+  }
+  .menu__book{
+    top:35vh;
+    left:20vw;
   }
   .menu__book h4 {
     left: 40px;
   }
   .menu__online_lec {
-    left: 41vw;
+    bottom:27vh;
+    left: 37vw;
   }
-
   .menu__online_lec h4 {
     left: -20px;
   }
   .menu__qna {
-    left: 15vw;
+    left: 18vw;
     top: 52vh;
+  }
+  .menu__wiki{
+    /* top:38vh; */
+    left:66vw;
+  }
+  .menu__curriculum{
+    /* top:23vh; */
+  }
+  .parasol{
+    left:17vw;
+  }
+  .windmill{
+    top:23vh;
   }
   .dolharbang {
     left: 16vw;
@@ -1062,9 +1086,9 @@ h4 {
     font-size: 35px;
   }
 }
-@media all and (min-width: 1366px) and (max-width: 1535px) {
+@media all and (min-width: 1366px) and (max-width: 1599px) {
   h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .home__btn p {
     font-size: 45px;
@@ -1110,7 +1134,7 @@ h4 {
     transform: scale(0.9);
   }
   .menu__paullab {
-    top: 16vh;
+    top: 17vh;
   }
   .menu__paullab h4 {
     top: 170px;
@@ -1120,7 +1144,7 @@ h4 {
     top: 27vh;
   }
   .menu__book {
-    left: 17vw;
+    left: 20vw;
     top: 34vh;
   }
   .menu__book h4 {
@@ -1128,15 +1152,23 @@ h4 {
   }
   .menu__qna {
     top: 55vh;
+    left:22vw;
   }
   .menu__wiki {
-    top: 30vh;
+    top: 38vh;
+    left:63vw;
   }
   .menu__curriculum {
-    top: 19vh;
+    top: 18vh;
   }
   .windmill {
-    top: 20vh;
+    top: 16vh;
+  }
+  .parasol{
+    left:20vw;
+  }
+  .hallabong{
+    left:36vw;
   }
   .sns {
     right: 8.8vw;
@@ -1144,8 +1176,9 @@ h4 {
   }
 }
 @media all and (min-width: 1600px) and (max-width: 2048px) {
-  h4 {
+  .menu h4 {
     font-size: 20px;
+    margin-top:20px;
   }
   @-webkit-keyframes hallasan {
     0% {
@@ -1170,52 +1203,25 @@ h4 {
     }
   }
   .scale {
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+  .menu div:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
   }
-  .menu div:hover {
+  .news:hover div {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
-  }
-  .news:hover div {
-    -webkit-transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-  }
-  .menu__paullab {
-    top: 13vh;
-  }
-  .menu__paullab h4 {
-    top: 180px;
-  }
-  .menu__youtube h4 {
-    top: 170px;
-  }
-  .menu__curriculum h4 {
-    top: 200px;
-  }
-  .menu__book {
-    width: 300px;
-  }
-  .menu__book h4 {
-    left: 130px;
-  }
-  .menu__qna h4 {
-    left: 140px;
-  }
-  .menu__intro h4 {
-    left: -50px;
-  }
-  .menu__wiki h4 {
-    top: 200px;
   }
   .sns {
     transform: scale(0.8);
