@@ -602,6 +602,7 @@ h4 {
   left: 16.2vw;
   bottom: 13vh;
 }
+
 /* 좌우반전 */
 .etc:hover img {
   transform: rotate(0deg);
