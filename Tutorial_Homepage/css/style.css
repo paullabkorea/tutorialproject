@@ -12,6 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   font-family: "Nanum Gothic", sans-serif;
   background-color: #7ccad5;
@@ -25,10 +26,12 @@ img {
   width: 100%;
   height: auto;
 }
+
 h4 {
   font-family: "CookieRunOTF-Bold", "serif";
   color: #fff;
 }
+
 #main-container {
   width: 100vw;
   height: 100vh;
@@ -50,10 +53,10 @@ h4 {
   width: 100vw;
   height: 100vh;
   background: url("../images/no-mountain.png") no-repeat center center;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
+  background-size: contain;
+  background-size: contain;
+  background-size: contain;
+  background-size: contain;
 }
 .home {
   position: absolute;
@@ -239,6 +242,10 @@ h4 {
 .menu__paullab h4 {
   left: 70px;
   top: 145px;
+}
+.menu__paullab div:hover{
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
 }
 /* 파이와 썬 - 유튜브 */
 .menu__youtube {
