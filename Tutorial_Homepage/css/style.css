@@ -756,12 +756,15 @@ h4 {
 .modal__content .post__img {
   margin: 0 auto;
 }
-
+.modal__content .post__img a{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .modal__content .post__img img{
-  min-width:200px;
-  float:left;
   width:50%;
-  height:auto;
+  min-width:200px;
+  margin:auto;
 }
 .post__item {
   padding-bottom: 35px;
