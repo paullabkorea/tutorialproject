@@ -756,6 +756,13 @@ h4 {
 .modal__content .post__img {
   margin: 0 auto;
 }
+
+.modal__content .post__img img{
+  min-width:200px;
+  float:left;
+  width:50%;
+  height:auto;
+}
 .post__item {
   padding-bottom: 35px;
 }
