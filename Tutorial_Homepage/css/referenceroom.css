@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "CookieRunOTF-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CookieRunOTF-Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: "Nanum Gothic", sans-serif;
+	background-color: #7ccad5;
+}
+#main-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+	background-color: #7ccad5;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/*배경 waves*/
+.background__wave{
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	z-index: 5;
+	/*z-index에 상관없이*/
+	pointer-events: none;
+}
+.waves {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 110%;
+  transform-origin: center bottom;
+	background-image: url("../images/waves4.png");
+}
+.waves--default{
+	animation: waves--default 2s infinite;
+}
+.waves--up{
+	animation: waves--up 2s forwards;
+}
+.waves--down{
+	animation: waves--down 2s forwards;
+}
+@keyframes waves--default {
+    0%,100% { transform: translate(0,0);}
+    25%     { transform: translate(10px,10px) scale(1.02); }
+    50%     { transform: translateY(10px);}
+    75%     { transform: translate(-5px,15px) scale(1.02); }
+}
+@keyframes waves--up{
+	0%			{ transform: translate(0,0); }
+	100%    { transform: translateY(-98%); }
+}
+@keyframes waves--down{
+		0%			{ transform: translateY(-98%); }
+		100%    { transform: translate(0,0); }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* notion */
+.notion__container{
+    position: absolute;
+    overflow-y:auto;
+    width:50%;
+    height:50%;
+    left:25%;
+    top:55vh;
+		background: #444;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+		animation: move--ship 2s infinite;
+}
+@keyframes move--ship{
+	0%,100% { transform: translate(0,0);}
+	25%     { transform: translate(5px,5px) scale(1.02); }
+	50%     { transform:  translateY(5px); }
+	75%     { transform: translate(-5px,15px) scale(1.02); }
+}
+.notion {
+    display: inherit;
+    position: relative;
+    width:5vw;
+    height: auto;
+    min-width: 150px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotatey(0deg) translatex(0px) translatey(0px);
+    transform: rotatey(0deg) translatex(0px) translatey(0px);
+    -webkit-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+    margin: 30px;
+    cursor: pointer;
+}
+.notion img{
+    width:100%;
+    height:auto;
+}
+.notion__info {
+  position: relative;
+  width: 100%;
+}
+
+.focus__notion{
+	overflow: hidden;
+	position:fixed;
+	width:100vw;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index:10;
+	/* display: none; */
+	background: #007BC7;
+	/* background: rgba(255,255,255,1); */
+  top: 100%;
+	transition: top 2s;
+}
+.notion__detail{
+  width: 250px;
+	height:360px;
+  box-shadow: 5px 5px 15px #333;
+  perspective: 600px;
+	cursor:pointer;
+	transform-style: preserve-3d;
+	transition: all 1.5s;
+}
+.notion__front{
+	position: absolute;
+	width:100%;
+	height:100%;
+  transition: 2s;
+	z-index:12;
+  transform-origin: left center;
+	/* backface-visibility: hidden; */
+}
+.notion__front img{
+	width:100%;
+	height:auto;
+	transition-delay: .565s;
+}
+.notion__detail:hover{
+	transform: scale(1.05);
+}
+.spread{
+  transform: rotateY(-180deg);
+  background: #666;
+}
+.spread__img{
+	transform: rotateY(-180deg);
+}
+.notion__back{
+	position: absolute;
+	width:100%;
+	height:100%;
+	z-index:11;
+	background: #fff;
+}
+.notion__back h1{
+	  font-family: "CookieRunOTF-Bold";
+		font-size:1.3rem;
+		margin:30px;
+		line-height:31px;
+}
+.text {
+  color: #000;
+  font-size: 1.4rem;
+    line-height: 1.7rem;
+  position: absolute;
+width:90%;
+padding:10%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* 메시지 */
+#message,#message2 {
+  display: none;
+}
+.message__img {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+#message,#message2 p {
+  font-size: 15px;
+  font-family: "CookieRunOTF-Bold";
+}
+
+/* 반응형 */
+/* 세로모드 */
+@media only screen and (orientation: portrait) {
+  #main-container {
+    display: none;
+  }
+  #message {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 30vh;
+  }
+  #message2{
+    display: none;
+  }
+}
+@media all and (orientation : landscape) and (max-aspect-ratio:65/50){
+  #main-container {
+    height: 100vw;
+    display: none;
+  }
+  #message2 {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 30vh;
+  }
+}
