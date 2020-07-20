@@ -98,21 +98,24 @@ function notionSelect(num){
     <div class="notion__back">
       <h1>${notionAbout.name}</h1>
       <h2>"${notionAbout.contents}"</h2>
-      <button class="notion__button">정보 보기</button>
-      <div class="button--hide">
-      <a href='${notionAbout.link}' target="_blank"><button class="button__notion"></button></a>
-      <a href='${notionAbout.bookstore}' target="_blank"><button class="button__bookstore"></button></a>
-      </div>
+      <div class="buttons">
+      <span>Information</span>
+      <nav>
+        <a href="#">n</a>
+        <a href="#">b</a>
+        <a href="#">e</a>
+      </nav>
+    </div>
     </div>
   </div>`;
   focus__notion.innerHTML = notionDetail;
   const notion__detail = document.querySelector(".notion__detail");
-  const notion__button = document.querySelector(".notion__button");
-  notion__button.addEventListener("click",function(){
-    notion__button.style.display="none";
-    const button__hide = document.querySelector(".button--hide");
-    button__hide.classList.add("active--show");
-  });
+  // const notion__button = document.querySelector(".notion__button");
+  // notion__button.addEventListener("click",function(){
+  //   notion__button.style.display="none";
+  //   const button__hide = document.querySelector(".button--hide");
+  //   button__hide.classList.add("active--show");
+  // });
   waves.classList.remove("waves--default");
   waves.classList.add("waves--up");
   focus__notion.style.top = "0px";

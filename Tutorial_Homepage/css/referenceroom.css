@@ -219,6 +219,85 @@ img {
   background-image: url('../images/book.svg');
   background-size: cover;
 }
+
+.buttons{
+  position: absolute;
+  width: 190px;
+  height:50px;
+  bottom:30px;
+  border-radius: 40px;
+  background: #fff;
+}
+.buttons span {
+  height:50px;
+  width: 190px;
+  border-radius: 40px;
+  line-height: 50px;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 1;
+  box-shadow: 5px 5px 15px #333;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+.buttons nav {
+  font-size: 0;
+}
+.buttons a {
+  line-height: 40px;
+  width: 40px;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #ffffff;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin: 0 -20px;
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.buttons a:nth-child(1) {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-left: 0;
+}
+.buttons a:nth-child(1):hover {
+  background-color: #61c5ec;
+}
+.buttons a:nth-child(2):hover {
+  background-color: #3B5998;
+}
+.buttons a:nth-child(3):hover {
+  background-color: #ea4335;
+}
+.buttons a:nth-child(4) {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: 0;
+}
+.buttons a:nth-child(4):hover {
+  background-color: #000000;
+}
+.buttons:hover span, .buttons.hover span {
+  opacity: 0;
+}
+.buttons:hover a, .buttons.hover a {
+  opacity: 1;
+  border-radius: 50%;
+  margin: 0 10px;
+  color: #f1ce64;
+  font-size: 28px;
+}
+.buttons:hover a:hover, .buttons.hover a:hover {
+  color: #fff;
+}
+
 .active--show{
   opacity: 1;
   transition: all 1s;
