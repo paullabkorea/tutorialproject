@@ -14,19 +14,27 @@
 }
 body{
   font-family: "Nanum Gothic", sans-serif;
-	background-color: #7ccad5;
+  background-color: #2CA1DB;
 }
 #main-container {
   width: 100vw;
   height: 100vh;
   position: relative;
   /* overflow: hidden; */
-	background-color: #7ccad5;
 }
 img {
   width: 100%;
   height: auto;
 }
+/*배경 하늘*/
+.background__sky{
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color: #7ccad5;
+  z-index: 0;
+}
+
 /*배경 waves*/
 .background__wave{
 	position: absolute;
@@ -42,18 +50,19 @@ img {
 }
 .waves {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-repeat: repeat no-repeat;
   background-position: 0 110%;
   transform-origin: center bottom;
 	background-image: url("../images/waves4.png");
+	transition: top 2s;
+}
+.waves--up{
+  animation: waves--up 2s forwards;
 }
 .waves--default{
 	animation: waves--default 2s infinite;
-}
-.waves--up{
-	animation: waves--up 2s forwards;
 }
 .waves--down{
 	animation: waves--down 2s forwards;
@@ -79,10 +88,12 @@ img {
 .notion__container{
   position: absolute;
   width:100%;
-  padding:80px 20%;
-  top:55vh;
-  background: #444;
+  padding:150px 20%;
+  top:52vh;
   box-sizing: border-box;
+  background-repeat: repeat no-repeat;
+  transform-origin: center bottom;
+	background-image: url("../images/waves6.png");
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -98,7 +109,7 @@ img {
   display: inherit;
   position: relative;
   width:5vw;
-  height: auto;
+  max-height:217px;
   min-width: 150px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -118,19 +129,23 @@ img {
   position: relative;
   width: 100%;
 }
-
 .focus__notion{
 	overflow: hidden;
 	position:fixed;
-	width:100vw;
-	height:100vh;
+	width:100%;
+	height:100%;
+	background-image: url("../images/waves5.png");
+  background-repeat: repeat no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	z-index:10;
-	background: #007BC7;
-  top: 100%;
+  top: 110%;
 	transition: top 2s;
+}
+.focust__notion--up{
+  top:0px;
+  /* padding-top:110px; */
 }
 .notion__detail{
   width: 250px;
@@ -172,7 +187,7 @@ img {
 	width:100%;
 	height:100%;
   z-index:11;
-  padding:30px;
+  padding:50px 30px;
   box-sizing: border-box;
 	background: #fff;
   font-family: "CookieRunOTF-Bold";
@@ -183,55 +198,23 @@ img {
   font-family: "CookieRunOTF-Black";
 }
 .notion__back h2{
-  margin-top:20px;
+  margin-top:30px;
   font-size: 1.0rem;
   font-weight: 100;
   line-height: 20px;
 }
-.notion__button{
-  font-family: "CookieRunOTF-Bold";
-  margin-top:40px;
-  width:100%;
-  height:50px;
-  font-size: 1.0rem;
-  border-radius:20px;
-  line-height: 25px;
-  color:#000;
-  transition: all 1s;
-  border:none;
-}
-.button--hide{
-  opacity: 0;
-  margin-top:40px;
-  width:100%;
-  height:50px;
-}
-.button--hide button{
-  width:50px;
-  height:50px;
-  border-radius:25px;
-  border:none;
-  background-color: #7ccad5;
-}
-.button__bookstore{
-  width:100%;
-  height:100%;
-  background-image: url('../images/book.svg');
-  background-size: cover;
-}
-
 .buttons{
   position: absolute;
   width: 190px;
   height:50px;
-  bottom:30px;
+  bottom:60px;
   border-radius: 40px;
   background: #fff;
 }
 .buttons span {
   height:50px;
   width: 190px;
-  border-radius: 40px;
+  border-radius: 20px;
   line-height: 50px;
   display: inline-block;
   font-weight: 700;
@@ -244,45 +227,38 @@ img {
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
 }
-.buttons nav {
-  font-size: 0;
-}
 .buttons a {
   line-height: 40px;
   width: 40px;
   text-align: center;
   border: none;
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #ffffff;
   overflow: hidden;
   opacity: 0;
+  text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  margin: 0 -20px;
-  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.3);
 }
 .buttons a:nth-child(1) {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   margin-left: 0;
+	background-image: url("../images/notionicon.png");
 }
 .buttons a:nth-child(1):hover {
   background-color: #61c5ec;
 }
 .buttons a:nth-child(2):hover {
-  background-color: #3B5998;
+  background-color: #333;
 }
 .buttons a:nth-child(3):hover {
-  background-color: #ea4335;
-}
-.buttons a:nth-child(4) {
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  margin-right: 0;
+  background-color: #444;
 }
 .buttons a:nth-child(4):hover {
-  background-color: #000000;
+  background-color: #555;
 }
 .buttons:hover span, .buttons.hover span {
   opacity: 0;
@@ -290,37 +266,13 @@ img {
 .buttons:hover a, .buttons.hover a {
   opacity: 1;
   border-radius: 50%;
-  margin: 0 10px;
+  margin: 0 7px;
   color: #f1ce64;
   font-size: 28px;
 }
 .buttons:hover a:hover, .buttons.hover a:hover {
   color: #fff;
 }
-
-.active--show{
-  opacity: 1;
-  transition: all 1s;
-}
-.notion__back img{
-  width:20%;
-  height:auto;
-}
-.text {
-  color: #000;
-  font-size: 1.4rem;
-  line-height: 1.7rem;
-  position: absolute;
-  width:90%;
-  padding:10%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 /* 메시지 */
 #message,#message2 {
   display: none;

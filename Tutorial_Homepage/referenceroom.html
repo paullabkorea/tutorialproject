@@ -45,7 +45,6 @@
     <p>해당 웹 페이지는 가로모드만 지원합니다.</p>
   </div>
   <!-- //모바일 세로모드 적용 -->
-
   <!-- 세로비율과 가로비율이 65:50이하일때 -->
   <div id="message2">
     <div class="message__img">
@@ -56,31 +55,36 @@
   <!-- //세로비율과 가로비율이 65:50일때 -->
 
   <section id="main-container">
+    <div class="background__sky"></div>
     <div class="background__wave">
         <div class="waves waves--default"></div>
     </div>
        <div class="notion__container">
-        <!-- <div class="notion">
+        <!-- notion 리스트 - js로 삽입
+          <div class="notion">
             <div class="notion__info">
-                <img src="./images/notions/30minute.jpg" alt="30minutes"/>
+              <img src="./images/notions/30minute.jpg" alt="30minutes"/>
             </div>
-        </div> -->
+          </div> -->
      </div>
     <div class="focus__notion">
-      <!-- <div class="notion__detail">
+      <!-- notion 클릭시 notion에 대한 정보, 링크 - js로 삽입
+      <div class="notion__detail">
         <div class="notion__front">
           <img src="./images/notions/30minute.jpg" alt="30minutes"/>
         </div>
         <div class="notion__back">
           <h1>30분 데이터분석<br>무료 요약 강좌 시즌2</h1>
-          
           <a href="https://www.notion.so/30-f20d59b2401c4404b6cd1ee3a31556d1" target="_blank">
-            <button>자료 보기</button>
-          </a>
+          <div class="buttons">
+            <a href='${notionAbout.link}'>n</a>
+            <a href='${notionAbout.link2}'>n2</a>
+            <a href='${notionAbout.bookstore}'>b</a>
+          </div>
         </div>
-    </div> -->
-  </div>
-</section>
+      </div> -->
+    </div>
+  </section>
   <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
