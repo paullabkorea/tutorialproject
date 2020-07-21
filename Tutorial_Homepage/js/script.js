@@ -31,7 +31,7 @@ const notionInfo = [
     "bookstore":"https://ridibooks.com/books/2773000032?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
   },{
     "name" : "직접 만드는 노션 템플릿 BEST 7선",
-    "image" : "",
+    "image" : "./images/notions/notion_template.png",
     "contents":"노션 템플릿을 쉽게 만들어보세요!",
     "link" : "https://www.notion.so/notiontemplatesample/Notion-Template-Sample-Best-7-part-1-15e07741a6144905b4d27c09a739c979",
   },{
@@ -65,8 +65,14 @@ const notionInfo = [
     "bookstore":"https://ridibooks.com/books/2773000022?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
   },
 
-  //추가- 출판정보 포함
-  
+    //추가- 출판정보 포함
+  {
+    "name" : "튜토리얼로 배우는 HTML&CSS",
+    "image" : "",
+    "contents":"",
+    "bookstore":"https://ridibooks.com/books/2773000005?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
+  },
+
 ];
 
 // Local JSON 파일 불러오기
