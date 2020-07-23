@@ -52,11 +52,11 @@ h4 {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: url("../images/no-mountain3.png") no-repeat center center;
+  background: url("../images/background_jeju.png") no-repeat center center;
   background-size: contain;
-  background-size: contain;
-  background-size: contain;
-  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
 }
 .home {
   position: absolute;
@@ -603,11 +603,24 @@ h4 {
   top: 45vh;
 }
 .dolharbang {
-  width: 40px;
+  width: 5vw;
+  min-width: 80px;
   height: auto;
   position: absolute;
-  left: 20.5vw;
-  bottom: 13vh;
+  left: 15vw;
+  bottom: 5vh;
+  background: url("../images/background_dolharbang.png") no-repeat center center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+}
+.dolharbang img{
+  width:50%;
+  margin:0 25%;
+  height:auto;
+  top:50%;
+  transform: translateY(-50%);
 }
 
 /* 좌우반전 */
@@ -983,7 +996,7 @@ h4 {
   }
   .dolharbang {
     left: 95px;
-    bottom: 25px;
+    bottom:3.5vh;
   }
   .news {
     left: 65vw;
@@ -1102,7 +1115,6 @@ h4 {
   }
   .dolharbang {
     left: 16vw;
-    top: 79vh;
   }
   .sns {
     right: 9vw;
