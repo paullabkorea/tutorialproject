@@ -56,9 +56,8 @@
       <!-- 음악 삽입 -->
       <!-- chrome에서는 사용자의 interation이 없으면 아예 자동재생이 불가!-->
       <!-- 2번_Cuckoo Clock - Quincas Moreira-->
-      <!-- <div class="bgm__button--play"></div>
-      <div class="bgm__button--pause"></div> -->
-      <!-- 화면 어디든 클릭시 음악 반복재생 -->
+      <div class="bgm__button--play"></div>
+      <div class="bgm__button--pause"></div>
       <audio autoplay loop class="bgm">
         <source src="https://drive.google.com/uc?export=download&id=1LgSv6VMQZOR9DPDhHSDmdAzFGOSmQpsy" type="audio/mp3" >
       </audio>
@@ -197,25 +196,19 @@
     });
 
     //음악 재생
-      // function musicPlay(){
-      //   document.querySelector('.bgm').play();
-      //   document.querySelector('.bgm__button--play').classList.add('bgm__button--disactive');
-      //   document.querySelector('.bgm__button--pause').classList.add('bgm__button--active');
-      // }
-      // function musicStop(){
-      //   document.querySelector('.bgm').pause();
-      //   document.querySelector('.bgm__button--play').classList.remove('bgm__button--disactive');
-      //   document.querySelector('.bgm__button--pause').classList.remove('bgm__button--active');
-      // }
-      // document.querySelector('.bgm__button--play').addEventListener('click', musicPlay);
-      // document.querySelector('.bgm__button--pause').addEventListener('click', musicStop);
-
-      //페이지 어디든지 클릭만 하게하면 음악재생
       function musicPlay(){
-      document.getElementById('bgm').play();
-      document.removeEventListener('click', musicPlay);
+        document.querySelector('.bgm').play();
+        document.querySelector('.bgm__button--play').classList.add('bgm__button--disactive');
+        document.querySelector('.bgm__button--pause').classList.add('bgm__button--active');
       }
-      document.addEventListener('click', musicPlay);
+      function musicStop(){
+        document.querySelector('.bgm').pause();
+        document.querySelector('.bgm__button--play').classList.remove('bgm__button--disactive');
+        document.querySelector('.bgm__button--pause').classList.remove('bgm__button--active');
+      }
+      document.querySelector('.bgm__button--play').addEventListener('click', musicPlay);
+      document.querySelector('.bgm__button--pause').addEventListener('click', musicStop);
+
   </script>
 </body>
 </html>
