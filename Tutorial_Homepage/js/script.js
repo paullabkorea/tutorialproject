@@ -221,6 +221,12 @@ function clickBodyEvent(event) {
     }
 };
 
+function musicPlay(){
+document.querySelector('.bgm').play();
+document.removeEventListener('click', musicPlay);
+}
+
+document.addEventListener('click', musicPlay);
 notionSetting();
 //notion 클릭시 해당하는 데이터 선택하기
 [].forEach.call(document.querySelectorAll('.notion__container .notion'), function(el) {

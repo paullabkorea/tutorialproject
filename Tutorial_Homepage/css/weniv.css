@@ -90,6 +90,42 @@ img {
   transform: rotate(360deg) scale(1.2);
 }
 
+.bgm__button--play{
+ position: absolute;
+ cursor:pointer;
+ top:0;
+ right:0;
+ margin:30px 40px;
+ width:35px;
+ height:35px;
+ background-image: url('../images/play-button.png');
+ background-size: contain;
+ background-repeat: no-repeat;
+ font-family: "CookieRunOTF-Black";
+ z-index: 999;
+}
+.bgm__button--pause{
+  display: none;
+  position: absolute;
+  cursor:pointer;
+  top:0;
+  right:0;
+  margin:30px 40px;
+  width:35px;
+  height:35px;
+  background-image: url('../images/pause.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "CookieRunOTF-Black";
+  z-index: 999;
+}
+.bgm__button--active{
+  display:block;
+}
+.bgm__button--disactive{
+  display: none;
+}
+
 .cloud-sun {
   position: absolute;
   right: 0;
@@ -332,6 +368,13 @@ img {
     font-size: 27px;
   }
 
+  .bgm__button--play,.bgm__button--pause{
+      margin: 15px 25px;
+      width:20px;
+      height:20px;
+      z-index:30;
+  }
+
   .cloud-sun {
     width: 120px;
     height: auto;
@@ -416,6 +459,12 @@ img {
 
   #home .home-btn i {
     font-size: 27px;
+  }
+  .bgm__button--play,.bgm__button--pause{
+      margin: 15px 25px;
+      width:20px;
+      height:20px;
+      z-index:30;
   }
 
   .cloud-sun {

@@ -66,6 +66,7 @@ h4 {
   padding: 30px 40px;
   font-family: "CookieRunOTF-Black";
 }
+
 .home__btn {
   position: relative;
 }
@@ -82,6 +83,40 @@ h4 {
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
+.bgm__button--play{
+ position: absolute;
+ cursor:pointer;
+ top:0;
+ right:0;
+ margin:30px 40px;
+ width:35px;
+ height:35px;
+ background-image: url('../images/play-button.png');
+ background-size: contain;
+ background-repeat: no-repeat;
+ font-family: "CookieRunOTF-Black";
+}
+.bgm__button--pause{
+  display: none;
+  position: absolute;
+  cursor:pointer;
+  top:0;
+  right:0;
+  margin:30px 40px;
+  width:35px;
+  height:35px;
+  background-image: url('../images/pause.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "CookieRunOTF-Black";
+}
+.bgm__button--active{
+  display:block;
+}
+.bgm__button--disactive{
+  display: none;
+}
+
 .news {
   width: 245px;
   height: 125px;
@@ -919,6 +954,12 @@ h4 {
   }
   .home__btn p {
     font-size: 23px;
+  }
+  .bgm__button--play,.bgm__button--pause{
+      margin: 15px 25px;
+      width:20px;
+      height:20px;
+      z-index:30;
   }
   .menu__hallasan {
     left: 30vw;
