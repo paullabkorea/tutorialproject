@@ -128,6 +128,7 @@ img {
 .notion__info {
   position: relative;
   width: 100%;
+  overflow:hidden;
 }
 .focus__notion{
 	overflow: hidden;
@@ -172,7 +173,7 @@ img {
 }
 .spread{
   box-shadow: 5px 5px 15px #333;
-  transform: rotateY(-180deg);
+  transform: rotateY(-120deg);
   background: #666;
 }
 .spread__img{
@@ -203,6 +204,7 @@ img {
   font-weight: 100;
   line-height: 20px;
 }
+
 .buttons{
   position: absolute;
   width: 190px;
