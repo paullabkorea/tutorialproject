@@ -657,6 +657,15 @@ h4 {
   top:50%;
   transform: translateY(-50%);
 }
+.dolharbang:hover img{
+  transform: rotate(0deg);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) translateY(-50%);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
 
 /* 좌우반전 */
 .etc:hover img {
@@ -668,6 +677,17 @@ h4 {
   filter: FlipH;
   -ms-filter: "FlipH";
 }
+
+.dolharbang:hover img{
+  transform: rotate(0deg);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) translateY(-50%);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
 .sns {
   width: 665px;
   height: 102px;
