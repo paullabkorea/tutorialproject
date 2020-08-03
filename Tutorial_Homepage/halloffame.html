@@ -1,80 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- 구글 추적코드 삽입 -->
-        <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-72047520-1"> </script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "UA-72047520-1");
-        </script>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta
-        http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <!-- 네이버 추적코드 삽입 -->
-        <meta name="naver-site-verification" content="f6051afcd291f3ccef7b8f01128dfc92d14563a4"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="바울랩, 위니브"/>
-        <meta name="description" content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사, 미디어"/>
-        <meta property="og:description" content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사, 미디어"/>
-        <meta property="og:image" content="http://paullab.co.kr/images/jejucoding.png"/>
-        <meta
-        property="og:url" content="http://paullab.co.kr"/>
-        <!-- favicon -->
-        <link rel="shortcut icon" href="favicon.ico"/>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" href="css/reset.css"/>
-        <link rel="stylesheet" href="css/halloffame.css"/>
-        <title>명예의 전당</title>
-    </head>
-    <body>
-        <!-- 홈으로 돌아가기 -->
-        <section id="home">
-            <div class="wrapper">
-                <a href="index.html" class="home-btn">
-                    <i class="fas fa-home"></i>
-                </a>
-            </div>
-        </section>
-        <section id="title">
-            <div class="wrapper">
-                <div class="title">
-                    <p>명예의 전당</p>
-                </div>
-            </div>
-        </section>
-        <!-- 메인 컨텐츠 -->
-        <section id="main_contents">
-            <div class="wrapper">
-              <ul class="grade">
-                <li>(트로피3)그랜드 마스터</li>
-                <p>이호준대표님</p>
-                <li>(트로피2)마스터</li>
-                <p></p>
-                <li>(트로피1)다이아</li>
-                <p></p>
-                <li>(금)골드</li>
-                <p></p>
-                <li>(은)실버</li>
-                <p></p>
-                <li>(동)브론즈<li>
-                <p></p>
-              </ul>
 
-              <ul class="rating">
-              <li>마스터 - 노트북, 책 몇권이상</li>
-              <li>다이아 - </li>
-              <li>골드 - </li>
-              <li>실버 - 책 5권이상</li>
-              <li>브론즈 - </li>
-              </ul>
-            </div>
-        </section>
+<head>
+  <!-- 구글 추적코드 삽입 -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72047520-1"> </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-72047520-1");
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- 네이버 추적코드 삽입 -->
+  <meta name="naver-site-verification" content="f6051afcd291f3ccef7b8f01128dfc92d14563a4" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="바울랩, 위니브" />
+  <meta name="description" content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사, 미디어" />
+  <meta property="og:description" content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사, 미디어" />
+  <meta property="og:image" content="http://paullab.co.kr/images/jejucoding.png" />
+  <meta property="og:url" content="http://paullab.co.kr" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/halloffame.css" />
+  <title>명예의 전당</title>
+</head>
 
-    </body>
+<body>
+  <div class="container">
+    <div class="scroller">
+      <div class="place">
+        <div class="place__face place__face--back">
+          <canvas id="canvas"></canvas>
+          <div class="title">
+            <img src="" alt="라이언">
+            <h1>PAULLAB AWARDS</h1>
+          </div>
+          <!-- <ul class="grade">
+                    <li>(트로피3)그랜드 마스터</li>
+                    <p>이호준대표님</p>
+                    <li>(트로피2)마스터</li>
+                    <p></p>
+                    <li>(트로피1)다이아</li>
+                    <p></p>
+                    <li>(금)골드</li>
+                    <p></p>
+                    <li>(은)실버</li>
+                    <p></p>
+                    <li>(동)브론즈<li>
+                    <p></p>
+                  </ul>
+
+                  <ul class="rating">
+                  <li>마스터 - 노트북, 책 몇권이상</li>
+                  <li>다이아 - </li>
+                  <li>골드 - </li>
+                  <li>실버 - 책 5권이상</li>
+                  <li>브론즈 - </li>
+                  </ul> -->
+        </div>
+        <div class="place__face place__face--left">
+          <!-- <img class="place__img" src="./images/weniv.png" /> -->
+        </div>
+        <div class="place__face place__face--right">
+          <div class="clock">
+            <div class="wrap">
+              <span class="hour"></span>
+              <span class="minute"></span>
+              <span class="second"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <!-- <img class="place__img" src="./images/weniv.png" /> -->
+          <!-- <img class="place__img" src="./images/weniv2.png" /> -->
+        </div>
+        <div class="place__face place__face--bottom">
+          <div class="seats">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /container -->
+    <div class="content">
+      <div class="slides">
+        <div class="slide">
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.1.0/gl-matrix.js"></script>
+    <script>
+      //CANVAS
+      var canvas = document.getElementById("canvas");
+      var flr = Math.floor;
+
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+
+      var halfw = canvas.width / 2,
+        halfh = canvas.height / 2,
+        step = 2,
+        warpZ = 12,
+        speed = 0.075;
+      var stampedDate = new Date();
+
+      var ctx = canvas.getContext("2d");
+
+      ctx.fillStyle = "black";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      function rnd(num1, num2) {
+        return flr(Math.random() * num2 * 2) + num1;
+      }
+
+      function getColor() {
+        return "hsla(200,100%, " + rnd(50, 100) + "%, 1)";
+      }
+
+      var star = function () {
+        var v = vec3.fromValues(
+          rnd(0 - halfw, halfw),
+          rnd(0 - halfh, halfh),
+          rnd(1, warpZ)
+        );
+
+        this.x = v[0];
+        this.y = v[1];
+        this.z = v[2];
+        this.color = getColor();
+
+        this.reset = function () {
+          v = vec3.fromValues(
+            rnd(0 - halfw, halfw),
+            rnd(0 - halfh, halfh),
+            rnd(1, warpZ)
+          );
+
+          this.x = v[0];
+          this.y = v[1];
+          this.color = getColor();
+          vel = this.calcVel();
+        };
+
+        this.calcVel = function () {
+          return vec3.fromValues(0, 0, 0 - speed);
+        };
+
+        var vel = this.calcVel();
+
+        this.draw = function () {
+          vel = this.calcVel();
+          v = vec3.add(vec3.create(), v, vel);
+          var x = v[0] / v[2];
+          var y = v[1] / v[2];
+          var x2 = v[0] / (v[2] + speed * 0.5);
+          var y2 = v[1] / (v[2] + speed * 0.5);
+
+          ctx.strokeStyle = this.color;
+          ctx.beginPath();
+          ctx.moveTo(x, y);
+          ctx.lineTo(x2, y2);
+          ctx.stroke();
+
+          if (x < 0 - halfw || x > halfw || y < 0 - halfh || y > halfh) {
+            this.reset();
+          }
+        };
+      };
+
+      var starfield = function () {
+        var numOfStars = 250;
+
+        var stars = [];
+
+        function _init() {
+          for (var i = 0, len = numOfStars; i < len; i++) {
+            stars.push(new star());
+          }
+        }
+
+        _init();
+
+        this.draw = function () {
+          ctx.translate(halfw, halfh);
+
+          for (var i = 0, len = stars.length; i < len; i++) {
+            var currentStar = stars[i];
+
+            currentStar.draw();
+          }
+        };
+      };
+
+      var mStarField = new starfield();
+
+      function draw() {
+        var millSeconds = 1000 * 10;
+        var currentTime = new Date();
+        speed = 0.025;
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.fillStyle = "rgba(0,0,0,0.2)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        mStarField.draw();
+        window.requestAnimationFrame(draw);
+      }
+      draw();
+      window.onresize = function () {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+
+        halfw = canvas.width / 2;
+        halfh = canvas.height / 2;
+      };
+
+      var canvas = document.querySelector('#canvas');
+      var place = document.querySelector('.place__face--back');
+      var enterBtn = document.querySelector('.enter');
+      var ranking = document.querySelector('.ranking');
+
+      function openning() {
+        place.classList.add('openning');
+        canvas.style.cursor = "auto";
+        event.preventDefault();
+      }
+
+      canvas.addEventListener('click', openning);
+
+
+    </script>
+</body>
+
 </html>
