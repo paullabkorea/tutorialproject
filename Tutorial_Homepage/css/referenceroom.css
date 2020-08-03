@@ -173,7 +173,7 @@ img {
 }
 .spread{
   box-shadow: 5px 5px 15px #333;
-  transform: rotateY(-120deg);
+  transform: rotateY(-180deg);
   background: #666;
 }
 .spread__img{

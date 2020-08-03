@@ -226,11 +226,11 @@ const notionData = JSON.parse(notionStr);
 const body = document.querySelector("body");
 const waves = document.querySelector(".waves");
 const focus__notion = document.querySelector(".focus__notion");
+const notion__container = document.querySelector('.notion__container')
 
 //notion data html에 뿌리기
 function notionSetting(){
-  let notionContents = "";
-  const notion__container = document.querySelector('.notion__container');
+  let notionContents = "";;
   for(var i=0; i<notionData.length;i++){
       var notion = notionData[i];
       notionContents = notionContents +
