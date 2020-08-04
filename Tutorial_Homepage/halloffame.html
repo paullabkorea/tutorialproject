@@ -40,29 +40,30 @@
       <div class="place">
         <div class="place__face place__face--back">
           <canvas id="canvas"></canvas>
-          <div class="title">
-            <img src="./images/licat_gold2.png" alt="라이캣_골드">
-            <h1>PAULLAB AWARDS</h1>
+          <div class="ending_credit">
+            <div class="title">
+              <img src="./images/licat_gold2.png" alt="라이캣_골드">
+              <h1>PAULLAB AWARDS</h1>
+            </div>
+            <!-- <ul class="thanks">
+              <li>그랜드 마스터</li>
+              <li>이호준대표님</li>
+              <li>마스터</li>
+              <li>dd&nbspdd</li>
+              <li>다이아</li>
+              <li>dd</li>
+              <li>골드</li>
+              <li>dd</li>
+              <li>실버</li>
+              <li>dd</li>
+              <li>브론즈</li>
+              <li>dd<br>dd<br></li>
+            </ul> -->
           </div>
-          <!-- <ul class="grade">
-                    <li>(트로피3)그랜드 마스터</li>
-                    <p>이호준대표님</p>
-                    <li>(트로피2)마스터</li>
-                    <p></p>
-                    <li>(트로피1)다이아</li>
-                    <p></p>
-                    <li>(금)골드</li>
-                    <p></p>
-                    <li>(은)실버</li>
-                    <p></p>
-                    <li>(동)브론즈<li>
-                    <p></p>
-                  </ul>
-                  -->
+        </div>
+
         </div>
         <div class="place__face place__face--left">
-          <!-- <div class="light">
-          </div> -->
           <!-- <div class="exit"> -->
             <!-- <div class="circle"></div> -->
             <!-- <img src="./images/exit.png" alt="exit" /> -->
@@ -100,22 +101,23 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.1.0/gl-matrix.js"></script>
     <script>
-      //CANVAS
+      //별이 쏟아지는 것 같은 css
       var canvas = document.getElementById("canvas");
       var flr = Math.floor;
 
       canvas.width = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
 
+      // Canvas 크기, 스피드, depth 설정
       var halfw = canvas.width / 2,
         halfh = canvas.height / 2,
         step = 2,
         warpZ = 12,
         speed = 0.075;
-      var stampedDate = new Date();
 
       var ctx = canvas.getContext("2d");
 
+      //canvas 배경 만들기
       ctx.fillStyle = "black";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -179,10 +181,8 @@
       };
 
       var starfield = function () {
-        var numOfStars = 250;
-
+        var numOfStars = 100;
         var stars = [];
-
         function _init() {
           for (var i = 0, len = numOfStars; i < len; i++) {
             stars.push(new star());
@@ -206,7 +206,6 @@
 
       function draw() {
         var millSeconds = 1000 * 10;
-        var currentTime = new Date();
         speed = 0.025;
         ctx.setTransform(1, 0, 0, 1, 0, 0);
         ctx.fillStyle = "rgba(0,0,0,0.2)";
@@ -215,6 +214,7 @@
         window.requestAnimationFrame(draw);
       }
       draw();
+      //페이지 사이즈가 변경되면 width,height 다시 설정
       window.onresize = function () {
         canvas.width = canvas.offsetWidth;
         canvas.height = canvas.offsetHeight;
@@ -224,6 +224,7 @@
       };
 
       var canvas = document.querySelector('#canvas');
+      var endingCredit = document.querySelector('.ending_credit');
       var place = document.querySelector('.place__face--back');
       var enterBtn = document.querySelector('.enter');
       var ranking = document.querySelector('.ranking');
@@ -231,10 +232,11 @@
       function openning() {
         place.classList.add('openning');
         canvas.style.cursor = "auto";
+        endingCredit.style.cursor = "auto";
         event.preventDefault();
       }
 
-      canvas.addEventListener('click', openning);
+      endingCredit.addEventListener('click', openning);
 
 
     </script>
