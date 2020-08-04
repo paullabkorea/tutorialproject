@@ -220,6 +220,8 @@ hr {
 }
 
 .about-paullab .company .inner_2 {
+  width: 150px;
+  height: auto;
   padding-right: 120px;
 }
 
