@@ -75,12 +75,45 @@ a:focus {
 	transform: rotate3d(0, 1, 0, -90deg);
 	transform-origin: 100% 50%;
 }
+.table{
+		position: absolute;
+		flex: none;
+		width:200px;
+		height:50%;
+		margin: 0 20%;
+		bottom:0;
+		color:#fff;
+		font-size:40px;
+		transform: translate3d(0,0,10px);
+}
 
 .place__face--left {
 	justify-content: flex-start;
 	transform: rotate3d(0, 1, 0, 90deg);
 	transform-origin: 0 50%;
 }
+.exit{
+	position: absolute;
+	flex: none;
+	width:200px;
+	height:50%;
+	margin: 0 20%;
+	bottom:0;
+	transform: translate3d(0,0,10px);
+	border: 6px solid #000;
+	background: #000;
+	box-shadow: 0px 0px 25px -2px #333333;
+}
+.exit .circle{
+	width:20%;
+	height:20%;
+	border-radius: 50%;
+	background: #fff;
+}
+.exit img{
+	width:50%;
+}
+
 .place__face--bottom{
 	bottom:0;
 }
@@ -90,14 +123,19 @@ canvas {
   position: absolute;
 	width:80%;
 	height:80%;
+	border: 40px solid #000;
 	-webkit-box-shadow: 0px 0px 25px -2px #333333;
 	/* box-shadow: 0px 0px 25px -2px #333333; */
 	box-shadow: 0px 0px 30px 1px #ddd;
 }
 
 .title{
+	width:50%;
+	margin:0 25%;
 	z-index: 10;
-	color:#fff;
+	text-align: center;
+	transform: translateZ(50px);
+	animation: all 3s;
 }
 .title h1{
 	letter-spacing: 5px;
@@ -116,6 +154,10 @@ canvas {
    color:transparent;
    -webkit-background-clip:text;
 }
+.title img{
+	width:300px;
+	margin:40px auto;
+}
 
 .list{
 	text-align: center;
@@ -125,24 +167,6 @@ canvas {
 	transform: rotateX(50deg) translateZ(100px);
 }
 
-.place__face--back .enter__btn{
-	/* border: none;
-	width:200px;
-	margin:0 auto;
-	text-align: center;
-	background-image: linear-gradient(
-	to right,
-	#462523 0,
-	#cb9b51 22%,
-	#f6e27a 45%,
-	#f6f2c0 50%,
-	#f6e27a 55%,
-	#cb9b51 78%,
-	#462523 100%
-	);
-	color:transparent;
-	-webkit-background-clip:text; */
-}
 
 .place__img {
 	flex: none;
@@ -165,10 +189,42 @@ canvas {
 .seat{
 	position: relative;
 	width: 10vw;
-	min-width:180px;
+	min-width:250px;
+	display: flex;
+	justify-content: center;
 	height: 100px;
 	bottom: -50px;
 	border-radius: 30px;
   background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041,  #F3686A);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.seat img{
+	width:150px;
+	position: absolute;
+	margin:0 auto;
+}
+.javadog_head img{
+	top:-93.25px;
+}
+.gary_head img{
+	top:-51.42px;
+}
+.python_head img{
+	width:120px;
+	top:-45.78px;
+}
+.licat_head img{
+	width:180px;
+	top:-124.92px;
+}
+.soulgom_head img{
+	width:170px;
+	top:-65.86px;
+}
+.binky_head img{
+	width:120px;
+	top:-100.05px;
+}
+.mura_head img{
+	top:-114.75px;
 }
