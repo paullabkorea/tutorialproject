@@ -39,6 +39,9 @@
     <div class="scroller">
       <div class="place">
         <div class="place__face place__face--back">
+          <!-- <div class="screen__wrap"></div> -->
+          <div class="curtain__left"></div>
+          <div class="curtain__right"></div>
           <canvas id="canvas"></canvas>
           <div class="ending_credit">
             <div class="title">
@@ -61,26 +64,56 @@
             </ul> -->
           </div>
         </div>
-
-        </div>
-        <div class="place__face place__face--left">
-          <div class="exit">
-            <div class="exit_icon">
-              <img src="./images/exit.png" alt="exit" />
+      </div>
+      <div class="place__face place__face--top">
+        <div class="lights">
+          <div class="lights_wrapper">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+          </div>
+            <div class="lights_wrapper">
+              <div class="light"></div>
+              <div class="light"></div>
+              <div class="light"></div>
+              <div class="light"></div>
+              <div class="light"></div>
+              <div class="light"></div>
+              <div class="light"></div>
             </div>
+              <div class="lights_wrapper">
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+                <div class="light"></div>
+              </div>
+        </div>
+      </div>
+      <div class="place__face place__face--left">
+        <div class="exit">
+          <div class="exit_icon">
+            <img src="./images/exit.png" alt="exit" />
           </div>
         </div>
-        <div class="place__face place__face--right">
-          <div class="table">
-            <!-- <ul>
-              <li>마스터 - 노트북, 책 몇권이상</li>
-              <li>다이아 - </li>
-              <li>골드 - </li>
-              <li>실버 - 책 5권이상</li>
-              <li>브론즈 - </li>
-            </ul> -->
-          </div>
+      </div>
+      <div class="place__face place__face--right">
+        <div class="table">
+          <!-- <ul>
+            <li>마스터 - 노트북, 책 몇권이상</li>
+            <li>다이아 - </li>
+            <li>골드 - </li>
+            <li>실버 - 책 5권이상</li>
+            <li>브론즈 - </li>
+          </ul> -->
         </div>
+      </div>
         <div class="place__face place__face--bottom">
           <div class="seats">
             <div class="seat javadog_head"><img src="./images/javadog_head.png" alt="javadog_head" /></div>
@@ -227,17 +260,20 @@
       var canvas = document.querySelector('#canvas');
       var endingCredit = document.querySelector('.ending_credit');
       var place = document.querySelector('.place__face--back');
-      var enterBtn = document.querySelector('.enter');
-      var ranking = document.querySelector('.ranking');
+      var curtainLeft = document.querySelector('.curtain__left');
+      var curtainRight = document.querySelector('.curtain__right');
 
       function openning() {
-        place.classList.add('openning');
-        canvas.style.cursor = "auto";
-        endingCredit.style.cursor = "auto";
-        event.preventDefault();
+        // place.classList.add('openning');
+        curtainLeft.classList.add('curtain__left--openning');
+        curtainRight.classList.add('curtain__right--openning');
+        // canvas.style.cursor = "auto";
+        // endingCredit.style.cursor = "auto";
+        // event.preventDefault();
       }
 
       endingCredit.addEventListener('click', openning);
+
 
 
     </script>
