@@ -52,7 +52,7 @@
               <h1>PAULLAB AWARDS</h1>
             </div>
             <!-- <ul class="thanks">
-              <li>그랜드 마스터</li>
+              <li>Grand Master</li>
               <li>이호준대표님</li>
               <li>마스터</li>
               <li>dd&nbspdd</li>
@@ -284,13 +284,15 @@
       //   bodyWrapper.style.opacity = 0;
       // }
       // bodyWrapper.addEventListener('click',movieStart);
-
+      function contentAnimation(){
+        title.classList.add('title--coming');
+      }
 
       function curtainOpenning() {
         curtainLeft.classList.add('curtain__left--openning');
         curtainRight.classList.add('curtain__right--openning');
         place.style.cursor ="auto";
-        title.classList.add('title--coming');
+        contentAnimation();
         option = true;
       }
 
