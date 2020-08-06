@@ -4,13 +4,27 @@
 	box-sizing: border-box;
 }
 body {
+  font-family: "Nanum Gothic", sans-serif;
 	background: #222;
 	width:100vw;
 	height: 100vh;
 	overflow: hidden;
 }
+/* .body_wrapper{
+	position: absolute;
+	z-index:100;
+	width:100vw;
+	height: 100vh;
+	font-size: 30px;
+	text-align: center;
+	background: #000;
+	color:#fff;
+
+	opacity:0.8;
+	transition: opacityl 3s;
+} */
 .container {
-	position: relative;
+	/* position: relative; */
 	overflow: hidden;
 	width: 100vw;
 	height: 100vh;
@@ -28,12 +42,14 @@ body {
 	left: 50%;
 	width: 100vw;
 	height: 100vh;
+	pointer-events: none;
 	margin: -50vh 0 0 -50vw;
   -webkit-transform-style: preserve-3d;
  	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
 .place__face {
+	pointer-events:auto;
 	position: absolute;
 	display: -webkit-box;
   display: -moz-box;
@@ -59,8 +75,9 @@ body {
   -ms-transform: translate3d(0, 0, -350px);
 	transform: translate3d(0, 0, -350px);
 	overflow: hidden;
+	cursor: pointer;
 }
-.openning{
+.openning {
 	-moz-transition: transform 2s;
 	-ms-transition: transform 2s;
 	-o-transition: transform 2s;
@@ -78,9 +95,9 @@ body {
 	background: #000;
 }
 /* Paullab awards */
-.ending_credit{
-	overflow: hidden;
+.ending_credit {
 	cursor: pointer;
+	overflow: hidden;
   position: absolute;
 	width:90%;
 	height:90%;
@@ -91,19 +108,21 @@ body {
  	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
-.title{
-	top: 35%;
+.title {
   position: absolute;
 	width:50%;
 	margin:0 25%;
 	z-index: 10;
 	text-align: center;
-	/* top:100%;
-  animation: 10s credits forwards; */
+	top:100%;
+}
+.title--coming {
+  animation: 10s credits forwards;
 }
 .title h1{
+	font-family: 'Libre Baskerville', serif;
 	letter-spacing: 5px;
-	font-size: 3vw;
+	font-size: 2.5vw;
 	font-weight: bold;
 	background-image: linear-gradient(
 	to right,
@@ -127,11 +146,8 @@ body {
   0% {
     top: 100%;
   }
-	50%{
-		opacity: 1;
-	}
   100% {
-    top: 35%;
+  	top: 35%;
   }
 }
 .curtain__wrap--bottom {
@@ -190,18 +206,18 @@ body {
 	right: -10%
 }
 .curtain__left--openning{
-	width: 0px;
-	background-size: 1px;
-  -webkit-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-	transform: rotate(5deg);
+	width: 13%;
+	background-size: 20px;
+  -webkit-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+	transform: rotate(1deg);
 }
 .curtain__right--openning{
-	width: 0px;
-	background-size: 1px;
-  -webkit-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-	transform: rotate(-5deg);
+	width: 13%;
+	background-size: 20px;
+  -webkit-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+	transform: rotate(-1deg);
 }
 .thanks{
 	z-index: 10;
@@ -316,21 +332,14 @@ body {
 }
 .exit{
 	position: absolute;
-	flex: none;
 	width: 50%;
 	height: 50%;
 	margin: 0 20%;
-	bottom: 5px;
-  -webkit-transform: translate3d(0,0,10px);
-  -ms-transform: translate3d(0,0,10px);
-	transform: translate3d(0,0,10px);
-	background: #353535;
-	-webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-	-moz-box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-	box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
-}
-.exit_circle{
-
+	bottom: 0px;
+	background: #333;
+  -webkit-transform-style: preserve-3d;
+ 	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 }
 .exit_icon{
 	position: absolute;
@@ -350,6 +359,83 @@ body {
 	height:90%;
 	top:5%;
 }
+.exit_door{
+	position: absolute;
+	width: 49%;
+	height: 100%;
+	float: left;
+	-webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  -webkit-transform: translate3d(0,0,10px);
+  -ms-transform: translate3d(0,0,10px);
+	transform: translate3d(0,0,10px);
+	background: #323232;
+	cursor: pointer;
+	transition: all 2s;
+	pointer-events: auto;
+  -webkit-transform-style: preserve-3d;
+ 	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.exit_door--left{
+	left:0;
+	-webkit-transform-origin: left;
+	-ms-transform-origin: left;
+	-moz-transform-origin: left;
+	-o-transform-origin: left;
+	transform-origin: left;
+}
+.exit_door--right{
+	right:0;
+	-webkit-transform-origin: right;
+	-ms-transform-origin: right;
+	-moz-transform-origin: right;
+	-o-transform-origin: right;
+	transform-origin: right;
+}
+.exit_animation--left{
+	-webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+	-moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+	transform:rotate3d(0, 1, 0, -25deg);
+}
+.exit_animation--right {
+	-webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+	-moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+	transform:rotate3d(0, 1, 0, 25deg);
+}
+
+.exit_window{
+	position: relative;
+	width:100%;
+	height:50%;
+}
+.exit_circle{
+	position: absolute;
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+	margin: 0 30%;
+	background: #fff;
+	bottom:30%;
+	-webkit-box-shadow: 0px 0px 25px -2px #fff;
+	-moz-box-shadow: 0px 0px 25px -2px #fff;
+	box-shadow: 0px 0px 25px -2px #fff;
+}
+.exit_handle{
+	position: absolute;
+	width:5%;
+	height:15%;
+	background: #242424;
+}
+.exit_door--right .exit_handle{
+	left:20%;
+}
+.exit_door--left .exit_handle{
+	right:20%;
+}
 .table{
 	position: absolute;
 	flex: none;
@@ -362,9 +448,6 @@ body {
   -webkit-transform: translate3d(0,0,10px);
   -ms-transform: translate3d(0,0,10px);
 	transform: translate3d(0,0,10px);
-}
-.place__face--bottom{
-	bottom:0;
 }
 .place__img {
 	flex: none;
@@ -379,6 +462,9 @@ body {
 	-moz-box-shadow: 0px 0px 25px -2px #333333;
 	box-shadow: 0px 0px 25px -2px #333333;
 }
+.place__face--bottom{
+	bottom:0;
+}
 .seats{
 	width: 90vw;
 	margin: 0 5vw;
@@ -387,6 +473,7 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
 	display: flex;
+	pointer-events: none;
 	-webkit-justify-content: space-around;
 	justify-content: space-around;
 	-webkit-box-align: center;
@@ -408,12 +495,13 @@ body {
 	justify-content: center;
 	height: 150px;
 	bottom: -70px;
-	border-radius: 30px;
+	border-radius: 50px;
   background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041,  #F3686A);
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
 .seat img{
 	width:150px;
 	position: absolute;
