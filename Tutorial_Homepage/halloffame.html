@@ -51,7 +51,7 @@
               <img src="./images/licat_gold2.png" alt="라이캣_골드">
               <h1>PAULLAB AWARDS</h1>
             </div>
-            <!-- <ul class="thanks">
+            <ul class="thanks">
               <li>Grand Master</li>
               <li>이호준대표님</li>
               <li>마스터</li>
@@ -64,7 +64,7 @@
               <li>dd</li>
               <li>브론즈</li>
               <li>dd<br>dd<br></li>
-            </ul> -->
+            </ul>
           </div>
         </div>
       </div>
@@ -147,126 +147,126 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.1.0/gl-matrix.js"></script>
     <script>
       //별이 쏟아지는 것 같은 css
-      // var canvas = document.getElementById("canvas");
-      // var flr = Math.floor;
-      //
-      // canvas.width = canvas.offsetWidth;
-      // canvas.height = canvas.offsetHeight;
-      //
-      // // Canvas 크기, 스피드, depth 설정
-      // var halfw = canvas.width / 2,
-      //   halfh = canvas.height / 2,
-      //   step = 2,
-      //   warpZ = 12,
-      //   speed = 0.075;
-      //
-      // var ctx = canvas.getContext("2d");
-      //
-      // //canvas 배경 만들기
-      // ctx.fillStyle = "black";
-      // ctx.fillRect(0, 0, canvas.width, canvas.height);
-      //
-      // function rnd(num1, num2) {
-      //   return flr(Math.random() * num2 * 2) + num1;
-      // }
-      //
-      // function getColor() {
-      //   return "hsla(200,100%, " + rnd(50, 100) + "%, 1)";
-      // }
-      //
-      // var star = function () {
-      //   var v = vec3.fromValues(
-      //     rnd(0 - halfw, halfw),
-      //     rnd(0 - halfh, halfh),
-      //     rnd(1, warpZ)
-      //   );
-      //
-      //   this.x = v[0];
-      //   this.y = v[1];
-      //   this.z = v[2];
-      //   this.color = getColor();
-      //
-      //   this.reset = function () {
-      //     v = vec3.fromValues(
-      //       rnd(0 - halfw, halfw),
-      //       rnd(0 - halfh, halfh),
-      //       rnd(1, warpZ)
-      //     );
-      //
-      //     this.x = v[0];
-      //     this.y = v[1];
-      //     this.color = getColor();
-      //     vel = this.calcVel();
-      //   };
-      //
-      //   this.calcVel = function () {
-      //     return vec3.fromValues(0, 0, 0 - speed);
-      //   };
-      //
-      //   var vel = this.calcVel();
-      //
-      //   this.draw = function () {
-      //     vel = this.calcVel();
-      //     v = vec3.add(vec3.create(), v, vel);
-      //     var x = v[0] / v[2];
-      //     var y = v[1] / v[2];
-      //     var x2 = v[0] / (v[2] + speed * 0.5);
-      //     var y2 = v[1] / (v[2] + speed * 0.5);
-      //
-      //     ctx.strokeStyle = this.color;
-      //     ctx.beginPath();
-      //     ctx.moveTo(x, y);
-      //     ctx.lineTo(x2, y2);
-      //     ctx.stroke();
-      //
-      //     if (x < 0 - halfw || x > halfw || y < 0 - halfh || y > halfh) {
-      //       this.reset();
-      //     }
-      //   };
-      // };
-      //
-      // var starfield = function () {
-      //   var numOfStars = 100;
-      //   var stars = [];
-      //   function _init() {
-      //     for (var i = 0, len = numOfStars; i < len; i++) {
-      //       stars.push(new star());
-      //     }
-      //   }
-      //
-      //   _init();
-      //
-      //   this.draw = function () {
-      //     ctx.translate(halfw, halfh);
-      //
-      //     for (var i = 0, len = stars.length; i < len; i++) {
-      //       var currentStar = stars[i];
-      //
-      //       currentStar.draw();
-      //     }
-      //   };
-      // };
-      //
-      // var mStarField = new starfield();
-      //
-      // function draw() {
-      //   var millSeconds = 1000 * 10;
-      //   speed = 0.025;
-      //   ctx.setTransform(1, 0, 0, 1, 0, 0);
-      //   ctx.fillStyle = "rgba(0,0,0,0.2)";
-      //   ctx.fillRect(0, 0, canvas.width, canvas.height);
-      //   mStarField.draw();
-      //   window.requestAnimationFrame(draw);
-      // }
-      // draw();
-      // //페이지 사이즈가 변경되면 width,height 다시 설정
-      // window.onresize = function () {
-      //   canvas.width = canvas.offsetWidth;
-      //   canvas.height = canvas.offsetHeight;
-      //
-      //   halfw = canvas.width / 2;
-      //   halfh = canvas.height / 2;
-      // };
+      var canvas = document.getElementById("canvas");
+      var flr = Math.floor;
+
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+
+      // Canvas 크기, 스피드, depth 설정
+      var halfw = canvas.width / 2,
+        halfh = canvas.height / 2,
+        step = 2,
+        warpZ = 12,
+        speed = 0.075;
+
+      var ctx = canvas.getContext("2d");
+
+      //canvas 배경 만들기
+      ctx.fillStyle = "black";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      function rnd(num1, num2) {
+        return flr(Math.random() * num2 * 2) + num1;
+      }
+
+      function getColor() {
+        return "hsla(200,100%, " + rnd(50, 100) + "%, 1)";
+      }
+
+      var star = function () {
+        var v = vec3.fromValues(
+          rnd(0 - halfw, halfw),
+          rnd(0 - halfh, halfh),
+          rnd(1, warpZ)
+        );
+
+        this.x = v[0];
+        this.y = v[1];
+        this.z = v[2];
+        this.color = getColor();
+
+        this.reset = function () {
+          v = vec3.fromValues(
+            rnd(0 - halfw, halfw),
+            rnd(0 - halfh, halfh),
+            rnd(1, warpZ)
+          );
+
+          this.x = v[0];
+          this.y = v[1];
+          this.color = getColor();
+          vel = this.calcVel();
+        };
+
+        this.calcVel = function () {
+          return vec3.fromValues(0, 0, 0 - speed);
+        };
+
+        var vel = this.calcVel();
+
+        this.draw = function () {
+          vel = this.calcVel();
+          v = vec3.add(vec3.create(), v, vel);
+          var x = v[0] / v[2];
+          var y = v[1] / v[2];
+          var x2 = v[0] / (v[2] + speed * 0.5);
+          var y2 = v[1] / (v[2] + speed * 0.5);
+
+          ctx.strokeStyle = this.color;
+          ctx.beginPath();
+          ctx.moveTo(x, y);
+          ctx.lineTo(x2, y2);
+          ctx.stroke();
+
+          if (x < 0 - halfw || x > halfw || y < 0 - halfh || y > halfh) {
+            this.reset();
+          }
+        };
+      };
+
+      var starfield = function () {
+        var numOfStars = 100;
+        var stars = [];
+        function _init() {
+          for (var i = 0, len = numOfStars; i < len; i++) {
+            stars.push(new star());
+          }
+        }
+
+        _init();
+
+        this.draw = function () {
+          ctx.translate(halfw, halfh);
+
+          for (var i = 0, len = stars.length; i < len; i++) {
+            var currentStar = stars[i];
+
+            currentStar.draw();
+          }
+        };
+      };
+
+      var mStarField = new starfield();
+
+      function draw() {
+        var millSeconds = 1000 * 10;
+        speed = 0.025;
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.fillStyle = "rgba(0,0,0,0.2)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        mStarField.draw();
+        window.requestAnimationFrame(draw);
+      }
+      draw();
+      //페이지 사이즈가 변경되면 width,height 다시 설정
+      window.onresize = function () {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+
+        halfw = canvas.width / 2;
+        halfh = canvas.height / 2;
+      };
 
       var canvas = document.querySelector('#canvas');
       var endingCredit = document.querySelector('.ending_credit');
@@ -279,20 +279,26 @@
       var option = false;
       var exitLeft = document.querySelector('.exit_door--left');
       var exitRight = document.querySelector('.exit_door--right');
+      var thanks = document.querySelector('.thanks');
 
       // function movieStart(){
       //   bodyWrapper.style.opacity = 0;
       // }
       // bodyWrapper.addEventListener('click',movieStart);
-      function contentAnimation(){
-        title.classList.add('title--coming');
+      function thanksAnimation(){
+        // thanks.classList.add('thanks--starting');
+      }
+
+      function titleAnimation(){
+        title.classList.add('title--starting');
+        title.addEventListener("animationend", thanksAnimation );
       }
 
       function curtainOpenning() {
         curtainLeft.classList.add('curtain__left--openning');
         curtainRight.classList.add('curtain__right--openning');
         place.style.cursor ="auto";
-        contentAnimation();
+        titleAnimation();
         option = true;
       }
 

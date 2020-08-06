@@ -119,8 +119,8 @@ body {
  	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
-.title--coming {
-  animation: 10s credits forwards;
+.title--starting {
+  animation: 7s credits forwards;
 }
 .title h1{
 	font-family: 'Libre Baskerville', serif;
@@ -154,7 +154,8 @@ body {
 		opacity: 1;
   }
 	70%{
-	  	top: 35%;
+  	top: 35%;
+		opacity: 1;
 	}
 	100%{
   	top: 35%;
@@ -234,30 +235,37 @@ body {
 	font-family: 'Libre Baskerville', serif;
 	z-index: 10;
 	width: 60%;
-	height: 400px;
+	height: 80%;
 	margin: 0 20%;
 	color: #fff;
-	font-size: 40px;
-	animation: 20s thanks
+	font-size: 1.5rem;
+	opacity: 0;
+	-webkit-transform: rotate3d(1, 1, 0, 60deg);
+	-ms-transform: rotate3d(1, 0, 0, 60deg);
+	transform: rotate3d(1, 0, 0, 60deg) translate3d(0,0,-350px);
+	transform-origin: center;
 }
 
 @keyframes thanks {
-  0% {
+	10%{
+		opacity: 1;
 		-webkit-transform: rotate3d(1, 1, 0, 60deg);
 	  -ms-transform: rotate3d(1, 0, 0, 60deg);
 		transform: rotate3d(1, 0, 0, 60deg) translate3d(0,0,-350px);
 		transform-origin: center;
-  }
+	}
   50% {
-		/* -webkit-transform: rotate3d(1, 0, 0, 20deg);
-	  -ms-transform: rotate3d(1, 0, 0, 20deg);
-		transform: rotate3d(1, 0, 0, 20deg); */
+		transform: none;
+		transform-origin: center;
 
   }
 	70%{
 	}
 	100%{
 	}
+}
+.thanks--starting{
+	animation: 20s thanks
 }
 
 .thanks li{
