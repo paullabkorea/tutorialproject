@@ -16,11 +16,13 @@ body{
   font-family: "Nanum Gothic", sans-serif;
   background-color: #32A0C8;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 #main-container {
   width: 100vw;
   height: 100vh;
   position: relative;
-  /* overflow: hidden; */
 }
 img {
   width: 100%;
@@ -35,6 +37,9 @@ img {
   z-index: 0;
 }
 .background__wrapper{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 .background__cloud{
@@ -57,6 +62,14 @@ img {
   }
 }
 
+@keyframes background__cloud--animation--mobile{
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translate(-1600px);
+  }
+}
 
 .background__cloudy{
   position: absolute;
@@ -133,17 +146,12 @@ img {
 		0%			{ transform: translateY(-98%); }
 		100%    { transform: translate(0,0); }
 }
-::-webkit-scrollbar {
-  display: none;
-}
-.scale{
-  /* transform: scale(1.3); */
-}
 .ship {
   position: absolute;
-  width: 500px;
-  height: 500px;
-  bottom: 30vh;
+  width: 600px;
+  height: 600px;
+  bottom: 33vh;
+  left:-40px;
   animation: ship--waves 2s infinite;
 }
 .ship img {
@@ -158,12 +166,33 @@ img {
     50%     { transform: translateY(10px);}
     75%     { transform: translate(-5px,15px) scale(1.02); }
 }
+.ship--animation{
+  animation:  ship--animation 6s infinite;
+}
+
+@keyframes ship--animation {
+  10%{
+    transform: translate(0,0) rotateZ(7deg);
+  }
+  30%{
+    transform: translate(-10px,10px) scale(1.02) rotateZ(3deg);
+  }
+  50%{
+    transform: translateY(10px) rotateZ(-2deg);
+  }
+  70%{
+    transform: translate(-5px,15px) scale(1.02) rotateZ(2deg);
+  }
+  100%{
+    transform: translate(0,0) rotateZ(0deg);
+  }
+}
 .javadog{
   position: absolute;
   z-index: 4;
   width:130px;
-  right:100px;
-  bottom:140px;
+  right:120px;
+  bottom:190px;
 }
 .javadog img{
   position: relative;
@@ -173,34 +202,34 @@ img {
   position: absolute;
   z-index: 5;
   width: 60px;
-  right: 105px;
-  bottom: 190px;
+  right: 125px;
+  bottom: 240px;
   transition: rotate 2s;
 }
 .javadog_left_hand {
   position: absolute;
   z-index: 3;
   width: 50px;
-  right: 80px;
-  bottom: 195px;
+  right: 100px;
+  bottom: 245px;
   transition: rotate 2s;
 }
 .fishing_rod {
   position: absolute;
   z-index: 2;
   width: 300px;
-  right: -190px;
-  bottom: 190px;
+  right: -170px;
+  bottom: 235px;
 }
 .fishing_line{
   position: absolute;
   width: 1px;
   height: 500px;
   border: 1px solid #fff;
-  top: 187px;
-  right: -190px;
+  top: 244px;
+  right: -170px;
   background: #fff;
-  transform: rotateZ(-15deg);
+  transform: rotateZ(-8deg);
   transform-origin: top;
 }
 .javadog--animation{
@@ -305,11 +334,9 @@ img {
     transform: rotateZ(-30deg) translate(-53px, -185px);
   }
   100%{
-    transform: rotateZ(-15deg) translate(0, 0);
+    transform: rotateZ(-8deg) translate(0, 0);
   }
 }
-
-
 
 /* notion */
 .notion__container{
@@ -325,14 +352,21 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  animation: move--ship 2s infinite;
+  animation: move--wave 2s infinite;
 }
-@keyframes move--ship{
+@keyframes move--wave{
 	0%,100% { transform: translate(0,0);}
-	25%     { transform: translate(5px,5px) scale(1.01); }
-	50%     { transform:  translateY(5px); }
-	75%     { transform: translate(-5px,5px) scale(1.01); }
+	25%     { transform: translate(3px,3px) scale(1.01); }
+	50%     { transform:  translateY(3px); }
+	75%     { transform: translate(-3px,3px) scale(1.01); }
 }
+@keyframes  move--wave--mobile {
+  0%,100% { transform: translate(0,0);}
+	25%     { transform: translate(1px,1px);}
+	50%     { transform:  translateY(1px); }
+	75%     { transform: translate(-1px,1px); }
+}
+
 .notion {
   display: inherit;
   position: relative;
@@ -519,7 +553,7 @@ img {
 
 /* 반응형 */
 /* 세로모드 */
-/* @media only screen and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
   #main-container {
     display: none;
   }
@@ -535,7 +569,7 @@ img {
     display: none;
   }
 }
-@media all and (orientation : landscape) and (max-aspect-ratio:65/50){
+/* @media all and (orientation : landscape) and (max-aspect-ratio:65/50){
   #main-container {
     height: 100vw;
     display: none;
@@ -550,7 +584,34 @@ img {
   }
 } */
 
+/* wide 화면 버전 */
 @media all and (min-width: 1600px) {
+  .ship__wrapper{
+    transform: scale(1.2);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .waves{
+    opacity:0;
+  }
+  .background__cloud {
+    background-size: 25%;
+    animation: background__cloud--animation--mobile 10s linear infinite;
+}
   .ship{
+    left:-20vw;
+    bottom:-20vh;
+  }
+  .ship__wrapper{
+    transform: scale(0.6);
+  }
+  .focus__notion{
+    margin-top:0px !important;
+  }
+  .notion__container{
+    padding: 80px 20%;
+    top: 63vh;
+    animation: move--wave--mobile 2s infinite;
   }
 }

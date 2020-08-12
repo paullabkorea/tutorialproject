@@ -228,6 +228,7 @@ const waves = document.querySelector(".waves");
 const focus__notion = document.querySelector(".focus__notion");
 const notion__container = document.querySelector('.notion__container')
 
+//배경요소
 const backgroundCloudy = document.querySelector('.background__cloudy');
 const ship = document.querySelector('.ship');
 const javadog = document.querySelector('.javadog');
@@ -236,6 +237,49 @@ const javadogLeftHand = document.querySelector('.javadog_left_hand');
 const javadogRightHand = document.querySelector('.javadog_right_hand');
 const fishingRod = document.querySelector('.fishing_rod');
 const fishingLine = document.querySelector('.fishing_line');
+
+function scrollTop() {
+if(window.scrollY!=0)
+{
+    setTimeout(function() {
+       window.scrollTo(0,window.scrollY-30);
+        scrollTop();
+    }, 2);
+   }
+}
+
+function javadogAnimationOn(){
+  scrollTop();
+  javadogImg.src = "./images/javadog_tired.png";
+  javadog.classList.add('javadog--animation');
+  ship.classList.add('ship--animation');
+  javadogLeftHand.classList.add('javadog_left_hand--animation');
+  javadogRightHand.classList.add('javadog_right_hand--animation');
+  fishingRod.classList.add('fishing_rod--animation');
+  fishingLine.classList.add('fishing_line--animation');
+  notion__container.style.pointerEvents = "none";
+}
+
+function javadogAnimationOff(){
+  notion__container.style.pointerEvents = "auto";
+  javadogImg.src = "./images/javadog_fishing.png";
+  javadog.classList.remove('javadog--animation');
+  ship.classList.remove('ship--animation');
+  javadogLeftHand.classList.remove('javadog_left_hand--animation');
+  javadogRightHand.classList.remove('javadog_right_hand--animation');
+  fishingRod.classList.remove('fishing_rod--animation');
+  fishingLine.classList.remove('fishing_line--animation');
+}
+
+function fishingAnimation(num){
+  backgroundCloudy.classList.add('background__cloudy--animation');
+  javadogAnimationOn();
+  javadog.addEventListener("animationend", function(){
+    backgroundCloudy.classList.remove('background__cloudy--animation');
+    javadogAnimationOff();
+    notionSelect(num);
+  });
+}
 
 //notion data html에 뿌리기
 function notionSetting(){
@@ -250,26 +294,6 @@ function notionSetting(){
         </div>`;
   }
   notion__container.innerHTML = notionContents;
-}
-
-function fishingAnimation(num){
-  backgroundCloudy.classList.add('background__cloudy--animation');
-  javadogImg.src = "./images/javadog_tired.png";
-  javadog.classList.add('javadog--animation');
-  javadogLeftHand.classList.add('javadog_left_hand--animation');
-  javadogRightHand.classList.add('javadog_right_hand--animation');
-  fishingRod.classList.add('fishing_rod--animation');
-  fishingLine.classList.add('fishing_line--animation');
-  javadog.addEventListener("animationend", function(){
-    javadogImg.src = "./images/javadog_fishing.png";
-    javadog.classList.remove('javadog--animation');
-    javadogLeftHand.classList.remove('javadog_left_hand--animation');
-    javadogRightHand.classList.remove('javadog_right_hand--animation');
-    fishingRod.classList.remove('fishing_rod--animation');
-    fishingLine.classList.remove('fishing_line--animation');
-    backgroundCloudy.classList.remove('background__cloudy--animation');
-    notionSelect(num);
-  });
 }
 
 function notionSelect(num){
@@ -342,15 +366,15 @@ function getElementIndex(element, range) {
 
 //notion 정보화면 펼치기
 function spreadClick(event){
-  var target = event.target;
+  const target = event.target;
   const buttons = document.querySelectorAll(".buttons a");
   for(var i=0; i<buttons.length; i++){
     if(target == buttons[i])
       return;
   }
-  var notion__detail = document.querySelector(".notion__detail");
-  var notion__img = document.querySelector(".notion__front img");
-  var notion__front = document.querySelector(".notion__front");
+  const notion__detail = document.querySelector(".notion__detail");
+  const notion__img = document.querySelector(".notion__front img");
+  const notion__front = document.querySelector(".notion__front");
   //notion 펼칠때 이미지 넘기는 효과
   notion__detail.classList.toggle("notion--spread");
   notion__img.classList.toggle("spread__img");
@@ -404,7 +428,7 @@ notionSetting();
 //notion 클릭시 해당하는 데이터 선택하기
 [].forEach.call(document.querySelectorAll('.notion__container .notion'), function(el) {
 	el.addEventListener('click', function() {
-		var num = getElementIndex(document.querySelectorAll('.notion'), el);
+		let num = getElementIndex(document.querySelectorAll('.notion'), el);
     fishingAnimation(num);
   });
 });
