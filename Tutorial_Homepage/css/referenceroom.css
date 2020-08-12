@@ -14,7 +14,7 @@
 }
 body{
   font-family: "Nanum Gothic", sans-serif;
-  background-color: #2CA1DB;
+  background-color: #32A0C8;
 }
 #main-container {
   width: 100vw;
@@ -29,14 +29,62 @@ img {
 /*배경 하늘*/
 .background__sky{
   position: absolute;
-  width:100%;
-  height:100%;
+  width:100vw;
+  height:100vh;
   background-color: #A2DAF7;
   z-index: 0;
+}
+.background__wrapper{
+  overflow: hidden;
+}
+.background__cloud{
+  position: absolute;
+  width: 4000px;
+  height: 100%;
   background-image: url('../images/cloud.png');
   background-position: top;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-repeat: repeat-x;
+  background-size: 40%;
+  animation: background__cloud--animation 10s linear infinite;
+}
+
+@keyframes background__cloud--animation{
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translate(-1600px);
+  }
+}
+
+
+.background__cloudy{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity:0;
+}
+.background__cloudy--animation{
+  animation: background__cloudy--animation 6s;
+}
+@keyframes background__cloudy--animation{
+  10%{
+    opacity:0.2;
+  }
+  30%{
+    opacity:0.4;
+  }
+  50%{
+    opacity:0.2;
+  }
+  70%{
+    opacity:0.5;
+  }
+  100%{
+    background-color: none;
+    opacity:0;
+  }
 }
 
 /*배경 waves*/
@@ -88,14 +136,14 @@ img {
 ::-webkit-scrollbar {
   display: none;
 }
+.scale{
+  /* transform: scale(1.3); */
+}
 .ship {
   position: absolute;
   width: 500px;
   height: 500px;
-  /* background-image:url('../images/ship.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left center; */
+  bottom: 30vh;
   animation: ship--waves 2s infinite;
 }
 .ship img {
@@ -112,6 +160,7 @@ img {
 }
 .javadog{
   position: absolute;
+  z-index: 4;
   width:130px;
   right:100px;
   bottom:140px;
@@ -119,13 +168,14 @@ img {
 .javadog img{
   position: relative;
   width: 100%;
-  z-index: 4;
 }
 .javadog_right_hand {
   position: absolute;
+  z-index: 5;
   width: 60px;
   right: 105px;
   bottom: 190px;
+  transition: rotate 2s;
 }
 .javadog_left_hand {
   position: absolute;
@@ -133,23 +183,141 @@ img {
   width: 50px;
   right: 80px;
   bottom: 195px;
+  transition: rotate 2s;
 }
 .fishing_rod {
   position: absolute;
   z-index: 2;
   width: 300px;
   right: -190px;
-  bottom: 200px;
+  bottom: 190px;
 }
+.fishing_line{
+  position: absolute;
+  width: 1px;
+  height: 500px;
+  border: 1px solid #fff;
+  top: 187px;
+  right: -190px;
+  background: #fff;
+  transform: rotateZ(-15deg);
+  transform-origin: top;
+}
+.javadog--animation{
+  animation: 6s javadog--animation forwards;
+  transform-origin: bottom;
+}
+.javadog_left_hand--animation {
+  animation: 6s javadog_left_hand--animation forwards;
+  transform-origin: left;
+}
+.javadog_right_hand--animation {
+  animation: 6s javadog_right_hand--animation forwards;
+  transform-origin: left center;
+}
+.fishing_rod--animation {
+  animation: 6s fishing_rod--animation forwards;
+  transform-origin: left center;
+}
+.fishing_line--animation {
+  animation: 6s fishing_line--animation forwards;
+}
+
+@keyframes javadog--animation {
+  10%{
+    transform: rotateZ(-10deg);
+  }
+  30%{
+    transform: rotateZ(-20deg);
+  }
+  50%{
+    transform: rotateZ(-10deg);
+  }
+  70%{
+    transform: rotateZ(-20deg);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes javadog_left_hand--animation {
+  10%{
+    transform: rotateZ(-30deg) translate(-10px, -20px);
+  }
+  30%{
+    transform: rotateZ(-60deg) translate(-5px, -30px);
+  }
+  50%{
+      transform: rotateZ(-30deg) translate(-10px, -20px);
+  }
+  70%{
+    transform: rotateZ(-60deg) translate(-5px, -30px);
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes javadog_right_hand--animation {
+  10%{
+    transform: rotateZ(-30deg) translate(-7px, -13px);
+  }
+  30%{
+    transform: rotateZ(-60deg) translate(-5px, -15px) ;
+  }
+  50%{
+    transform: rotateZ(-30deg) translate(-7px, -13px);
+  }
+  70%{
+    transform: rotateZ(-60deg) translate(-5px, -15px) ;
+  }
+  100%{
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes fishing_rod--animation {
+  10%{
+    transform: rotateZ(-20deg) translate(-50px, -10px);
+  }
+  30%{
+    transform: rotateZ(-30deg) translate(-70px, -30px);
+  }
+  50%{
+    transform: rotateZ(-20deg) translate(-50px, -10px);
+  }
+  70%{
+    transform: rotateZ(-30deg) translate(-70px, -30px);
+  }
+  100%{
+    transform: rotateZ(0deg) translate(0, 0);
+  }
+}
+@keyframes fishing_line--animation {
+  10%{
+    transform: rotateZ(-20deg) translate(-47px, -115px);
+  }
+  30%{
+    transform: rotateZ(-30deg) translate(-53px, -185px);
+  }
+  50%{
+    transform: rotateZ(-20deg) translate(-47px, -115px);
+  }
+  70%{
+    transform: rotateZ(-30deg) translate(-53px, -185px);
+  }
+  100%{
+    transform: rotateZ(-15deg) translate(0, 0);
+  }
+}
+
 
 
 /* notion */
 .notion__container{
   position: absolute;
-  width: 100%;
-  padding: 150px 20%;
+  width: 100vw;
+  padding: 120px 20%;
   top: 55vh;
-  z-index:10;
+  z-index: 10;
   box-sizing: border-box;
   background-repeat: repeat no-repeat;
   transform-origin: bottom center;
@@ -200,7 +368,7 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index:10;
+	z-index:20;
   top: 110%;
 	transition: top 2s;
 }
@@ -284,7 +452,7 @@ img {
   text-transform: uppercase;
   position: absolute;
   opacity: 1;
-  box-shadow: 5px 5px 15px #333;
+  /* box-shadow: 5px 5px 15px #333; */
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
   pointer-events: none;
@@ -302,7 +470,7 @@ img {
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.3); */
 }
 .buttons a:nth-child(1) {
   border-top-left-radius: 20px;
@@ -381,3 +549,8 @@ img {
     top: 30vh;
   }
 } */
+
+@media all and (min-width: 1600px) {
+  .ship{
+  }
+}
