@@ -228,6 +228,15 @@ const waves = document.querySelector(".waves");
 const focus__notion = document.querySelector(".focus__notion");
 const notion__container = document.querySelector('.notion__container')
 
+const backgroundCloudy = document.querySelector('.background__cloudy');
+const ship = document.querySelector('.ship');
+const javadog = document.querySelector('.javadog');
+const javadogImg = document.querySelector('.javadog img');
+const javadogLeftHand = document.querySelector('.javadog_left_hand');
+const javadogRightHand = document.querySelector('.javadog_right_hand');
+const fishingRod = document.querySelector('.fishing_rod');
+const fishingLine = document.querySelector('.fishing_line');
+
 //notion data html에 뿌리기
 function notionSetting(){
   let notionContents = "";;
@@ -241,6 +250,26 @@ function notionSetting(){
         </div>`;
   }
   notion__container.innerHTML = notionContents;
+}
+
+function fishingAnimation(num){
+  backgroundCloudy.classList.add('background__cloudy--animation');
+  javadogImg.src = "./images/javadog_tired.png";
+  javadog.classList.add('javadog--animation');
+  javadogLeftHand.classList.add('javadog_left_hand--animation');
+  javadogRightHand.classList.add('javadog_right_hand--animation');
+  fishingRod.classList.add('fishing_rod--animation');
+  fishingLine.classList.add('fishing_line--animation');
+  javadog.addEventListener("animationend", function(){
+    javadogImg.src = "./images/javadog_fishing.png";
+    javadog.classList.remove('javadog--animation');
+    javadogLeftHand.classList.remove('javadog_left_hand--animation');
+    javadogRightHand.classList.remove('javadog_right_hand--animation');
+    fishingRod.classList.remove('fishing_rod--animation');
+    fishingLine.classList.remove('fishing_line--animation');
+    backgroundCloudy.classList.remove('background__cloudy--animation');
+    notionSelect(num);
+  });
 }
 
 function notionSelect(num){
@@ -376,6 +405,6 @@ notionSetting();
 [].forEach.call(document.querySelectorAll('.notion__container .notion'), function(el) {
 	el.addEventListener('click', function() {
 		var num = getElementIndex(document.querySelectorAll('.notion'), el);
-    notionSelect(num);
+    fishingAnimation(num);
   });
 });
