@@ -296,6 +296,26 @@ function notionSetting(){
   notion__container.innerHTML = notionContents;
 }
 
+function fishingAnimation(num){
+  backgroundCloudy.classList.add('background__cloudy--animation');
+  javadogImg.src = "./images/javadog_tired.png";
+  javadog.classList.add('javadog--animation');
+  javadogLeftHand.classList.add('javadog_left_hand--animation');
+  javadogRightHand.classList.add('javadog_right_hand--animation');
+  fishingRod.classList.add('fishing_rod--animation');
+  fishingLine.classList.add('fishing_line--animation');
+  javadog.addEventListener("animationend", function(){
+    javadogImg.src = "./images/javadog_fishing.png";
+    javadog.classList.remove('javadog--animation');
+    javadogLeftHand.classList.remove('javadog_left_hand--animation');
+    javadogRightHand.classList.remove('javadog_right_hand--animation');
+    fishingRod.classList.remove('fishing_rod--animation');
+    fishingLine.classList.remove('fishing_line--animation');
+    backgroundCloudy.classList.remove('background__cloudy--animation');
+    notionSelect(num);
+  });
+}
+
 function notionSelect(num){
   let notionDetail="";
   var notionAbout = notionData[num];
