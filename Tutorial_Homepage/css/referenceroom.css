@@ -12,6 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body{
   font-family: "Nanum Gothic", sans-serif;
   background-color: #32A0C8;
@@ -31,8 +32,8 @@ img {
 /*배경 하늘*/
 .background__sky{
   position: absolute;
-  width:100vw;
-  height:100vh;
+  width: 100vw;
+  height: 100vh;
   background-color: #A2DAF7;
   z-index: 0;
 }
@@ -43,23 +44,37 @@ img {
   overflow: hidden;
 }
 .background__cloud{
-  position: relative;
-  float:left;
+  display: inline-block;
+  position: absolute;
   width: 100%;
   height: 100%;
+  transform: translateX(100%);
   background-image: url('../images/cloud.png');
-  background-position: top;
-  background-repeat: repeat-x;
+  background-position: top center;
+  background-repeat: no-repeat;
   background-size: 100%;
-  animation: background__cloud--animation 5s linear infinite;
+}
+.background__cloud:first-child{
+  animation: background__cloud--animation 10s linear infinite;
+}
+.background__cloud:last-child{
+  animation: background__cloud--animation2 10s 5s linear infinite;
 }
 
 @keyframes background__cloud--animation{
   0%{
-    transform: translate(0);
+    transform: translateX(100%);
   }
   100%{
-    transform: translate(-100%);
+    transform: translateX(-100%);
+  }
+}
+@keyframes background__cloud--animation2{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
   }
 }
 
@@ -75,16 +90,16 @@ img {
 }
 @keyframes background__cloudy--animation{
   10%{
-    opacity:0.2;
+    opacity: 0.2;
   }
   30%{
-    opacity:0.4;
+    opacity: 0.4;
   }
   50%{
-    opacity:0.2;
+    opacity: 0.2;
   }
   70%{
-    opacity:0.5;
+    opacity: 0.5;
   }
   100%{
     background-color: none;
@@ -143,7 +158,7 @@ img {
   width: 600px;
   height: 600px;
   bottom: 36vh;
-  left:-40px;
+  left: -40px;
   animation: ship--waves 2s infinite;
 }
 .ship img {
@@ -182,9 +197,9 @@ img {
 .javadog{
   position: absolute;
   z-index: 4;
-  width:130px;
-  right:120px;
-  bottom:190px;
+  width: 130px;
+  right: 120px;
+  bottom: 190px;
 }
 .javadog img{
   position: relative;
@@ -198,6 +213,7 @@ img {
   bottom: 240px;
   transition: rotate 2s;
 }
+
 .javadog_left_hand {
   position: absolute;
   z-index: 3;
@@ -216,12 +232,12 @@ img {
 .fishing_line{
   position: absolute;
   width: 1px;
-  height: 500px;
+  height: 600px;
   border: 1px solid #fff;
-  top: 254px;
+  top: 244px;
   right: -170px;
   background: #fff;
-  transform: rotateZ(-8deg);
+  transform: rotateZ(-5deg);
   transform-origin: top;
 }
 .javadog--animation{
@@ -326,7 +342,7 @@ img {
     transform: rotateZ(-30deg) translate(-53px, -185px);
   }
   100%{
-    transform: rotateZ(-8deg) translate(0, 0);
+    transform: rotateZ(-5deg) translate(0, 0);
   }
 }
 
@@ -361,7 +377,7 @@ img {
 .notion {
   display: inherit;
   position: relative;
-  width:13vw;
+  width: 13vw;
   max-width: 210px;
   min-width: 150px;
   -webkit-transform-style: preserve-3d;
@@ -373,9 +389,28 @@ img {
   margin: 30px;
   cursor: pointer;
 }
+.notion--animation--odd{
+  animation: notion--animation--odd 6s;
+}
+.notion--animation--even{
+  animation: notion--animation--even 6s;
+}
+
+@keyframes notion--animation--odd{
+	0%,100% { transform: rotateZ(0);}
+	25%     { transform: rotateZ(-5deg); }
+	50%     { transform: rotateZ(7deg); }
+	75%     { transform: rotateZ(-5deg); }
+}
+@keyframes notion--animation--even{
+	0%,100% { transform: rotateZ(0);}
+	25%     { transform: rotateZ(7deg); }
+	50%     { transform: rotateZ(-5deg); }
+	75%     { transform: rotateZ(5deg); }
+}
 .notion img{
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
   box-shadow: 4px 4px 20px rgba(255, 255, 255, 1);
   box-sizing: border-box;
 }
@@ -386,26 +421,27 @@ img {
 }
 .focus__notion{
 	overflow: hidden;
-	position:fixed;
-	width:100%;
-	height:100%;
+	position: fixed;
+	width: 100%;
+	height: 100%;
 	background-image: url("../images/waves3.png");
   background-repeat: repeat no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index:20;
+	z-index: 20;
   top: 130%;
 	transition: top 2s;
 }
-.focust__notion--up{
-  top:0px;
-  /* padding-top:110px; */
+.focus__notion--clicked{
+  /* background-image: none; */
+  background: #000;
 }
 .notion__detail{
+  box-sizing: border-box;
   width: 300px;
 	height:433px;
-  box-shadow: 5px 5px 15px #333;
+  box-shadow: 5px 5px 15px #fff;
   perspective: 600px;
 	cursor:pointer;
 	transform-style: preserve-3d;
@@ -413,20 +449,19 @@ img {
 }
 .notion__front{
 	position: absolute;
-	width:100%;
-	height:100%;
-  transition: 2s;
+	width: 100%;
+	height: 100%;
+  transition: all 2s;
 	z-index:12;
   transform-origin: left center;
-	/* backface-visibility: hidden; */
 }
 .notion__front img{
-	width:100%;
-	height:auto;
+	width: 100%;
+	height: auto;
 	transition-delay: .565s;
 }
 .spread{
-  box-shadow: 5px 5px 15px #333;
+  box-shadow: 5px 5px 15px #fff;
   transform: rotateY(-180deg);
   background: #666;
 }
@@ -439,36 +474,40 @@ img {
 }
 .notion__back{
 	position: absolute;
-	width:100%;
-	height:100%;
-  z-index:11;
-  padding:50px 30px;
+	width: 100%;
+	height: 100%;
+  z-index: 11;
+  padding: 50px 30px;
   box-sizing: border-box;
 	background: #fff;
+  color:#000;
   font-family: "CookieRunOTF-Bold";
 }
 .notion__back h1{
-  font-size:1.3rem;
-  line-height:31px;
+  font-size :1.6rem;
+  line-height: 31px;
   font-family: "CookieRunOTF-Black";
 }
 .notion__back h2{
-  margin-top:30px;
+  margin-top: 30px;
   font-size: 1.0rem;
   font-weight: 100;
-  line-height: 20px;
+  line-height: 23px;
 }
 
+
 .buttons{
+  margin:auto;
   position: absolute;
   width: 190px;
-  height:50px;
-  bottom:60px;
+  height: 50px;
+  bottom: 60px;
+  color:#fff;
   border-radius: 40px;
-  background: #fff;
+  background: #000;
 }
 .buttons span {
-  height:50px;
+  height: 50px;
   width: 190px;
   border-radius: 20px;
   line-height: 50px;
@@ -478,6 +517,7 @@ img {
   text-transform: uppercase;
   position: absolute;
   opacity: 1;
+  border: 3px solid #fff;
   /* box-shadow: 5px 5px 15px #333; */
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -489,14 +529,13 @@ img {
   text-align: center;
   border: none;
   display: inline-block;
-  background-color: #fff;
+  background-color: #000;
   color: #ffffff;
   overflow: hidden;
   opacity: 0;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  /* box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.3); */
 }
 .buttons a:nth-child(1) {
   border-top-left-radius: 20px;
@@ -564,14 +603,14 @@ img {
 
 /* wide 화면 버전 */
 @media all and (min-width: 1600px) {
-  .background__cloud{
-    background-size: 50%;
-  }
   .ship__wrapper{
     transform: scale(1.2);
   }
   .ship{
     bottom: 42vh;
+  }
+  .fishing_line{
+    top:254px;
   }
   .notion__detail{
     transform: scale(1.2);
@@ -586,15 +625,17 @@ img {
     opacity:0;
   }
   .background__cloud {
-    background-size: 25%;
-    animation: background__cloud--animation--mobile 10s linear infinite;
-}
+    width: 150%;
+  }
   .ship{
     left:-20vw;
     bottom:-14vh;
   }
   .ship__wrapper{
     transform: scale(0.6);
+  }
+  .fishing_line{
+    top:254px;
   }
   .notion__container{
     padding: 80px 15%;

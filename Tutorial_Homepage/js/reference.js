@@ -260,6 +260,25 @@ function javadogAnimationOn(){
   fishingLine.classList.add('fishing_line--animation');
 }
 
+function notionAnimationOn(){
+  let notion = document.querySelectorAll('.notion');
+  for(let i=0; i<10; i=i+2){
+    notion[i].classList.add('notion--animation--odd');
+  }
+  for(let i=1; i<10; i=i+2){
+    notion[i].classList.add('notion--animation--even');
+  }
+}
+function notionAnimationOff(){
+  let notion = document.querySelectorAll('.notion');
+  for(let i=0; i<10; i=i+2){
+    notion[i].classList.remove('notion--animation--odd');
+  }
+  for(let i=1; i<10; i=i+2){
+    notion[i].classList.remove('notion--animation--even');
+  }
+}
+
 function javadogAnimationOff(){
   notionContainer.style.pointerEvents = "auto";
   javadogImg.src = "./images/javadog_fishing.png";
@@ -274,9 +293,11 @@ function javadogAnimationOff(){
 function fishingAnimation(num){
   backgroundCloudy.classList.add('background__cloudy--animation');
   javadogAnimationOn();
+  notionAnimationOn();
   javadog.addEventListener("animationend", function(){
     backgroundCloudy.classList.remove('background__cloudy--animation');
     javadogAnimationOff();
+    notionAnimationOff();
     notionSelect(num);
   });
 }
@@ -379,6 +400,7 @@ function spreadClick(event){
   notionDetail.classList.toggle("notion--spread");
   notion__img.classList.toggle("spread__img");
   notion__front.classList.toggle("spread");
+  focusNotion.classList.toggle("focus__notion--clicked");
 }
 
 // transition 효과가 완료되었는지 감지
@@ -410,6 +432,7 @@ function clickBodyEvent(event) {
       if(target == notionDetail)
         return ;
       else{
+        focusNotion.classList.remove("focus__notion--clicked");
         focusNotion.style.top = "150%";
         focusNotion.addEventListener(whichTransitionEvent(), function() {
             waves.classList.add("waves--default");
