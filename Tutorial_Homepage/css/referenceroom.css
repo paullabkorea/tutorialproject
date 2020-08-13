@@ -43,14 +43,15 @@ img {
   overflow: hidden;
 }
 .background__cloud{
-  position: absolute;
-  width: 4000px;
+  position: relative;
+  float:left;
+  width: 100%;
   height: 100%;
   background-image: url('../images/cloud.png');
   background-position: top;
   background-repeat: repeat-x;
-  background-size: 40%;
-  animation: background__cloud--animation 10s linear infinite;
+  background-size: 100%;
+  animation: background__cloud--animation 5s linear infinite;
 }
 
 @keyframes background__cloud--animation{
@@ -58,16 +59,7 @@ img {
     transform: translate(0);
   }
   100%{
-    transform: translate(-1600px);
-  }
-}
-
-@keyframes background__cloud--animation--mobile{
-  0%{
-    transform: translate(0);
-  }
-  100%{
-    transform: translate(-1600px);
+    transform: translate(-100%);
   }
 }
 
@@ -120,7 +112,7 @@ img {
   background-repeat: repeat no-repeat;
   background-position: 0 110%;
   transform-origin: center bottom;
-	background-image: url("../images/waves4.png");
+	background-image: url("../images/waves.png");
 	transition: top 2s;
 }
 .waves--up{
@@ -150,7 +142,7 @@ img {
   position: absolute;
   width: 600px;
   height: 600px;
-  bottom: 33vh;
+  bottom: 36vh;
   left:-40px;
   animation: ship--waves 2s infinite;
 }
@@ -226,7 +218,7 @@ img {
   width: 1px;
   height: 500px;
   border: 1px solid #fff;
-  top: 244px;
+  top: 254px;
   right: -170px;
   background: #fff;
   transform: rotateZ(-8deg);
@@ -348,7 +340,7 @@ img {
   box-sizing: border-box;
   background-repeat: repeat no-repeat;
   transform-origin: bottom center;
-	background-image: url("../images/waves6.png");
+	background-image: url("../images/waves2.png");
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -362,16 +354,15 @@ img {
 }
 @keyframes  move--wave--mobile {
   0%,100% { transform: translate(0,0);}
-	25%     { transform: translate(1px,1px);}
-	50%     { transform:  translateY(1px); }
-	75%     { transform: translate(-1px,1px); }
+	25%     { transform: translate(-1vh,1vw);}
+	50%     { transform:  translateY(1vw); }
+	75%     { transform: translate(-1vh,1vw); }
 }
-
 .notion {
   display: inherit;
   position: relative;
-  width:5vw;
-  max-height:217px;
+  width:13vw;
+  max-width: 210px;
   min-width: 150px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -379,13 +370,14 @@ img {
   transform: rotatey(0deg) translatex(0px) translatey(0px);
   -webkit-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
   margin: 30px;
   cursor: pointer;
 }
 .notion img{
   width:100%;
   height:auto;
+  box-shadow: 4px 4px 20px rgba(255, 255, 255, 1);
+  box-sizing: border-box;
 }
 .notion__info {
   position: relative;
@@ -397,13 +389,13 @@ img {
 	position:fixed;
 	width:100%;
 	height:100%;
-	background-image: url("../images/waves5.png");
+	background-image: url("../images/waves3.png");
   background-repeat: repeat no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	z-index:20;
-  top: 110%;
+  top: 130%;
 	transition: top 2s;
 }
 .focust__notion--up{
@@ -411,8 +403,8 @@ img {
   /* padding-top:110px; */
 }
 .notion__detail{
-  width: 250px;
-	height:360px;
+  width: 300px;
+	height:433px;
   box-shadow: 5px 5px 15px #333;
   perspective: 600px;
 	cursor:pointer;
@@ -442,7 +434,7 @@ img {
 	transform: rotateY(-180deg);
 }
 .notion--spread{
-  transform: translateX(125px);
+  transform: translateX(150px);
   transition: all 2s;
 }
 .notion__back{
@@ -569,29 +561,27 @@ img {
     display: none;
   }
 }
-/* @media all and (orientation : landscape) and (max-aspect-ratio:65/50){
-  #main-container {
-    height: 100vw;
-    display: none;
-  }
-  #message2 {
-    display: block;
-    text-align: center;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    top: 30vh;
-  }
-} */
 
 /* wide 화면 버전 */
 @media all and (min-width: 1600px) {
+  .background__cloud{
+    background-size: 50%;
+  }
   .ship__wrapper{
     transform: scale(1.2);
   }
+  .ship{
+    bottom: 42vh;
+  }
+  .notion__detail{
+    transform: scale(1.2);
+  }
+  .notion--spread{
+    transform: scale(1.2) translateX(150px);
+  }
 }
 
-@media (min-width: 481px) and (max-width: 1023px) {
+@media all and (min-width: 481px) and (max-width: 1023px) {
   .waves{
     opacity:0;
   }
@@ -601,17 +591,20 @@ img {
 }
   .ship{
     left:-20vw;
-    bottom:-20vh;
+    bottom:-14vh;
   }
   .ship__wrapper{
     transform: scale(0.6);
   }
-  .focus__notion{
-    margin-top:0px !important;
-  }
   .notion__container{
-    padding: 80px 20%;
-    top: 63vh;
+    padding: 80px 15%;
+    top: 60vh;
     animation: move--wave--mobile 2s infinite;
+  }
+  .notion__detail{
+    transform: scale(0.7);
+  }
+  .notion--spread{
+    transform: scale(0.7) translateX(150px);
   }
 }

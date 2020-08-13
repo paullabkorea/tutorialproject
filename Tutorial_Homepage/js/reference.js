@@ -225,8 +225,8 @@ const notionData = JSON.parse(notionStr);
 
 const body = document.querySelector("body");
 const waves = document.querySelector(".waves");
-const focus__notion = document.querySelector(".focus__notion");
-const notion__container = document.querySelector('.notion__container')
+const focusNotion = document.querySelector(".focus__notion");
+const notionContainer = document.querySelector('.notion__container')
 
 //배경요소
 const backgroundCloudy = document.querySelector('.background__cloudy');
@@ -250,6 +250,7 @@ if(window.scrollY!=0)
 
 function javadogAnimationOn(){
   scrollTop();
+  notionContainer.style.pointerEvents = "none";
   javadogImg.src = "./images/javadog_tired.png";
   javadog.classList.add('javadog--animation');
   ship.classList.add('ship--animation');
@@ -257,11 +258,10 @@ function javadogAnimationOn(){
   javadogRightHand.classList.add('javadog_right_hand--animation');
   fishingRod.classList.add('fishing_rod--animation');
   fishingLine.classList.add('fishing_line--animation');
-  notion__container.style.pointerEvents = "none";
 }
 
 function javadogAnimationOff(){
-  notion__container.style.pointerEvents = "auto";
+  notionContainer.style.pointerEvents = "auto";
   javadogImg.src = "./images/javadog_fishing.png";
   javadog.classList.remove('javadog--animation');
   ship.classList.remove('ship--animation');
@@ -293,33 +293,13 @@ function notionSetting(){
           </div>
         </div>`;
   }
-  notion__container.innerHTML = notionContents;
-}
-
-function fishingAnimation(num){
-  backgroundCloudy.classList.add('background__cloudy--animation');
-  javadogImg.src = "./images/javadog_tired.png";
-  javadog.classList.add('javadog--animation');
-  javadogLeftHand.classList.add('javadog_left_hand--animation');
-  javadogRightHand.classList.add('javadog_right_hand--animation');
-  fishingRod.classList.add('fishing_rod--animation');
-  fishingLine.classList.add('fishing_line--animation');
-  javadog.addEventListener("animationend", function(){
-    javadogImg.src = "./images/javadog_fishing.png";
-    javadog.classList.remove('javadog--animation');
-    javadogLeftHand.classList.remove('javadog_left_hand--animation');
-    javadogRightHand.classList.remove('javadog_right_hand--animation');
-    fishingRod.classList.remove('fishing_rod--animation');
-    fishingLine.classList.remove('fishing_line--animation');
-    backgroundCloudy.classList.remove('background__cloudy--animation');
-    notionSelect(num);
-  });
+  notionContainer.innerHTML = notionContents;
 }
 
 function notionSelect(num){
-  let notionDetail="";
+  let notion="";
   var notionAbout = notionData[num];
-  notionDetail = notionDetail +
+  notion = notion +
   `<div class="notion__detail">
     <div class="notion__front">
       <img src='${notionAbout.image}' alt='${notionAbout.name}' />
@@ -331,7 +311,7 @@ function notionSelect(num){
         <span>Information</span>`;
         //link,link2와 bookstore 모두 존재할때
         if( notionAbout.link&&notionAbout.link2&&notionAbout.bookstore ){
-          notionDetail = notionDetail +`
+          notion = notion +`
           <a href='${notionAbout.link}' target='_blank'>n</a>
           <a href='${notionAbout.link2}' target='_blank'>n2</a>
           <a href='${notionAbout.bookstore}' target='_blank'>b</a>
@@ -341,7 +321,7 @@ function notionSelect(num){
         }
         //link와 bookstore 모두 존재할때
         else if( notionAbout.link&&notionAbout.bookstore ){
-          notionDetail = notionDetail +`
+          notion = notion +`
           <a href='${notionAbout.link}' target='_blank'>n</a>
           <a href='${notionAbout.bookstore}' target='_blank'>b</a>
           </div>
@@ -350,7 +330,7 @@ function notionSelect(num){
         }
         //bookstore만 존재할때
         else if( notionAbout.bookstore ){
-          notionDetail = notionDetail +`
+          notion = notion +`
           <a href='${notionAbout.bookstore}' target='_blank'>b</a>
           </div>
           </div>
@@ -358,24 +338,24 @@ function notionSelect(num){
         }
         //link만 존재할때
         else{
-          notionDetail = notionDetail +`
+          notion = notion +`
           <a href='${notionAbout.link}' target='_blank'>n</a>
           </nav>
           </div>
           </div>
           </div>`;
         }
-  focus__notion.innerHTML = notionDetail;
-  const notion__detail = document.querySelector(".notion__detail");
+  focusNotion.innerHTML = notion;
+  const notionDetail = document.querySelector(".notion__detail");
   //wave 효과
   waves.classList.remove("waves--default");
-  focus__notion.style.marginTop="-120px";
-  focus__notion.style.paddingTop="120px";
-  focus__notion.style.top="0px";
+  focusNotion.style.marginTop="-120px";
+  focusNotion.style.paddingTop="120px";
+  focusNotion.style.top="0px";
   //notion 제외한 영역클릭시 notion 정보화면 닫기
   body.addEventListener('click', clickBodyEvent);
   //notion 클릭시 notion 정보화면 펼쳐지기
-  notion__detail.addEventListener('click', spreadClick);
+  notionDetail.addEventListener('click', spreadClick);
 };
 
 //선택한 요소의 인데스 알기
@@ -392,11 +372,11 @@ function spreadClick(event){
     if(target == buttons[i])
       return;
   }
-  const notion__detail = document.querySelector(".notion__detail");
+  const notionDetail = document.querySelector(".notion__detail");
   const notion__img = document.querySelector(".notion__front img");
   const notion__front = document.querySelector(".notion__front");
   //notion 펼칠때 이미지 넘기는 효과
-  notion__detail.classList.toggle("notion--spread");
+  notionDetail.classList.toggle("notion--spread");
   notion__img.classList.toggle("spread__img");
   notion__front.classList.toggle("spread");
 }
@@ -423,15 +403,15 @@ function reset(){
 }
 
 function clickBodyEvent(event) {
-    var notion__detail = document.querySelector(".notion__detail");
+    var notionDetail = document.querySelector('.notion__detail');
     var target = event.target;
     // notion 영역 이면 pass
-    if(target == focus__notion){
-      if(target == notion__detail)
+    if(target == focusNotion){
+      if(target == notionDetail)
         return ;
       else{
-        focus__notion.style.top = "110%";
-        focus__notion.addEventListener(whichTransitionEvent(), function() {
+        focusNotion.style.top = "150%";
+        focusNotion.addEventListener(whichTransitionEvent(), function() {
             waves.classList.add("waves--default");
         });
       }
