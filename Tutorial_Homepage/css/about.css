@@ -118,7 +118,7 @@ hr {
 .title-img {
   width: 97.5px;
   height: 145px;
-  background: url("../images/paullab-frame.png") no-repeat 0 0 / 4096px 145px;
+  background: url("../images/frame_paullab.png") no-repeat 0 0 / 4096px 145px;
   animation: paullab 3.3s infinite steps(42);
   position: relative;
   left: 0;
