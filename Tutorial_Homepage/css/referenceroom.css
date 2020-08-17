@@ -649,6 +649,8 @@ img {
   box-sizing: border-box;
   width: 300px;
 	height: 433px;
+  -webkit-transform: rotate3d(0, 1, 1, -10deg);
+  -ms-transform: rotate3d(0, 1, 1, -10deg);
   transform: rotate3d(0, 1, 1, -10deg);
 	-webkit-box-shadow: 2px 2px 10px #fff;
   box-shadow: 2px 2px 10px #fff;
@@ -672,6 +674,8 @@ img {
   box-shadow: 2px 2px 10px #fff;
 	z-index:12;
   overflow:hidden;
+  -webkit-transform: rotate3d(0, 1, 0, -15deg);
+  -ms-transform: rotate3d(0, 1, 0, -15deg);
   transform: rotate3d(0, 1, 0, -15deg);
 	-webkit-transform-origin: left center;
 	-ms-transform-origin: left center;
@@ -817,6 +821,8 @@ img {
 /* wide 화면 버전 */
 @media all and (min-width: 1600px) {
   .ship__wrapper{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
   .ship{
@@ -826,9 +832,13 @@ img {
     top:254px;
   }
   .notion__detail{
+    -webkit-transform: scale(1.2) rotate3d(0, 1, 1, -10deg);
+    -ms-transform: scale(1.2) rotate3d(0, 1, 1, -10deg);
     transform: scale(1.2) rotate3d(0, 1, 1, -10deg);
   }
   .notion--spread{
+    -webkit-transform: scale(1.2) translateX(150px);
+    -ms-transform: scale(1.2) translateX(150px);
     transform: scale(1.2) translateX(150px);
   }
 }
@@ -845,6 +855,8 @@ img {
     bottom:-10vh;
   }
   .ship__wrapper{
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
     transform: scale(0.6);
   }
   .fishing_line{
@@ -856,9 +868,13 @@ img {
     animation: move--wave--mobile 2s infinite;
   }
   .notion__detail{
+    -webkit-transform: scale(0.6) rotate3d(0, 1, 1, -10deg);
+    -ms-transform: scale(0.6) rotate3d(0, 1, 1, -10deg);
     transform: scale(0.6) rotate3d(0, 1, 1, -10deg);
   }
   .notion--spread{
+    -webkit-transform: scale(0.6) translateX(150px);
+    -ms-transform: scale(0.6) translateX(150px);
     transform: scale(0.6) translateX(150px);
   }
 }

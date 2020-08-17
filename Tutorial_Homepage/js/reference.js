@@ -63,28 +63,28 @@ const notionInfo = [
   },
   {
     "name" : "Python 100제 1부",
-    "image" : "./images/notions/code_festival_python_1.jpg",
+    "image" : "./images/notions/code_festival_python_01.jpg",
     "contents":"파이썬으로 푸는 100개의 코딩 문제 - 1부 (1-50번)",
     "link" : "https://www.notion.so/pythonworkbook/Python-100-6ee1860ce29a41bc8eb6b9cfa7d7f06c",
     "bookstore":"https://ridibooks.com/books/2773000025?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
   },
   {
     "name" : "Python 100제 2부",
-    "image" : "./images/notions/code_festival_python_2.jpg",
+    "image" : "./images/notions/code_festival_python_02.jpg",
     "contents":"파이썬으로 푸는 100개의 코딩 문제 - 2부 (51-100번)",
     "link" : "https://www.notion.so/pythonworkbook/Python-100-6ee1860ce29a41bc8eb6b9cfa7d7f06c",
     "bookstore":"https://ridibooks.com/books/2773000028"
   },
   {
     "name" : "Javasciprt 100제 1부",
-    "image" : "./images/notions/code_festival_javascript_1.jpg",
+    "image" : "./images/notions/code_festival_javascript_01.jpg",
     "contents":"자바스크립트로 푸는 100개의 코딩 문제 - 1부 (1-50번)",
     "link" : "https://www.notion.so/JS-100-94d97d294dd14c9b911a02c840fa9f2d",
     "bookstore":"https://ridibooks.com/books/2773000029"
   },
   {
     "name" : "Javasciprt 100제 2부",
-    "image" : "./images/notions/code_festival_javascript_2.jpg",
+    "image" : "./images/notions/code_festival_javascript_02.jpg",
     "contents":"자바스크립트로 푸는 100개의 코딩 문제 - 2부 (51-100번)",
     "link" : "https://www.notion.so/JS-100-94d97d294dd14c9b911a02c840fa9f2d",
     "bookstore":"https://ridibooks.com/books/2773000031"

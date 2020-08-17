@@ -40,7 +40,7 @@ h4 {
 }
 #background-img {
   position: absolute;
-  background: url("../images/back-no-sns.png") no-repeat center center;
+  background: url("../images/bg_no_sns.png") no-repeat center center;
   width: 100vw;
   height: 100vh;
   -webkit-background-size: cover;
@@ -51,7 +51,7 @@ h4 {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: url("../images/background_jeju.png") no-repeat center center;
+  background: url("../images/bg_jeju.png") no-repeat center center;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
@@ -87,7 +87,7 @@ h4 {
  margin:30px 40px;
  width:35px;
  height:35px;
- background-image: url('../images/play-button.png');
+ background-image: url('../images/button_bgm_play.png');
  -webkit-background-size: contain;
  -moz-background-size: contain;
  background-size: contain;
@@ -103,7 +103,7 @@ h4 {
   margin:30px 40px;
   width:35px;
   height:35px;
-  background-image: url('../images/pause.png');
+  background-image: url('../images/button_bgm_pause.png');
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "CookieRunOTF-Black";
@@ -163,7 +163,7 @@ h4 {
 .news__bird {
   width: 245px;
   height: 125px;
-  background: url("../images/bird_frame2.png") no-repeat 0 0 / 1342.5px 125px;
+  background: url("../images/frame_bird.png") no-repeat 0 0 / 1342.5px 125px;
   -webkit-animation: bird 1s infinite steps(6);
   animation: bird 1s infinite steps(6);
   position: relative;
@@ -261,7 +261,7 @@ h4 {
 .menu__paullab--frame {
   width: 97.5px;
   height: 145px;
-  background: url("../images/paullab-frame.png") no-repeat 0 0 / 4096px 145px;
+  background: url("../images/frame_paullab.png") no-repeat 0 0 / 4096px 145px;
   -webkit-animation: paullab 3.3s infinite steps(42);
   animation: paullab 3.3s infinite steps(42);
   position: absolute;
@@ -300,7 +300,7 @@ h4 {
 .menu__youtube--python {
   width: 125px;
   height: 125px;
-  background: url("../images/python_frame.png") no-repeat 0 0 / 500px 125px;
+  background: url("../images/frame_python.png") no-repeat 0 0 / 500px 125px;
   -webkit-animation: py_thon 1s infinite steps(4);
   animation: py_thon 1s infinite steps(4);
   position: absolute;
@@ -341,7 +341,7 @@ h4 {
 .menu__book--mura {
   width: 167px;
   height: 167px;
-  background: url("../images/mura_frame.png") no-repeat 0 0 / 667px 167px;
+  background: url("../images/frame_mura.png") no-repeat 0 0 / 667px 167px;
   -webkit-animation: mura 0.5s infinite steps(4);
   animation: mura 0.5s infinite steps(4);
   position: relative;
@@ -382,7 +382,7 @@ h4 {
 .menu__qna--gary {
   width: 167px;
   height: 167px;
-  background: url("../images/gary_frame.png") no-repeat 0 0 / 667px 167px;
+  background: url("../images/frame_gary.png") no-repeat 0 0 / 667px 167px;
   animation: gary 1s infinite steps(4);
   transform: scale(0.8);
   position: relative;
@@ -408,7 +408,7 @@ h4 {
 .menu__online_lec--soulgom {
   width: 167px;
   height: 167px;
-  background: url("../images/soulgom_frame.png") no-repeat 0 0/ 667px 167px;
+  background: url("../images/frame_soulgom.png") no-repeat 0 0/ 667px 167px;
   -webkit-animation: soulgom 1s infinite steps(4);
   animation: soulgom 1s infinite steps(4);
   position: relative;
@@ -516,7 +516,7 @@ h4 {
 .menu__referenceroom--javadog {
   width: 167px;
   height: 167px;
-  background: url("../images/javadog_frame.png") no-repeat 0 0 / 667px 167px;
+  background: url("../images/frame_javadog.png") no-repeat 0 0 / 667px 167px;
   -webkit-animation: javadog 0.5s infinite steps(4);
   animation: javadog 0.5s infinite steps(4);
   -webkit-transform: scale(0.8);
@@ -548,7 +548,7 @@ h4 {
 .menu__curriculum--binky {
   width: 167px;
   height: 167px;
-  background: url("../images/binky_frame.png") no-repeat 0 0 / 667px 167px;
+  background: url("../images/frame_binky.png") no-repeat 0 0 / 667px 167px;
   -webkit-animation: binky 1s infinite steps(4);
   animation: binky 1s infinite steps(4);
   -webkit-transform: scale(0.8);
@@ -642,7 +642,7 @@ h4 {
   position: absolute;
   left: 15vw;
   bottom: 5vh;
-  background: url("../images/background_dolharbang.png") no-repeat center center;
+  background: url("../images/bg_dolharbang.png") no-repeat center center;
   background-size: contain;
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -690,7 +690,7 @@ h4 {
   width: 665px;
   height: 102px;
   position: absolute;
-  background: url("../images/sns-set.png") no-repeat;
+  background: url("../images/bg_sns.png") no-repeat;
   background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;

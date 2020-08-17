@@ -32,6 +32,9 @@ body {
 	background:#000;
 	opacity:0;
 	pointer-events: none;
+	-moz-transition: opacity 3s;
+	-ms-transition: opacity 3s;
+	-o-transition: opacity 3s;
 	transition: opacity 3s;
 }
 .container {
@@ -88,6 +91,9 @@ h1{
   -webkit-transform: translate3d(0, 0, -350px);
   -ms-transform: translate3d(0, 0, -350px);
 	transform: translate3d(0, 0, -350px);
+	-moz-transition: transform 2s;
+	-ms-transition: transform 2s;
+	-o-transition: transform 2s;
 	transition: transform 2s;
 	overflow: hidden;
 	cursor:pointer;
@@ -96,6 +102,7 @@ h1{
 	-moz-transition: transform 2s;
 	-ms-transition: transform 2s;
 	-o-transition: transform 2s;
+	transition: transform 2s;
 	cursor: auto;
   -webkit-transform: translate3d(0, 0, 50px);
   -ms-transform: translate3d(0, 0, 50px);
@@ -116,7 +123,6 @@ h1{
 	width:90%;
 	height:90%;
 	/* -webkit-box-shadow: 0px 0px 20px 5px #fff;
-	-moz-box-shadow: 0px 0px 20px 5px #fff;
 	box-shadow: 0px 0px 20px 5px #fff; */
   -webkit-transform-style: preserve-3d;
  	-moz-transform-style: preserve-3d;
@@ -160,10 +166,10 @@ h1{
 	margin: 0 auto 5% auto;
 }
 @keyframes credits {
-  0% {
+  0%{
     top: 100%;
   }
-  50% {
+  50%{
   	top: 35%;
 		opacity: 1;
   }
@@ -277,7 +283,6 @@ h1{
 	background-size: 60px;
 	/* border: 7px solid #000; */
 	-webkit-box-shadow: 0px 0px 10px 10px #000;
-	-moz-box-shadow: 0px 0px 10px 10px #000;
 	box-shadow: 0px -5px 20px 10px #000;
 	z-index: 15;
 }
@@ -308,7 +313,6 @@ h1{
   -o-background-size: 60px;
   background-size: 60px;
 	-webkit-box-shadow: 0 0 10px #555 ,inset 0 -60px  60px -30px  rgba(0,0,0, 1), inset 0 90px  60px -30px  rgba(0,0,0, 0.5);
-	-moz-box-shadow: 0 0 10px #555 ,inset 0 -60px  60px -30px  rgba(0,0,0, 1), inset 0 90px  60px -30px  rgba(0,0,0, 0.5);
   box-shadow: 0 0 10px #555 ,inset 0 -60px  60px -30px  rgba(0,0,0, 1), inset 0 90px  60px -30px  rgba(0,0,0, 0.5);
 }
 .curtain__left {
@@ -380,7 +384,6 @@ h1{
 	background: #fff;
 	/* border: 2px solid #000; */
 	-webkit-box-shadow: 0px 0px 30px 3px #fff;
-	-moz-box-shadow: 0px 0px 30px 3px #fff;
 	box-shadow: 0px 0px 10px 3px #fff;
 }
 .light--stopped{
@@ -390,13 +393,11 @@ h1{
 	0%{
 		background: #fff;
 		-webkit-box-shadow: 0px 0px 30px 3px #fff;
-		-moz-box-shadow: 0px 0px 30px 3px #fff;
 		box-shadow: 0px 0px 30px 3px #fff;
 	}
 	100%{
 		background: #343434;
 		-webkit-box-shadow: 0px 0px 30px 3px #232323;
-		-moz-box-shadow: 0px 0px 30px 3px #232323;
 		box-shadow: 0px 0px 30px 3px #232323;
 	}
 }
@@ -408,12 +409,11 @@ h1{
 	background-repeat: repeat;
 	/* border: 7px solid #000; */
 	-webkit-box-shadow: 0 0 10px #555 ,inset 0 -60px  60px -30px  rgba(0,0,0, 0.5), inset 0 90px  60px -30px  rgba(0,0,0, 0.5);
-	-moz-box-shadow: 0 0 10px #555 ,inset 0 -60px  60px -30px  rgba(0,0,0, 0.5), inset 0 90px  60px -30px  rgba(0,0,0, 0.5);
 	box-shadow: 0 0 10px #555 ,inset 0 -60px  60px -30px  rgba(0,0,0, 0.5), inset 0 90px  60px -30px  rgba(0,0,0, 0.5);
 	background-size: 60px;
 }
 .place__face--left {
-	background-image: linear-gradient(90deg,  transparent 50%, rgba(225,225,225,.25) 60% ,transparent 100% );
+	background-image: linear-gradient(90deg,  transparent 90%, rgba(225,225,225,.25) 60% ,transparent 100% );
 	left: 0;
 	-webkit-justify-content: flex-start;
 	justify-content: flex-start;
@@ -427,7 +427,7 @@ h1{
 	transform-origin: 0 50%;
 }
 .place__face--right {
-	background-image: linear-gradient(-90deg,  transparent 50%, rgba(225,225,225,.25) 60% ,transparent 100% );
+	background-image: linear-gradient(-90deg,  transparent 90%, rgba(225,225,225,.25) 60% ,transparent 100% );
 	right: 0;
 	-webkit-justify-content: flex-end;
 	justify-content: flex-end;
@@ -460,7 +460,6 @@ h1{
 	text-align: center;
 	background: #fff;
 	-webkit-box-shadow: 0px 0px 25px 1px #fff;
-	-moz-box-shadow: 0px 0px 25px 1px #fff;
 	box-shadow: 0px 0px 25px 1px #fff;
 }
 .exit_icon img{
@@ -475,13 +474,15 @@ h1{
 	height: 100%;
 	float: left;
 	-webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
-	-moz-box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
 	box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
   -webkit-transform: translate3d(0,0,10px);
   -ms-transform: translate3d(0,0,10px);
 	transform: translate3d(0,0,10px);
 	background: #323232;
 	cursor: pointer;
+	-moz-transition: all 2s;
+	-ms-transition: all 2s;
+	-o-transition: all 2s;
 	transition: all 2s;
 	pointer-events: auto;
   -webkit-transform-style: preserve-3d;
@@ -506,12 +507,11 @@ h1{
 }
 .exit_animation--left{
 	-webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-	-moz-box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 	box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
-	transform:rotate3d(0, 1, 0, -30deg);
+	transform: rotate3d(0, 1, 0, -30deg);
 }
 .exit_animation--right {
-	transform:rotate3d(0, 1, 0, 30deg);
+	transform: rotate3d(0, 1, 0, 30deg);
 }
 
 .exit_window{
@@ -528,7 +528,6 @@ h1{
 	background: #fff;
 	bottom:30%;
 	-webkit-box-shadow: 0px 0px 25px -2px #fff;
-	-moz-box-shadow: 0px 0px 25px -2px #fff;
 	box-shadow: 0px 0px 25px -2px #fff;
 }
 .exit_handle{
@@ -566,7 +565,6 @@ h1{
 	backface-visibility: hidden;
 	border: 6px solid #000;
 	-webkit-box-shadow: 0px 0px 25px -2px #333333;
-	-moz-box-shadow: 0px 0px 25px -2px #333333;
 	box-shadow: 0px 0px 25px -2px #333333;
 }
 .place__face--bottom{
@@ -606,7 +604,6 @@ h1{
 	border-radius: 50px;
   background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041,  #F3686A);
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .seat img{

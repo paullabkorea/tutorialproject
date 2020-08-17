@@ -93,7 +93,7 @@ strong {
 #title .title-img {
   width: 167px;
   height: 167px;
-  background: url("../images/binky_frame.png") no-repeat 0 0 / 667px 167px;
+  background: url("../images/frame_binky.png") no-repeat 0 0 / 667px 167px;
   animation: binky 1s infinite steps(4);
   position: relative;
   left: 0;

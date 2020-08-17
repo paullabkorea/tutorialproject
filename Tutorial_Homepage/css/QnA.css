@@ -88,7 +88,7 @@ a {
 #title .title-img {
   width: 167px;
   height: 167px;
-  background: url("../images/gary_frame.png") no-repeat 0 0 / 667px 167px;
+  background: url("../images/frame_gary.png") no-repeat 0 0 / 667px 167px;
   animation: gary 1s infinite steps(4);
   transform: scale(0.8);
   padding-bottom: 80px;
