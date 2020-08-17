@@ -353,6 +353,20 @@ hr {
   font-size: 10px;
 }
 
+/* us */
+#us{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+.us_imgs{
+    padding: 35px 25px;
+}
+
+.us_imgs img{
+  margin-top:30px;
+}
 /* contact */
 #contact {
   position: relative;
