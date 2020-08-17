@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,7 +36,6 @@
 </head>
 
 <body>
-
 <!-- 화면 어디든 클릭시 음악 반복재생 -->
 <audio autoplay loop class="bgm">
   <source src="https://drive.google.com/uc?export=download&id=1XelfpMJY5-2xlYWXCWXT2zqYmKNnukU7" type="audio/mp3" >
@@ -60,6 +58,7 @@
   <!-- //세로비율과 가로비율이 65:50일때 -->
 
   <section id="main-container">
+    <!--  배경 background -->
     <div class="background__sky"></div>
     <div class="background__cloudy"></div>
     <div class="background__wrapper">
@@ -69,25 +68,30 @@
     <div class="background__wave">
         <div class="waves waves--default"></div>
     </div>
+    <!-- //배경 background -->
 
+    <!-- 자바독 낚시 애니메이션 -->
     <div class="ship">
       <div class="ship__wrapper">
-        <img src="./images/ship.png" alt="ship" />
+        <img src="./images/bg_ship.png" alt="ship" />
         <div class="javadog">
-          <img src="./images/javadog_fishing.png" />
+          <img src="./images/animation_javadog_fishing.png" />
         </div>
         <div class="javadog_right_hand">
-          <img src="./images/javadog_right_hand.png" alt="right_hand" />
+          <img src="./images/animation_javadog_right_hand.png" alt="right_hand" />
         </div>
         <div class="javadog_left_hand">
-          <img src="./images/javadog_left_hand.png" alt="left_hand" />
+          <img src="./images/animation_javadog_left_hand.png" alt="left_hand" />
         </div>
         <div class="fishing_rod">
-          <img src="./images/fishing_rod.png" alt="fishing_rod" />
+          <img src="./images/animation_fishing_rod.png" alt="fishing_rod" />
         </div>
         <div class="fishing_line"></div>
       </div>
     </div>
+    <!-- //자바독 낚시 애니메이션 -->
+
+    <!-- // notion 리스트 -->
     <div class="notion__container">
       <!-- notion 리스트 - js로 삽입
         <div class="notion">
@@ -96,6 +100,9 @@
           </div>
         </div> -->
    </div>
+   <!-- // notion 리스트 -->
+
+   <!-- 선택한 노션 정보 화면 -->
     <div class="focus__notion">
       <!-- notion 클릭시 notion에 대한 정보, 링크 - js로 삽입
       <div class="notion__detail">
@@ -113,7 +120,8 @@
         </div>
       </div> -->
     </div>
+    <!-- //선택한 노션 정보 화면 -->
   </section>
-  <script src="js/reference.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/reference.js" ></script>
 </body>
 </html>

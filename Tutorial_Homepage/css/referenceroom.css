@@ -50,7 +50,7 @@ img {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  background-image: url('../images/cloud.png');
+  background-image: url('../images/bg_cloud.png');
   background-position: top center;
   background-repeat: no-repeat;
   -webkit-background-size: 100%;
@@ -125,7 +125,7 @@ img {
   background-repeat: repeat no-repeat;
   background-position: 0 105%;
   transform-origin: center bottom;
-	background-image: url("../images/waves.png");
+	background-image: url("../images/bg_waves.png");
 	-webkit-transition: top 2s;
 	transition: top 2s;
 }
@@ -483,7 +483,7 @@ img {
   z-index: 10;
   background-repeat: repeat no-repeat;
   transform-origin: bottom center;
-	background-image: url("../images/waves2.png");
+	background-image: url("../images/bg_waves2.png");
 	display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -631,7 +631,7 @@ img {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-image: url("../images/waves3.png");
+	background-image: url("../images/bg_waves3.png");
   background-repeat: repeat no-repeat;
 	display: flex;
 	justify-content: center;

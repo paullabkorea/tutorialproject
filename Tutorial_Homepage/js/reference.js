@@ -1,13 +1,13 @@
 const notionInfo = [
   {
     "name" : "Paullab Wiki",
-    "image" : "",
+    "image" : "./images/notions/paullab_wiki.png",
     "contents":"공부하시면서 정리하고 싶었던 부분을 Paullab Wiki에 정리해 주세요!",
     "wiki" : "http://paullabedu.synology.me/dokuwiki"
   },
   {
     "name" : "2020 Jeju Coding Basecamp",
-    "image" : "./images/notions/jejucodingbasecamp.jpg",
+    "image" : "./images/notions/jeju_coding_basecamp.jpg",
     "contents":"서비스 기획부터 런칭까지 같이 해봅니다.",
     "link" : "https://www.notion.so/jejucodingcamp/Jeju-Coding-Basecamp-Home-ff529a96a4e5497eaadd7c5b12b60328",
     "bookstore":"https://ridibooks.com/books/2773000035?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
@@ -252,7 +252,7 @@ if(window.scrollY!=0)
 function javadogAnimationOn(){
   scrollTop();
   notionContainer.style.pointerEvents = "none";
-  javadogImg.src = "./images/javadog_tired.png";
+  javadogImg.src = "./images/animation_javadog_tired.png";
   javadog.classList.add('javadog--animation');
   ship.classList.add('ship--animation');
   javadogLeftHand.classList.add('javadog_left_hand--animation');
@@ -282,7 +282,7 @@ function notionAnimationOff(){
 
 function javadogAnimationOff(){
   notionContainer.style.pointerEvents = "auto";
-  javadogImg.src = "./images/javadog_fishing.png";
+  javadogImg.src = "./images/animation_javadog_fishing.png";
   javadog.classList.remove('javadog--animation');
   ship.classList.remove('ship--animation');
   javadogLeftHand.classList.remove('javadog_left_hand--animation');
@@ -333,9 +333,9 @@ function notionSelect(num){
         // link,link2와 bookstore 모두 존재할때
         if( notionAbout.link&&notionAbout.link2&&notionAbout.bookstore ){
           notion = notion +`
-          <a href='${notionAbout.link}' target='_blank'><img src="./images/notionicon.png" alt="노션" />노션 1부 바로가기</a>
-          <a href='${notionAbout.link2}' target='_blank'><img src="./images/notionicon.png" alt="노션" />노션 2부 바로가기</a>
-          <a href='${notionAbout.bookstore}' target='_blank'><img src="./images/bookicon.png" alt="책" />책 바로가기</a>
+          <a href='${notionAbout.link}' target='_blank'><img src="./images/icon_notion.png" alt="노션" />노션 1부 바로가기</a>
+          <a href='${notionAbout.link2}' target='_blank'><img src="./images/icon_notion.png" alt="노션" />노션 2부 바로가기</a>
+          <a href='${notionAbout.bookstore}' target='_blank'><img src="./images/icon_book.png" alt="책" />책 바로가기</a>
           </div>
           </div>
           </div>`;
@@ -343,8 +343,8 @@ function notionSelect(num){
         //link와 bookstore 모두 존재할때
         else if( notionAbout.link&&notionAbout.bookstore ){
           notion = notion +`
-          <a href='${notionAbout.link}' target='_blank'><img src="./images/notionicon.png" alt="노션" />노션 바로가기</a>
-          <a href='${notionAbout.bookstore}' target='_blank'><img src="./images/bookicon.png" alt="책" />책 바로가기</a>
+          <a href='${notionAbout.link}' target='_blank'><img src="./images/icon_notion.png" alt="노션" />노션 바로가기</a>
+          <a href='${notionAbout.bookstore}' target='_blank'><img src="./images/icon_book.png" alt="책" />책 바로가기</a>
           </div>
           </div>
           </div>`;
@@ -352,7 +352,7 @@ function notionSelect(num){
         //bookstore만 존재할때
         else if( notionAbout.bookstore ){
           notion = notion +`
-          <a href='${notionAbout.bookstore}' target='_blank'><img src="./images/bookicon.png" alt="책" />책 바로가기</a>
+          <a href='${notionAbout.bookstore}' target='_blank'><img src="./images/icon_book.png" alt="책" />책 바로가기</a>
           </div>
           </div>
           </div>`;
@@ -368,7 +368,7 @@ function notionSelect(num){
         //link만 존재할때
         else {
           notion = notion +`
-          <a href='${notionAbout.link}' target='_blank'><img src="./images/notionicon.png" alt="노션" />노션 바로가기</a>
+          <a href='${notionAbout.link}' target='_blank'><img src="./images/icon_notion.png" alt="노션" />노션 바로가기</a>
           </div>
           </div>
           </div>`;
@@ -401,12 +401,12 @@ function spreadClick(event){
       return;
   }
   const notionDetail = document.querySelector(".notion__detail");
-  const notion__img = document.querySelector(".notion__front img");
-  const notion__front = document.querySelector(".notion__front");
+  const notionImg = document.querySelector(".notion__front img");
+  const notionFront = document.querySelector(".notion__front");
   //notion 펼칠때 이미지 넘기는 효과
   notionDetail.classList.toggle("notion--spread");
-  notion__img.classList.toggle("notion__front__img--spread");
-  notion__front.classList.toggle("notion__front--spread");
+  notionImg.classList.toggle("notion__front__img--spread");
+  notionFront.classList.toggle("notion__front--spread");
 }
 
 // transition 효과가 완료되었는지 감지
