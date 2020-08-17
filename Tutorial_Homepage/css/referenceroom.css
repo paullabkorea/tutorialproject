@@ -781,37 +781,6 @@ img {
   background-color: #000;
   color:#fff;
 }
-/* .buttons a:nth-child(1) {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  margin-left: 0;
-	background-image: url("../images/notionicon.png");
-}
-.buttons a:nth-child(1):hover {
-  background-color: #61c5ec;
-}
-.buttons a:nth-child(2):hover {
-  background-color: #333;
-}
-.buttons a:nth-child(3):hover {
-  background-color: #444;
-}
-.buttons a:nth-child(4):hover {
-  background-color: #555;
-}
-.buttons:hover span, .buttons.hover span {
-  opacity: 0;
-}
-.buttons:hover a, .buttons.hover a {
-  opacity: 1;
-  border-radius: 50%;
-  margin: 0 7px;
-  color: #f1ce64;
-  font-size: 28px;
-}
-.buttons:hover a:hover, .buttons.hover a:hover {
-  color: #fff;
-} */
 /* 메시지 */
 #message,#message2 {
   display: none;

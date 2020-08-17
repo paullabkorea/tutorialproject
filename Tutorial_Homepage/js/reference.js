@@ -1,9 +1,9 @@
 const notionInfo = [
   {
-    "name" : "wiki",
+    "name" : "Paullab Wiki",
     "image" : "",
-    "contents":"공부하시면서 정리하고 싶었던 부분을 Wiki에 정리해 주세요!",
-    "wiki" : "http://paullabedu.synology.me/dokuwiki/"
+    "contents":"공부하시면서 정리하고 싶었던 부분을 Paullab Wiki에 정리해 주세요!",
+    "wiki" : "http://paullabedu.synology.me/dokuwiki"
   },
   {
     "name" : "2020 Jeju Coding Basecamp",
