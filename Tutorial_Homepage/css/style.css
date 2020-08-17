@@ -45,7 +45,6 @@ h4 {
   height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 #jeju-img {
@@ -53,10 +52,9 @@ h4 {
   width: 100vw;
   height: 100vh;
   background: url("../images/background_jeju.png") no-repeat center center;
-  background-size: contain;
   -webkit-background-size: contain;
   -moz-background-size: contain;
-  -o-background-size: contain;
+  background-size: contain;
 }
 .home {
   position: absolute;
@@ -66,21 +64,19 @@ h4 {
   padding: 30px 40px;
   font-family: "CookieRunOTF-Black";
 }
-
 .home__btn {
   position: relative;
 }
 .home__btn p {
   font-size: 40px;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: #000;
 }
 .home__btn:hover p {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
+  -moz-transform: scale(1.05);
   transform: scale(1.05);
 }
 .bgm__button--play{
@@ -92,6 +88,8 @@ h4 {
  width:35px;
  height:35px;
  background-image: url('../images/play-button.png');
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
  background-size: contain;
  background-repeat: no-repeat;
  font-family: "CookieRunOTF-Black";
@@ -501,8 +499,8 @@ h4 {
     transform: rotate(-11deg);
   }
 }
-/* 자바독 - 바울랩 wiki */
-.menu__wiki {
+/* 자바독 - 바울랩 reference */
+.menu__referenceroom {
   width: 167px;
   height: 167px;
   position: absolute;
@@ -510,12 +508,12 @@ h4 {
   top: 36vh;
 }
 
-.menu__wiki h4 {
+.menu__referenceroom h4 {
   left: 50px;
   top: 150px;
 }
 
-.menu__wiki--javadog {
+.menu__referenceroom--javadog {
   width: 167px;
   height: 167px;
   background: url("../images/javadog_frame.png") no-repeat 0 0 / 667px 167px;
@@ -935,7 +933,7 @@ h4 {
   }
   .menu__youtube,
   .menu__qna,
-  .menu__wiki,
+  .menu__referenceroom,
   .menu__curriculum {
     width: 105px;
     height: auto;
@@ -1032,11 +1030,11 @@ h4 {
     left: 20px;
     top: 160px;
   }
-  .menu__wiki {
+  .menu__referenceroom {
     left: 64vw;
     top: 18vh;
   }
-  .menu__wiki h4 {
+  .menu__referenceroom h4 {
     left: 50px;
     top: 120px;
   }
@@ -1161,7 +1159,7 @@ h4 {
     left: 18vw;
     top: 52vh;
   }
-  .menu__wiki{
+  .menu__referenceroom{
     /* top:38vh; */
     left:66vw;
   }
@@ -1255,7 +1253,7 @@ h4 {
     top: 55vh;
     left:22vw;
   }
-  .menu__wiki {
+  .menu__referenceroom {
     top: 38vh;
     left:63vw;
   }

@@ -3,7 +3,14 @@ const notionInfo = [
     "name" : "wiki",
     "image" : "",
     "contents":"공부하시면서 정리하고 싶었던 부분을 Wiki에 정리해 주세요!",
-    "link" : "http://paullabedu.synology.me/dokuwiki/"
+    "wiki" : "http://paullabedu.synology.me/dokuwiki/"
+  },
+  {
+    "name" : "2020 Jeju Coding Basecamp",
+    "image" : "./images/notions/jejucodingbasecamp.jpg",
+    "contents":"서비스 기획부터 런칭까지 같이 해봅니다.",
+    "link" : "https://www.notion.so/jejucodingcamp/Jeju-Coding-Basecamp-Home-ff529a96a4e5497eaadd7c5b12b60328",
+    "bookstore":"https://ridibooks.com/books/2773000035?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
   },
   {
     "name" : "Python Bootcamp 얕은물",
@@ -98,15 +105,9 @@ const notionInfo = [
     "bookstore":"https://ridibooks.com/books/2773000005?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
   },
   {
-    "name" : "코딩 기초부터 서비스 런칭까지 JEJU CODING BASECAMP",
-    "image" : "./images/books/jejucodingbasecamp.jpg",
-    "contents":"제주 코딩 베이스캠프(www.jejucodingcamp.com)'의 강의자료 묶음 책입니다.",
-    "bookstore":"https://ridibooks.com/books/2773000021?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
-  },
-  {
     "name" : "제주문학동인지 옴따 2017 여름호",
     "image" : "./images/books/omdda.jpg",
-    "contents":"제주문학동인지 '옴따'는 오픈컬리지 출판 프로젝트로 시작된 문학 계간지 입니다.",
+    "contents":"오픈컬리지 출판 프로젝트로 시작된 문학 계간지 입니다.",
     "bookstore":"https://ridibooks.com/books/2773000003?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
   },
   {
@@ -124,7 +125,7 @@ const notionInfo = [
   {
     "name" : "실습으로 배우는 SQL injection",
     "image" : "./images/books/training_sql_injection.jpg",
-    "contents":" 제공되는 실습사이트를 기반으로 Blind SQL injection, Time Based SQL injection, Error Based SQL injection 와 같은 다양한 SQL injection 의 원리를 설명하고 있습니다.",
+    "contents":"다양한 SQL injection 의 원리를 설명하고 있습니다.",
     "bookstore":"https://ridibooks.com/books/2773000024?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
   },
   {
@@ -166,7 +167,7 @@ const notionInfo = [
   {
     "name" : "코딩도장 튜토리얼로 배우는 Python 문제풀이",
     "image" : "./images/books/tutorial_python_explanation.jpg",
-    "contents":"이 책은 Python 문법을 이제 막 끝낸 분에게 추천해 드립니다.",
+    "contents":"Python 문법을 이제 막 끝낸 분에게 추천해 드립니다.",
     "bookstore":"https://ridibooks.com/books/2773000011?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
   },
   {
@@ -262,10 +263,10 @@ function javadogAnimationOn(){
 
 function notionAnimationOn(){
   let notion = document.querySelectorAll('.notion');
-  for(let i=0; i<10; i=i+2){
+  for(let i=0; i<notion.length; i=i+2){
     notion[i].classList.add('notion--animation--odd');
   }
-  for(let i=1; i<10; i=i+2){
+  for(let i=1; i<notion.length; i=i+2){
     notion[i].classList.add('notion--animation--even');
   }
 }
@@ -328,14 +329,13 @@ function notionSelect(num){
     <div class="notion__back">
       <h1>${notionAbout.name}</h1>
       <h2>"${notionAbout.contents}"</h2>
-      <div class="buttons">
-        <span>Information</span>`;
-        //link,link2와 bookstore 모두 존재할때
+      <div class="buttons">`;
+        // link,link2와 bookstore 모두 존재할때
         if( notionAbout.link&&notionAbout.link2&&notionAbout.bookstore ){
           notion = notion +`
-          <a href='${notionAbout.link}' target='_blank'>n</a>
-          <a href='${notionAbout.link2}' target='_blank'>n2</a>
-          <a href='${notionAbout.bookstore}' target='_blank'>b</a>
+          <a href='${notionAbout.link}' target='_blank'><img src="./images/notionicon.png" alt="노션" />노션 1부 바로가기</a>
+          <a href='${notionAbout.link2}' target='_blank'><img src="./images/notionicon.png" alt="노션" />노션 2부 바로가기</a>
+          <a href='${notionAbout.bookstore}' target='_blank'><img src="./images/bookicon.png" alt="책" />책 바로가기</a>
           </div>
           </div>
           </div>`;
@@ -343,8 +343,8 @@ function notionSelect(num){
         //link와 bookstore 모두 존재할때
         else if( notionAbout.link&&notionAbout.bookstore ){
           notion = notion +`
-          <a href='${notionAbout.link}' target='_blank'>n</a>
-          <a href='${notionAbout.bookstore}' target='_blank'>b</a>
+          <a href='${notionAbout.link}' target='_blank'><img src="./images/notionicon.png" alt="노션" />노션 바로가기</a>
+          <a href='${notionAbout.bookstore}' target='_blank'><img src="./images/bookicon.png" alt="책" />책 바로가기</a>
           </div>
           </div>
           </div>`;
@@ -352,16 +352,23 @@ function notionSelect(num){
         //bookstore만 존재할때
         else if( notionAbout.bookstore ){
           notion = notion +`
-          <a href='${notionAbout.bookstore}' target='_blank'>b</a>
+          <a href='${notionAbout.bookstore}' target='_blank'><img src="./images/bookicon.png" alt="책" />책 바로가기</a>
+          </div>
+          </div>
+          </div>`;
+        }
+        //wiki만 존재할때
+        else if( notionAbout.wiki ){
+          notion = notion +`
+          <a href='${notionAbout.wiki}' target='_blank'>위키 바로가기</a>
           </div>
           </div>
           </div>`;
         }
         //link만 존재할때
-        else{
+        else {
           notion = notion +`
-          <a href='${notionAbout.link}' target='_blank'>n</a>
-          </nav>
+          <a href='${notionAbout.link}' target='_blank'><img src="./images/notionicon.png" alt="노션" />노션 바로가기</a>
           </div>
           </div>
           </div>`;
@@ -398,9 +405,8 @@ function spreadClick(event){
   const notion__front = document.querySelector(".notion__front");
   //notion 펼칠때 이미지 넘기는 효과
   notionDetail.classList.toggle("notion--spread");
-  notion__img.classList.toggle("spread__img");
-  notion__front.classList.toggle("spread");
-  focusNotion.classList.toggle("focus__notion--clicked");
+  notion__img.classList.toggle("notion__front__img--spread");
+  notion__front.classList.toggle("notion__front--spread");
 }
 
 // transition 효과가 완료되었는지 감지
