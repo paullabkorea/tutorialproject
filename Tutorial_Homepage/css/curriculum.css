@@ -243,7 +243,7 @@ section > h2 {
 }
 #footer .wrapper {
   margin: 0;
-  padding: 30px 60px;
+  padding: 40px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,7 +263,7 @@ section > h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 500px;
+  width: 60%;
 }
 #footer .title {
   display: -webkit-box;
@@ -273,17 +273,21 @@ section > h2 {
   font-family: "CookieRunOTF-Bold", "serif";
 }
 #footer .contact_item {
-  padding-top: 20px;
+  padding-top: 15px;
+  line-height: 1.5;
 }
 #footer .contact_item div {
   padding-bottom: 10px;
 }
-#footer .about {
-  width: 500px;
+#footer .contact_item .addr {
   line-height: 1.5;
 }
+#footer .about {
+  width: 40%;
+}
 #footer .about-item {
-  padding-top: 10px;
+  padding-top: 15px;
+  line-height: 1.5;
 }
 #footer .copyright {
   background-color: #3a3939;
@@ -348,27 +352,28 @@ section > h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 15px 15px;
+    padding: 20px 30px;
   }
   #footer .contact {
-    width: 300px;
-    padding-bottom: 10px;
+    width: 100%;
+    padding-bottom: 15px;
   }
   #footer .title {
-    font-size: 10px;
+    font-size: 15px;
   }
-  .contact_item {
+  #footer .contact_item {
     font-size: 5px;
     padding-top: 5px;
   }
-  .contact_item div {
+  #footer .contact_item div {
     padding-bottom: 5px;
   }
-  .about {
-    width: 90vw;
+  #footer .about {
+    width: 100%;
   }
-  .about-item {
+  #footer .about-item {
     font-size: 5px;
+    padding-top: 5px;
   }
   #footer .copyright {
     font-size: 5px;
@@ -428,27 +433,22 @@ section > h2 {
             transform: translateX(-2px) translateY(-2px);
   }
   #footer .wrapper {
-    padding: 20px 30px;
-  }
-  #footer .contact {
-    width: 35vw;
+    padding: 30px 50px;
   }
   #footer .title {
     font-size: 20px;
   }
-  .contact_item {
-    font-size: 10px;
+  #footer .contact_item {
+    font-size: 12px;
     padding-top: 10px;
   }
-  .contact_item div {
+  #footer .contact_item div {
     padding-bottom: 5px;
   }
-  .about {
-    width: 35vw;
-  }
-  .about-item {
-    font-size: 5px;
-    padding-top: 5px;
+  #footer .about-item {
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 1.7;
   }
   #footer .copyright {
     padding: 10px 30px;
