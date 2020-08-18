@@ -12,7 +12,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   font-family: "Nanum Gothic", sans-serif;
   background-color: #7ccad5;
@@ -38,22 +37,20 @@ h4 {
   position: relative;
   overflow-x: hidden;
 }
+/* 바다 배경 */
 #background-img {
   position: absolute;
   background: url("../images/bg_no_sns.png") no-repeat center center;
   width: 100vw;
   height: 100vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
 }
+/* JEJU 배경 */
 #jeju-img {
   position: absolute;
   width: 100vw;
   height: 100vh;
   background: url("../images/bg_jeju.png") no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
   background-size: contain;
 }
 .home {
@@ -70,26 +67,23 @@ h4 {
 .home__btn p {
   font-size: 40px;
   -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+          transition: all 0.3s;
   color: #000;
 }
 .home__btn:hover p {
   -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  transform: scale(1.05);
+          transform: scale(1.05);
 }
+/* BGM BBUTTONS */
 .bgm__button--play{
  position: absolute;
- cursor:pointer;
- top:0;
- right:0;
- margin:30px 40px;
- width:35px;
- height:35px;
+ cursor: pointer;
+ top: 0;
+ right: 0;
+ margin: 30px 40px;
+ width: 35px;
+ height: 35px;
  background-image: url('../images/button_bgm_play.png');
- -webkit-background-size: contain;
- -moz-background-size: contain;
  background-size: contain;
  background-repeat: no-repeat;
  font-family: "CookieRunOTF-Black";
@@ -97,24 +91,24 @@ h4 {
 .bgm__button--pause{
   display: none;
   position: absolute;
-  cursor:pointer;
-  top:0;
-  right:0;
-  margin:30px 40px;
-  width:35px;
-  height:35px;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  margin: 30px 40px;
+  width: 35px;
+  height: 35px;
   background-image: url('../images/button_bgm_pause.png');
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "CookieRunOTF-Black";
 }
 .bgm__button--active{
-  display:block;
+  display: block;
 }
 .bgm__button--disactive{
   display: none;
 }
-
+/* 새소식 */
 .news {
   width: 245px;
   height: 125px;
@@ -122,20 +116,14 @@ h4 {
   left: 74vw;
   top: 0;
   -webkit-animation: move 2s;
-  animation: move 2s;
-  -moz-transition: ease;
-  -ms-transition: ease;
-  -o-transition: ease;
-  transition: ease;
+          animation: move 2s;
+  -webkit-transition: ease;
+          transition: ease;
 }
 .news:hover .news__bird {
   -webkit-animation-play-state: paused;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -moz-transition: transform 0.5s;
-  -ms-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-  animation-play-state: paused;
+          animation-play-state: paused;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transform: scale(1.1);
   cursor: pointer;
@@ -165,13 +153,11 @@ h4 {
   height: 125px;
   background: url("../images/frame_bird.png") no-repeat 0 0 / 1342.5px 125px;
   -webkit-animation: bird 1s infinite steps(6);
-  animation: bird 1s infinite steps(6);
+          animation: bird 1s infinite steps(6);
   position: relative;
   cursor: pointer;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 @-webkit-keyframes bird {
   100% {
@@ -183,20 +169,20 @@ h4 {
     background-position: -1342.5px 0;
   }
 }
+/* 메뉴 */
 .menu h4 {
-  width:100px;
+  width: 100px;
   position: absolute;
 }
 .menu div:hover {
   -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-  -moz-transition: transform 0.5s;
-  -ms-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
+          animation-play-state: paused;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
+          transform: scale(0.9);
   cursor: pointer;
 }
 .menu:hover h4 {
@@ -204,40 +190,38 @@ h4 {
   text-shadow: 0 0 5px #fff;
 }
 .menu__hallasan {
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
   position: absolute;
   left: 40vw;
   top: 33vh;
 }
 .menu__hallasan__img {
   -webkit-animation: hallasan 0.5s infinite;
+          animation: hallasan 0.5s infinite;
   -webkit-animation-direction: alternate;
-  animation: hallasan 0.5s infinite;
-  animation-direction: alternate;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+          animation-direction: alternate;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 @-webkit-keyframes hallasan {
   0% {
     -webkit-transform: scale(0.5);
-    -ms-transform: scale(0.5);
+            transform: scale(0.5);
   }
   100% {
     -webkit-transform: scale(0.6);
-    -ms-transform: scale(0.6);
+            transform: scale(0.6);
   }
 }
 @keyframes hallasan {
   0% {
-    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   100% {
-    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
 }
 /* 바울랩 - about */
@@ -247,6 +231,26 @@ h4 {
   top: 16vh;
   width: 97.5px;
   height: auto;
+}
+.menu__paullab--frame {
+  width: 97.5px;
+  height: 145px;
+  background: url("../images/frame_paullab.png") no-repeat 0 0 / 4096px 145px;
+  -webkit-animation: paullab 3.3s infinite steps(42);
+          animation: paullab 3.3s infinite steps(42);
+  position: absolute;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+}
+.menu__paullab h4 {
+  left: 30px;
+  top: 145px;
+}
+.menu__paullab div:hover{
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 @-webkit-keyframes paullab {
   100% {
@@ -258,29 +262,6 @@ h4 {
     background-position: -4096px 0;
   }
 }
-.menu__paullab--frame {
-  width: 97.5px;
-  height: 145px;
-  background: url("../images/frame_paullab.png") no-repeat 0 0 / 4096px 145px;
-  -webkit-animation: paullab 3.3s infinite steps(42);
-  animation: paullab 3.3s infinite steps(42);
-  position: absolute;
-  -webkit-ransform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.menu__paullab h4 {
-  left: 30px;
-  top: 145px;
-}
-.menu__paullab div:hover{
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
 /* 파이와 썬 - 유튜브 */
 .menu__youtube {
   position: absolute;
@@ -288,10 +269,8 @@ h4 {
   top: 27vh;
   width: 125px;
   height: 125px;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 .menu__youtube h4 {
   left: 50px;
@@ -302,15 +281,12 @@ h4 {
   height: 125px;
   background: url("../images/frame_python.png") no-repeat 0 0 / 500px 125px;
   -webkit-animation: py_thon 1s infinite steps(4);
-  animation: py_thon 1s infinite steps(4);
+          animation: py_thon 1s infinite steps(4);
   position: absolute;
-  -webkit-ransform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 @-webkit-keyframes py_thon {
   100% {
@@ -323,35 +299,30 @@ h4 {
   }
 }
 /* 뮤라 - 출판정보 */
-.menu__book {
+.menu__store {
   position: absolute;
   left: 24vw;
   top: 34vh;
   width: 167px;
   height: 167px;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
-.menu__book h4 {
-  left:57px;
+.menu__store h4 {
+  left: 57px;
   top: 150px;
 }
-.menu__book--mura {
+.menu__store--mura {
   width: 167px;
   height: 167px;
   background: url("../images/frame_mura.png") no-repeat 0 0 / 667px 167px;
   -webkit-animation: mura 0.5s infinite steps(4);
-  animation: mura 0.5s infinite steps(4);
+          animation: mura 0.5s infinite steps(4);
   position: relative;
-  -webkit-ransform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 @-webkit-keyframes mura {
   100% {
@@ -370,10 +341,8 @@ h4 {
   top: 53vh;
   width: 167px;
   height: 167px;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 .menu__qna h4 {
   left: 120px;
@@ -383,10 +352,18 @@ h4 {
   width: 167px;
   height: 167px;
   background: url("../images/frame_gary.png") no-repeat 0 0 / 667px 167px;
-  animation: gary 1s infinite steps(4);
-  transform: scale(0.8);
+  -webkit-animation: gary 1s infinite steps(4);
+          animation: gary 1s infinite steps(4);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   position: relative;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+}
+@-webkit-keyframes gary {
+  100% {
+    background-position: -667px 0;
+  }
 }
 @keyframes gary {
   100% {
@@ -410,15 +387,12 @@ h4 {
   height: 167px;
   background: url("../images/frame_soulgom.png") no-repeat 0 0/ 667px 167px;
   -webkit-animation: soulgom 1s infinite steps(4);
-  animation: soulgom 1s infinite steps(4);
+          animation: soulgom 1s infinite steps(4);
   position: relative;
-  -webkit-ransform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 @-webkit-keyframes soulgom {
   100% {
@@ -444,59 +418,56 @@ h4 {
 }
 .menu__intro:hover .menu__intro img {
   -webkit-animation-play-state: paused;
-  animation-play-state: paused;
+          animation-play-state: paused;
 }
 .menu__intro div:hover {
   -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
 }
 .menu__intro--licat {
   -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
+          transform: scale(0.9);
   position: relative;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 .menu__intro--licat .hand {
   position: relative;
   -webkit-animation: licat 1s infinite linear;
-  animation: licat 1s infinite linear;
+          animation: licat 1s infinite linear;
   width: 70px;
   height: 70px;
   left: 58px;
   top: -121px;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 @-webkit-keyframes licat {
   0% {
     -webkit-transform: rotate(-11deg);
-    -ms-transform: rotate(-11deg);
+            transform: rotate(-11deg);
   }
   50% {
     -webkit-transform: rotate(23deg);
-    -ms-transform: rotate(23deg);
+            transform: rotate(23deg);
   }
   100% {
     -webkit-transform: rotate(-11deg);
-    -ms-transform: rotate(-11deg);
+            transform: rotate(-11deg);
   }
 }
 @keyframes licat {
   0% {
-    transform: rotate(-11deg);
+    -webkit-transform: rotate(-11deg);
+            transform: rotate(-11deg);
   }
   50% {
-    transform: rotate(23deg);
+    -webkit-transform: rotate(23deg);
+            transform: rotate(23deg);
   }
   100% {
-    transform: rotate(-11deg);
+    -webkit-transform: rotate(-11deg);
+            transform: rotate(-11deg);
   }
 }
 /* 자바독 - 바울랩 reference */
@@ -507,26 +478,26 @@ h4 {
   left: 64vw;
   top: 36vh;
 }
-
 .menu__referenceroom h4 {
   left: 50px;
   top: 150px;
 }
-
 .menu__referenceroom--javadog {
   width: 167px;
   height: 167px;
   background: url("../images/frame_javadog.png") no-repeat 0 0 / 667px 167px;
   -webkit-animation: javadog 0.5s infinite steps(4);
-  animation: javadog 0.5s infinite steps(4);
+          animation: javadog 0.5s infinite steps(4);
   -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
+          transform: scale(0.8);
   position: relative;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+}
+@-webkit-keyframes javadog {
+  100% {
+    background-position: -667px 0;
+  }
 }
 @keyframes javadog {
   100% {
@@ -550,15 +521,12 @@ h4 {
   height: 167px;
   background: url("../images/frame_binky.png") no-repeat 0 0 / 667px 167px;
   -webkit-animation: binky 1s infinite steps(4);
-  animation: binky 1s infinite steps(4);
+          animation: binky 1s infinite steps(4);
   -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
+          transform: scale(0.8);
   position: relative;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 @-webkit-keyframes binky {
   100% {
@@ -583,19 +551,21 @@ h4 {
 @-webkit-keyframes windmill {
   50% {
     -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 @keyframes windmill {
   50% {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /* etc
@@ -610,7 +580,7 @@ h4 {
   width: 100px;
   height: 100px;
   -webkit-animation: windmill 2s infinite linear;
-  animation: windmill 2s infinite linear;
+          animation: windmill 2s infinite linear;
   position: relative;
 }
 .windmill--wind .wind1 {
@@ -644,60 +614,38 @@ h4 {
   bottom: 5vh;
   background: url("../images/bg_dolharbang.png") no-repeat center center;
   background-size: contain;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
 }
 .dolharbang img{
   width:50%;
   margin:0 25%;
   height:auto;
   top:50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
-.dolharbang:hover img{
-  transform: rotate(0deg);
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1) translateY(-50%);
-  filter: FlipH;
-  -ms-filter: "FlipH";
-}
-
 /* 좌우반전 */
 .etc:hover img {
-  transform: rotate(0deg);
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+          transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
 }
-
 .dolharbang:hover img{
-  transform: rotate(0deg);
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1) translateY(-50%);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+  -webkit-transform: scaleX(-1) translateY(-50%);
+          transform: scaleX(-1) translateY(-50%);
+  -webkit-filter: FlipH;
+          filter: FlipH;
 }
-
 .sns {
   width: 665px;
   height: 102px;
   position: absolute;
   background: url("../images/bg_sns.png") no-repeat;
   background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
   right: 7vw;
   bottom: 6.2vh;
-  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 .sns__wrap {
   padding-top: 10px;
@@ -706,13 +654,12 @@ h4 {
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .sns .sns__wrap div {
   width: 50px;
@@ -723,20 +670,18 @@ h4 {
   position: fixed;
   display: none;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  justify-content: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
   z-index: 3;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
 }
 #modal.on {
   display: -webkit-box;
@@ -770,13 +715,13 @@ h4 {
 .modal__header {
   display: -webkit-box;
   display: -ms-flexbox;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 30px;
   border-bottom: solid 1px #dbdbdb;
 }
@@ -790,32 +735,31 @@ h4 {
 .modal__header .close__btn i {
   color: #dbdbdb;
   font-size: 2vw;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
 }
 .modal__header .close__btn:hover i {
-  -ms-transform: rotate(360deg); /* IE 9 */
-  -webkit-transform: rotate(360deg); /* Safari 3-8 */
-  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 .modal__content {
   display: -webkit-box;
   display: -ms-flexbox;
-  -webkit-box-orient: vertical;
-  -ms-flex-direction: column;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 30px 20px;
 }
 .modal__content .post {
   display: -webkit-box;
   display: -ms-flexbox;
-  -webkit-box-orient: vertical;
-  -ms-flex-direction: column;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-bottom: 1px solid #dcdddd;
   margin-bottom: 20px;
 }
@@ -823,9 +767,15 @@ h4 {
   margin: 0 auto;
 }
 .modal__content .post__img a{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .modal__content .post__img img{
   width:50%;
@@ -919,17 +869,11 @@ h4 {
   }
   .scale {
     -webkit-transform: scale(0.4);
-    -moz-transform: scale(0.4);
-    -o-transform: scale(0.4);
-    -ms-transform: scale(0.4);
-    transform: scale(0.4);
+            transform: scale(0.4);
   }
   .etc {
     -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5);
+            transform: scale(0.5);
   }
   .menu__youtube,
   .menu__qna,
@@ -938,33 +882,36 @@ h4 {
     width: 105px;
     height: auto;
   }
+  .menu div:hover {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
   .news__bird {
     -webkit-transform: scale(0.4);
-    -moz-transform: scale(0.4);
-    -o-transform: scale(0.4);
-    -ms-transform: scale(0.4);
-    transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  .news:hover .news__bird{
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   @-webkit-keyframes hallasan {
     0% {
       -webkit-transform: scale(0.2);
-      -moz-transform: scale(0.2);
-      -o-transform: scale(0.2);
-      -ms-transform: scale(0.2);
+              transform: scale(0.2);
     }
     100% {
       -webkit-transform: scale(0.3);
-      -moz-transform: scale(0.3);
-      -o-transform: scale(0.3);
-      -ms-transform: scale(0.3);
+              transform: scale(0.3);
     }
   }
   @keyframes hallasan {
     0% {
-      transform: scale(0.2);
+      -webkit-transform: scale(0.2);
+              transform: scale(0.2);
     }
     100% {
-      transform: scale(0.3);
+      -webkit-transform: scale(0.3);
+              transform: scale(0.3);
     }
   }
   .home {
@@ -979,6 +926,7 @@ h4 {
       height:20px;
       z-index:30;
   }
+
   .menu__hallasan {
     left: 30vw;
     top: 20vh;
@@ -998,11 +946,11 @@ h4 {
   .menu__youtube h4 {
     top: 95px;
   }
-  .menu__book {
+  .menu__store {
     left: 14vw;
     top: 23vh;
   }
-  .menu__book h4 {
+  .menu__store h4 {
     left: 97px;
     top: 110px;
   }
@@ -1063,16 +1011,14 @@ h4 {
   }
   .news:hover div {
     -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5);
+            transform: scale(0.5);
   }
   .modal__header {
     padding: 10px 20px;
   }
   .sns {
-    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
     right: -20vw;
     bottom: 0px;
   }
@@ -1091,45 +1037,34 @@ h4 {
   @-webkit-keyframes hallasan {
     0% {
       -webkit-transform: scale(0.5);
-      -moz-transform: scale(0.5);
-      -o-transform: scale(0.5);
-      -ms-transform: scale(0.5);
+              transform: scale(0.5);
     }
     100% {
       -webkit-transform: scale(0.6);
-      -moz-transform: scale(0.6);
-      -o-transform: scale(0.6);
-      -ms-transform: scale(0.6);
+              transform: scale(0.6);
     }
   }
   @keyframes hallasan {
     0% {
-      transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
     }
     100% {
-      transform: scale(0.6);
+      -webkit-transform: scale(0.6);
+              transform: scale(0.6);
     }
   }
   .scale {
     -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
+            transform: scale(0.8);
   }
   .menu div:hover {
     -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
+            transform: scale(0.9);
   }
   .etc {
     -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
+            transform: scale(0.8);
   }
   .menu__paullab {
     /* top: 25vh; */
@@ -1141,11 +1076,11 @@ h4 {
     left: 29vw;
     top: 28vh;
   }
-  .menu__book{
+  .menu__store{
     top:35vh;
     left:20vw;
   }
-  .menu__book h4 {
+  .menu__store h4 {
     left: 40px;
   }
   .menu__online_lec {
@@ -1199,38 +1134,30 @@ h4 {
   @-webkit-keyframes hallasan {
     0% {
       -webkit-transform: scale(0.6);
-      -moz-transform: scale(0.6);
-      -o-transform: scale(0.6);
-      -ms-transform: scale(0.6);
+              transform: scale(0.6);
     }
     100% {
       -webkit-transform: scale(0.7);
-      -moz-transform: scale(0.7);
-      -o-transform: scale(0.7);
-      -ms-transform: scale(0.7);
+              transform: scale(0.7);
     }
   }
   @keyframes hallasan {
     0% {
-      transform: scale(0.6);
+      -webkit-transform: scale(0.6);
+              transform: scale(0.6);
     }
     100% {
-      transform: scale(0.7);
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
     }
   }
   .scale {
     -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
+            transform: scale(0.8);
   }
   .menu div:hover {
     -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
+            transform: scale(0.9);
   }
   .menu__paullab {
     top: 17vh;
@@ -1242,11 +1169,11 @@ h4 {
     left: 30vw;
     top: 27vh;
   }
-  .menu__book {
+  .menu__store {
     left: 20vw;
     top: 34vh;
   }
-  .menu__book h4 {
+  .menu__store h4 {
     left: 70px;
   }
   .menu__qna {
@@ -1282,48 +1209,38 @@ h4 {
   @-webkit-keyframes hallasan {
     0% {
       -webkit-transform: scale(0.7);
-      -moz-transform: scale(0.7);
-      -o-transform: scale(0.7);
-      -ms-transform: scale(0.7);
+              transform: scale(0.7);
     }
     100% {
       -webkit-transform: scale(0.8);
-      -moz-transform: scale(0.8);
-      -o-transform: scale(0.8);
-      -ms-transform: scale(0.8);
+              transform: scale(0.8);
     }
   }
   @keyframes hallasan {
     0% {
-      transform: scale(0.7);
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
     }
     100% {
-      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
     }
   }
   .scale {
     -webkit-transform: scale(1.0);
-    -moz-transform: scale(1.0);
-    -o-transform: scale(1.0);
-    -ms-transform: scale(1.0);
-    transform: scale(1.0);
+            transform: scale(1.0);
   }
   .menu div:hover {
     -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
   .news:hover div {
     -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+            transform: scale(1.2);
   }
   .sns {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
     right: 9.3vw;
     bottom: 6.2vh;
   }
