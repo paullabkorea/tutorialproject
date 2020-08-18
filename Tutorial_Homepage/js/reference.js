@@ -272,10 +272,10 @@ function notionAnimationOn(){
 }
 function notionAnimationOff(){
   let notion = document.querySelectorAll('.notion');
-  for(let i=0; i<10; i=i+2){
+  for(let i=0; i<notion.length; i=i+2){
     notion[i].classList.remove('notion--animation--odd');
   }
-  for(let i=1; i<10; i=i+2){
+  for(let i=1; i<notion.length; i=i+2){
     notion[i].classList.remove('notion--animation--even');
   }
 }
