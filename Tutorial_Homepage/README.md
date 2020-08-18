@@ -302,6 +302,9 @@ CSS는 CSS3 속성을 제외하고 W3C validation을 통과해야 한다.
 -
 
 
+### 4. Vendor Prefix
+- 브라우저 별 css 지원 속
+- transform : ms, webkit
 
 - css 스타일 속성간 
 
