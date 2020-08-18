@@ -75,7 +75,7 @@ h4 {
           transform: scale(1.05);
 }
 /* BGM BBUTTONS */
-.bgm__button--play{
+.bgm__button--play {
  position: absolute;
  cursor: pointer;
  top: 0;
@@ -88,7 +88,7 @@ h4 {
  background-repeat: no-repeat;
  font-family: "CookieRunOTF-Black";
 }
-.bgm__button--pause{
+.bgm__button--pause {
   display: none;
   position: absolute;
   cursor: pointer;
@@ -102,10 +102,10 @@ h4 {
   background-repeat: no-repeat;
   font-family: "CookieRunOTF-Black";
 }
-.bgm__button--active{
+.bgm__button--active {
   display: block;
 }
-.bgm__button--disactive{
+.bgm__button--disactive {
   display: none;
 }
 /* 새소식 */
@@ -615,7 +615,7 @@ h4 {
   background: url("../images/bg_dolharbang.png") no-repeat center center;
   background-size: contain;
 }
-.dolharbang img{
+.dolharbang img {
   width:50%;
   margin:0 25%;
   height:auto;
@@ -890,7 +890,7 @@ h4 {
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
   }
-  .news:hover .news__bird{
+  .news:hover .news__bird {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
@@ -920,13 +920,12 @@ h4 {
   .home__btn p {
     font-size: 23px;
   }
-  .bgm__button--play,.bgm__button--pause{
+  .bgm__button--play,.bgm__button--pause {
       margin: 15px 25px;
       width:20px;
       height:20px;
       z-index:30;
   }
-
   .menu__hallasan {
     left: 30vw;
     top: 20vh;
@@ -1094,17 +1093,13 @@ h4 {
     left: 18vw;
     top: 52vh;
   }
-  .menu__referenceroom{
-    /* top:38vh; */
+  .menu__referenceroom {
     left:66vw;
   }
-  .menu__curriculum{
-    /* top:23vh; */
-  }
-  .parasol{
+  .parasol {
     left:17vw;
   }
-  .windmill{
+  .windmill {
     top:23vh;
   }
   .dolharbang {
