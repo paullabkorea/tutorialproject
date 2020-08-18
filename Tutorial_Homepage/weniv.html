@@ -1,71 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <!-- 구글 추적코드 삽입 -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72047520-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-72047520-1');
-  </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
   <!-- 네이버 추적코드 삽입 -->
-  <meta name="naver-site-verification" content="f6051afcd291f3ccef7b8f01128dfc92d14563a4"/>
+  <meta name="naver-site-verification" content="f6051afcd291f3ccef7b8f01128dfc92d14563a4">
   <meta property="og:type" content="website">
   <meta property="og:title" content="바울랩, 위니브">
   <meta name="description" content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사, 미디어">
   <meta property="og:description" content="제주 ICT 코딩 컴퓨터학원, 연구원, 출판사, 미디어">
   <meta property="og:image" content="http://paullab.co.kr/images/jejucoding.png">
   <meta property="og:url" content="http://paullab.co.kr">
-
   <!-- favicon -->
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/weniv.css">
   <title>캐릭터 소개</title>
+  <!--
+  구글 Analytics 스크립트 삽입
+  Global site tag (gtag.js) - Google Analytics
+  -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-72047520-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-72047520-1");
+  </script>
 </head>
 <body>
   <!-- 모바일 세로모드일 경우에 표시 -->
   <div id="message">
     <div class="msg-img">
-      <img src="images/licat-hi.png" alt="">
+      <img src="images/message_licat.png" alt="">
     </div>
     <p>해당 웹 페이지는 가로모드만 지원합니다.</p>
   </div>
   <!-- // 모바일 세로모드일 경우에 표시 -->
 
   <!-- 메인 컨텐츠 -->
-  <div id="main_contents">
-    <div class="bg">
-    </div>
+  <section id="main-contents">
+    <h2>메인 컨텐츠</h2>
+    <div class="bg"></div>
     <div id="home">
       <a href="index.html" class="home-btn">
         <i class="fas fa-home"></i>
       </a>
     </div>
-
-      <!-- 음악 삽입 -->
-      <!-- chrome에서는 사용자의 interation이 없으면 아예 자동재생이 불가!-->
-      <!-- 2번_Cuckoo Clock - Quincas Moreira-->
-      <!-- <div class="bgm__button--play"></div>
-      <div class="bgm__button--pause"></div> -->
-      <audio autoplay loop class="bgm">
-        <source src="https://drive.google.com/uc?export=download&id=1LgSv6VMQZOR9DPDhHSDmdAzFGOSmQpsy" type="audio/mp3" >
-      </audio>
-
+    <!-- 음악 삽입 -->
+    <!-- chrome에서는 사용자의 interation이 없으면 아예 자동재생이 불가!-->
+    <audio autoplay loop class="bgm">
+      <source src="https://drive.google.com/uc?export=download&id=1LgSv6VMQZOR9DPDhHSDmdAzFGOSmQpsy" type="audio/mp3" >
+    </audio>
+    <!-- //음악 삽입 -->
     <div class="cloud-sun">
       <img src="images/cloud-sun.png" alt="">
     </div>
-
     <div class="text">
       <div class="inner">
         <h2>"위니브 친구들을 소개합니다"</h2>
@@ -74,8 +69,6 @@
         </p>
       </div>
     </div>
-
-
     <!-- 캐릭터 배치 -->
     <div id="wenivs">
       <ul class="wrapper">
@@ -105,6 +98,7 @@
         </li>
       </ul>
     </div>
+    <!-- //캐릭터 배치 -->
 
     <!-- 캐릭터 소개 -->
     <div id="intro">
@@ -180,7 +174,10 @@
         </p>
       </div>
     </div>
-  </div>
+    <!-- //캐릭터 소개 -->
+  </section>
+  <!-- //메인 컨텐츠 -->
+
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script type="text/javascript">
     let index = 0;
@@ -194,20 +191,6 @@
       $('.intro').eq(index).css('display','none');
       $('.text').css('display', 'block');
     });
-
-    //음악 재생
-    // function musicPlay(){
-    //   document.querySelector('.bgm').play();
-    //   document.querySelector('.bgm__button--play').classList.add('bgm__button--disactive');
-    //   document.querySelector('.bgm__button--pause').classList.add('bgm__button--active');
-    // }
-    // function musicStop(){
-    //   document.querySelector('.bgm').pause();
-    //   document.querySelector('.bgm__button--play').classList.remove('bgm__button--disactive');
-    //   document.querySelector('.bgm__button--pause').classList.remove('bgm__button--active');
-    // }
-    // document.querySelector('.bgm__button--play').addEventListener('click', musicPlay);
-    // document.querySelector('.bgm__button--pause').addEventListener('click', musicStop);
 
     //아무곳이나 클릭시 재생 가능
     function musicPlay(){

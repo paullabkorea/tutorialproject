@@ -13,7 +13,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "CookieRun-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
@@ -21,55 +20,42 @@
   font-weight: normal;
   font-style: normal;
 }
-
 body {
   font-family: "Nanum Gothic", sans-serif;
   background-color: #7ccad5;
 }
-
 a {
   color: inherit;
   cursor: pointer;
   text-decoration: none;
 }
-
 img {
   width: 100%;
   height: auto;
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#main_contents {
+#main-contents {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
-
-#main_contents .bg {
+section > h2 {
+  display: none;
+}
+/* weniv 배경화면 */
+#main-contents .bg {
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-
   display: -webkit-box;
   display: -ms-flexbox;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: url("../images/weniv-bg.png") no-repeat 0 0 / 100vw 100vh;
 }
-
 #home {
   position: absolute;
   left: 0;
@@ -77,55 +63,16 @@ img {
   padding: 20px 30px;
   z-index: 999;
 }
-
 #home .home-btn i {
   font-size: 35px;
   color: #fff;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
 }
-
 #home .home-btn:hover i {
-  -ms-transform: rotate(360deg) scale(1.2); /* IE 9 */
-  -webkit-transform: rotate(360deg) scale(1.2); /* Safari 3-8 */
-  transform: rotate(360deg) scale(1.2);
+  -webkit-transform: rotate(360deg) scale(1.2);
+          transform: rotate(360deg) scale(1.2);
 }
-
-.bgm__button--play{
- position: absolute;
- cursor:pointer;
- top:0;
- right:0;
- margin:30px 40px;
- width:35px;
- height:35px;
- background-image: url('../images/play-button.png');
- background-size: contain;
- background-repeat: no-repeat;
- font-family: "CookieRunOTF-Black";
- z-index: 999;
-}
-.bgm__button--pause{
-  display: none;
-  position: absolute;
-  cursor:pointer;
-  top:0;
-  right:0;
-  margin:30px 40px;
-  width:35px;
-  height:35px;
-  background-image: url('../images/pause.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-family: "CookieRunOTF-Black";
-  z-index: 999;
-}
-.bgm__button--active{
-  display:block;
-}
-.bgm__button--disactive{
-  display: none;
-}
-
 .cloud-sun {
   position: absolute;
   right: 0;
@@ -134,38 +81,36 @@ img {
   height: auto;
   padding: 40px 50px;
 }
-
+/* 메인 텍스트 */
 .text {
   position: absolute;
   left: 0;
   top: 0;
   display: block;
-  transition: all 0.4s;
-  animation: fadeIn 1s ease;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+  -webkit-animation: fadeIn 1s ease;
+          animation: fadeIn 1s ease;
 }
-
 .text .inner {
   width: 100vw;
   height: auto;
   position: absolute;
-
   display: -webkit-box;
   display: -ms-flexbox;
-  -webkit-box-orient: vertical;
-  -ms-flex-direction: column;
-
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 120px;
 }
-
 .text h2 {
   font-family: "CookieRunOTF-Black";
   font-size: 40px;
   padding-bottom: 30px;
   margin: 0 auto;
 }
-
 .text p {
   font-family: "CookieRun-Regular";
   color: #fff;
@@ -174,11 +119,10 @@ img {
   padding-bottom: 20px;
   margin: 0 auto;
 }
-
+/* 캐릭터 배치 */
 #wenivs {
   width: 100vw;
   height: auto;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,37 +130,34 @@ img {
   left: 0;
   bottom: 350px;
 }
-
 #wenivs .wrapper {
   width: 100vw;
   height: auto;
-
   display: -webkit-box;
   display: -ms-flexbox;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-
 #wenivs .wrapper li {
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
 }
-
 #wenivs img {
   cursor: pointer;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
 }
-
 #wenivs li:hover > img {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 5px #fff);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: drop-shadow(0 0 5px #fff);
+          filter: drop-shadow(0 0 5px #fff);
 }
-
 #wenivs .licat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,7 +167,6 @@ img {
   width: 200px;
   height: auto;
 }
-
 #wenivs .gary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,7 +176,6 @@ img {
   width: 150px;
   height: auto;
 }
-
 #wenivs .javadog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,7 +185,6 @@ img {
   width: 200px;
   height: auto;
 }
-
 #wenivs .soulgom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +194,6 @@ img {
   width: 200px;
   height: auto;
 }
-
 #wenivs .sun,
 .pie {
   display: -webkit-box;
@@ -267,7 +204,6 @@ img {
   width: 70px;
   height: auto;
 }
-
 #wenivs .binky {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,7 +214,6 @@ img {
   height: auto;
   padding-bottom: 20px;
 }
-
 #wenivs .mura {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,7 +223,7 @@ img {
   width: 160px;
   height: auto;
 }
-
+/* 캐릭터 소개 */
 #intro {
   position: absolute;
   left: 200px;
@@ -296,18 +231,31 @@ img {
   width: 50vw;
   height: auto;
 }
-
 #intro div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  -webkit-box-orient: vertical;
-  -ms-flex-direction: column;
-
   display: none;
-  flex-direction: column;
-  animation: fadeIn 0.8s ease;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: fadeIn 0.8s ease;
+          animation: fadeIn 0.8s ease;
 }
-
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #intro h2 {
   font-family: "CookieRunOTF-Black";
   font-size: 35px;
@@ -319,36 +267,30 @@ img {
   font-size: 25px;
   padding-bottom: 25px;
 }
-
 #intro p {
   font-family: "CookieRun-Regular";
   font-size: 17px;
   line-height: 1.4;
 }
-
 /* 메시지 */
 #message {
   display: none;
 }
-
 #message .msg-img {
   width: 200px;
   height: auto;
   margin: 0 auto;
 }
-
 #message p {
   font-size: 15px;
   font-family: "CookieRunOTF-Bold";
 }
-
 @media only screen and (orientation: portrait) {
-  #main_contents {
+  #main-contents {
     height: 100vw;
     width: auto;
     display: none;
   }
-
   #message {
     display: block;
     text-align: center;
@@ -358,85 +300,61 @@ img {
     top: 30vh;
   }
 }
-
 @media all and (min-width: 480px) and (max-width: 568px) {
   #home {
     padding: 15px 20px;
   }
-
   #home .home-btn i {
     font-size: 27px;
   }
-
-  .bgm__button--play,.bgm__button--pause{
-      margin: 15px 25px;
-      width:20px;
-      height:20px;
-      z-index:30;
-  }
-
   .cloud-sun {
     width: 120px;
     height: auto;
     padding: 20px 20px;
   }
-
   .text {
     top: 50px;
   }
-
   .text .inner {
     padding-top: 0;
   }
-
   .text h2 {
     font-size: 20px;
     padding-bottom: 20px;
   }
-
   .text p {
     font-size: 15px;
   }
-
   #wenivs {
     bottom: 45vh;
   }
-
   #wenivs .licat {
     width: 90px;
   }
-
   #wenivs .gary {
     width: 60px;
   }
-
   #wenivs .javadog {
     width: 90px;
   }
-
   #wenivs .soulgom {
     width: 90px;
   }
-
   #wenivs .sun,
   .pie {
     width: 40px;
   }
-
   #wenivs .binky {
     width: 60px;
     padding-bottom: 10px;
   }
-
   #wenivs .mura {
     width: 80px;
   }
-
   #intro {
     left: 20vw;
     top: 10vh;
   }
-
   #intro h2 {
     font-size: 15px;
     padding-bottom: 5px;
@@ -445,7 +363,6 @@ img {
     font-size: 10px;
     padding-bottom: 5px;
   }
-
   #intro p {
     font-size: 5px;
     line-height: 1.3;
@@ -456,79 +373,57 @@ img {
   #home {
     padding: 15px 20px;
   }
-
   #home .home-btn i {
     font-size: 27px;
   }
-  .bgm__button--play,.bgm__button--pause{
-      margin: 15px 25px;
-      width:20px;
-      height:20px;
-      z-index:30;
-  }
-
   .cloud-sun {
     width: 120px;
     height: auto;
     padding: 20px 20px;
   }
-
   .text {
     top: 50px;
   }
-
   .text .inner {
     padding-top: 0;
   }
-
   .text h2 {
     font-size: 20px;
     padding-bottom: 20px;
   }
-
   .text p {
     font-size: 15px;
   }
-
   #wenivs {
     bottom: 45vh;
   }
-
   #wenivs .licat {
     width: 100px;
   }
-
   #wenivs .gary {
     width: 70px;
   }
-
   #wenivs .javadog {
     width: 100px;
   }
-
   #wenivs .soulgom {
     width: 100px;
   }
-
   #wenivs .sun,
   .pie {
     width: 40px;
   }
-
   #wenivs .binky {
     width: 70px;
     padding-bottom: 10px;
   }
-
   #wenivs .mura {
     width: 90px;
   }
-
   #intro {
     left: 20vw;
     top: 10vh;
   }
-
   #intro h2 {
     font-size: 20px;
     padding-bottom: 10px;
@@ -537,16 +432,13 @@ img {
     font-size: 15px;
     padding-bottom: 10px;
   }
-
   #intro p {
     font-size: 10px;
     line-height: 1.3;
   }
-
   #message .msg-img {
     width: 300px;
   }
-
   #message p {
     font-size: 30px;
   }
@@ -559,19 +451,15 @@ img {
   .text {
     top: 50px;
   }
-
   #wenivs {
     bottom: 40vh;
   }
-
   #wenivs .licat {
     width: 150px;
   }
-
   #wenivs .gary {
     width: 100px;
   }
-
   #wenivs .javadog {
     width: 150px;
   }
@@ -579,44 +467,35 @@ img {
   #wenivs .soulgom {
     width: 150px;
   }
-
   #wenivs .sun,
   .pie {
     width: 60px;
   }
-
   #wenivs .binky {
     width: 90px;
     padding-bottom: 15px;
   }
-
   #wenivs .mura {
     width: 110px;
   }
-
   #intro {
     left: 17vw;
     top: 15vh;
   }
-
   #intro h2 {
     font-size: 30px;
     padding-bottom: 20px;
   }
-
   #intro span {
     font-size: 20px;
     padding-bottom: 20px;
   }
-
   #intro p {
     font-size: 15px;
   }
-
   #message .msg-img {
     width: 400px;
   }
-
   #message p {
     font-size: 35px;
   }
@@ -629,7 +508,6 @@ img {
   .text {
     top: 70px;
   }
-
   #intro {
     left: 17vw;
     top: 20vh;
@@ -640,7 +518,6 @@ img {
   #home .home-btn i {
     font-size: 40px;
   }
-
   .text {
     top: 50px;
   }
@@ -651,12 +528,13 @@ img {
     padding-right: 15px;
   }
   #wenivs img {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #wenivs li:hover > img {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
-
   #intro {
     left: 270px;
     top: 200px;
