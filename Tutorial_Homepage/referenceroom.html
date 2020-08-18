@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,11 +14,12 @@
   <meta property="og:image" content="http://paullab.co.kr/images/jejucoding.png" />
   <meta property="og:url" content="http://paullab.co.kr" />
   <!-- favicon -->
-  <link rel="shortcut icon" type=”image/x-icon” href="favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" />
-  <link rel="stylesheet" type="text/css" href="css/reset.css"  />
-  <link rel="stylesheet" type="text/css" href="css/referenceroom.css"  />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/referenceroom.css" />
   <title>자료실</title>
   <!--
   구글 Analytics 스크립트 삽입
@@ -36,14 +38,14 @@
 </head>
 
 <body>
-<!-- 화면 어디든 클릭시 음악 반복재생 -->
-<audio autoplay loop class="bgm">
-  <source src="https://drive.google.com/uc?export=download&id=1XelfpMJY5-2xlYWXCWXT2zqYmKNnukU7" type="audio/mp3" >
-</audio>
+  <!-- 화면 어디든 클릭시 음악 반복재생 -->
+  <audio autoplay loop class="bgm">
+    <source src="https://drive.google.com/uc?export=download&id=1XelfpMJY5-2xlYWXCWXT2zqYmKNnukU7" type="audio/mp3">
+  </audio>
   <!-- 모바일 세로모드 적용 -->
   <div id="message">
     <div class="message__img">
-      <img src="images/licat-hi.png" alt="" />
+      <img src="images/message_licat.png" alt="메세지_라이캣" />
     </div>
     <p>해당 웹 페이지는 가로모드만 지원합니다.</p>
   </div>
@@ -51,13 +53,14 @@
   <!-- 세로비율과 가로비율이 65:50이하일때 -->
   <div id="message2">
     <div class="message__img">
-      <img src="images/licat-hi.png" alt="" />
+      <img src="images/message_licat.png" alt="메세지_라이캣" />
     </div>
     <p>해당 웹 페이지가 지원하지 않는 화면 비율입니다.</p>
   </div>
   <!-- //세로비율과 가로비율이 65:50일때 -->
 
   <section id="main-container">
+    <h2>메인화면</h2>
     <!--  배경 background -->
     <div class="background__sky"></div>
     <div class="background__cloudy"></div>
@@ -66,7 +69,7 @@
       <div class="background__cloud"></div>
     </div>
     <div class="background__wave">
-        <div class="waves waves--default"></div>
+      <div class="waves waves--default"></div>
     </div>
     <!-- //배경 background -->
 
@@ -75,7 +78,7 @@
       <div class="ship__wrapper">
         <img src="./images/bg_ship.png" alt="ship" />
         <div class="javadog">
-          <img src="./images/animation_javadog_fishing.png" />
+          <img src="./images/animation_javadog_fishing.png" alt="javadog" />
         </div>
         <div class="javadog_right_hand">
           <img src="./images/animation_javadog_right_hand.png" alt="right_hand" />
@@ -99,10 +102,10 @@
             <img src="./images/notions/30minute.jpg" alt="30minutes"/>
           </div>
         </div> -->
-   </div>
-   <!-- // notion 리스트 -->
+    </div>
+    <!-- // notion 리스트 -->
 
-   <!-- 선택한 노션 정보 화면 -->
+    <!-- 선택한 노션 정보 화면 -->
     <div class="focus__notion">
       <!-- notion 클릭시 notion에 대한 정보, 링크 - js로 삽입
       <div class="notion__detail">
@@ -122,6 +125,7 @@
     </div>
     <!-- //선택한 노션 정보 화면 -->
   </section>
-  <script type="text/javascript" src="js/reference.js" ></script>
+  <script type="text/javascript" src="js/reference.js"></script>
 </body>
+
 </html>
