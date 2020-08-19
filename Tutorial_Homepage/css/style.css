@@ -1040,10 +1040,11 @@ section > h2 {
     top: 12vh;
   }
   .parasol {
-    left: 15vw;
+    top: 50vh;
+    left: 16vw;
   }
   .dolharbang {
-    left: 95px;
+    left: 50px;
     bottom:3.5vh;
   }
   .news {
