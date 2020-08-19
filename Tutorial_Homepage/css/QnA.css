@@ -40,6 +40,7 @@ section > h2 {
 }
 #home .home-btn:hover i {
   -webkit-transform: rotate(360deg) scale(1.2);
+      -ms-transform: rotate(360deg) scale(1.2);
           transform: rotate(360deg) scale(1.2);
 }
 #title {
@@ -86,6 +87,7 @@ section > h2 {
   -webkit-animation: gary 1s infinite steps(4);
           animation: gary 1s infinite steps(4);
   -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
           transform: scale(0.8);
   padding-bottom: 80px;
 }
@@ -377,6 +379,7 @@ section > h2 {
   }
   #title .title-img {
     -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
             transform: scale(0.7);
   }
   .answer,

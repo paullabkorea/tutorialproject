@@ -73,6 +73,7 @@ section > h2 {
 }
 .home__btn:hover p {
   -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
           transform: scale(1.05);
 }
 /* BGM BBUTTONS */
@@ -126,7 +127,9 @@ section > h2 {
           animation-play-state: paused;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   cursor: pointer;
 }
 @-webkit-keyframes move {
@@ -183,6 +186,7 @@ section > h2 {
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
           transform: scale(0.9);
   cursor: pointer;
 }
@@ -208,20 +212,24 @@ section > h2 {
 @-webkit-keyframes hallasan {
   0% {
     -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
             transform: scale(0.5);
   }
   100% {
     -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
             transform: scale(0.6);
   }
 }
 @keyframes hallasan {
   0% {
     -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
             transform: scale(0.5);
   }
   100% {
     -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
             transform: scale(0.6);
   }
 }
@@ -241,6 +249,7 @@ section > h2 {
           animation: paullab 3.3s infinite steps(42);
   position: absolute;
   -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
           transform: scale(0.8);
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
@@ -285,6 +294,7 @@ section > h2 {
           animation: py_thon 1s infinite steps(4);
   position: absolute;
   -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
           transform: scale(0.8);
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
@@ -321,6 +331,7 @@ section > h2 {
           animation: mura 0.5s infinite steps(4);
   position: relative;
   -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
           transform: scale(0.8);
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
@@ -356,6 +367,7 @@ section > h2 {
   -webkit-animation: gary 1s infinite steps(4);
           animation: gary 1s infinite steps(4);
   -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
           transform: scale(0.8);
   position: relative;
   -webkit-transition: all 0.4s;
@@ -391,6 +403,7 @@ section > h2 {
           animation: soulgom 1s infinite steps(4);
   position: relative;
   -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
           transform: scale(0.8);
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
@@ -423,10 +436,12 @@ section > h2 {
 }
 .menu__intro div:hover {
   -webkit-transform: scale(1);
+      -ms-transform: scale(1);
           transform: scale(1);
 }
 .menu__intro--licat {
   -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
           transform: scale(0.9);
   position: relative;
   -webkit-transition: all 0.4s;
@@ -446,28 +461,34 @@ section > h2 {
 @-webkit-keyframes licat {
   0% {
     -webkit-transform: rotate(-11deg);
+        -ms-transform: rotate(-11deg);
             transform: rotate(-11deg);
   }
   50% {
     -webkit-transform: rotate(23deg);
+        -ms-transform: rotate(23deg);
             transform: rotate(23deg);
   }
   100% {
     -webkit-transform: rotate(-11deg);
+        -ms-transform: rotate(-11deg);
             transform: rotate(-11deg);
   }
 }
 @keyframes licat {
   0% {
     -webkit-transform: rotate(-11deg);
+        -ms-transform: rotate(-11deg);
             transform: rotate(-11deg);
   }
   50% {
     -webkit-transform: rotate(23deg);
+        -ms-transform: rotate(23deg);
             transform: rotate(23deg);
   }
   100% {
     -webkit-transform: rotate(-11deg);
+        -ms-transform: rotate(-11deg);
             transform: rotate(-11deg);
   }
 }
@@ -490,6 +511,7 @@ section > h2 {
   -webkit-animation: javadog 0.5s infinite steps(4);
           animation: javadog 0.5s infinite steps(4);
   -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
           transform: scale(0.8);
   position: relative;
   -webkit-transition: all 0.4s;
@@ -524,6 +546,7 @@ section > h2 {
   -webkit-animation: binky 1s infinite steps(4);
           animation: binky 1s infinite steps(4);
   -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
           transform: scale(0.8);
   position: relative;
   -webkit-transition: all 0.4s;
@@ -552,20 +575,24 @@ section > h2 {
 @-webkit-keyframes windmill {
   50% {
     -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
             transform: rotate(180deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
 @keyframes windmill {
   50% {
     -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
             transform: rotate(180deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
@@ -622,17 +649,20 @@ section > h2 {
   height:auto;
   top:50%;
   -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 /* 좌우반전 */
 .etc:hover img {
   -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
           transform: scaleX(-1);
   -webkit-filter: FlipH;
           filter: FlipH;
 }
 .dolharbang:hover img{
   -webkit-transform: scaleX(-1) translateY(-50%);
+      -ms-transform: scaleX(-1) translateY(-50%);
           transform: scaleX(-1) translateY(-50%);
   -webkit-filter: FlipH;
           filter: FlipH;
@@ -646,6 +676,7 @@ section > h2 {
   right: 7vw;
   bottom: 6.2vh;
   -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
           transform: scale(0.7);
 }
 .sns__wrap {
@@ -741,6 +772,7 @@ section > h2 {
 }
 .modal__header .close__btn:hover i {
   -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 .modal__content {
@@ -870,10 +902,12 @@ section > h2 {
   }
   .scale {
     -webkit-transform: scale(0.4);
+        -ms-transform: scale(0.4);
             transform: scale(0.4);
   }
   .etc {
     -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
             transform: scale(0.5);
   }
   .menu__youtube,
@@ -885,33 +919,40 @@ section > h2 {
   }
   .menu div:hover {
     -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
             transform: scale(0.5);
   }
   .news__bird {
     -webkit-transform: scale(0.4);
+        -ms-transform: scale(0.4);
             transform: scale(0.4);
   }
   .news:hover .news__bird {
     -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
             transform: scale(0.5);
   }
   @-webkit-keyframes hallasan {
     0% {
       -webkit-transform: scale(0.2);
+          -ms-transform: scale(0.2);
               transform: scale(0.2);
     }
     100% {
       -webkit-transform: scale(0.3);
+          -ms-transform: scale(0.3);
               transform: scale(0.3);
     }
   }
   @keyframes hallasan {
     0% {
       -webkit-transform: scale(0.2);
+          -ms-transform: scale(0.2);
               transform: scale(0.2);
     }
     100% {
       -webkit-transform: scale(0.3);
+          -ms-transform: scale(0.3);
               transform: scale(0.3);
     }
   }
@@ -1011,6 +1052,7 @@ section > h2 {
   }
   .news:hover div {
     -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
             transform: scale(0.5);
   }
   .modal__header {
@@ -1018,6 +1060,7 @@ section > h2 {
   }
   .sns {
     -webkit-transform: scale(0.4);
+        -ms-transform: scale(0.4);
             transform: scale(0.4);
     right: -20vw;
     bottom: 0px;
@@ -1037,33 +1080,40 @@ section > h2 {
   @-webkit-keyframes hallasan {
     0% {
       -webkit-transform: scale(0.5);
+          -ms-transform: scale(0.5);
               transform: scale(0.5);
     }
     100% {
       -webkit-transform: scale(0.6);
+          -ms-transform: scale(0.6);
               transform: scale(0.6);
     }
   }
   @keyframes hallasan {
     0% {
       -webkit-transform: scale(0.5);
+          -ms-transform: scale(0.5);
               transform: scale(0.5);
     }
     100% {
       -webkit-transform: scale(0.6);
+          -ms-transform: scale(0.6);
               transform: scale(0.6);
     }
   }
   .scale {
     -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
             transform: scale(0.8);
   }
   .menu div:hover {
     -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
             transform: scale(0.9);
   }
   .etc {
     -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
             transform: scale(0.8);
   }
   .menu__paullab {
@@ -1130,29 +1180,35 @@ section > h2 {
   @-webkit-keyframes hallasan {
     0% {
       -webkit-transform: scale(0.6);
+          -ms-transform: scale(0.6);
               transform: scale(0.6);
     }
     100% {
       -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
               transform: scale(0.7);
     }
   }
   @keyframes hallasan {
     0% {
       -webkit-transform: scale(0.6);
+          -ms-transform: scale(0.6);
               transform: scale(0.6);
     }
     100% {
       -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
               transform: scale(0.7);
     }
   }
   .scale {
     -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
             transform: scale(0.8);
   }
   .menu div:hover {
     -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
             transform: scale(0.9);
   }
   .menu__paullab {
@@ -1205,37 +1261,45 @@ section > h2 {
   @-webkit-keyframes hallasan {
     0% {
       -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
               transform: scale(0.7);
     }
     100% {
       -webkit-transform: scale(0.8);
+          -ms-transform: scale(0.8);
               transform: scale(0.8);
     }
   }
   @keyframes hallasan {
     0% {
       -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
               transform: scale(0.7);
     }
     100% {
       -webkit-transform: scale(0.8);
+          -ms-transform: scale(0.8);
               transform: scale(0.8);
     }
   }
   .scale {
     -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
             transform: scale(1.0);
   }
   .menu div:hover {
     -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
             transform: scale(1.1);
   }
   .news:hover div {
     -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
             transform: scale(1.2);
   }
   .sns {
     -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
             transform: scale(0.8);
     right: 9.3vw;
     bottom: 6.2vh;
