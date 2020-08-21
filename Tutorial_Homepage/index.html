@@ -44,152 +44,145 @@
     <p>해당 웹 페이지는 가로모드만 지원합니다.</p>
   </div>
   <!-- //모바일 세로모드 적용 -->
-
-  <!-- 세로비율과 가로비율이 65:50이하일때 -->
-  <div id="message2">
-    <div class="message__img">
-      <img src="images/message_licat.png" alt="메세지_라이캣" />
+  <section id="header">
+    <div class="home">
+      <a href="index.html" class="home__btn">
+        <p>JEJU CODING BASECAMP</p>
+      </a>
     </div>
-    <p>해당 웹 페이지가 지원하지 않는 화면 비율입니다.</p>
-  </div>
-  <!-- 세로비율과 가로비율이 65:50일때 -->
-
+    <!-- 음악 삽입 -->
+    <!-- 1번_childrens-game by ziv-moran Artlist-->
+    <div class="bgm__button--play"></div>
+    <div class="bgm__button--pause"></div>
+    <audio autoplay loop class="bgm">
+      <source src="https://drive.google.com/uc?export=download&id=1xbevC0q-fNUDuoFCSLUdot0OIO81LgpE" type="audio/mp3" >
+    </audio>
+    <!-- //음악삽입 -->
+    <!-- 새소식 -->
+    <div class="news" onclick="openModal()">
+      <div class="news__bird"></div>
+    </div>
+    <!-- //새소식 -->
+  </section>
   <!-- main section -->
   <section id="main-container">
     <h2>메인 컨텐츠</h2>
+    <div id="background-img"></div>
     <div class="main__wrapper">
-      <!-- background-img -->
-      <div id="background-img">
-        <!-- jeju-img -->
-        <div id="jeju-img">
-          <div class="home">
-            <a href="index.html" class="home__btn">
-              <p>JEJU CODING BASECAMP</p>
-            </a>
-          </div>
-            <!-- 음악 삽입 -->
-            <!-- 1번_childrens-game by ziv-moran Artlist-->
-            <div class="bgm__button--play"></div>
-            <div class="bgm__button--pause"></div>
-            <audio autoplay loop class="bgm">
-              <source src="https://drive.google.com/uc?export=download&id=1xbevC0q-fNUDuoFCSLUdot0OIO81LgpE" type="audio/mp3" >
-            </audio>
-            <!-- //음악삽입 -->
-          <div class="news" onclick="openModal()">
-            <div class="news__bird"></div>
-          </div>
-          <!-- menu -->
-          <div class="menu__hallasan">
-            <a href="http://www.jejucodingcamp.com/" target="_blank">
-              <img src="images/menu_hallasan.png" class="menu__hallasan__img" alt="메뉴_한라산" />
-            </a>
-          </div>
-          <div class="menu menu__paullab">
-            <a href="about.html">
-              <div class="menu__paullab--frame scale"></div>
-            </a>
-            <h4>About</h4>
-          </div>
-          <div class="menu menu__youtube">
-            <a href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ" target="_blank">
-              <div class="menu__youtube--python scale"></div>
-              <h4>유튜브</h4>
-            </a>
-          </div>
-          <div class="menu menu__store">
-            <a href="#">
-              <div class="menu__store--mura scale"></div>
-            </a>
-            <h4>Store</h4>
-          </div>
-          <div class="menu menu__qna">
-            <a href="QnA.html">
-              <div class="menu__qna--gary scale"></div>
-            </a>
-            <h4>Q&amp;A</h4>
-          </div>
-          <div class="menu menu__online_lec">
-            <a href="https://www.inflearn.com/instructors/170213/courses" target="_blank">
-              <div class="menu__online_lec--soulgom scale"></div>
-            </a>
-            <h4>온라인 강의</h4>
-          </div>
-          <div class="menu menu__intro">
-            <a href="weniv.html">
-              <div class="menu__intro--licat scale">
-                <img src="images/animation_licat_no_hand.png" alt="" />
-                <img src="images/animation_licat_hand.png" class="hand" alt="" />
-              </div>
-            </a>
-            <h4>캐릭터 소개</h4>
-          </div>
-          <div class="menu menu__referenceroom">
-            <a href="referenceroom.html">
-              <div class="menu__referenceroom--javadog scale"></div>
-            </a>
-            <h4>자료실</h4>
-          </div>
-          <div class="menu menu__curriculum">
-            <a href="curriculum.html">
-              <div class="menu__curriculum--binky scale"></div>
-            </a>
-            <h4>커리큘럼</h4>
-          </div>
-          <!-- //menu -->
-          <!-- etc -->
-          <div class="windmill scale">
-            <div class="windmill_base">
-              <img src="images/windmill_base.png" alt="" />
-            </div>
-            <div class="windmill--wind">
-              <img src="images/windmill_wind1.png" alt="" class="wind1" />
-              <img src="images/windmill_wind1.png" alt="" class="wind2" />
-            </div>
-          </div>
-          <div class="parasol etc">
-            <a href="http://paullab.co.kr/codefestival.html">
-              <img src="images/menu_parasol.png" alt="메뉴_파라솔" />
-            </a>
-          </div>
-          <div class="hallabong etc">
-            <a href="http://paullab.co.kr/stock.html">
-              <img src="images/menu_hallabong.png" alt="메뉴_한라봉" />
-            </a>
-          </div>
-          <div class="dolharbang etc">
-            <a href="halloffame.html">
-              <img src="images/menu_dolharbang.png" alt="메뉴_돌하르방" />
-            </a>
-          </div>
-          <!-- // etc -->
+      <!-- jeju-img -->
+      <div id="jeju-img">
+        <!-- menu -->
+        <div class="menu__hallasan">
+          <a href="http://www.jejucodingcamp.com/" target="_blank">
+            <img src="images/menu_hallasan.png" class="menu__hallasan__img" alt="메뉴_한라산" />
+          </a>
         </div>
-        <!-- //jeju-img -->
-
-        <!-- sns -->
-        <div class="sns">
-          <div class="sns__wrap">
-            <div class="instagram">
-              <a href="https://www.instagram.com/paullab_official/?hl=ko" target="_blank">
-                <img src="images/sns_instagram.png" alt="sns_인스타그램" />
-              </a>
+        <div class="menu menu__paullab">
+          <a href="about.html">
+            <div class="menu__paullab--frame"></div>
+          </a>
+          <h4>About</h4>
+        </div>
+        <div class="menu menu__youtube">
+          <a href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ" target="_blank">
+            <div class="menu__youtube--python"></div>
+            <h4>유튜브</h4>
+          </a>
+        </div>
+        <div class="menu menu__store">
+          <a href=" http://smartstore.naver.com/weniv_store">
+            <div class="menu__store--mura"></div>
+          </a>
+          <h4>Store</h4>
+        </div>
+        <div class="menu menu__qna">
+          <a href="QnA.html">
+            <div class="menu__qna--gary"></div>
+          </a>
+          <h4>Q&amp;A</h4>
+        </div>
+        <div class="menu menu__online_lec">
+          <a href="https://www.inflearn.com/instructors/170213/courses" target="_blank">
+            <div class="menu__online_lec--soulgom"></div>
+          </a>
+          <h4>온라인 강의</h4>
+        </div>
+        <div class="menu menu__intro">
+          <a href="weniv.html">
+            <div class="menu__intro--licat">
+              <img src="images/animation_licat_no_hand.png" alt="animation_licat_no_hand" />
+              <img src="images/animation_licat_hand.png" class="hand" alt="animation_licat_hand" />
             </div>
-            <div class="facebook">
-              <a href="https://www.facebook.com/제주-코딩-베이스캠프-1512494142177634/" target="_blank">
-                <img src="images/sns_facebook.png" alt="sns_페이스북" />
-              </a>
-            </div>
-            <div class="naver">
-              <a href="https://blog.naver.com/paul-lab" target="_blank"><img src="images/sns_naverblog.png" alt="sns_네이버블로그" /></a>
-            </div>
-            <div class="tistory">
-              <a href="https://paullab.tistory.com" target="_blank"><img src="images/sns_tistory.png" alt="sns_티스토리" /></a>
-            </div>
+          </a>
+          <h4>캐릭터 소개</h4>
+        </div>
+        <div class="menu menu__referenceroom">
+          <a href="referenceroom.html">
+            <div class="menu__referenceroom--javadog"></div>
+          </a>
+          <h4>자료실</h4>
+        </div>
+        <div class="menu menu__curriculum">
+          <a href="curriculum.html">
+            <div class="menu__curriculum--binky"></div>
+          </a>
+          <h4>커리큘럼</h4>
+        </div>
+        <!-- //menu -->
+        <!-- etc -->
+        <div class="windmill scale">
+          <div class="windmill_base">
+            <img src="images/windmill_base.png" alt="windmill_base" />
+          </div>
+          <div class="windmill--wind">
+            <img src="images/windmill_wind1.png" alt="wind1" class="wind1" />
+            <img src="images/windmill_wind1.png" alt="wind2" class="wind2" />
           </div>
         </div>
-        <!-- //sns -->
+        <div class="parasol etc">
+          <a href="http://paullab.co.kr/codefestival.html">
+            <img src="images/menu_parasol.png" alt="메뉴_파라솔" />
+          </a>
+        </div>
+        <div class="hallabong etc">
+          <a href="http://paullab.co.kr/stock.html">
+            <img src="images/menu_hallabong.png" alt="메뉴_한라봉" />
+          </a>
+        </div>
+        <!-- // etc -->
+        <!-- dolharbang -->
+        <div class="dolharbang">
+          <a href="halloffame.html">
+            <img src="images/menu_dolharbang.png" alt="메뉴_돌하르방" />
+          </a>
+        </div>
+        <!-- //dolharbang -->
       </div>
-      <!-- //background-img -->
+      <!-- //jeju-img -->
+      <!-- sns -->
+      <div class="sns">
+        <div class="sns__wrap">
+          <div class="instagram">
+            <a href="https://www.instagram.com/paullab_official/?hl=ko" target="_blank">
+              <img src="images/sns_instagram.png" alt="sns_인스타그램" />
+            </a>
+          </div>
+          <div class="facebook">
+            <a href="https://www.facebook.com/제주-코딩-베이스캠프-1512494142177634/" target="_blank">
+              <img src="images/sns_facebook.png" alt="sns_페이스북" />
+            </a>
+          </div>
+          <div class="naver">
+            <a href="https://blog.naver.com/paul-lab" target="_blank"><img src="images/sns_naverblog.png" alt="sns_네이버블로그" /></a>
+          </div>
+          <div class="tistory">
+            <a href="https://paullab.tistory.com" target="_blank"><img src="images/sns_tistory.png" alt="sns_티스토리" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- //sns -->
     </div>
+    <!-- //main__wrapper -->
   </section>
   <!-- //main section -->
 
