@@ -858,8 +858,8 @@ display: none;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+    		  flex-wrap: wrap;
 }
 .modal__content .post__img img{
   width:50%;
