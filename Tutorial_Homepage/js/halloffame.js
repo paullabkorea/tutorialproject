@@ -121,25 +121,22 @@
   };
 
   const endingCredit = document.querySelector('.ending_credit');
-  const place = document.querySelector('.place__face--back');
+  const placeBack = document.querySelector('.place__face--back');
+  const placeTop = document.querySelector('.place__face--top');
+  const body = document.querySelector('body');
   const curtain = document.querySelector('.curtain');
   const curtainLeft = document.querySelector('.curtain__left');
   const curtainRight = document.querySelector('.curtain__right');
   const light = document.querySelectorAll('.light');
-  const bodyWrapper = document.querySelector('.body_wrapper');
   const title = document.querySelector('.title');
   const exitDoor = document.querySelectorAll('.exit_door');
-  let option = false;
   const exitLeft = document.querySelector('.exit_door--left');
   const exitRight = document.querySelector('.exit_door--right');
   const thanksGreetings = document.querySelector('.thanks__greetings');
   const thanksList = document.querySelector('.thanks__list');
   const wrapper = document.querySelectorAll('.wrapper');
+  let openState = false;
 
-  function screenZoomOut(){
-      place.classList.remove('openning');
-      option = false;
-  }
   function reset(){
     thanksList.classList.remove('thanks__list--starting');
     thanksGreetings.classList.remove('thanks__greetings--starting');
@@ -151,7 +148,6 @@
 
   function thanksListAnimation(){
     thanksList.classList.add('thanks__list--starting');
-    thanksList.addEventListener("animationend", screenZoomOut,reset );
   }
 
   function thanksGreetingsAnimation(){
@@ -162,6 +158,7 @@
     for(var i=0; i<light.length; i++){
       light[i].classList.add('light--stopped');
     }
+    placeTop.classList.add('darkening');
   }
   function titleAnimation(){
     title.classList.add('title--starting');
@@ -171,18 +168,16 @@
     lightAnimation();
     curtainLeft.classList.add('curtain__left--openning');
     curtainRight.classList.add('curtain__right--openning');
-    place.style.cursor ="auto";
+    placeBack.style.cursor ="auto";
     for(var i =0; i<wrapper.length; i++){
-      wrapper[i].style.opacity ='0.6';
+      wrapper[i].style.opacity ='0.7';
     }
     titleAnimation();
-    option = true;
-
+    openState = true;
   }
-
   function screenZoomIn() {
-    if(option){
-      place.classList.add('openning');
+    if(openState){
+      placeBack.classList.add('openning');
       endingCredit.style.cursor ="auto";
     }
   }
@@ -195,7 +190,7 @@
     exitRight.classList.remove('exit_animation--right');
   }
 
-  place.addEventListener('click', curtainOpenning);
+  placeBack.addEventListener('click', curtainOpenning);
   endingCredit.addEventListener('click', screenZoomIn);
 
   for(var i=0; i<2; i++){
