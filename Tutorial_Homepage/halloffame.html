@@ -28,13 +28,20 @@
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/halloffame.css" />
   <title>명예의 전당</title>
 </head>
-
 <body>
+  <!-- 모바일 세로모드 적용 -->
+  <div id="message">
+    <div class="message__img">
+      <img src="images/message_licat.png" alt="메세지_라이캣" />
+    </div>
+    <p>해당 웹 페이지는 가로모드만 지원합니다.</p>
+  </div>
+  <!-- //모바일 세로모드 적용 -->
   <section class="container">
     <h1>명예의 전당</h1>
     <div class="scroller">
@@ -52,29 +59,26 @@
               <h2>PAULLAB AWARDS</h2>
             </div>
             <div class="thanks__greetings">
-              <p>바울랩을 위해 기증해주신 모든 분들께 감사 말씀드립니다.</p>
+              <p>제주에 ICT 발전을 위해 <span>&nbsp;바울랩&nbsp;</span> , <span>&nbsp;위니브&nbsp;</span> 에 기증해주신 많은 분들에게 감사 인사를 올립니다.</p>
             </div>
+            <div class="fade"></div>
             <ul class="thanks__list">
-              <li>Grand Master</li>
-              <li>이호준 대표님</li>
-              <li>Master</li>
-              <li>
-                <p>dd</p>
-                <p>dd</p>
-              </li>
-              <li>Diamond</li>
-              <li>dd</li>
-              <li>Gold</li>
-              <li>dd</li>
-              <li>Silver</li>
-              <li>dd</li>
-              <li>Bronze</li>
-              <li>
-                <p>dd</p>
-                <p>dd</p>
-                <p>dd</p>
-                <p>dd</p>
-              </li>
+              <div class="thanks__wrapper">
+                <li class="rank">Grand Master</li>
+                <li class="name">- 이호준 대표님 -</li>
+                <li class="rank">Master</li>
+                <li class="name">- 1분코딩 유준모 대표님 -</li>
+                <li class="name">- 스페이스클라우드 이범재 개발자님 -</li>
+                <li class="rank">Diamond</li>
+                <li class="name">- 마이크로소프트MVP 고경희 -</li>
+                <li class="name">- AWS 개발자 민창현 -</li>
+                <li class="rank">Gold</li>
+                <li class="name">-</li>
+                <li class="rank">Silver</li>
+                <li class="name">-</li>
+                <li class="rank">Bronze</li>
+                <li class="name">-</li>
+              </div>
             </ul>
           </div>
         </div>

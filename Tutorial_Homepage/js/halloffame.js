@@ -133,12 +133,13 @@
   const exitLeft = document.querySelector('.exit_door--left');
   const exitRight = document.querySelector('.exit_door--right');
   const thanksGreetings = document.querySelector('.thanks__greetings');
+  const thanksWrapper = document.querySelector('.thanks__wrapper');
   const thanksList = document.querySelector('.thanks__list');
   const wrapper = document.querySelectorAll('.wrapper');
   let openState = false;
 
   function reset(){
-    thanksList.classList.remove('thanks__list--starting');
+    thanksWrapper.classList.remove('thanks__list--starting');
     thanksGreetings.classList.remove('thanks__greetings--starting');
       for(var i=0; i<light.length; i++){
         light[i].classList.remove('light--stopped');
@@ -147,7 +148,7 @@
   }
 
   function thanksListAnimation(){
-    thanksList.classList.add('thanks__list--starting');
+    thanksWrapper.classList.add('thanks__list--starting');
   }
 
   function thanksGreetingsAnimation(){
