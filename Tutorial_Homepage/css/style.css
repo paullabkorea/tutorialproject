@@ -29,6 +29,13 @@ time, mark, audio, video {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "NEXON Lv1 Gothic OTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: "Nanum Gothic", sans-serif;
   background-color: #7ccad5;
@@ -827,6 +834,7 @@ display: none;
           transform: rotate(360deg);
 }
 .modal__content {
+	font-family: "NEXON Lv1 Gothic OTF";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,7 +842,7 @@ display: none;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 20px;
+  padding: 30px 35px;
 }
 .modal__content .post {
   display: -webkit-box;
@@ -879,8 +887,9 @@ display: none;
   text-decoration: underline;
 }
 .post__explanation {
+	/* font-family: "NEXON Lv1 Gothic OTF"; */
   font-size: 1.2vw;
-  line-height: 1.7;
+  line-height: 1.6;
   padding-bottom: 15px;
 }
 .readmore__btn {
