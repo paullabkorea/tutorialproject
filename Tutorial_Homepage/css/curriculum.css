@@ -126,7 +126,6 @@ section > h2 {
 }
 #main_contents .jejucoding {
   padding-bottom: 40px;
-  border-bottom: dashed 1px #dcdddd;
 }
 #main_contents .lec_title {
   font-size: 20px;
@@ -243,6 +242,12 @@ section > h2 {
 }
 #main_contents .live-lec {
   padding: 40px 0;
+}
+.bottom-line {
+  border-bottom: dashed 1px #dcdddd;
+}
+.readmore__btn:hover {
+  text-decoration: underline;
 }
 /* footer */
 #footer {

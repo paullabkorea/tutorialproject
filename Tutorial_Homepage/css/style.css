@@ -53,6 +53,9 @@ h4 {
   font-family: "CookieRunOTF-Bold", "serif";
   color: #fff;
 }
+strong {
+  font-weight: bold;
+}
 section > h2 {
   display: none;
 }
