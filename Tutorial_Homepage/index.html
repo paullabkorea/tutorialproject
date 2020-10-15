@@ -277,7 +277,6 @@
     //음악 재생
     function musicPlay(){
       document.querySelector('.bgm').play();
-      document.removeEventListener('click', musicPlay);
       document.querySelector('.bgm__button--play').classList.add('bgm__button--disactive');
       document.querySelector('.bgm__button--pause').classList.add('bgm__button--active');
     }
@@ -287,7 +286,6 @@
       document.querySelector('.bgm__button--pause').classList.remove('bgm__button--active');
     }
     document.querySelector('.bgm__button--play').addEventListener('click', musicPlay);
-    document.addEventListener('click', musicPlay);
     document.querySelector('.bgm__button--pause').addEventListener('click', musicStop);
 
     //페이지 어디든지 클릭만 하게하면 음악재생
