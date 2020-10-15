@@ -447,12 +447,22 @@ function clickBodyEvent(event) {
     }
 };
 
+//음악 재생
 function musicPlay(){
-document.querySelector('.bgm').play();
-document.removeEventListener('click', musicPlay);
+  document.querySelector('.bgm').play();
+  document.removeEventListener('click', musicPlay);
+  document.querySelector('.bgm__button--play').classList.add('bgm__button--disactive');
+  document.querySelector('.bgm__button--pause').classList.add('bgm__button--active');
 }
-
+function musicStop(){
+  document.querySelector('.bgm').pause();
+  document.querySelector('.bgm__button--play').classList.remove('bgm__button--disactive');
+  document.querySelector('.bgm__button--pause').classList.remove('bgm__button--active');
+}
+document.querySelector('.bgm__button--play').addEventListener('click', musicPlay);
 document.addEventListener('click', musicPlay);
+document.querySelector('.bgm__button--pause').addEventListener('click', musicStop);
+
 notionSetting();
 //notion 클릭시 해당하는 데이터 선택하기
 [].forEach.call(document.querySelectorAll('.notion__container .notion'), function(el) {

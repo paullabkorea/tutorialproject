@@ -82,6 +82,42 @@ section > h2 {
   height: auto;
   padding: 40px 50px;
 }
+/* BGM BBUTTONS */
+.bgm__button--play {
+ position: absolute;
+ cursor: pointer;
+ width: 50px;
+ height: 50px;
+ right: 0;
+ top: 0;
+ z-index: 999;
+ margin: 25px;
+ background-image: url('../images/button_bgm_play.png');
+ background-size: contain;
+ background-repeat: no-repeat;
+ font-family: "CookieRunOTF-Black";
+}
+.bgm__button--pause {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 25px;
+  background-image: url('../images/button_bgm_pause.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "CookieRunOTF-Black";
+}
+.bgm__button--active {
+  display: block;
+}
+.bgm__button--disactive {
+  display: none;
+}
 /* 메인 텍스트 */
 .text {
   position: absolute;
@@ -309,6 +345,14 @@ section > h2 {
   #home .home-btn i {
     font-size: 27px;
   }
+  .bgm__button--play {
+	 width: 18px;
+ 	 width: 18px;
+	}
+	.bgm__button--pause {
+	 width: 18px;
+ 	 width: 18px;
+	}
   .cloud-sun {
     width: 120px;
     height: auto;
@@ -378,6 +422,14 @@ section > h2 {
   #home .home-btn i {
     font-size: 27px;
   }
+  .bgm__button--play {
+	 width: 20px;
+	 height: 20px;
+	}
+	.bgm__button--pause {
+		width: 20px;
+		height: 20px;
+	}
   .cloud-sun {
     width: 120px;
     height: auto;
@@ -447,6 +499,14 @@ section > h2 {
 }
 
 @media all and (min-width: 865px) and (max-width: 1024px) {
+  .bgm__button--play {
+	 width: 30px;
+	 height: 30px;
+	}
+	.bgm__button--pause {
+		width: 30px;
+		height: 30px;
+	}
   .cloud-sun {
     width: 200px;
   }
@@ -507,6 +567,14 @@ section > h2 {
   #home .home-btn i {
     font-size: 40px;
   }
+  .bgm__button--play {
+	 width: 30px;
+	 height: 30px;
+	}
+	.bgm__button--pause {
+		width: 30px;
+		height: 30px;
+	}
   .text {
     top: 70px;
   }
@@ -514,6 +582,17 @@ section > h2 {
     left: 17vw;
     top: 20vh;
   }
+}
+
+@media all and (min-width: 1367px) and (max-width: 1919px) {
+	.bgm__button--play {
+	 width: 40px;
+	 height: 40px;
+	}
+	.bgm__button--pause {
+	  width: 40px;
+	  height: 40px;
+	}
 }
 
 @media all and (min-width: 1920px) and (max-width: 2048px) {

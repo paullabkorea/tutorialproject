@@ -33,6 +33,40 @@ img {
   width: 100%;
   height: auto;
 }
+/* BGM BBUTTONS */
+.bgm__button--play {
+ position: absolute;
+ cursor: pointer;
+ width: 50px;
+ height: 50px;
+ right: 0;
+ z-index: 999;
+ margin: 25px;
+ background-image: url('../images/button_bgm_play.png');
+ background-size: contain;
+ background-repeat: no-repeat;
+ font-family: "CookieRunOTF-Black";
+}
+.bgm__button--pause {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  z-index: 999;
+  margin: 25px;
+  background-image: url('../images/button_bgm_pause.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "CookieRunOTF-Black";
+}
+.bgm__button--active {
+  display: block;
+}
+.bgm__button--disactive {
+  display: none;
+}
 /* 배경 하늘 */
 .background__sky {
   position: absolute;
@@ -1209,6 +1243,14 @@ img {
 }
 
 @media all and (min-width: 481px) and (max-width: 1023px) {
+  .bgm__button--play {
+	 width: 25px;
+	 height: 25px;
+	}
+	.bgm__button--pause {
+		width: 25px;
+		height: 25px;
+	}
   .waves {
     opacity:0;
   }
@@ -1243,4 +1285,26 @@ img {
         -ms-transform: scale(0.6) translateX(150px);
             transform: scale(0.6) translateX(150px);
   }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1366px) {
+  .bgm__button--play {
+	 width: 30px;
+	 height: 30px;
+	}
+	.bgm__button--pause {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media all and (min-width: 1367px) and (max-width: 1919px) {
+	.bgm__button--play {
+	 width: 40px;
+	 height: 40px;
+	}
+	.bgm__button--pause {
+	  width: 40px;
+	  height: 40px;
+	}
 }
