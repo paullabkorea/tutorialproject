@@ -407,8 +407,8 @@ display: none;
     background-position: -667px 0;
   }
 }
-/* 개리 - Q&A */
-.menu__qna {
+/* 개리 - 채용정보 */
+.menu__recruitment {
   position: absolute;
   top: 600px;
   left: 350px;
@@ -417,11 +417,11 @@ display: none;
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
 }
-.menu__qna h4 {
+.menu__recruitment h4 {
   left: 120px;
   top: 130px;
 }
-.menu__qna--gary {
+.menu__recruitment--gary {
   width: 167px;
   height: 167px;
   background: url("../images/frame_gary.png") no-repeat 0 0 / 667px 167px;
