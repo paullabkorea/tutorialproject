@@ -54,9 +54,9 @@
     <!-- 1번_childrens-game by ziv-moran Artlist-->
     <div class="bgm__button--play"></div>
     <div class="bgm__button--pause"></div>
-    <audio autoplay loop class="bgm">
+    <!-- <audio loop class="bgm">
       <source src="https://drive.google.com/uc?export=download&id=1xbevC0q-fNUDuoFCSLUdot0OIO81LgpE" type="audio/mp3" >
-    </audio>
+    </audio> -->
     <!-- //음악삽입 -->
     <!-- 새소식 -->
     <div class="news" onclick="openModal()">
@@ -267,7 +267,7 @@
       modal.classList.remove("on");
     }
     window.onclick = function (event) {
-      if (event.target == modal) {
+      if(event.target == modal) {
         modal.classList.remove("on");
       }
     };
@@ -275,18 +275,42 @@
     window.addEventListener("onclick", closeModal);
 
     //음악 재생
+    const bgm_button_play = document.querySelector('.bgm__button--play');
+    const bgm_button_pause = document.querySelector('.bgm__button--pause');
+    const portraitMedia = window.matchMedia( 'only screen and (orientation: portrait)' );
+
+    const audio = new Audio();
+    audio.src = "https://drive.google.com/uc?export=download&id=1xbevC0q-fNUDuoFCSLUdot0OIO81LgpE";
+    audio.autoplay = true;
+    audio.loop = true;
+
+    if(audio.paused) {
+      bgm_button_play.classList.add('bgm__button--disactive');
+      bgm_button_pause.classList.add('bgm__button--active');
+    }
+
     function musicPlay(){
-      document.querySelector('.bgm').play();
-      document.querySelector('.bgm__button--play').classList.add('bgm__button--disactive');
-      document.querySelector('.bgm__button--pause').classList.add('bgm__button--active');
+      if(audio.paused) {
+        audio.play();
+        bgm_button_play.classList.add('bgm__button--disactive');
+        bgm_button_pause.classList.add('bgm__button--active');
+        document.removeEventListener('click', musicPlay);
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+        bgm_button_play.classList.remove('bgm__button--disactive');
+        bgm_button_pause.classList.remove('bgm__button--active');
+      }
     }
-    function musicStop(){
-      document.querySelector('.bgm').pause();
-      document.querySelector('.bgm__button--play').classList.remove('bgm__button--disactive');
-      document.querySelector('.bgm__button--pause').classList.remove('bgm__button--active');
-    }
-    document.querySelector('.bgm__button--play').addEventListener('click', musicPlay);
-    document.querySelector('.bgm__button--pause').addEventListener('click', musicStop);
+    window.onresize = function() {
+      if(portraitMedia.matches == true) {
+        console.log('stop');
+        musicStop();
+      }
+    };
+    bgm_button_play.addEventListener('click', musicPlay);
+    document.addEventListener('click', musicPlay);
+    bgm_button_pause.addEventListener('click', musicPlay);
 
     //페이지 어디든지 클릭만 하게하면 음악재생
     // function musicPlay(){

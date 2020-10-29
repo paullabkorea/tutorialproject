@@ -53,12 +53,12 @@
       </a>
     </div>
     <!-- 음악 삽입 -->
-    <!-- chrome에서는 사용자의 interation이 없으면 아예 자동재생이 불가!-->
+    <!-- chrome에서는 사용자의 interaction이 없으면 아예 자동재생이 불가!-->
     <div class="bgm__button--play"></div>
     <div class="bgm__button--pause"></div>
-    <audio autoplay loop class="bgm">
+    <!-- <audio loop class="bgm">
       <source src="https://drive.google.com/uc?export=download&id=1LgSv6VMQZOR9DPDhHSDmdAzFGOSmQpsy" type="audio/mp3" >
-    </audio>
+    </audio> -->
     <!-- //음악 삽입 -->
     <div class="cloud-sun">
       <img src="images/cloud-sun.png" alt="">
@@ -195,20 +195,52 @@
     });
 
     //음악 재생
+    // const bgm = document.querySelector('.bgm');
+    const bgm_button_play = document.querySelector('.bgm__button--play');
+    const bgm_button_pause = document.querySelector('.bgm__button--pause');
+    const portraitMedia = window.matchMedia( 'only screen and (orientation: portrait)' );
+
+    const audio = new Audio();
+    audio.src = "https://drive.google.com/uc?export=download&id=1LgSv6VMQZOR9DPDhHSDmdAzFGOSmQpsy";
+    audio.autoplay = true;
+    audio.loop = true;
+
+    if(audio.paused) {
+      bgm_button_play.classList.add('bgm__button--disactive');
+      bgm_button_pause.classList.add('bgm__button--active');
+    }
+
     function musicPlay(){
-      document.querySelector('.bgm').play();
-      document.removeEventListener('click', musicPlay);
-      document.querySelector('.bgm__button--play').classList.add('bgm__button--disactive');
-      document.querySelector('.bgm__button--pause').classList.add('bgm__button--active');
+      if(audio.paused) {
+        audio.play();
+        document.removeEventListener('click', musicPlay);
+        bgm_button_play.classList.add('bgm__button--disactive');
+        bgm_button_pause.classList.add('bgm__button--active');
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+        bgm_button_play.classList.remove('bgm__button--disactive');
+        bgm_button_pause.classList.remove('bgm__button--active');
+      }
     }
-    function musicStop(){
-      document.querySelector('.bgm').pause();
-      document.querySelector('.bgm__button--play').classList.remove('bgm__button--disactive');
-      document.querySelector('.bgm__button--pause').classList.remove('bgm__button--active');
-    }
-    document.querySelector('.bgm__button--play').addEventListener('click', musicPlay);
+    // function musicStop(){
+    //   if(!bgm.paused) {
+    //     bgm.pause();
+    //     bgm_button_play.classList.remove('bgm__button--disactive');
+    //     bgm_button_pause.classList.remove('bgm__button--active');
+    //   }
+    // }
+
+    window.onresize = function() {
+      if(portraitMedia.matches == true) {
+        console.log('stop');
+        musicStop();
+      }
+    };
+    bgm_button_play.addEventListener('click', musicPlay);
     document.addEventListener('click', musicPlay);
-    document.querySelector('.bgm__button--pause').addEventListener('click', musicStop);
+    bgm_button_pause.addEventListener('click', musicPlay);
+
 
     //아무곳이나 클릭시 재생 가능
     // function musicPlay(){

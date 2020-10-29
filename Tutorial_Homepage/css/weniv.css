@@ -84,6 +84,7 @@ section > h2 {
 }
 /* BGM BBUTTONS */
 .bgm__button--play {
+ /* display: none; */
  position: absolute;
  cursor: pointer;
  width: 50px;

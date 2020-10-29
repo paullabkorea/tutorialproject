@@ -6,6 +6,27 @@ const notionInfo = [
     "wiki" : "http://paullabedu.synology.me/dokuwiki"
   },
   {
+    "name" : "[개정판]메모혁신 Notion(노션) 활용 가이드",
+    "image" : "./images/notions/notion_guide.png",
+    "contents":"메모작성부터 협업까지 노션으로 시작하세요!",
+    "link" : "https://www.notion.so/bootcampisland/Bootcamp-Island-Home-7ada10f07c384f78b4cf5402246b96e4",
+    "bookstore":"https://ridibooks.com/books/2773000038?_s=search&_q=%EC%9D%B4%ED%98%B8%EC%A4%80"
+  },
+  {
+    "name" : "실전 예제로 살펴보는 PyQt Tutorial",
+    "image" : "./images/notions/pyqt.png",
+    "contents":"PyQt를 이용하여 Python GUI 프로그래밍 세계에 빠져봅시다!",
+    "link" : "https://www.notion.so/pyqt/PyQt-5-Lecture-62b4f0d6c6984efea9f1b1c7d3e315ae",
+    "bookstore":"https://ridibooks.com/books/2773000036?_s=search&_q=%EC%9D%B4%ED%98%B8%EC%A4%80"
+  },
+  {
+    "name" : "생애 첫 SQL With 제코베",
+    "image" : "./images/notions/my_first_sql.jpg",
+    "contents":"생애 첫 SQL, 제코베와 함께 배워봐요!",
+    "link" : "https://www.notion.so/SQL-With-1da2d84c3bf8435d9b879b5d1d911acd",
+    "bookstore":"https://ridibooks.com/books/2773000037?_s=search&_q=%EC%9D%B4%ED%98%B8%EC%A4%80"
+  },
+  {
     "name" : "2020 Jeju Coding Basecamp",
     "image" : "./images/notions/jeju_coding_basecamp.jpg",
     "contents":"서비스 기획부터 런칭까지 같이 해봅니다.",
@@ -45,13 +66,6 @@ const notionInfo = [
     "image" : "./images/notions/notion_template.png",
     "contents":"노션 템플릿을 쉽게 만들어보세요!",
     "link" : "https://www.notion.so/notiontemplatesample/Notion-Template-Sample-Best-7-part-1-15e07741a6144905b4d27c09a739c979",
-  },
-  {
-    "name" : "메모 혁신 : Notion 활용 가이드",
-    "image" : "./images/notions/notion_guide.png",
-    "contents":"메모작성부터 협업까지 노션으로 시작하세요!",
-    "link" : "https://www.notion.so/bootcampisland/Bootcamp-Island-Home-7ada10f07c384f78b4cf5402246b96e4",
-    "bookstore":"https://ridibooks.com/books/2773000023?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
   },
   {
     "name" : "Web Animation With 냥이집사",
@@ -448,20 +462,43 @@ function clickBodyEvent(event) {
 };
 
 //음악 재생
+// const bgm = document.querySelector('.bgm');
+const bgm_button_play = document.querySelector('.bgm__button--play');
+const bgm_button_pause = document.querySelector('.bgm__button--pause');
+const portraitMedia = window.matchMedia( 'only screen and (orientation: portrait)' );
+
+const audio = new Audio();
+audio.src = "https://drive.google.com/uc?export=download&id=1XelfpMJY5-2xlYWXCWXT2zqYmKNnukU7";
+audio.autoplay = true;
+audio.loop = true;
+
+if(audio.paused) {
+  bgm_button_play.classList.add('bgm__button--disactive');
+  bgm_button_pause.classList.add('bgm__button--active');
+}
+
 function musicPlay(){
-  document.querySelector('.bgm').play();
-  document.removeEventListener('click', musicPlay);
-  document.querySelector('.bgm__button--play').classList.add('bgm__button--disactive');
-  document.querySelector('.bgm__button--pause').classList.add('bgm__button--active');
+  if(audio.paused) {
+    audio.play();
+    document.removeEventListener('click', musicPlay);
+    bgm_button_play.classList.add('bgm__button--disactive');
+    bgm_button_pause.classList.add('bgm__button--active');
+  } else {
+    audio.pause();
+    audio.currentTime = 0;
+    bgm_button_play.classList.remove('bgm__button--disactive');
+    bgm_button_pause.classList.remove('bgm__button--active');
+  }
 }
-function musicStop(){
-  document.querySelector('.bgm').pause();
-  document.querySelector('.bgm__button--play').classList.remove('bgm__button--disactive');
-  document.querySelector('.bgm__button--pause').classList.remove('bgm__button--active');
-}
-document.querySelector('.bgm__button--play').addEventListener('click', musicPlay);
+window.onresize = function() {
+  if(portraitMedia.matches == true) {
+    console.log('stop');
+    musicStop();
+  }
+};
+bgm_button_play.addEventListener('click', musicPlay);
 document.addEventListener('click', musicPlay);
-document.querySelector('.bgm__button--pause').addEventListener('click', musicStop);
+bgm_button_pause.addEventListener('click', musicPlay);
 
 notionSetting();
 //notion 클릭시 해당하는 데이터 선택하기
