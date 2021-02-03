@@ -6,11 +6,31 @@ const notionInfo = [
     "wiki" : "http://paullabedu.synology.me/dokuwiki"
   },
   {
+    "name" : "위니브 월드 : 새로운 시대",
+    "image" : "./images/notions/weniv_world.jpg",
+    "contents":"위니브 월드를 바꾸기 위해 모험을 떠난 라이캣과 그의 동료들의 이야기",
+    "bookstore":"https://ridibooks.com/books/2773000042?_s=search&_q=사도출판"
+  },
+  {
+    "name" : "PyGame 어드벤쳐 : 위니브 월드를 수복하라!",
+    "image" : "./images/notions/pygame.jpg",
+    "contents":"위니브 월드의 재미있는 스토리와 함께 Pygame을 이용하여 게임을 제작해보아요!",
+    "link" : "https://www.notion.so/pygame/Pygame-Lecture-3bb9d5e7e92240519ab204d968e226a5",
+    "bookstore":"https://ridibooks.com/books/2773000041?_s=search&_q=사도출판"
+  },
+  {
     "name" : "[개정판]메모혁신 Notion(노션) 활용 가이드",
     "image" : "./images/notions/notion_guide.png",
     "contents":"메모작성부터 협업까지 노션으로 시작하세요!",
     "link" : "https://www.notion.so/bootcampisland/Bootcamp-Island-Home-7ada10f07c384f78b4cf5402246b96e4",
     "bookstore":"https://ridibooks.com/books/2773000038?_s=search&_q=%EC%9D%B4%ED%98%B8%EC%A4%80"
+  },
+  {
+    "name" : "캐글 데이터로 보는 데이터분석 With Python & SAS",
+    "image" : "./images/notions/python_sas.jpg",
+    "contents":"실전처럼 훈련할 수 있는 데이터를 가져와 Python과 SAS로 분석을 해봅시다!",
+    "link" : "https://www.notion.so/With-Python-and-SAS-f2b8927d9b054fa5bd12b24e2da7ffb7",
+    "bookstore":"https://ridibooks.com/books/2773000040?_s=search&_q=사도출판"
   },
   {
     "name" : "실전 예제로 살펴보는 PyQt Tutorial",
