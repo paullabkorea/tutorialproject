@@ -6,6 +6,13 @@ const notionInfo = [
     "wiki" : "http://paullabedu.synology.me/dokuwiki"
   },
   {
+    "name" : "눈떠보니 코딩테스트 전날 With JAVA",
+    "image" : "./images/notions/coding_test_java.jpg",
+    "contents":"얼마남지 않은 코딩테스트를 위니브와 함께 Java로 준비해 봅시다!",
+    "link" : "https://www.notion.so/3fb1b6fe0d63401d83f1fffd4c6a16dc?v=d46ca0eaf37e4262988a980459e24fc9",
+    "bookstore":"https://ridibooks.com/books/2773000043?_s=search&_q=사도출판"
+  },
+  {
     "name" : "위니브 월드 : 새로운 시대",
     "image" : "./images/notions/weniv_world.jpg",
     "contents":"위니브 월드를 바꾸기 위해 모험을 떠난 라이캣과 그의 동료들의 이야기",
