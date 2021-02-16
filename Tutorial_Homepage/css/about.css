@@ -270,7 +270,7 @@ hr {
 .about-ceo .intro .intro_saying {
   font-family: "CookieRunOTF-Bold";
   font-size: 15px;
-  margin: 0 auto;
+  text-align: center;
   padding-top: 20px;
   line-height: 1.3;
 }
@@ -478,6 +478,7 @@ hr {
     font-size: 8px;
   }
   .about-paullab .company .inner_2 {
+    width: 70px;
     padding-right: 30px;
   }
   .about-paullab .company .inner_2 p {
@@ -664,6 +665,7 @@ hr {
     padding-bottom: 26px;
   }
   .about-paullab .company .inner_2 {
+    width: 110px;
     padding-right: 70px;
   }
   .about-paullab .company .inner_2 p {
