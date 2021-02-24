@@ -10,7 +10,7 @@ const loading = document.querySelector(".result_loading");
 function calculator() {
     const fieldValue = document.querySelector("#field_value");
     let timeValue = document.querySelector("#time_value");
-    let timeValue_int = parseInt(timeValue.value, 10);
+    let timeValue_int = Number(timeValue.value);
 
     const fieldResult = document.querySelector(".field_result");
     const timeResult = document.querySelector(".time_result");
@@ -19,7 +19,7 @@ function calculator() {
         alert('입력되지 않았습니다.');
         fieldValue.focus();
         return false;
-    } else if (timeValue.value == "") {
+    } else if (timeValue.value== "") {
         alert('입력되지 않았습니다.');
         timeValue.focus();
         return false;
