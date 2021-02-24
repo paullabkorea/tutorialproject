@@ -712,6 +712,20 @@ display: none;
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.hallabongTree {
+  width: 75px;
+  height: auto;
+  position: absolute;
+  top: 550px;
+  right: 790px;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+}
+.hallabongTree:hover{
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
 /* 좌우반전 */
 .etc:hover img {
   -webkit-transform: scaleX(-1);
