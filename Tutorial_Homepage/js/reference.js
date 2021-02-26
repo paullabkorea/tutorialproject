@@ -6,6 +6,13 @@ const notionInfo = [
     "wiki" : "http://paullabedu.synology.me/dokuwiki"
   },
   {
+    "name" : "MBIT : 나의 개발 유형을 테스트해보자!",
+    "image" : "./images/notions/mbit_1.png",
+    "contents":"비전공자를 위한 프로그래밍에 대한 전반적인 내용을 다루는 짧고 굵은 IT겉핥기",
+    "link" : "https://www.notion.so/MBIT-My-Best-IT-personalities-3d9128d972054b498b98365f1df4e656",
+    "bookstore":"https://ridibooks.com/books/2773000044?_s=search&_q=사도출판"
+  },
+  {
     "name" : "눈떠보니 코딩테스트 전날 With JAVA",
     "image" : "./images/notions/coding_test_java.jpg",
     "contents":"얼마남지 않은 코딩테스트를 위니브와 함께 Java로 준비해 봅시다!",
