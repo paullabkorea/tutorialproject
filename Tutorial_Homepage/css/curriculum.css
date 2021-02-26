@@ -154,28 +154,25 @@ section > h2 {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 42.5px;
-  width: 719px;
+  margin-left: 47px;
   left: 0;
-  top: 400px;
+  top: 360px;
 }
-.roadmap .inner div {
-  left: 0;
-  top: 0;
+.roadmap .inner > div {
+  margin-right: 64.5px;
+}
+.roadmap .inner > div:last-child {
+  margin: 0;
 }
 .roadmap .inner .lec {
-  width: 100px;
-  height: auto;
-  padding-bottom: 61px;
+  width: 90px;
+  height: 58.5px;
+  margin-bottom: 71px;
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
+}
+.roadmap .inner .lec:last-child {
+  margin: 0;
 }
 .roadmap .inner .lec:hover {
   -webkit-transform: scale(1.1);
@@ -345,15 +342,17 @@ section > h2 {
     height: auto;
   }
   .roadmap .inner {
-    padding-left: 16px;
-    width: 269px;
+    margin-left: 17.5px;
     left: 0;
-    top: 150px;
+    top: 135px;
+  }
+  .roadmap .inner > div {
+    margin-right: 24px;
   }
   .roadmap .inner .lec {
-    width: 37px;
-    height: auto;
-    padding-bottom: 21.2px;
+    width: 34px;
+    height: 22px;
+    margin-bottom: 26.5px;
   }
   .roadmap .inner .lec:hover img {
     box-shadow: 1px 1px 5px #000;
@@ -433,14 +432,16 @@ section > h2 {
     height: auto;
   }
   .roadmap .inner {
-    padding-left: 34px;
-    width: 555px;
-    top: 310px;
+    margin-left: 36.5px;
+    top: 280px;
+  }
+  .roadmap .inner > div {
+    margin-right: 50px;
   }
   .roadmap .inner .lec {
-    width: 75px;
-    height: auto;
-    padding-bottom: 48.5px;
+    width: 70px;
+    height: 45.5;
+    margin-bottom: 41.5px;
   }
   .roadmap .inner .lec:hover img {
     box-shadow: 2px 2px 7px #000;
