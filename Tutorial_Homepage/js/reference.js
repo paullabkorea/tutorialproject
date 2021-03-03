@@ -6,6 +6,18 @@ const notionInfo = [
     "wiki" : "http://paullabedu.synology.me/dokuwiki"
   },
   {
+    "name" : "내 손으로 만드는 인스타그램 클론 강의 1권",
+    "image" : "./images/books/insta_clone_1.png",
+    "contents":"'인스타그램'이라는 SNS를 똑같이 따라 만드는 클론 코딩을 통해 재미있게 코딩을 학습할 수 있습니다. 해당 책은 1, 2부로 나눠져있습니다.",
+    "bookstore":"https://ridibooks.com/books/2773000045"
+  },
+  {
+    "name" : "내 손으로 만드는 인스타그램 클론 강의 2권",
+    "image" : "./images/books/insta_clone_2.png",
+    "contents":"'인스타그램'이라는 SNS를 똑같이 따라 만드는 클론 코딩을 통해 재미있게 코딩을 학습할 수 있습니다. 해당 책은 1, 2부로 나눠져있습니다.",
+    "bookstore":"https://ridibooks.com/books/2773000046"
+  },
+  {
     "name" : "MBIT : 나의 개발 유형을 테스트해보자!",
     "image" : "./images/notions/mbit_1.png",
     "contents":"비전공자를 위한 프로그래밍에 대한 전반적인 내용을 다루는 짧고 굵은 IT겉핥기",
