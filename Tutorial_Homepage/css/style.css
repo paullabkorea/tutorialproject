@@ -125,7 +125,6 @@ section > h2 {
   position: absolute;
 	right: 8%;
 	top: -30px;
-	/* margin-right: -125.5px; */
   -webkit-animation: move 2s;
           animation: move 2s;
   -webkit-transition: ease;
@@ -491,10 +490,6 @@ display: none;
   left: -70px;
   top: 160px;
 }
-.menu__intro:hover .menu__intro img {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
 .menu__intro div:hover {
   -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);
@@ -518,6 +513,10 @@ display: none;
   top: -121px;
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
+}
+.menu__intro:hover .menu__intro--licat .hand {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 @-webkit-keyframes licat {
   0% {
