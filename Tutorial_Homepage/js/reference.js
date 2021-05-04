@@ -6,6 +6,32 @@ const notionInfo = [
     "wiki" : "http://paullabedu.synology.me/dokuwiki"
   },
   {
+    "name" : "디스이즈 디스커버 디스코드",
+    "image" : "./images/books/discode.jpeg",
+    "contents":"디스코드를 처음 입문하시는 분들을 위한 기초적인 사용 방법과 API를 활용하여 봇을 만드는 다양한 방법까지 다루고 있습니다.",
+    "bookstore":"https://ridibooks.com/books/2773000050?_s=search&_q=사도출판"
+  },
+  {
+    "name" : "정규표현식 Python으로 톺아보기",
+    "image" : "./images/notions/regular_expression.jpeg",
+    "contents":"Python을 통해 정규표현식을 어떻게 사용할 수 있는지 다양한 예제를 통해 알아봅시다.",
+    "link" : "https://www.notion.so/paullabworkspace/1c57fc683c33468d95e7a490b6f66c95",
+    "bookstore":"https://ridibooks.com/books/2773000049?_s=search&_q=사도출판"
+  },
+  {
+    "name" : "개정판|메모혁신 Notion(노션) 활용 가이드(2021년)",
+    "image" : "./images/notions/notion_guide.png",
+    "contents":"메모작성부터 협업까지 노션으로 시작하세요!",
+    "bookstore":"https://ridibooks.com/books/2773000047?_s=search&_q=%사도출판"
+  },
+  {
+    "name" : "2021 Jeju Coding Basecamp",
+    "image" : "./images/notions/jeju_coding_basecamp.jpg",
+    "contents":"서비스 기획부터 런칭까지 같이 해봅니다.",
+    "link" : "https://www.notion.so/jejucodingcamp/Jeju-Coding-Basecamp-Home-ff529a96a4e5497eaadd7c5b12b60328",
+    "bookstore":"https://ridibooks.com/books/2773000048?_s=search&_q=사도출판"
+  },
+  {
     "name" : "내 손으로 만드는 인스타그램 클론 강의 1권",
     "image" : "./images/books/insta_clone_1.png",
     "contents":"'인스타그램'이라는 SNS를 똑같이 따라 만드는 클론 코딩을 통해 재미있게 코딩을 학습할 수 있습니다. 해당 책은 1, 2부로 나눠져있습니다.",
@@ -45,13 +71,6 @@ const notionInfo = [
     "bookstore":"https://ridibooks.com/books/2773000041?_s=search&_q=사도출판"
   },
   {
-    "name" : "[개정판]메모혁신 Notion(노션) 활용 가이드",
-    "image" : "./images/notions/notion_guide.png",
-    "contents":"메모작성부터 협업까지 노션으로 시작하세요!",
-    "link" : "https://www.notion.so/bootcampisland/Bootcamp-Island-Home-7ada10f07c384f78b4cf5402246b96e4",
-    "bookstore":"https://ridibooks.com/books/2773000038?_s=search&_q=%EC%9D%B4%ED%98%B8%EC%A4%80"
-  },
-  {
     "name" : "캐글 데이터로 보는 데이터분석 With Python & SAS",
     "image" : "./images/notions/python_sas.jpg",
     "contents":"실전처럼 훈련할 수 있는 데이터를 가져와 Python과 SAS로 분석을 해봅시다!",
@@ -71,13 +90,6 @@ const notionInfo = [
     "contents":"생애 첫 SQL, 제코베와 함께 배워봐요!",
     "link" : "https://www.notion.so/SQL-With-1da2d84c3bf8435d9b879b5d1d911acd",
     "bookstore":"https://ridibooks.com/books/2773000037?_s=search&_q=%EC%9D%B4%ED%98%B8%EC%A4%80"
-  },
-  {
-    "name" : "2020 Jeju Coding Basecamp",
-    "image" : "./images/notions/jeju_coding_basecamp.jpg",
-    "contents":"서비스 기획부터 런칭까지 같이 해봅니다.",
-    "link" : "https://www.notion.so/jejucodingcamp/Jeju-Coding-Basecamp-Home-ff529a96a4e5497eaadd7c5b12b60328",
-    "bookstore":"https://ridibooks.com/books/2773000035?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90"
   },
   {
     "name" : "Python Bootcamp 얕은물",
