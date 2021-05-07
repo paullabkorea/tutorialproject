@@ -1,0 +1,148 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supporters-info {
+  background-color: #8d36df;
+  width: 1190px;
+  padding: 60px 61px;
+  margin-bottom: 91px;
+  margin-top: 74px;
+}
+
+.info-box {
+  color: #fff;
+}
+
+.info-box div dt {
+  color: #fff;
+  font-weight: 900;
+  margin-right: 30px;
+  font-size: 24px;
+}
+
+.info-box div dd {
+  font-size: 18px;
+  line-height: 1.4477;
+  position: relative;
+  top: -5px;
+}
+
+.info-box div:not(.info-box div:nth-child(5), .info-box div:nth-child(2)) dt {
+  margin-bottom: 20px;
+}
+
+.info-box div:nth-child(2) dt {
+  margin-bottom: 99px;
+}
+
+.info-box div:first-child dd,
+.info-box div:nth-child(5) dd {
+  color: #f2c94c;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.44791667;
+}
+
+.info-box div {
+  display: flex;
+}
+
+.supporters-benefit {
+  padding-top: 93px;
+  border-top: 5px solid #8d36df;
+  width: 1190px;
+  position: relative;
+}
+
+.supporters-benefit h1 {
+  font-family: "GmarketSansTTFMedium";
+  font-size: 36px;
+  color: #8d36df;
+  padding: 0px 40px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 40px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffff;
+}
+
+.supporters-benefit h1 strong {
+  font-family: "GmarketSansTTFBold";
+}
+
+.benefit {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 418px;
+}
+
+.benefit-box {
+  width: 350px;
+}
+
+.benefit-box {
+  background-color: #8d36df;
+  color: #fff;
+  padding: 45px 38px 36px 38px;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.benefit-box h2 {
+  font-family: "GmarketSansTTFMedium";
+  font-size: 36px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.33333;
+}
+
+.benefit-box h2 strong {
+  font-family: "GmarketSansTTFBold";
+}
+
+.benefit-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  word-break: keep-all;
+  font-weight: 400;
+}
+
+.benefit-box p strong {
+  font-weight: 700;
+}
+
+.benefit-box p strong::before {
+  content: "※";
+  margin-right: 4px;
+  font-weight: 400;
+}
+
+.benefit-box a {
+  color: #ffedb8;
+  font-size: 18px;
+  position: absolute;
+  bottom: 36px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.benefit-box a::after {
+  content: "";
+  background-image: url("../assets/arrow_up_right.svg");
+  width: 26px;
+  height: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}

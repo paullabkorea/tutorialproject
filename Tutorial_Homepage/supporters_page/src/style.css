@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
+@import "./reset.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./home.css";
+@import "./preview.css";
+@import "./gide.css";
+
+@font-face {
+  font-family: "GmarketSansTTFMedium";
+  src: url("../fonts/GmarketSansTTFMedium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansTTFBold";
+  src: url("../fonts/GmarketSansTTFBold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}

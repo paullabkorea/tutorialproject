@@ -1,0 +1,36 @@
+.gide-container {
+  margin: 0 auto;
+  width: 1190px;
+  margin-top: 99px;
+}
+
+.gide-container article {
+  margin-bottom: 51px;
+  padding: 56px 62px;
+}
+
+.gide-container h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.4479;
+  color: #8d36df;
+  margin-bottom: 58px;
+}
+
+.gide-container h2 {
+  color: #8d36df;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.625;
+  margin-bottom: 22px;
+}
+
+.gide-container p {
+  font-size: 16px;
+  line-height: 1.625;
+}
+
+.gide-container p:not(.gide-container p:last-child) {
+  margin-bottom: 37px;
+}
