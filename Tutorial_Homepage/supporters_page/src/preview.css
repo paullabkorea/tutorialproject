@@ -26,6 +26,7 @@
   font-size: 12px;
   line-height: 2.068;
   color: #828282;
+  cursor: pointer;
 }
 
 .activity-list li span {
