@@ -169,6 +169,10 @@
     position: relative;
   }
 
+  .activity-header {
+    min-width: 100%;
+  }
+
   .activity-header-box {
     width: 100%;
   }
