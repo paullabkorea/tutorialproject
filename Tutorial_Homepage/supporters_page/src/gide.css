@@ -44,6 +44,10 @@
   margin-left: 18px;
 }
 
+.gide-item:nth-child(10) p {
+  margin-bottom: 37px;
+}
+
 .item-list {
   margin-left: 34px;
 }
@@ -134,6 +138,9 @@
 }
 
 @media screen and (max-width: 420px) {
+  .gide-main {
+    width: 100%;
+  }
   .gide-container {
     padding: 27px 25px 27px 26px;
     margin: 81px auto 40px;
@@ -160,6 +167,10 @@
     margin-top: 26px;
     margin-left: 16px;
     width: 247px;
+  }
+
+  .gide-item:nth-child(10) p {
+    margin-bottom: 20px;
   }
 
   .ex-box {

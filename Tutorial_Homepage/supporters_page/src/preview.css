@@ -1,3 +1,13 @@
+.activity-header {
+  min-width: 1190px;
+}
+
+.activity-header-box {
+  width: 1190px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .activity {
   margin-bottom: 96px;
   font-weight: 500;
@@ -158,6 +168,15 @@
   body {
     position: relative;
   }
+
+  .activity-header-box {
+    width: 100%;
+  }
+
+  .preview-main {
+    width: 100%;
+  }
+
   .activity {
     padding: 25px;
     margin-bottom: 0px;

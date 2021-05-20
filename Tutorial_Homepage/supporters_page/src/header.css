@@ -1,5 +1,5 @@
 header {
-  width: 100%;
+  min-width: 1190px;
   background: linear-gradient(to right, #8d36df, #bb6bd9);
 }
 
@@ -73,6 +73,7 @@ header {
   background-size: cover;
   position: relative;
   overflow: hidden;
+  min-width: 1190px;
 }
 
 .photo-content {
@@ -102,6 +103,9 @@ header {
 }
 
 @media screen and (max-width: 414px) {
+  header {
+    min-width: 100%;
+  }
   .head {
     display: block;
     width: 100%;
@@ -157,6 +161,10 @@ header {
   .head ul li:last-child,
   .head ul li:first-child {
     display: block;
+  }
+
+  .head-photo {
+    min-width: 100%;
   }
 
   .head-photo img {

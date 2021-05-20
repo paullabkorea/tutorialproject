@@ -1,4 +1,4 @@
-main {
+.home-main {
   width: 1190px;
   margin: 0 auto;
 }
@@ -175,7 +175,7 @@ main {
 }
 
 @media screen and (max-width: 420px) {
-  main {
+  .home-main {
     width: 100%;
   }
 
