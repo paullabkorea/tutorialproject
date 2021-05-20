@@ -31,7 +31,8 @@ header {
   list-style: none;
 }
 
-.head ul li:last-child {
+.head ul li:last-child,
+.head ul li:first-child {
   display: none;
 }
 
@@ -153,7 +154,8 @@ header {
     margin: 0;
   }
 
-  .head ul li:last-child {
+  .head ul li:last-child,
+  .head ul li:first-child {
     display: block;
   }
 

@@ -93,6 +93,11 @@
   flex-direction: column;
 }
 
+.gide-item:nth-child(1) ul li::before {
+  content: "-";
+  margin-right: 4px;
+}
+
 .gide-item:nth-child(3) ol li:nth-child(1)::before {
   content: "(1)";
   margin-right: 4px;
