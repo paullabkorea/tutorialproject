@@ -1,12 +1,11 @@
 .gide-container {
-  margin: 0 auto;
-  width: 1190px;
+  padding: 4.7% 5.2%;
+  margin: 99px auto 0px;
   margin-top: 99px;
-}
-
-.gide-container article {
-  margin-bottom: 51px;
-  padding: 56px 62px;
+  width: 1190px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  margin-bottom: 98px;
 }
 
 .gide-container h1 {
@@ -15,22 +14,176 @@
   font-size: 24px;
   line-height: 1.4479;
   color: #8d36df;
-  margin-bottom: 58px;
+  margin-bottom: 46px;
 }
 
-.gide-container h2 {
-  color: #8d36df;
+.gide-container strong {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.625;
-  margin-bottom: 22px;
+  color: #333333;
 }
 
-.gide-container p {
+.gide-item {
   font-size: 16px;
   line-height: 1.625;
+  color: #333333;
 }
 
-.gide-container p:not(.gide-container p:last-child) {
+.gide-item h2 {
+  margin-top: 26px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #8d36df;
+}
+
+.gide-item > p,
+.gide-item a,
+.gide-item:nth-child(9) strong,
+.gide-item:nth-child(1) ul {
+  margin-left: 18px;
+}
+
+.item-list {
+  margin-left: 34px;
+}
+
+.gide-item .underscore {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.gide-item a {
+  color: #2f80ed;
+  text-decoration: underline;
+}
+
+.item-list {
+  font-weight: 700;
   margin-bottom: 37px;
+}
+
+.gide-item:nth-child(12) span {
+  display: inline-block;
+  margin-top: 37px;
+}
+
+.gide-item img {
+  margin-top: 26px;
+  margin-left: 16px;
+}
+
+.ex-box {
+  background-image: url("../assets/union.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 339px;
+  height: 192px;
+  padding: 18px 27px 18px 45px;
+  margin-top: 26px;
+}
+
+.ex-box h3 {
+  margin-bottom: 27px;
+}
+
+.ex-box p {
+  display: flex;
+  flex-direction: column;
+}
+
+.gide-item:nth-child(3) ol li:nth-child(1)::before {
+  content: "(1)";
+  margin-right: 4px;
+}
+
+.gide-item:nth-child(3) ol li:nth-child(2)::before {
+  content: "(2)";
+  margin-right: 4px;
+}
+
+.gide-item:nth-child(3) ol li:nth-child(3)::before {
+  content: "(3)";
+  margin-right: 4px;
+}
+
+.gide-item:nth-child(3) ol li:nth-child(4)::before {
+  content: "(4)";
+  margin-right: 4px;
+}
+
+.gide-item:nth-child(12) ol li:nth-child(1)::before {
+  content: "1.";
+  margin-right: 4px;
+}
+
+.gide-item:nth-child(12) ol li:nth-child(2)::before {
+  content: "2.";
+  margin-right: 4px;
+}
+
+.gide-item:nth-child(12) ol li:nth-child(3)::before {
+  content: "3.";
+  margin-right: 4px;
+}
+
+@media screen and (max-width: 420px) {
+  .gide-container {
+    padding: 27px 25px 27px 26px;
+    margin: 81px auto 40px;
+    width: 360px;
+  }
+
+  .gide-container h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .gide-container strong,
+  .gide-item,
+  .gide-item strong {
+    font-size: 12px;
+  }
+
+  .gide-item h2 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .gide-item img {
+    margin-top: 26px;
+    margin-left: 16px;
+    width: 247px;
+  }
+
+  .ex-box {
+    padding: 13px 13px 13px 34px;
+    margin-top: 20px;
+    background-image: url("../assets/union_mini.png");
+    width: 182px;
+    height: 128px;
+  }
+
+  .ex-box h3 {
+    margin-bottom: 14px;
+  }
+
+  .ex-box h3,
+  .ex-box p {
+    font-size: 12px;
+    line-height: 1.4483;
+  }
+
+  .gide-item > p,
+  .gide-item a,
+  .gide-item:nth-child(9) strong,
+  .gide-item:nth-child(1) ul {
+    margin-left: 12px;
+  }
+
+  .item-list {
+    margin-left: 22px;
+    margin-bottom: 20px;
+  }
 }

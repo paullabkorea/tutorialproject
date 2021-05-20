@@ -16,20 +16,38 @@
             <img src="./assets/logo.svg" alt=""
           /></a>
         </h1>
-        <nav>
+        <button class="menu-bar"></button>
+        <nav class="">
           <ul>
             <li>
-              <a href="./gide.html">서포터즈 활용 가이드</a>
+              <a href="./gide.html">서포터즈 활용 가이드 </a>
             </li>
             <li>
               <a href="./preview.html">서포터즈 활동 살펴보기</a>
             </li>
+            <li>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdqvYfvcX3g0XnRQuttsnFiCEYHaTGawmLz6eKz56xjdVx5-g/viewform"
+              >
+                서포터즈 신청하기
+              </a>
+            </li>
           </ul>
+          <button type="button"></button>
         </nav>
-        <a href="#">신청하기</a>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdqvYfvcX3g0XnRQuttsnFiCEYHaTGawmLz6eKz56xjdVx5-g/viewform"
+          class="apply-btn"
+        >
+          신청하기
+        </a>
       </div>
       <div class="head-photo">
-        <!-- Image -->
+        <div class="photo-content">
+          <img src="./assets/main_acc.png" alt="" />
+          <img src="./assets/main_logo.png" alt="" />
+          <img src="./assets/main_acc_2.png" alt="" />
+        </div>
       </div>
     </header>
     <main>
@@ -37,21 +55,33 @@
         <dl class="info-box">
           <div>
             <dt>모집 기간</dt>
-            <dd>2021년 6월 1일 ~ 6월 25일</dd>
+            <dd>2021년 5월 24일 ~ 7월 25일</dd>
           </div>
           <div>
             <dt>신청 자격</dt>
             <dd>
               <ul>
-                <li>코딩을 공부하면서 공부 과정을 SNS에 정리하고 싶으신 분</li>
-                <li>온라인 동영상 강의를 통해서 코딩 독학하고 싶으신 분</li>
                 <li>
-                  코딩을 독학하고 싶지만 강의 비용이 부담스러워 망설이고 있으신
-                  분
+                  <span>
+                    코딩을 공부하면서 공부 과정을 SNS에 정리하고 싶으신 분
+                  </span>
                 </li>
                 <li>
-                  코딩 공부도 하고 서포터즈 활동도 하면서 공부 효과를 극대화하고
-                  싶으신 분
+                  <span>
+                    온라인 동영상 강의를 통해서 코딩 독학하고 싶으신 분
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    코딩을 독학하고 싶지만 강의 비용이 부담스러워 망설이고
+                    있으신 분
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    코딩 공부도 하고 서포터즈 활동도 하면서 공부 효과를
+                    극대화하고 싶으신 분
+                  </span>
                 </li>
               </ul>
             </dd>
@@ -62,7 +92,7 @@
           </div>
           <div>
             <dt>활동 기간</dt>
-            <dd>2021년 7월 1일 ~ 12월 31일(2021년 하반기)</dd>
+            <dd>2021년 7월 1일 ~ 9월 30일(약 3개월)</dd>
           </div>
           <div>
             <dt>모집 인원</dt>
@@ -75,7 +105,10 @@
           <strong>JE</strong>코베 서포터<strong>JU</strong> 혜택
         </h1>
         <div class="benefit">
-          <div class="benefit-box">
+          <a
+            href="https://smartstore.naver.com/weniv_store"
+            class="benefit-link"
+          >
             <h2>
               <span>제코베</span>
               <strong>굿즈 제공</strong>
@@ -84,9 +117,12 @@
               제주코딩베이스캠프 스토어에서 판매 하는 개발자 굿즈 전 제품을
               제공합니다.
             </p>
-            <a href="#">제코베 굿즈 보러가기</a>
-          </div>
-          <div class="benefit-box">
+            <span>제코베 굿즈 보러가기</span>
+          </a>
+          <a
+            href="https://www.inflearn.com/courses?s=%EC%A0%9C%EC%A3%BC%EC%BD%94%EB%94%A9%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%BA%A0%ED%94%84"
+            class="benefit-link"
+          >
             <h2>
               <span>제코베</span>
               <strong>온라인 강의 제공</strong>
@@ -96,9 +132,9 @@
               제공합니다. <br />
               <strong>제주코딩베이스캠프 강의 한정</strong>
             </p>
-            <a href="#">제코베 강의 보러가기</a>
-          </div>
-          <div class="benefit-box">
+            <span>제코베 강의 보러가기</span>
+          </a>
+          <a href="./gide.html" class="benefit-link">
             <h2>
               수료증과 <br />
               활동비 지급
@@ -107,52 +143,68 @@
               서포터즈 활동에 성실히 참여해 주신 서포터즈 여러분들께 서포터즈
               종료 시 수료증과 소정의 활동비를 지급합니다.
             </p>
-            <a href="#">서포터즈 활동 가이드 보러가기</a>
-          </div>
-        </div>
-      </article>
-    </main>
-    <footer>
-      <div class="link-box">
-        <div class="link-page">
-          <a href="./preview.html">서포터즈 활동 살펴보기</a>
-          <a href="./gide.html">
-            제코베 서포터즈 가이드 &amp; 서포터즈 활동 규정
+            <span>서포터즈 활동 가이드 보러가기</span>
           </a>
         </div>
-        <div class="link-sns">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+      </article>
+      <a href="http://paullab.co.kr/" class="page-link">
+        <img src="./assets/home_link.png" alt="" />
+      </a>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="link-box">
+          <div class="link-page">
+            <a href="./preview.html">서포터즈 활동 살펴보기</a>
+            <a href="./gide.html">
+              제코베 서포터즈 가이드 &amp; 서포터즈 활동 규정
+            </a>
+          </div>
+          <div class="link-sns">
+            <a href="#">
+              <img src="./assets/blog.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="./assets/t_story.svg" alt="" />
+            </a>
+            <a href="https://www.instagram.com/paullab_official/">
+              <img src="./assets/instagram.svg" alt="" />
+            </a>
+            <a href="https://business.facebook.com/Jejucoding/">
+              <img src="./assets/facebook.svg" alt="" />
+            </a>
+            <a href="https://www.youtube.com/channel/UC4GnvNKtuJ4cqWsYjxNxAEQ">
+              <img src="./assets/youtube.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="co-info">
+          <dl class="co-info-list">
+            <div>
+              <dt>회사명</dt>
+              <dd>(주)위니브</dd>
+            </div>
+            <div>
+              <dt>대표</dt>
+              <dd>이호준</dd>
+            </div>
+            <div>
+              <dt>사업자 번호</dt>
+              <dd>000-0000-0000</dd>
+            </div>
+            <div>
+              <dt>업종</dt>
+              <dd>정보통신업</dd>
+            </div>
+            <div>
+              <dt>주소</dt>
+              <dd>제주특별자치도 제주시 수목원길</dd>
+            </div>
+          </dl>
+          <strong>&copy;WeNiv Corp</strong>
         </div>
       </div>
-      <div class="co-info">
-        <dl class="co-info-list">
-          <div>
-            <dt>회사명</dt>
-            <dd>(주)위니브</dd>
-          </div>
-          <div>
-            <dt>대표</dt>
-            <dd>이호준</dd>
-          </div>
-          <div>
-            <dt>사업자 번호</dt>
-            <dd>000-0000-0000</dd>
-          </div>
-          <div>
-            <dt>업종</dt>
-            <dd>정보통신업</dd>
-          </div>
-          <div>
-            <dt>주소</dt>
-            <dd>제주특별자치도 제주시 수목원길</dd>
-          </div>
-        </dl>
-        <strong>&copy;WeNiv Corp</strong>
-      </div>
     </footer>
+    <script src="./src/bar.js"></script>
   </body>
 </html>

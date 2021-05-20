@@ -1,30 +1,74 @@
 .activity {
-  margin-bottom: 327px;
+  margin-bottom: 96px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.44285;
+  width: 1190px;
+  margin: 0 auto 77px;
+}
+
+.activity-list {
+  display: none;
+}
+
+.activity-list li {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.068;
+  color: #828282;
+}
+
+.activity-list li span {
+  text-decoration: underline;
+}
+
+.activity-list li:nth-child(1)::before {
+  content: "1.";
+  margin-right: 4px;
+}
+
+.activity-list li:nth-child(2)::before {
+  content: "2.";
+  margin-right: 4px;
+}
+
+.activity-list li:nth-child(3)::before {
+  content: "3.";
+  margin-right: 4px;
+}
+
+.activity-list li:nth-child(4)::before {
+  content: "4.";
+  margin-right: 4px;
+}
+
+.activity-header {
+  background-color: #f1f3f4;
+  width: 100%;
+  height: 266px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.activity h1 {
+.activity-header h1 {
   font-family: "GmarketSansTTFBold";
   font-size: 48px;
   color: #8d36df;
-  margin-top: 97px;
   margin-bottom: 17px;
 }
-.activity strong {
+.activity-header strong {
   display: inline-block;
-  font-weight: 500;
-  font-size: 16px;
   color: #4f4f4f;
   text-align: center;
-  margin-bottom: 110px;
 }
 
 .activity-preview {
   display: block;
   margin: 0 auto;
   padding-top: 67px;
+  max-width: 1190px;
 }
 
 .activity-preview h2 {
@@ -37,37 +81,157 @@
 }
 
 .activity-preview p {
-  font-size: 16px;
-  line-height: 1.448125;
-  font-weight: 500;
   margin-bottom: 45px;
-  width: 1250px;
 }
 
 .preview-album {
+  width: 100%;
   display: flex;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
-.phosting {
+.phoster,
+.phoster-none {
   border: 2px solid #bb6bd9;
-  position: relative;
   border-radius: 15px;
+  width: 574px;
+  height: 310px;
 }
 
-.phosting:first-child {
-  margin-right: 42px;
+.phoster span {
+  display: inline-block;
+  border-top: 2px solid #bb6bd9;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  width: 100%;
+  padding: 16px 0 17px;
+  text-align: center;
 }
 
 .photo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 254px;
 }
 
-.photo-name a {
-  display: inline-block;
-  padding: 17px 136px;
-  border-top: 2px solid #bb6bd9;
-  font-weight: 500px;
-  font-size: 16px;
-  color: #000000;
+.one {
+  background-image: url("../assets/phoster1.png");
+}
+
+.two {
+  background-image: url("../assets/phoster2.png");
+}
+
+.three {
+  background-image: url("../assets/phoster3.png");
+}
+
+.four {
+  background-image: url("../assets/phoster4.png");
+}
+
+.five {
+  background-image: url("../assets/phoster5.png");
+}
+
+.six {
+  background-image: url("../assets/phoster6.png");
+}
+
+.phoster {
+  font-size: 0px;
+  overflow: hidden;
+}
+
+.phoster-none {
+  background-color: rgba(151, 151, 151, 0.44);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    position: relative;
+  }
+  .activity {
+    padding: 25px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .activity-list {
+    display: block;
+    margin-top: 169px;
+    margin-left: 3px;
+  }
+
+  .activity-header {
+    height: 100%;
+    margin: 0px auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 169px;
+    padding-top: 18px;
+  }
+
+  .activity-header h1 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .activity-header strong {
+    font-size: 12px;
+    width: 218px;
+  }
+
+  .activity-preview {
+    padding-top: 26px;
+  }
+
+  .activity-preview h2 {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .activity-preview p {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .preview-album {
+    display: block;
+  }
+
+  .phoster {
+    width: 100%;
+    height: 175px;
+    margin: 0 auto;
+  }
+
+  .phoster span {
+    font-size: 10px;
+    padding: 0px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-margin {
+    margin-bottom: 18px;
+  }
+
+  .photo {
+    height: 137px;
+  }
+
+  .phoster-none {
+    display: none;
+  }
 }

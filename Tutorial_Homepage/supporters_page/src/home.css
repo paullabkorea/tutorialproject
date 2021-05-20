@@ -1,19 +1,20 @@
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 1190px;
+  margin: 0 auto;
 }
 
 .supporters-info {
   background-color: #8d36df;
-  width: 1190px;
   padding: 60px 61px;
-  margin-bottom: 91px;
-  margin-top: 74px;
+  margin: 74px auto 91px;
 }
 
 .info-box {
   color: #fff;
+}
+
+.info-box ul li::before {
+  content: "•";
 }
 
 .info-box div dt {
@@ -53,17 +54,14 @@ main {
 .supporters-benefit {
   padding-top: 93px;
   border-top: 5px solid #8d36df;
-  width: 1190px;
   position: relative;
+  margin: 0 auto;
 }
 
 .supporters-benefit h1 {
   font-family: "GmarketSansTTFMedium";
   font-size: 36px;
   color: #8d36df;
-  padding: 0px 40px;
-  margin: 0 auto;
-  text-align: center;
   padding: 0px 40px;
   position: absolute;
   top: 0px;
@@ -79,16 +77,28 @@ main {
 .benefit {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 418px;
+  margin-bottom: 93px;
 }
 
-.benefit-box {
-  width: 350px;
+.benefit-link {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.benefit-box {
-  background-color: #8d36df;
-  color: #fff;
+.benefit-link:nth-child(1) {
+  background-image: url("../assets/link_box1.png");
+}
+
+.benefit-link:nth-child(2) {
+  background-image: url("../assets/link_box2.png");
+}
+
+.benefit-link:nth-child(3) {
+  background-image: url("../assets/link_box3.png");
+}
+
+.benefit-link {
   padding: 45px 38px 36px 38px;
   width: 350px;
   height: 350px;
@@ -96,7 +106,11 @@ main {
   position: relative;
 }
 
-.benefit-box h2 {
+.benefit-link {
+  color: #fff;
+}
+
+.benefit-link h2 {
   font-family: "GmarketSansTTFMedium";
   font-size: 36px;
   margin-bottom: 32px;
@@ -105,28 +119,28 @@ main {
   line-height: 1.33333;
 }
 
-.benefit-box h2 strong {
+.benefit-link h2 strong {
   font-family: "GmarketSansTTFBold";
 }
 
-.benefit-box p {
+.benefit-link p {
   font-size: 15px;
   line-height: 1.6;
   word-break: keep-all;
   font-weight: 400;
 }
 
-.benefit-box p strong {
+.benefit-link p strong {
   font-weight: 700;
 }
 
-.benefit-box p strong::before {
+.benefit-link p strong::before {
   content: "※";
   margin-right: 4px;
   font-weight: 400;
 }
 
-.benefit-box a {
+.benefit-link > span {
   color: #ffedb8;
   font-size: 18px;
   position: absolute;
@@ -136,7 +150,7 @@ main {
   align-items: center;
 }
 
-.benefit-box a::after {
+.benefit-link > span::after {
   content: "";
   background-image: url("../assets/arrow_up_right.svg");
   width: 26px;
@@ -145,4 +159,118 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
+}
+
+.page-link {
+  display: inline-block;
+  margin-bottom: 115px;
+  background-image: url("../assets/home_link.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-link img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 420px) {
+  main {
+    width: 100%;
+  }
+
+  .supporters-info {
+    width: 310px;
+    font-size: 14px;
+    margin: 22px auto 41px;
+    padding: 20px 22px 0px 22px;
+    border-radius: 10px;
+  }
+
+  .info-box div:first-child dd,
+  .info-box div:nth-child(5) dd {
+    color: #f2c94c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.44791667;
+  }
+
+  .info-box div dt {
+    font-weight: 900;
+    margin-right: 15px;
+    font-size: 14px;
+  }
+
+  .info-box div dd {
+    font-size: 13px;
+    line-height: 1.4477;
+    position: relative;
+    top: -5px;
+    width: 180px;
+    margin-bottom: 12px;
+  }
+
+  .info-box div dd ul {
+    width: 185px;
+  }
+
+  .info-box div:not(.info-box div:nth-child(5), .info-box div:nth-child(2)) dt {
+    margin-bottom: 0px;
+  }
+
+  .supporters-benefit {
+    width: 310px;
+    padding-top: 40px;
+    border-top: 2px solid #8d36df;
+  }
+
+  .supporters-benefit h1 {
+    font-size: 16px;
+    padding: 0 11px;
+    top: -6px;
+    left: 20.5%;
+    transform: translate(0, 0);
+  }
+
+  .benefit {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .benefit-link {
+    width: 310px;
+    height: 230px;
+    margin-bottom: 16px;
+    padding: 30px 30px 22px 30px;
+  }
+
+  .benefit-link h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .benefit-link p {
+    font-size: 14px;
+  }
+
+  .benefit-link > span {
+    font-size: 14px;
+    bottom: 22px;
+  }
+
+  .page-link {
+    margin-top: 12px;
+    height: 340px;
+    width: 100%;
+    font-size: 0px;
+    background-image: url("../assets/home_link_mini.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+  }
+  .page-link img {
+    display: none;
+    font-size: 0px;
+  }
 }

@@ -1,5 +1,16 @@
 footer {
-  width: 1189px;
+  background-color: #f2f2f2;
+  height: 263px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content {
+  width: 1190px;
   margin: 0 auto;
 }
 
@@ -7,6 +18,8 @@ footer {
   padding-bottom: 43px;
   border-bottom: 1px solid #c4c4c4;
   margin-bottom: 33px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .link-page {
@@ -25,11 +38,14 @@ footer {
   margin-bottom: 20px;
 }
 
+.link-sns a {
+  margin-left: 20px;
+}
+
 .co-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 61px;
 }
 
 .co-info dl {
@@ -60,11 +76,74 @@ footer {
 }
 
 .co-info-list div dd::after {
-  content: '|';
+  content: "|";
   font-weight: 700;
   margin: 0px 7px;
 }
 
 .co-info strong {
   font-weight: 700;
+}
+
+.hiding-footer {
+  display: none;
+}
+
+@media screen and (max-width: 420px) {
+  footer {
+    height: 100%;
+    padding: 30px 25px 26px;
+  }
+
+  .co-info-list {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .link-box {
+    display: block;
+  }
+
+  .link-page {
+    margin-bottom: 42px;
+  }
+
+  .link-page a {
+    font-size: 12px;
+  }
+
+  .link-page a:first-child {
+    margin-bottom: 13px;
+  }
+
+  .link-sns a {
+    margin-left: 16px;
+  }
+
+  .link-sns a img {
+    width: 13px;
+  }
+  .link-sns a:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .link-box {
+    padding-bottom: 0px;
+    border-bottom: none;
+    margin-bottom: 0px;
+    display: block;
+  }
+
+  .co-info strong {
+    position: absolute;
+    right: 23px;
+    font-size: 10px;
+  }
+
+  .hiding-footer {
+    display: block;
+  }
 }
