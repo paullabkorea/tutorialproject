@@ -82,6 +82,10 @@ footer {
   margin: 0px 7px;
 }
 
+.co-info-list div:last-child dd::after {
+  content: "";
+}
+
 .co-info strong {
   font-weight: 700;
 }
