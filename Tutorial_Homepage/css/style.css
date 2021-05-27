@@ -725,6 +725,24 @@ display: none;
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
+.supporters {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: 360px;
+  left: 700px;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+}
+.mbit_test {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: 350px;
+  left: 1480px;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+}
 /* 좌우반전 */
 .etc:hover img {
   -webkit-transform: scaleX(-1);
@@ -877,18 +895,9 @@ display: none;
 .modal__content .post__img {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
-.modal__content .post__img a{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-    		  flex-wrap: wrap;
-}
+
 .modal__content .post__img img{
   width: 100%;
   height: auto;

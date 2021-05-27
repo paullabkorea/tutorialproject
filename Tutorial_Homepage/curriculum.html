@@ -72,7 +72,16 @@
           <strong>⭐ 해당 강좌를 클릭하시면 수강 페이지를 확인할 수 있습니다!⭐</strong><br>
           </p>
           <div class="roadmap">
-            <img src="images/roadmap_bg.png" alt="제코베 로드맵"/>
+            <img src="images/roadmap_bg.png" alt="제코베 로드맵" usemap="#roadmap_secret" />
+            <map name="roadmap_secret">
+              <area shape="rect" coords="106, 3473, 359, 3637" href="https://www.inflearn.com/course/제주코딩-웹개발-30분요약" target="_blank" alt="30분요약강좌"/>
+              <area shape="rect" coords="473, 3473, 726, 3637" href="https://inf.run/pjvA" target="_blank" alt="1만시간의법칙"/>
+              <area shape="rect" coords="840, 3473, 1093, 3637" href="https://inf.run/4v6N" target="_blank" alt="생애첫SQL"/>
+
+              <area shape="rect" coords="106, 4098, 359, 4262" href="https://inf.run/Ernr" target="_blank" alt="pyton부트캠프"/>
+              <area shape="rect" coords="473, 4098, 726, 4262" href="https://inf.run/D3mA" target="_blank" alt="mbit-테스트-페이지-웹개발"/>
+              <area shape="rect" coords="840, 4098, 1093, 4262" href="https://inf.run/PYxw" target="_blank" alt="눈떠보니코딩테스트전날"/>
+            </map>
             <div class="inner">
               <!-- junior basic -->
               <div class="junior">
@@ -111,6 +120,9 @@
                 </div>
                 <div class="lec">
                   <a href="https://inf.run/DCEy" target="_blank"><img src="images/lecture/lec40.png" alt="1만 시간의 법칙"/></a>
+                </div>
+                <div class="lec white-bg-border">
+                  <a href="https://inf.run/ycoZ" target="_blank"><img src="images/lecture/lec41.png" alt="google sheets로 만드는 simple Blog"/></a>
                 </div>
                 <div class="lec">
                   <a href="https://www.inflearn.com/course/제주코딩-웹개발-30분요약-시즌2" target="_blank"><img src="images/lecture/lec05.png" alt="30분요약강좌시즌2"/></a>
@@ -205,6 +217,9 @@
                 <div class="lec">
                   <a href="https://www.inflearn.com/course/스타트업" target="_blank"><img src="images/lecture/lec34.png" alt="스타트업AtoZ"/></a>
                 </div>
+                <div class="lec">
+                  <a href="https://inf.run/MkoW" target="_blank"><img src="images/lecture/lec42.png" alt="하드웨어 기초상식"/></a>
+                </div>
               </div>
             </div>
           </div>
@@ -288,5 +303,14 @@
       </div>
     </section>
     <!-- //footer -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+    <script>
+   $(function(){
+     $('img[usemap]').rwdImageMaps();
+     $("#img").width("100%");
+   });
+   </script>
   </body>
 </html>
