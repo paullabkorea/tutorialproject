@@ -156,10 +156,10 @@ section > h2 {
   position: absolute;
   margin-left: 47px;
   left: 0;
-  top: 360px;
+  top: 365px;
 }
 .roadmap .inner > div {
-  margin-right: 64.5px;
+  margin-right: 64px;
 }
 .roadmap .inner > div:last-child {
   margin: 0;
@@ -167,7 +167,7 @@ section > h2 {
 .roadmap .inner .lec {
   width: 90px;
   height: 58.5px;
-  margin-bottom: 71px;
+  margin-bottom: 70px;
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
 }
@@ -188,9 +188,6 @@ section > h2 {
   -webkit-transform: translateX(-5px) translateY(-5px);
       -ms-transform: translateX(-5px) translateY(-5px);
           transform: translateX(-5px) translateY(-5px);
-}
-.white-bg-border {
-  border: 1px solid #959595;
 }
 @-webkit-keyframes blink {
   0% {
@@ -435,8 +432,8 @@ section > h2 {
     height: auto;
   }
   .roadmap .inner {
-    margin-left: 36.5px;
-    top: 280px;
+    margin-left: 36px;
+    top: 282px;
   }
   .roadmap .inner > div {
     margin-right: 50px;
