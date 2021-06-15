@@ -321,6 +321,9 @@ hr {
   margin: 0 25px 20px 0;
   cursor: pointer;
 }
+.us_imgs img:hover {
+  filter: opacity(.5) drop-shadow(0 0 0 rgba(0, 0, 0, 0.4));
+}
 /* us - 이미지 팝업창 */
 #img_popup {
     position: fixed;
