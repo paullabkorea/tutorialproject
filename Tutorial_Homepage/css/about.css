@@ -140,8 +140,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1000px;
-  height: auto;
+  width: 1200px;
   padding: 40px 10px;
 }
 .section {
@@ -151,9 +150,6 @@ hr {
 }
 /* about us */
 .about-paullab {
-  position: relative;
-  width: 100%;
-  height: auto;
   padding: 30px 0;
 }
 .about-paullab .saying {
@@ -224,9 +220,7 @@ hr {
   font-size: 15px;
 }
 .about-paullab .intro .intro_contents {
-  padding-top: 80px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 80px 40px 0;
 }
 .about-paullab .intro_contents h4 {
   font-family: "CookieRunOTF-Bold";
@@ -244,11 +238,11 @@ hr {
   font-size: 20px;
   font-weight: bold;
 }
+.readmore-btn:hover {
+  text-decoration: underline;
+}
 /* ceo */
 .about-ceo {
-  position: relative;
-  width: 100%;
-  height: auto;
   padding: 30px 0;
 }
 .about-ceo .intro {
@@ -314,22 +308,49 @@ hr {
 }
 /* us */
 #us{
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 30px 0;
+  padding: 30px 0;
 }
 .us_imgs{
-    padding: 35px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 45px 25px;
 }
 .us_imgs img{
-  margin-top:30px;
+  width: 350px;
+  margin: 0 25px 20px 0;
+  cursor: pointer;
+}
+/* us - 이미지 팝업창 */
+#img_popup {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.img_popup-wrap {
+  display: flex;
+  align-items: center;
+  width: 900px;
+  height: 600px;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.img_popup-wrap img {
+  width: 100%;
+  height: 100%;
 }
 /* contact */
 #contact {
-  position: relative;
   width: 100%;
-  height: auto;
   padding: 30px 0;
 }
 #contact .contact_items {
@@ -357,7 +378,7 @@ hr {
   margin: 0 auto;
 }
 #contact .contact_items .map iframe {
-  width: 900px;
+  width: 950px;
   height: 600px;
   border: 0;
 }
@@ -572,6 +593,18 @@ hr {
   .about-ceo .intro .intro_contents .intro_text span {
     font-size: 7px;
   }
+  /* us */
+  .us_imgs{
+    padding: 40px 15px;
+  }
+  .us_imgs img{
+    width: 250px;
+    margin: 0 0 20px 0;
+  }
+  .img_popup-wrap {
+    width: 300px;
+    height: 200px;
+  }
   #contact {
     position: relative;
     width: 100%;
@@ -716,6 +749,17 @@ hr {
   }
   .about-ceo .intro .intro_contents .intro_text span {
     font-size: 9px;
+  }
+  /* us */
+  .us_imgs{
+    padding: 40px 15px;
+  }
+  .us_imgs img{
+    margin: 0 20px 20px 0;
+  }
+  .img_popup-wrap {
+    width: 600px;
+    height: 400px;
   }
   /* contact */
   #contact .contact_items {
