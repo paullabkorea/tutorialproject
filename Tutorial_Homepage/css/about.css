@@ -150,10 +150,9 @@ hr {
 }
 /* about us */
 .about-paullab {
-  padding: 30px 0;
+  padding-bottom: 30px;
 }
 .about-paullab .saying {
-  padding-top: 35px;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -168,8 +167,7 @@ hr {
   padding: 30px 0;
 }
 .about-paullab .intro {
-  margin-top: 30px;
-  padding: 35px 0;
+  padding-top: 50px;
 }
 .about-paullab .company {
   display: -webkit-box;
@@ -220,7 +218,7 @@ hr {
   font-size: 15px;
 }
 .about-paullab .intro .intro_contents {
-  padding: 80px 40px 0;
+  padding: 50px 40px 0;
 }
 .about-paullab .intro_contents h4 {
   font-family: "CookieRunOTF-Bold";
@@ -230,9 +228,11 @@ hr {
 .about-paullab .intro_contents p {
   font-family: "NEXON Lv1 Gothic OTF";
   font-size: 17px;
-  padding-left: 30px;
-  padding-bottom: 50px;
+  padding: 0 0 50px 35px;
   line-height: 1.5;
+}
+.about-paullab .intro_contents p:last-child {
+  padding: 0 0 0 35px;
 }
 .about-paullab .intro_contents span {
   font-size: 20px;
@@ -252,7 +252,7 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 35px 25px;
+  padding: 35px 25px 0;
 }
 .about-ceo .intro .intro_img {
   padding-right: 200px;
@@ -314,7 +314,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 45px 25px;
+  padding: 45px 25px 0;
 }
 .us_imgs img{
   width: 350px;
@@ -354,7 +354,7 @@ hr {
 /* contact */
 #contact {
   width: 100%;
-  padding: 30px 0;
+  padding: 40px;
 }
 #contact .contact_items {
   display: -webkit-box;
@@ -367,12 +367,12 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 35px 0;
+  padding: 40px 0;
   font-family: "NEXON Lv1 Gothic OTF";
   font-size: 17px;
 }
 #contact .contact_items .contact_item {
-  padding: 30px;
+  padding: 0 30px 30px;
 }
 #contact .contact_items .contact_item div {
   padding-bottom: 15px;
@@ -472,24 +472,23 @@ hr {
   .about-paullab {
     width: 100%;
     height: auto;
-    padding: 15px 0;
+    padding-bottom: 20px;
   }
   .about-paullab .saying {
     line-height: 1.5;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 15px;
   }
   .about-paullab .saying h4 {
     font-size: 13px;
-    padding: 30px 0;
+    padding: 15px 0;
   }
   .about-paullab .saying p {
     font-size: 10px;
-    padding: 30px 0;
+    padding: 15px 0;
   }
   .about-paullab .intro {
     margin-top: 0;
-    padding: 35px 0;
+    padding: 35px 0 0;
   }
   .about-paullab .company .inner_1 {
     width: 60px;
@@ -524,9 +523,7 @@ hr {
     font-size: 8px;
   }
   .about-paullab .intro .intro_contents {
-    padding-top: 50px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 30px 5px 0;
   }
   .about-paullab .intro_contents h4 {
     font-size: 15px;
@@ -534,15 +531,16 @@ hr {
   }
   .about-paullab .intro_contents p {
     font-size: 10px;
-    padding-left: 30px;
-    padding-bottom: 35px;
-    line-height: 1.5;
+    padding: 0 0 30px 20px;
+  }
+  .about-paullab .intro_contents p:last-child {
+    padding: 0 0 0 20px;
   }
   .about-paullab .intro_contents span {
     font-size: 13px;
   }
   .about-ceo {
-    padding: 30px 0;
+    padding: 20px 0;
   }
   .about-ceo .intro {
     -webkit-box-orient: vertical;
@@ -552,7 +550,7 @@ hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 35px 10px;
+    padding: 0px 10px;
   }
   .about-ceo .intro .intro_img {
     display: -webkit-box;
@@ -576,7 +574,7 @@ hr {
     font-size: 10px;
   }
   .about-ceo .intro .intro_contents {
-    padding: 15px 5px;
+    padding: 15px 5px 0;
   }
   .about-ceo .intro .intro_contents .name {
     padding: 15px 0;
@@ -590,15 +588,18 @@ hr {
   }
   .about-ceo .intro .intro_contents .intro_text {
     font-size: 10px;
-    padding: 15px 0;
+    padding: 15px 0 0;
     line-height: 1.3;
   }
   .about-ceo .intro .intro_contents .intro_text span {
     font-size: 7px;
   }
   /* us */
+  #us {
+    padding: 20px 0;
+  }
   .us_imgs{
-    padding: 40px 15px;
+    padding: 40px 15px 0;
   }
   .us_imgs img{
     width: 250px;
@@ -609,16 +610,13 @@ hr {
     height: 200px;
   }
   #contact {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 30px 0;
+    padding: 20px 0;
   }
   #contact .contact_items {
     font-size: 10px;
   }
   #contact .contact_items .contact_item {
-    padding: 30px 0;
+    padding: 0 0 30px;
     line-height: 1.3;
   }
   #contact .contact_items .contact_item div {
@@ -686,12 +684,10 @@ hr {
   }
   /* about us */
   .about-paullab .saying {
-    padding-top: 10px;
     padding-bottom: 35px;
   }
   .about-paullab .intro {
-    margin-top: 30px;
-    padding: 35px 0;
+    padding-top: 40px;
   }
   .about-paullab .company .inner_1 {
     width: 100px;
@@ -716,8 +712,10 @@ hr {
   }
   .about-paullab .intro_contents p {
     font-size: 15px;
-    padding-left: 20px;
-    padding-bottom: 40px;
+    padding: 0 0 40px 28px;
+  }
+  .about-paullab .intro_contents p:last-child {
+    padding: 0 0 0 28px;
   }
   .about-paullab .intro_contents span {
     font-size: 17px;
@@ -725,7 +723,7 @@ hr {
   }
   /* ceo */
   .about-ceo .intro {
-    padding: 35px 15px;
+    padding: 20px 15px 0;
   }
   .about-ceo .intro .intro_img {
     padding-right: 100px;
@@ -755,7 +753,7 @@ hr {
   }
   /* us */
   .us_imgs{
-    padding: 40px 15px;
+    padding: 40px 15px 0;
   }
   .us_imgs img{
     margin: 0 20px 20px 0;
