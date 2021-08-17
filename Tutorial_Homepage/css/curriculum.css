@@ -19,19 +19,25 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'NEXON Lv2 Gothic Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
 body {
   font-family: "NEXON Lv1 Gothic OTF", sans-serif;
 }
-a {
-  color: inherit;
-  cursor: pointer;
-  text-decoration: none;
-}
 strong {
   font-weight: bold;
-}
-section > h2 {
-  display: none;
 }
 #home {
   position: relative;
@@ -61,17 +67,11 @@ section > h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-family: "CookieRunOTF-Black";
-}
-#title .title {
-  font-size: 80px;
-  padding-bottom: 20px;
-  padding-right: 0;
+  margin-bottom: 20px;
 }
 #title .wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +81,12 @@ section > h2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 20px;
+  width: 900px;
+  height: 120px;
+}
+#title .title {
+  font-size: 80px;
+  padding-right: 133px;
 }
 /* 빙키 -title 옆 이미지 */
 @-webkit-keyframes binky {
@@ -95,14 +100,14 @@ section > h2 {
   }
 }
 #title .title-img {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
   width: 167px;
   height: 167px;
   background: url("../images/frame_binky.png") no-repeat 0 0 / 667px 167px;
   -webkit-animation: binky 1s infinite steps(4);
           animation: binky 1s infinite steps(4);
-  position: relative;
-  left: 0;
-  top: 0;
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
@@ -128,8 +133,7 @@ section > h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 900px;
-  height: 100%;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 .jejucoding, .oreum, .live-lec, .certification {
   padding: 40px 0;
@@ -273,63 +277,98 @@ section > h2 {
 .readmore__btn:hover {
   text-decoration: underline;
 }
+
 /* footer */
 #footer {
-  background-color: #606060;
-  color: #fff;
+  left: 0;
+  bottom: 0;
+  background-color: #F2F2F2;
 }
+
 #footer .wrapper {
-  margin: 0;
-  padding: 40px 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1180px;
+}
+
+#footer .footer_top {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-#footer .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 60%;
-}
-#footer .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 2vw;
-  font-family: "CookieRunOTF-Bold", "serif";
-}
-#footer .contact_item {
-  padding-top: 15px;
-  line-height: 1.5;
-}
-#footer .contact_item div {
+  justify-content: space-between;
   padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #C4C4C4;
+  font-size: 16px;
 }
-#footer .contact_item .addr {
-  line-height: 1.5;
+
+#footer .menu_item {
+  display: inline-block;
+  font-family: 'NEXON Lv2 Gothic Bold';
 }
-#footer .about {
-  width: 40%;
+
+#footer .menu_item:first-child {
+  margin-right: 58px;
 }
-#footer .about-item {
-  padding-top: 15px;
-  line-height: 1.5;
+
+#footer .menu_item li {
+  display: block;
 }
-#footer .copyright {
-  background-color: #3a3939;
-  margin: 0;
-  padding: 15px 60px;
+
+#footer .menu_item a {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#footer .sns_list {
+ padding-top: 10px;
+}
+
+#footer .sns_list > a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 20px;
+}
+
+#footer .sns_list > a:first-child {
+  margin-left: 0;
+}
+
+#footer .footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  color: #4F4F4F;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#footer .footer_bottom .weniv_info > div {
+  display: inline-block;
+}
+
+#footer .footer_bottom dd, #footer .footer_bottom dt {
+  display: inline-block;
+}
+
+#footer .footer_bottom .weniv_info > div:first-child dd {
+  font-family: 'NEXON Lv2 Gothic Bold';
+}
+
+#footer .footer_bottom dd::after {
+  font-family: "NEXON Lv1 Gothic OTF";
+  content: "|";
+  margin: 0 6px 2px 8px;
+}
+
+#footer .footer_bottom .weniv_info > div:last-child dd::after {
+  content: "";
+}
+
+#footer .footer_bottom dt, #footer .footer_bottom span {
+  font-family: 'NEXON Lv2 Gothic Bold';
+}
+
+#footer .weniv_corp span {
+  padding-left: 3px;
 }
 
 @media all and (min-width: 320px) and (max-width: 639px) {
@@ -339,8 +378,11 @@ section > h2 {
   #home .home-btn i {
     font-size: 25px;
   }
+  #title {
+    margin-bottom: 0;
+  }
   #title .title {
-    font-size: 35px;
+    font-size: 30px;
     padding: 0;
   }
   #title .wrapper {
@@ -357,10 +399,10 @@ section > h2 {
     padding-bottom: 40px;
   }
   #main_contents .lec_title {
-    font-size: 10px;
+    font-size: 13px;
   }
   #main_contents p {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.6;
   }
   #main_contents .roadmap {
@@ -384,55 +426,74 @@ section > h2 {
         -ms-transform: translateX(-1px) translateY(-1px);
             transform: translateX(-1px) translateY(-1px);
   }
+  .jejucoding strong, .oreum strong {
+    font-size: 13px;
+  }
+  .jejucoding span, .oreum span {
+    font-size: 10px;
+  }
+  /* footer */
   #footer .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 20px 30px;
+    width: 320px;
+    padding: 30px 0;
   }
-  #footer .contact {
-    width: 100%;
-    padding-bottom: 15px;
+
+  #footer .footer_top {
+    font-size: 12px;
+    padding-bottom: 5;
+    margin-bottom: 20px;
   }
-  #footer .title {
-    font-size: 15px;
+
+  #footer .menu_item a {
+    margin-bottom: 15px;
   }
-  #footer .contact_item {
-    font-size: 5px;
+
+  #footer .menu_item:first-child {
+    margin-right: 30px;
+  }
+
+  #footer .sns_list {
     padding-top: 5px;
   }
-  #footer .contact_item div {
-    padding-bottom: 5px;
+
+  #footer .sns_list > a {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
   }
-  #footer .about {
+
+  #footer .sns_list > a img {
     width: 100%;
   }
-  #footer .about-item {
-    font-size: 5px;
-    padding-top: 5px;
+
+  #footer .footer_bottom {
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 10px;
   }
-  #footer .copyright {
-    font-size: 5px;
-    padding: 10px 15px;
+
+  #footer .footer_bottom dd::after {
+    margin: 0 3px 1px 4px;
+  }
+
+  #footer .footer_bottom .weniv_info {
+    padding-bottom: 10px;
   }
 }
 
-@media all and (min-width: 640px) and (max-width: 1023px) {
+@media all and (min-width: 640px) and (max-width: 1180px) {
   #home .wrapper {
     padding: 20px 25px;
   }
   #title .wrapper {
-    margin-left: 20px;
+    width: 620px;
   }
   #title .title {
-    font-size: 60px;
-    margin: 0;
-    padding-bottom: 30px;
+    font-size: 50px;
+    padding-right: 110px;
   }
   #title .title-img {
-    margin: 0;
-    padding: 0;
+    bottom: -30px;
     -webkit-transform: scale(0.7);
         -ms-transform: scale(0.7);
             transform: scale(0.7);
@@ -471,25 +532,35 @@ section > h2 {
         -ms-transform: translateX(-2px) translateY(-2px);
             transform: translateX(-2px) translateY(-2px);
   }
+  .jejucoding strong, .oreum strong {
+    font-size: 17px;
+  }
+  /* footer */
   #footer .wrapper {
-    padding: 30px 50px;
+    width: 640px;
   }
-  #footer .title {
-    font-size: 20px;
+
+  #footer .footer_top {
+    font-size: 15px;
   }
-  #footer .contact_item {
-    font-size: 12px;
-    padding-top: 10px;
+
+  #footer .menu_item:first-child {
+    margin-right: 40px;
   }
-  #footer .contact_item div {
-    padding-bottom: 5px;
+
+  #footer .sns_list {
+  padding-top: 10px;
   }
-  #footer .about-item {
-    font-size: 12px;
-    padding-top: 10px;
-    line-height: 1.7;
+
+  #footer .sns_list > a {
+    margin-left: 15px;
   }
-  #footer .copyright {
-    padding: 10px 30px;
+
+  #footer .footer_bottom {
+    font-size: 13px;
+  }
+
+  #footer .footer_bottom .weniv_info {
+    max-width: 500px;
   }
 }
