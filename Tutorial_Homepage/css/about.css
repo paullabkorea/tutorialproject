@@ -41,7 +41,7 @@
   overflow:hidden;
 }
 body {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "NEXON Lv1 Gothic OTF", sans-serif;
 }
 a {
   color: inherit;
@@ -176,7 +176,6 @@ hr {
   font-family: "CookieRunOTF-Bold";
 }
 .about-paullab .saying p {
-  font-family: "NEXON Lv1 Gothic OTF";
   line-height: 1.5;
   padding: 30px 0;
 }
@@ -194,7 +193,6 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-family: "NEXON Lv1 Gothic OTF";
 }
 .about-paullab .company .inner_1 {
   width: 120px;
@@ -221,7 +219,6 @@ hr {
 }
 .about-paullab .company .inner_2 span {
   font-size: 15px;
-  font-family: "NEXON Lv1 Gothic OTF";
 }
 .about-paullab .company .inner_3 {
   width: 200px;
@@ -240,7 +237,6 @@ hr {
   padding-bottom: 20px;
 }
 .about-paullab .intro_contents p {
-  font-family: "NEXON Lv1 Gothic OTF";
   font-size: 17px;
   padding: 0 0 50px 35px;
   line-height: 1.5;
@@ -313,7 +309,6 @@ hr {
   color: rgb(124, 124, 124);
 }
 .about-ceo .intro .intro_contents .intro_text {
-  font-family: "NEXON Lv1 Gothic OTF";
   padding: 20px 0;
   line-height: 1.6;
 }
@@ -382,7 +377,6 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 40px 0;
-  font-family: "NEXON Lv1 Gothic OTF";
   font-size: 17px;
 }
 #contact .contact_items .contact_item {
