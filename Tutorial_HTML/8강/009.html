@@ -1,20 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Document</title>   
-        <style>
-            p{
-                font-size: 5em;
-            }        
-        </style> 
-    </head>
-    <body>
-    <h1>고정 크기 단위</h1>
-    <p> px, pt, in, cm ,mm</p>
-    <h1>가변 크기 단위</h1>
-    <p> em, % rem</p>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body, html{
+            font-size: 10px;
+        }
+        .one{
+            font-size: 32px;
+        }
+        .two{
+            font-size: 2em;
+        }
+        .three{
+            font-size: 2rem;
+        }
+        .four{
+            width: 50%;
+            height: 100px;
+            background: red;
+        }
+        .five{
+            width: 50vw; /*vh(높이), vw(넓이)*/
+            height: 100px;
+            background: aqua;
+        }
+        .six{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- font-size : 16px -->
+    <div class="two">
+        <!-- font-size : 32px -->
+        <div class="two">
+            <!-- font-size : 64px -->
+            <div class="two">
+                <!-- font-size : 128px -->
+                hello
+            </div>
+        </div>
+    </div>
+    <!-- font-size : 16px -->
+    <div class="two">
+        <!-- font-size : 32px -->
+        <div class="two">
+            <!-- font-size : 64px -->
+            <div class="three">
+                <!-- font-size : 32px -->
+                hello
+            </div>
+        </div>
+    </div>
+    <div class="six">
+        <div class="four">hello</div>
+    </div>
+    <div class="five">hello</div>
+    <div class="six">
+        <div class="five">hello</div>
+    </div>
+    <h2>고정 크기 단위</h2>
+    <p>px</p>
+    <h2>가변 크기 단위</h2>
+    <p>em, rem, %, vw, vh</p>
+</body>
 </html>
  

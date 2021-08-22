@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head><title>document</title></head>
-    <body>
-        <img src="img/a.jpg" alt="이미지 없음.">
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/-iuX3r8PSzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
-    </body>
+<head>
+    <title>media</title>
+</head>
+<body>
+    <!-- 이미지 alt-->
+    <img src="img/a.jpg" alt="이미지 없음">
+    <img src="img/a.jpg" alt="">
+    <img src="img/a.jpg" alt="스크린 리더가 읽어야 하는 문구">
+    <!-- srcset 속성을 사용하면 여러 해상도 대응 가능 -->
+    <img src="a.jpg" srcset="a.jpg, a.jpg 2x" alt="대체문구">
+    <!-- 
+        picture나 source와 함께 사용하는 것을 권장
+        -->
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/-iuX3r8PSzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <!-- 
+        audio : 음악 플레이
+        video : 영상 플레이
+    -->
+</body>
 </html>
