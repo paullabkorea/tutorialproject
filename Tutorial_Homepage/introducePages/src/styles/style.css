@@ -1,0 +1,326 @@
+@import 'reset.css';
+
+@font-face {
+    font-family: "CookieRunOTF-Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CookieRunOTF-Black";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv1 Gothic OTF";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+body {
+    font-family: "NEXON Lv1 Gothic OTF", sans-serif;
+}
+
+#app {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title {
+    margin: 4rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.nav {
+    float: right;
+    position: sticky;
+    top: 3rem;
+}
+
+.nav-btn {
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: rgb(93, 167, 86);
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.content {
+    margin: 3rem;
+}
+
+.content-introduce {
+    line-height: 1.5;
+}
+
+.content-introduce-title {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.content-box {
+    margin: 3rem 0;
+    display: flex;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    padding: 1rem;
+}
+
+.content-item {
+    width: 50%;
+    line-height: 1.5;
+    margin: auto 0;
+}
+
+.content-hashtag {
+    color: rgb(93, 167, 86);
+    text-align: center;
+}
+
+.content-hashtag>span {
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+.mbit-link {
+    text-align: center;
+    margin: 1rem;
+}
+
+.img {
+    width: 100%;
+}
+
+/* ---footer--- */
+#footer {
+    left: 0;
+    bottom: 0;
+    background-color: #F2F2F2;
+}
+
+#footer .wrapper {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 1180px;
+}
+
+#footer .footer_top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #C4C4C4;
+    font-size: 16px;
+}
+
+#footer .menu_item {
+    display: inline-block;
+    font-family: 'NEXON Lv2 Gothic Bold';
+}
+
+#footer .menu_item:first-child {
+    margin-right: 58px;
+}
+
+#footer .menu_item li {
+    display: block;
+}
+
+#footer .menu_item a {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#footer .sns_list {
+    padding-top: 10px;
+}
+
+#footer .sns_list>a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+}
+
+#footer .sns_list>a:first-child {
+    margin-left: 0;
+}
+
+#footer .footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    color: #4F4F4F;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#footer .footer_bottom .weniv_info>div {
+    display: inline-block;
+}
+
+#footer .footer_bottom dd,
+#footer .footer_bottom dt {
+    display: inline-block;
+}
+
+#footer .footer_bottom .weniv_info>div:first-child dd {
+    font-family: 'NEXON Lv2 Gothic Bold';
+}
+
+#footer .footer_bottom dd::after {
+    font-family: "NEXON Lv1 Gothic OTF";
+    content: "|";
+    margin: 0 6px 2px 8px;
+}
+
+#footer .footer_bottom .weniv_info>div:last-child dd::after {
+    content: "";
+}
+
+#footer .footer_bottom dt,
+#footer .footer_bottom span {
+    font-family: 'NEXON Lv2 Gothic Bold';
+}
+
+#footer .weniv_corp span {
+    padding-left: 3px;
+}
+
+/* ---footer--- */
+
+
+@media all and (max-width: 1718px) {
+    #app {
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 1227px) {
+    #app {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 1072px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 770px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 639px) {
+
+    /* footer */
+    #footer .wrapper {
+        width: 320px;
+        padding: 30px 0;
+    }
+
+    #footer .footer_top {
+        font-size: 12px;
+        padding-bottom: 5;
+        margin-bottom: 20px;
+    }
+
+    #footer .menu_item a {
+        margin-bottom: 15px;
+    }
+
+    #footer .menu_item:first-child {
+        margin-right: 30px;
+    }
+
+    #footer .sns_list {
+        padding-top: 5px;
+    }
+
+    #footer .sns_list>a {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+    }
+
+    #footer .sns_list>a img {
+        width: 100%;
+    }
+
+    #footer .footer_bottom {
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 10px;
+    }
+
+    #footer .footer_bottom dd::after {
+        margin: 0 3px 1px 4px;
+    }
+
+    #footer .footer_bottom .weniv_info {
+        padding-bottom: 10px;
+    }
+}
+
+@media all and (min-width: 640px) and (max-width: 1180px) {
+
+    /* footer */
+    #footer .wrapper {
+        width: 640px;
+    }
+
+    #footer .footer_top {
+        font-size: 15px;
+    }
+
+    #footer .menu_item:first-child {
+        margin-right: 40px;
+    }
+
+    #footer .sns_list {
+        padding-top: 10px;
+    }
+
+    #footer .sns_list>a {
+        margin-left: 15px;
+    }
+
+    #footer .footer_bottom {
+        font-size: 13px;
+    }
+
+    #footer .footer_bottom .weniv_info {
+        max-width: 500px;
+    }
+}
