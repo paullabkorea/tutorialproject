@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        @keyframes 애니 {
+            50%{
+                transform: translate(200px, 0);
+            }
+            100%{
+                transform: translate(200px, 200px);
+            }
+        }
+        div{
+            background-color:red;
+            width: 100px;
+            height: 100px;
+            transition: all 1s;
+            animation: 애니 2s;
+        }
+        div:hover{
+            background-color: dodgerblue;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>hello world</div>    
+</body>
+</html>
