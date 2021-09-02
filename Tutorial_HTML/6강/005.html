@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
     <style>
-        table, th ,tr, td{
-            border: 1px black solid;
-            border-collapse: collapse;
-        }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 
         1. thead, tbody, tfoot, caption이나 colgroup은 하지 않습니다
         2. 구도를 잡는 용도로 사용하지 않습니다.
     -->
     <table>
+      <thead>
         <tr>
-            <td>구분</td>
-            <td>이름</td>
-            <td>판매량</td>
+          <th>구분</th>
+          <th>이름</th>
+          <th>판매량</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>해리포터</td>
+          <td>100</td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>해리포터</td>
-            <td>100</td>
+          <td>2</td>
+          <td>헝거게임</td>
+          <td>200</td>
         </tr>
         <tr>
-            <td>2</td>
-            <td>헝거게임</td>
-            <td>200</td>
+          <td>3</td>
+          <td>반지의제왕</td>
+          <td>300</td>
         </tr>
+      </tbody>
+      <tfoot>
         <tr>
-            <td>3</td>
-            <td>반지의제왕</td>
-            <td>300</td>
+          <td colspan="2">총 판매량</td>
+          <td>600</td>
         </tr>
-        <tr>
-            <td colspan="2">총 판매량</td>
-            <td>600</td>
-        </tr>
+      </tfoot>
     </table>
-</body>
+  </body>
 </html>
