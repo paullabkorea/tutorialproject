@@ -48,9 +48,16 @@ body {
 }
 
 .title {
+    margin: 5rem 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.lecture {
     margin: 4rem 0;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .nav {
@@ -242,8 +249,39 @@ body {
     }
 }
 
-@media all and (min-width: 320px) and (max-width: 639px) {
+@media all and (min-width: 640px) and (max-width: 1180px) {
 
+    /* footer */
+    #footer .wrapper {
+        width: 640px;
+    }
+
+    #footer .footer_top {
+        font-size: 15px;
+    }
+
+    #footer .menu_item:first-child {
+        margin-right: 40px;
+    }
+
+    #footer .sns_list {
+        padding-top: 10px;
+    }
+
+    #footer .sns_list>a {
+        margin-left: 15px;
+    }
+
+    #footer .footer_bottom {
+        font-size: 13px;
+    }
+
+    #footer .footer_bottom .weniv_info {
+        max-width: 500px;
+    }
+}
+
+@media all and (max-width: 639px) {
     /* footer */
     #footer .wrapper {
         width: 320px;
@@ -290,37 +328,5 @@ body {
 
     #footer .footer_bottom .weniv_info {
         padding-bottom: 10px;
-    }
-}
-
-@media all and (min-width: 640px) and (max-width: 1180px) {
-
-    /* footer */
-    #footer .wrapper {
-        width: 640px;
-    }
-
-    #footer .footer_top {
-        font-size: 15px;
-    }
-
-    #footer .menu_item:first-child {
-        margin-right: 40px;
-    }
-
-    #footer .sns_list {
-        padding-top: 10px;
-    }
-
-    #footer .sns_list>a {
-        margin-left: 15px;
-    }
-
-    #footer .footer_bottom {
-        font-size: 13px;
-    }
-
-    #footer .footer_bottom .weniv_info {
-        max-width: 500px;
     }
 }
