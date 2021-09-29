@@ -169,10 +169,10 @@ strong {
   position: absolute;
   margin-left: 47.5px;
   left: 0;
-  top: 364px;
+  top: 355.5px;
 }
 .roadmap .inner > div {
-  margin-right: 66.5px;
+  margin-right: 67px;
 }
 .roadmap .inner > div:last-child {
   margin: 0;
@@ -410,10 +410,10 @@ strong {
   }
   .roadmap .inner {
     margin-left: 18.4px;
-    top: 137px;
+    top: 134.5px;
   }
   .roadmap .inner > div {
-    margin-right: 26px;
+    margin-right: 26.4px;
   }
   .roadmap .inner .lec {
     width: 32px;
@@ -516,7 +516,7 @@ strong {
   }
   .roadmap .inner {
     margin-left: 38px;
-    top: 282px;
+    top: 276.5px;
   }
   .roadmap .inner > div {
     margin-right: 53px;
