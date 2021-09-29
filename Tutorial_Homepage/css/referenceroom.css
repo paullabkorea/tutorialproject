@@ -12,6 +12,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "NEXON Lv1 Gothic OTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: "Nanum Gothic", sans-serif;
   background-color: #32A0C8;
@@ -1126,16 +1133,16 @@ img {
   box-sizing: border-box;
 	background: #fff;
   color:#000;
-  font-family: "CookieRunOTF-Bold";
+  font-family: "NEXON Lv1 Gothic OTF";
 }
 .notion__back h1 {
-  font-size :1.6rem;
+  font-size :1.4rem;
   line-height: 31px;
-  font-family: "CookieRunOTF-Black";
+  font-family: "CookieRunOTF-Bold";
 }
 .notion__back h2 {
   margin-top: 30px;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: 100;
   line-height: 23px;
 }

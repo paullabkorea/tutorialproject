@@ -6,6 +6,26 @@ const notionInfo = [
     "wiki" : "http://paullabedu.synology.me/dokuwiki"
   },
   {
+    "name" : "PWA! <1만 시간의 법칙> 웹 페이지를 앱으로!",
+    "image" : "./images/books/pwa.png",
+    "link" : "https://www.notion.so/paullabworkspace/PWA-1-84a3c6e825094213b7bd92f2c2522c00",
+    "contents":"제주코딩베이스캠프의 <1만 시간의 법칙> 웹 페이지를 PWA를 사용하여 직접 앱으로 만들어봅시다! 난이도는 초급이며, 교육 과정에 필요한 웹 페이지 소스코드를 모두 제공합니다",
+    "bookstore":"https://ridibooks.com/books/2773000053?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90&_rdt_sid=search&_rdt_idx=0"
+  },
+  {
+    "name" : "누구나 할 수 있는 카카오톡 채널 만들기",
+    "image" : "./images/books/kakaotalk_channel.png",
+    "contents":"이 책은 카카오톡 채널 기초적인 사용 방법과 코딩을 접하지 않은 분들께서도 쉽게 만들어 볼 수 있는 챗봇 만드는 방법을 다루고 있습니다.",
+    "bookstore":"https://ridibooks.com/books/2773000052?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90&_rdt_sid=search&_rdt_idx=1"
+  },
+  {
+    "name" : "40 minutes Basic Sass",
+    "image" : "./images/books/sass.png",
+    "contents":"\"40분 만에 훑어보는 Sass\" 이름 그대로 부담 없이 훑어보셔서, Sass가 무엇이며 안에 어떤 내용들이 있는지 함께 확인해보아요!",
+    "link" : "https://www.notion.so/23157e6484a64582853c7867f9b88150?v=492e2c8d7a8e4e369c8badfecc5c6676" ,
+    "bookstore":"https://ridibooks.com/books/2773000051?_s=search&_q=%EC%82%AC%EB%8F%84%EC%B6%9C%ED%8C%90&_rdt_sid=search&_rdt_idx=2"
+  },
+  {
     "name" : "디스이즈 디스커버 디스코드",
     "image" : "./images/books/discode.jpeg",
     "contents":"디스코드를 처음 입문하시는 분들을 위한 기초적인 사용 방법과 API를 활용하여 봇을 만드는 다양한 방법까지 다루고 있습니다.",
