@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>007_3.html</title>
+</head>
+<body>
+  <script>
+    // 함수 선언문
+
+    function sum(x, y){
+      return x + y;
+    }
+
+
+
+    //함수 표현식
+    let sumXY = function(x, y){
+      return x + y;
+    };
+    // let x = 10;
+    // let y = x;
+    let sumXYcopy = sumXY;
+
+    document.write(sumXYcopy(10, 20), '<br>');
+
+    //콜백함수
+    function sum(x, y, c){
+      c(x + y);
+      return x + y;
+    }
+
+    function documentWrite(s){
+      document.write('콜백함수', s);
+    }
+
+    sum(10, 20, documentWrite)
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>013_1.html</title>
+</head>
+<body>
+  <script>
+    // 제어문 - 반복문 - for
+    let array = [10, 20, 30, 40, 50];
+    var i = 0
+    for (; i < array.length;) {
+      document.write(array[i], '<br>');
+       i++;
+    }
+
+    array.forEach(e => console.log(e*3));
+
+    for (var variable in array) {
+      document.write(array[variable], '<br>');
+    }
+
+    for (var variable of array) {
+      document.write(variable, '!! <br>');
+    }
+  </script>
+</body>
+</html>

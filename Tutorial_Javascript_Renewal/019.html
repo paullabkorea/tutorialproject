@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>019.html</title>
+</head>
+<body>
+  <script>
+    // Map, Set
+    let s = new Set('abcdeeeeeeeee');
+    console.log(s.size);
+    s.add('f');
+    console.log(s);
+    for (var variable of s) {
+      console.log(variable);
+    }
+
+    let ss = new Set('abcdeeeeeeeee'.split(''));
+    console.log(ss);
+
+    ss.delete('b');
+    console.log(ss.has('a'));
+    console.log(ss);
+    // ss.clear
+  </script>
+</body>
+</html>

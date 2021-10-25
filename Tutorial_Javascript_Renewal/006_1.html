@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>006_1.html</title>
+</head>
+<body>
+  <script>
+    // document.write(10 + 10);
+    // document.write('10' + '10');
+    let one = 1;
+    document.write(`<p> one + one : ${one + one} </p>`);
+    document.write(`<p> String(one) + String(one) : ${String(one) + String(one)} </p>`);
+
+    let two = '2';
+    document.write(`<p> two + two : ${two + two} </p>`);
+    document.write(`<p> Number(two) + Number(two) : ${Number(two) + Number(two)} </p>`);
+
+    let three = two + two;
+    document.write(`<p> typeof(three) : ${typeof(three)} </p>`);
+
+    document.write(`<p> Boolean(-1) : ${Boolean(-1)} </p>`);
+    document.write(`<p> Boolean(0) : ${Boolean(0)} </p>`);
+    document.write(`<p> Boolean(' ') : ${Boolean(' ')} </p>`);
+    document.write(`<p> Boolean('') : ${Boolean('')} </p>`);
+    document.write(`<p> Boolean([]) : ${Boolean([])} </p>`);
+    document.write(`<p> Boolean([0]) : ${Boolean([0])} </p>`);
+    document.write(`<p> Boolean('0') : ${Boolean('0')} </p>`);
+  </script>
+</body>
+</html>

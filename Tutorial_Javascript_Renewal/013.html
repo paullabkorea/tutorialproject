@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>010.html</title>
+</head>
+<body>
+  <script>
+    // 제어문 - 반복문 - for
+    for (var i = 0; i < 10; i++) {
+      document.write(i, '<br>');
+    }
+
+    //1부터 100까지의 짝수의 합
+    let s = 0;
+    for (var i = 0; i < 101; i+=2) {
+      document.write(i, '<br>');
+      s += i;
+    }
+    document.write(s, '<br>');
+
+    //구구단
+    for (var i = 2; i < 10; i++) {
+      for (var j = 1; j < 10; j++) {
+        document.write(`${i} X ${j} = ${i*j} <br>`);
+      }
+    }
+
+    //100보다 작은 3의 배수와 5의 배수의 합
+    s = 0;
+    for (var i = 0; i < 101; i++) {
+      if(i%3==0 || i%5==0){
+        document.write(i, '<br>');
+        s += i;
+      }
+    }
+    document.write(s, '<br>');
+  </script>
+</body>
+</html>

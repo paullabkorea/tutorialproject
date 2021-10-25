@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>007_1.html</title>
+</head>
+<body>
+  <script>
+    //지역변수 전역변수
+    let z = 100;
+    function sum(x){ //x는 매개변수(parameter)이면서 지역변수(local val)
+      let y = 50; //y는 지역변수
+      z = z + y;
+      return x + y;
+    }
+    document.write(sum(10));//10은 전달인자(argument)
+    document.write('<br>');
+    document.write(z);
+    //키워드로 인해 전역, 지역이 갈리는 것은 아닌지, let, var, const 모두 테스트 필요
+  </script>
+</body>
+</html>
