@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>021_2_test.html</title>
+</head>
+<body>
+  <!-- table>(thead>tr>th*5)+tbody -->
+  <button onclick="renderTable(호텔)" type="button" name="button">클릭해!!</button>
+  <table id="rederingDataTable">
+    <thead>
+      <tr>
+        <th onclick="sort('이름')">이름</th>
+        <th onclick="sort('위치')">위치</th>
+        <th onclick="sort('가격')">가격</th>
+        <th onclick="sort('방의개수')">방의개수</th>
+        <th onclick="sort('예약자수')">예약자수</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <!-- json generator -->
+  <script>
+    var 호텔 = [{
+      '이름' : '하나호텔',
+      '위치' : '제주도 제주시 001',
+      '가격' : {'A':50000, 'B':30000, 'C':15000},
+      '방의개수' : 50,
+      '예약자수' : 25,
+      '남은방의개수' : function(){return this.방의개수 - this.예약자수}
+    },{
+      '이름' : '둘호텔',
+      '위치' : '제주도 제주시 002',
+      '가격' : {'A':100000, 'B':60000, 'C':30000},
+      '방의개수' : 100,
+      '예약자수' : 30,
+      '남은방의개수' : function(){return this.방의개수 - this.예약자수}
+    },{
+      '이름' : '셋호텔',
+      '위치' : '제주도 제주시 003',
+      '가격' : {'A':80000, 'B':50000, 'C':30000},
+      '방의개수' : 120,
+      '예약자수' : 80,
+      '남은방의개수' : function(){return this.방의개수 - this.예약자수}
+    }];
+
+    function sort(name){
+      let 정렬된호텔 = 호텔.sort((a, b) => (b[name] - a[name]));
+      renderTable(정렬된호텔);
+    }
+
+    function renderTable(호텔기본값){
+        let tableBody = [];
+        // JSON.stringify({ x: 5, y: 6 })
+        for (var variable of 호텔기본값) {
+          tableBody.push(`
+            <tr>
+              <td>${variable.이름}</td>
+              <td>${variable.위치}</td>
+              <td>${JSON.stringify(variable.가격)}</td>
+              <td>${variable.방의개수}</td>
+              <td>${variable.예약자수}</td>
+            </tr>
+            `);
+        }
+        document.querySelector('#rederingDataTable > tbody').innerHTML = tableBody.join('');
+    }
+
+  </script>
+</body>
+</html>

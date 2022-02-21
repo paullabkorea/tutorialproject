@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>연습문제2.html</title>
+</head>
+<body>
+  <script>
+    // 연습문제 2
+    // 다음 array에 각 자리수의 합을 구하세요.
+    // [11, 22, 33, 111, 2]
+    // 1+1, 2+2, 3+3, 1+1+1, 2
+    // 2, 4, 6, 3, 2
+    // 정답 : 17
+    let a = [11, 22, 33, 111, 2];
+    let s = [11, 22, 33, 111, 2].join('');
+    console.log(s);
+    let sum = 0;
+    for (var variable in s) {
+      console.log(parseInt(s[variable], 10));
+      sum += parseInt(s[variable], 10);
+    }
+    console.log(sum);
+  </script>
+</body>
+</html>
