@@ -36,6 +36,9 @@
 body {
   font-family: "NEXON Lv1 Gothic OTF", sans-serif;
 }
+img {
+  vertical-align: top;
+}
 strong {
   font-weight: bold;
 }
@@ -81,8 +84,9 @@ strong {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 900px;
-  height: 120px;
+  width: 60%;
+  min-width: 300px;
+  margin-top: 8%;
 }
 #title .title {
   font-size: 80px;
@@ -123,6 +127,9 @@ strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 60%;
+  min-width: 300px;
+  margin: 0 auto;
 }
 #main_contents .wrapper {
   display: -webkit-box;
@@ -154,33 +161,32 @@ strong {
   padding-bottom: 30px;
 }
 .roadmap {
-  width: 800px;
+  width: 100%;
   position: relative;
-  margin: 0 auto;
 }
 .roadmap img {
   width: 100%;
   height: 100%;
+  image-rendering: -webkit-optimize-contrast;
+  z-index: 0;
 }
 .roadmap .inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   position: absolute;
-  margin-left: 47.5px;
   left: 0;
-  top: 355.5px;
+  top: 9.6%;
+  width: 100%;
+  gap: 8.14%;
 }
 .roadmap .inner > div {
-  margin-right: 67px;
-}
-.roadmap .inner > div:last-child {
-  margin: 0;
+  width: 11.2%;
+  height: 8%;
 }
 .roadmap .inner .lec {
-  width: 88px;
-  height: 57px;
-  margin-bottom: 72px;
+  margin-bottom: 79%;
   -webkit-transition: all 0.4s;
           transition: all 0.4s;
 }
@@ -194,8 +200,7 @@ strong {
 }
 
 .roadmap .inner .lec > a {
-  width: 100%;
-  height: 100%;
+  display: block;
 }
 
 .lec img {
@@ -371,7 +376,7 @@ strong {
   padding-left: 3px;
 }
 
-@media all and (min-width: 320px) and (max-width: 639px) {
+@media all and (min-width: 320px) and (max-width: 769px) {
   #home .wrapper {
     padding: 15px 20px;
   }
@@ -404,21 +409,6 @@ strong {
   #main_contents p {
     font-size: 12px;
     line-height: 1.6;
-  }
-  #main_contents .roadmap {
-    width: 300px;
-  }
-  .roadmap .inner {
-    margin-left: 18.4px;
-    top: 134.5px;
-  }
-  .roadmap .inner > div {
-    margin-right: 26.4px;
-  }
-  .roadmap .inner .lec {
-    width: 32px;
-    height: 21px;
-    margin-bottom: 27.3px;
   }
   .roadmap .inner .lec:hover img {
     box-shadow: 1px 1px 5px #000;
@@ -481,22 +471,16 @@ strong {
   }
 }
 
-@media all and (min-width: 640px) and (max-width: 1180px) {
+@media all and (min-width: 769px) and (max-width: 1180px) {
   #home .wrapper {
     padding: 20px 25px;
   }
-  #title .wrapper {
-    width: 620px;
-  }
   #title .title {
     font-size: 50px;
-    padding-right: 110px;
+    padding-right: 0;
   }
   #title .title-img {
-    bottom: -30px;
-    -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7);
+    display: none;
   }
   #main_contents .wrapper {
     width: 620px;
@@ -510,21 +494,6 @@ strong {
   }
   #main_contents p {
     font-size: 15px;
-  }
-  #main_contents .roadmap {
-    width: 620px;
-  }
-  .roadmap .inner {
-    margin-left: 38px;
-    top: 276.5px;
-  }
-  .roadmap .inner > div {
-    margin-right: 53px;
-  }
-  .roadmap .inner .lec {
-    width: 67px;
-    height: 44px;
-    margin-bottom: 56px;
   }
   .roadmap .inner .lec:hover img {
     box-shadow: 2px 2px 7px #000;
