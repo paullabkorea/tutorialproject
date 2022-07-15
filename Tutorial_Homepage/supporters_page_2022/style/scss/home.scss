@@ -94,7 +94,19 @@ main.home-main {
 @media (max-width: 640px) {
 	main.home-main {
 		.home-title {
-			font-size: 8rem;
+			font-size: 6rem;
+			h2 {
+				padding: 0;
+				.year {
+					left: 3rem;
+				}
+			}
+			.period {
+				font-size: 1.4rem;
+			}
+			.class {
+				transform: translate(calc(-50% + 7em), calc(-50% + 0.5em));
+			}
 		}
 	}
 }
@@ -142,6 +154,8 @@ main.home-main {
 
 @media (max-width: 640px) {
 	.supporters-info {
+		padding: 3rem;
+		letter-spacing: -0.5px;
 		.info-box {
 			div {
 				&:not(:first-child) {
@@ -151,6 +165,10 @@ main.home-main {
 				gap: 0.8rem;
 				dt {
 					flex-basis: auto;
+					font-size: 2rem;
+				}
+				dd {
+					font-size: 1.6rem;
 				}
 			}
 		}
@@ -300,13 +318,38 @@ main.home-main {
 }
 
 @media (max-width: 1200px) {
-	.supporters-benefit .benefit {
-		flex-direction: column;
-		li {
-			height: auto;
-			h4 {
-				flex-direction: row;
-				gap: 0.3em;
+	.supporters-benefit {
+		h3 {
+			word-break: keep-all;
+			text-align: center;
+			font-size: 2.4rem;
+			padding: 0 1rem;
+			letter-spacing: -0.5px;
+		}
+		.benefit {
+			flex-direction: column;
+			li {
+				height: auto;
+				h4 {
+					flex-direction: row;
+					flex-wrap: wrap;
+					gap: 0.3em;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 640px) {
+	.supporters-benefit {
+		.benefit {
+			li {
+				h4 {
+					font-size: 2.4rem;
+					gap: 0;
+				}
+				p {
+					font-size: 1.4rem;
+				}
 			}
 		}
 	}
@@ -327,9 +370,11 @@ main.home-main {
 	}
 	p {
 		width: 36rem;
+		max-width: 100%;
 		line-height: 1.6;
 		letter-spacing: -0.5px;
 		word-break: keep-all;
+		margin-bottom: 4rem;
 	}
 	a {
 		position: absolute;
@@ -365,5 +410,17 @@ main.home-main {
 		height: 3rem;
 		display: block;
 		border-radius: 50%;
+	}
+}
+@media (max-width: 640px) {
+	.new-window {
+		font-size: 1em;
+	}
+
+	.supporters-benefit .benefit li,
+	.supporters-benefit .benefit li .new-window,
+	.page-link,
+	.page-link a {
+		padding: 4rem 2rem;
 	}
 }

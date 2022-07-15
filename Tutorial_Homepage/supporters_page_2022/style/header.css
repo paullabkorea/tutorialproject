@@ -64,3 +64,22 @@ header.header .head nav ul li .apply-btn:hover {
     padding: 1.6rem 2rem;
   }
 }
+
+@media (max-width: 640px) {
+  header.header .head h1 img {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  header.header .head nav {
+    width: 100%;
+    padding-left: 2rem;
+  }
+  header.header .head nav ul {
+    justify-content: space-between;
+  }
+  header.header .head nav ul li a {
+    font-size: 1.4rem;
+    padding: 1.6rem 1rem;
+  }
+}

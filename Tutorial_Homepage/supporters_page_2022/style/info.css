@@ -51,6 +51,7 @@
   margin-top: 3rem;
   position: relative;
   transition: color 0.3s, background-color 0.3s;
+  word-break: keep-all;
 }
 
 .info .link::after {
@@ -92,16 +93,20 @@
   .info {
     padding: 8rem 0;
   }
+  .info h3 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
 }
 
 .title-box {
   border: 1px solid #ddd;
   box-shadow: 0 0 0 1.6rem #f5f5f5;
+  width: calc(100% - 3.2rem);
   padding: 4rem;
   position: relative;
   text-align: center;
   word-break: keep-all;
-  width: calc(100% - 3.2rem);
   box-sizing: border-box;
   margin: 0 auto 10rem;
 }
@@ -136,10 +141,23 @@
   margin-bottom: 2rem;
 }
 
+@media (max-width: 640px) {
+  .title-box {
+    margin-bottom: 0;
+    padding: 4rem 2rem;
+    box-shadow: 0 0 0 0.8rem #f5f5f5;
+    width: calc(100% - 1.6rem);
+  }
+  .title-box h2 {
+    font-size: 2.4rem;
+  }
+}
+
 .mark,
 .gray_mark {
   padding: 0.2rem 1rem 0.4rem;
   border-radius: var(--borderRadius);
+  display: inline-block;
 }
 
 .mark {

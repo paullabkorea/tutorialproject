@@ -1,6 +1,6 @@
 footer {
 	background-color: #f2f2f2;
-	height: 263px;
+	padding: 4rem 0;
 	display: flex;
 	align-items: center;
 	font-size: 1.6rem;
@@ -50,7 +50,7 @@ footer {
 }
 .co-info-list div {
 	display: flex;
-	font-size: 1.4rem;
+	font-size: 0.8em;
 	line-height: 1.8;
 	color: #4f4f4f;
 }
@@ -94,6 +94,14 @@ footer {
 @media (max-width: 500px) {
 	.co-info {
 		flex-direction: column;
-		align-items: flex-end;
+		justify-content: center;
+	}
+	.co-info dl {
+		justify-content: center;
+	}
+	.link-box {
+		flex-direction: column;
+		gap: 2rem;
+		text-align: center;
 	}
 }

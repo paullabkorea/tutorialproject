@@ -1,74 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
 @font-face {
-	font-family: "GmarketSansTTFMedium";
-	src: url("../fonts/GmarketSansTTFMedium.ttf");
-	font-weight: normal;
-	font-style: normal;
+  font-family: "GmarketSansTTFMedium";
+  src: url("../fonts/GmarketSansTTFMedium.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-	font-family: "GmarketSansTTFBold";
-	src: url("../fonts/GmarketSansTTFBold.ttf");
+  font-family: "GmarketSansTTFBold";
+  src: url("../fonts/GmarketSansTTFBold.ttf");
 }
 
 html {
-	font-size: 10px;
+  font-size: 10px;
 }
+
 body {
-	font-size: 2rem;
-	font-family: "Noto Sans KR", sans-serif;
-	color: var(--fontColor);
+  font-size: 2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--fontColor);
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 1.5rem;
+  }
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 :root {
-	--mainColor: #4e2cd1;
-	--fontColor: #333;
-	--color1: #98cad5;
-	--color2: #2cd1a5;
-	--color2Dark: #06936d;
-	--color3: #ffdd00;
-	--bgColor: #f9f9f9;
-	--borderRadius: 1rem;
+  --mainColor: #4e2cd1;
+  --fontColor: #333;
+  --color1: #98cad5;
+  --color2: #2cd1a5;
+  --color2Dark: #06936d;
+  --color3: #ffdd00;
+  --bgColor: #f9f9f9;
+  --borderRadius: 1rem;
 }
 
 .a11y-hidden {
-	overflow: hidden;
-	position: absolute;
-	clip: rect(0, 0, 0, 0);
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 }
 
 .max-width {
-	width: 1190px;
-	max-width: calc(100% - 8rem);
-	margin: 0 auto;
-	box-sizing: border-box;
+  width: 1190px;
+  max-width: calc(100% - 6rem);
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .bullet li {
-	position: relative;
-	padding-left: 2rem;
+  position: relative;
+  padding-left: 2rem;
 }
 
 .bullet li:not(:first-child) {
-	margin-top: 1.2rem;
+  margin-top: 1.2rem;
 }
 
 .bullet li::before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0.7em;
-	left: 0;
-	width: 0.6rem;
-	height: 0.6rem;
-	background: var(--mainColor);
-	border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--mainColor);
+  border-radius: 50%;
 }

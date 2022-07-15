@@ -94,7 +94,19 @@ main.home-main .home-title .period {
 
 @media (max-width: 640px) {
   main.home-main .home-title {
-    font-size: 8rem;
+    font-size: 6rem;
+  }
+  main.home-main .home-title h2 {
+    padding: 0;
+  }
+  main.home-main .home-title h2 .year {
+    left: 3rem;
+  }
+  main.home-main .home-title .period {
+    font-size: 1.4rem;
+  }
+  main.home-main .home-title .class {
+    transform: translate(calc(-50% + 7em), calc(-50% + 0.5em));
   }
 }
 
@@ -137,6 +149,10 @@ main.home-main .home-title .period {
 }
 
 @media (max-width: 640px) {
+  .supporters-info {
+    padding: 3rem;
+    letter-spacing: -0.5px;
+  }
   .supporters-info .info-box div {
     flex-direction: column;
     gap: 0.8rem;
@@ -146,6 +162,10 @@ main.home-main .home-title .period {
   }
   .supporters-info .info-box div dt {
     flex-basis: auto;
+    font-size: 2rem;
+  }
+  .supporters-info .info-box div dd {
+    font-size: 1.6rem;
   }
 }
 
@@ -304,6 +324,13 @@ main.home-main .home-title .period {
 }
 
 @media (max-width: 1200px) {
+  .supporters-benefit h3 {
+    word-break: keep-all;
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 0 1rem;
+    letter-spacing: -0.5px;
+  }
   .supporters-benefit .benefit {
     flex-direction: column;
   }
@@ -312,7 +339,18 @@ main.home-main .home-title .period {
   }
   .supporters-benefit .benefit li h4 {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.3em;
+  }
+}
+
+@media (max-width: 640px) {
+  .supporters-benefit .benefit li h4 {
+    font-size: 2.4rem;
+    gap: 0;
+  }
+  .supporters-benefit .benefit li p {
+    font-size: 1.4rem;
   }
 }
 
@@ -333,9 +371,11 @@ main.home-main .home-title .period {
 
 .page-link p {
   width: 36rem;
+  max-width: 100%;
   line-height: 1.6;
   letter-spacing: -0.5px;
   word-break: keep-all;
+  margin-bottom: 4rem;
 }
 
 .page-link a {
@@ -376,4 +416,16 @@ main.home-main .home-title .period {
   height: 3rem;
   display: block;
   border-radius: 50%;
+}
+
+@media (max-width: 640px) {
+  .new-window {
+    font-size: 1em;
+  }
+  .supporters-benefit .benefit li,
+  .supporters-benefit .benefit li .new-window,
+  .page-link,
+  .page-link a {
+    padding: 4rem 2rem;
+  }
 }
