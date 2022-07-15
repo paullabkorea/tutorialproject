@@ -58,6 +58,7 @@ footer {
 .co-info-list div dt {
 	font-weight: 700;
 	margin-right: 7px;
+	flex-shrink: 0;
 }
 
 .co-info-list div:first-child dt,
@@ -91,13 +92,17 @@ footer {
 	display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
 	.co-info {
 		flex-direction: column;
 		justify-content: center;
+		gap: 2rem;
 	}
 	.co-info dl {
 		justify-content: center;
+	}
+	.co-info dl dd {
+		text-align: center;
 	}
 	.link-box {
 		flex-direction: column;

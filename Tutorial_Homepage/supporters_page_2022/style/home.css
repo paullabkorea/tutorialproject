@@ -370,8 +370,6 @@ main.home-main .home-title .period {
 }
 
 .page-link p {
-  width: 36rem;
-  max-width: 100%;
   line-height: 1.6;
   letter-spacing: -0.5px;
   word-break: keep-all;
