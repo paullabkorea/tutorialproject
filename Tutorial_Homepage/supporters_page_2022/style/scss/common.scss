@@ -1,0 +1,41 @@
+.a11y-hidden {
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+}
+
+.max-width {
+	width: 1190px;
+	max-width: calc(100% - 8rem);
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+// bullet style
+.bullet {
+	li {
+		position: relative;
+		padding-left: 2rem;
+
+		&:not(:first-child) {
+			margin-top: 1.2rem;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0.7em;
+			left: 0;
+			width: 0.6rem;
+			height: 0.6rem;
+			background: var(--mainColor);
+			border-radius: 50%;
+		}
+	}
+}

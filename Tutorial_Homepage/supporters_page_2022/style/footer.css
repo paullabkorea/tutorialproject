@@ -1,0 +1,99 @@
+footer {
+	background-color: #f2f2f2;
+	height: 263px;
+	display: flex;
+	align-items: center;
+	font-size: 1.6rem;
+	justify-content: center;
+	position: relative;
+	bottom: 0;
+}
+
+.link-box {
+	padding-bottom: 43px;
+	border-bottom: 1px solid #c4c4c4;
+	margin-bottom: 33px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.link-page {
+	display: flex;
+	flex-direction: column;
+}
+
+.link-page a {
+	font-weight: 700;
+	line-height: 1.44785;
+	color: #000000;
+}
+
+.link-page a:first-child {
+	margin-bottom: 20px;
+}
+
+.link-sns a {
+	margin-left: 20px;
+}
+
+.co-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.co-info dl {
+	display: flex;
+}
+.co-info-list {
+	flex-wrap: wrap;
+}
+.co-info-list div {
+	display: flex;
+	font-size: 1.4rem;
+	line-height: 1.8;
+	color: #4f4f4f;
+}
+
+.co-info-list div dt {
+	font-weight: 700;
+	margin-right: 7px;
+}
+
+.co-info-list div:first-child dt,
+.co-info-list div:nth-child(4) dt {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	margin: 0;
+}
+
+.co-info-list div:first-child dd {
+	font-weight: 700;
+}
+
+.co-info-list div dd::after {
+	content: "|";
+	font-weight: 700;
+	margin: 0px 7px;
+}
+
+.co-info-list div:last-child dd::after {
+	content: "";
+}
+
+.co-info strong {
+	font-weight: 700;
+	flex-shrink: 0;
+}
+
+.hiding-footer {
+	display: none;
+}
+
+@media (max-width: 500px) {
+	.co-info {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+}

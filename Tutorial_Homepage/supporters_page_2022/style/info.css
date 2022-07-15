@@ -1,0 +1,199 @@
+.info {
+  padding: 8rem 4rem;
+  line-height: 1.4;
+}
+
+.info strong {
+  font-weight: bold;
+}
+
+.info h3 {
+  font-size: 2.4rem;
+  font-family: "GmarketSansTTFBold";
+  margin: 8rem 0 1rem 0;
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.info h3::before {
+  content: "";
+  background: var(--mainColor);
+  border-top: 6px solid var(--color2);
+  display: inline-block;
+  width: 6px;
+  height: 0.7em;
+  margin-right: 1rem;
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+}
+
+.info h4 {
+  font-weight: bold;
+  margin: 3rem 0 0.8rem;
+}
+
+.info p {
+  line-height: 1.8;
+}
+
+.info p strong {
+  text-decoration: underline;
+}
+
+.info .link {
+  display: inline-block;
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  border-radius: var(--borderRadius);
+  padding: 1rem 6rem 1.3rem 3rem;
+  box-sizing: border-box;
+  margin-top: 3rem;
+  position: relative;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.info .link::after {
+  content: "";
+  display: inline-block;
+  border: 3px solid var(--mainColor);
+  border-width: 3px 3px 0 0;
+  width: 0.8rem;
+  height: 0.8rem;
+  transform: translateY(-40%) rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  transition: border-color 0.3s;
+}
+
+.info .link:hover {
+  color: #fff;
+  background: var(--mainColor);
+}
+
+.info .link:hover::after {
+  border-color: #fff;
+}
+
+.info .box {
+  background-color: var(--bgColor);
+  border-radius: var(--borderRadius);
+  border: 1px solid #ddd;
+  padding: 3rem 4rem;
+}
+
+.info .notice {
+  margin-top: 2rem;
+  font-size: 0.9em;
+}
+
+@media (max-width: 640px) {
+  .info {
+    padding: 8rem 0;
+  }
+}
+
+.title-box {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 0 1.6rem #f5f5f5;
+  padding: 4rem;
+  position: relative;
+  text-align: center;
+  word-break: keep-all;
+  width: calc(100% - 3.2rem);
+  box-sizing: border-box;
+  margin: 0 auto 10rem;
+}
+
+.title-box::before, .title-box::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  box-sizing: border-box;
+}
+
+.title-box::before {
+  top: -1.8rem;
+  left: -1.8rem;
+  border-top: 3.2rem solid #fff;
+  border-right: 3.2rem solid transparent;
+}
+
+.title-box::after {
+  bottom: -1.8rem;
+  right: -1.8rem;
+  border-bottom: 3.2rem solid #fff;
+  border-left: 3.2rem solid transparent;
+}
+
+.title-box h2 {
+  font-size: 4rem;
+  font-family: "GmarketSansTTFBold";
+  color: var(--mainColor);
+  margin-bottom: 2rem;
+}
+
+.mark,
+.gray_mark {
+  padding: 0.2rem 1rem 0.4rem;
+  border-radius: var(--borderRadius);
+}
+
+.mark {
+  background: var(--color2);
+  color: #fff;
+}
+
+.gray_mark {
+  display: inline-block;
+  background: #eee;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.ex-img {
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+.preview {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.preview li {
+  flex-basis: calc((100% - 3rem) / 2);
+  flex-grow: 0;
+  background: var(--color2);
+  border-radius: var(--borderRadius);
+  border: 2px solid var(--color2);
+}
+
+.preview li a {
+  display: block;
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+  color: #333;
+}
+
+.preview li a img {
+  width: 100%;
+  display: block;
+}
+
+.preview li a span {
+  display: block;
+  padding: 1rem 2rem 1.2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .preview {
+    flex-direction: column;
+  }
+}

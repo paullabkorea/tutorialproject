@@ -1,0 +1,66 @@
+header.header {
+  position: relative;
+  z-index: 10;
+  background: var(--mainColor);
+}
+
+header.header a {
+  display: block;
+}
+
+header.header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+header.header .head nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+header.header .head nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 1.6rem;
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+
+header.header .head nav ul li a:not(.apply-btn):hover {
+  color: var(--color3);
+}
+
+header.header .head nav ul li.active a {
+  color: var(--color3);
+  font-weight: bold;
+  border-bottom: 4px solid var(--color3);
+}
+
+header.header .head nav ul li .apply-btn {
+  background-color: #fff;
+  padding: 1.6rem 6rem;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px 0px rgba(33, 139, 162, 0.5);
+  color: var(--mainColor);
+  font-weight: 700;
+}
+
+header.header .head nav ul li .apply-btn:hover {
+  background-color: var(--color3);
+}
+
+@media (max-width: 1024px) {
+  header.header .head {
+    flex-direction: column;
+    padding: 3rem 0;
+  }
+  header.header .head nav ul {
+    margin-top: 4rem;
+    gap: 1rem;
+  }
+  header.header .head nav ul li a.apply-btn {
+    padding: 1.6rem 2rem;
+  }
+}

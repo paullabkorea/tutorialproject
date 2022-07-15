@@ -1,0 +1,369 @@
+// main
+main.home-main {
+	.home-title {
+		background: var(--color1) url("../assets/bg.png") no-repeat 50% 50% / cover;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url("../assets/main_back.png") no-repeat 50% 50% / cover;
+			mix-blend-mode: color-burn;
+			opacity: 0.7;
+		}
+
+		padding: 15rem 0 20rem 0;
+		margin-bottom: -20rem;
+		font-family: "GmarketSansTTFBold";
+		position: relative;
+		font-size: 10rem;
+
+		h2 {
+			position: relative;
+			z-index: 1;
+			width: 5em;
+			margin: 0 auto;
+			padding-right: 4rem;
+			color: #fff;
+			text-align: center;
+			position: relative;
+			word-break: keep-all;
+			text-shadow: -0.2rem -0.2rem 0 rgba(0, 255, 183, 0.4), 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+
+			.font-medium {
+				font-family: "GmarketSansTTFMedium";
+				opacity: 0.8;
+			}
+			.year {
+				position: absolute;
+				top: -1.8em;
+				left: 2em;
+				font-size: 4rem;
+				background: var(--color2);
+				color: #fff;
+				padding: 0.2em 0.4em;
+				&::after {
+					content: "";
+					width: 2rem;
+					height: 1.6rem;
+					box-sizing: border-box;
+					display: block;
+					position: absolute;
+					bottom: -1.6rem;
+					left: 0;
+					border-left: 2rem solid var(--color2Dark);
+					border-bottom: 1.6rem solid transparent;
+				}
+			}
+		}
+		.class {
+			z-index: 1;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(calc(-50% + 7.5em), calc(-50% + 1em));
+			background: var(--color3);
+			color: var(--mainColor);
+			font-size: 0.3em;
+			width: 3.6em;
+			height: 3.6em;
+			padding: 0.65em;
+			box-sizing: border-box;
+			text-align: center;
+			border-radius: 50%;
+
+			box-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
+			strong {
+				font-size: 1.2em;
+			}
+		}
+		.period {
+			font-size: 2rem;
+			font-family: "GmarketSansTTFMedium";
+			color: #fff;
+			text-align: center;
+			letter-spacing: 0.6rem;
+			margin-top: 3rem;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	main.home-main {
+		.home-title {
+			font-size: 8rem;
+		}
+	}
+}
+
+// 모집 정보
+.supporters-info {
+	background-color: var(--bgColor);
+	border-radius: var(--borderRadius);
+	padding: 6rem;
+	box-sizing: border-box;
+	margin: 74px auto 91px;
+	position: relative;
+
+	.info-box {
+		div {
+			display: flex;
+			gap: 2rem;
+			line-height: 3rem;
+
+			&:not(:first-child) {
+				margin-top: 2rem;
+			}
+
+			dt {
+				font-family: "GmarketSansTTFMedium";
+				font-weight: bold;
+				flex-basis: 5em;
+				flex-shrink: 0;
+
+				font-size: 2.4rem;
+			}
+			dd {
+				font-size: 1.8rem;
+				position: relative;
+
+				strong {
+					color: var(--mainColor);
+					font-weight: bold;
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.supporters-info {
+		.info-box {
+			div {
+				&:not(:first-child) {
+					margin-top: 4rem;
+				}
+				flex-direction: column;
+				gap: 0.8rem;
+				dt {
+					flex-basis: auto;
+				}
+			}
+		}
+	}
+}
+
+// 서포터즈 혜택
+.supporters-benefit {
+	padding-top: 93px;
+	border-top: 5px solid var(--mainColor);
+	position: relative;
+	margin: 0 auto;
+
+	h3 {
+		font-family: "GmarketSansTTFMedium";
+		font-size: 3.6rem;
+		width: fit-content;
+		padding: 0px 40px;
+		position: absolute;
+		color: var(--mainColor);
+		top: 0px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #fff;
+		strong {
+			font-family: "GmarketSansTTFBold";
+		}
+	}
+
+	.benefit {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		gap: 4rem;
+		margin-bottom: 10rem;
+
+		li {
+			flex: 1 1 0;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 2.4rem;
+			position: relative;
+			height: 34rem;
+			padding: 5rem 4rem 4rem;
+			border-radius: var(--borderRadius);
+
+			&::before {
+				content: "01";
+				font-size: 2rem;
+				font-family: "GmarketSansTTFBold";
+				background: var(--mainColor);
+				color: #fff;
+				width: 4rem;
+				height: 4rem;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: absolute;
+				top: -2rem;
+				left: 2rem;
+				z-index: 10;
+			}
+
+			.new-window {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				align-items: flex-end;
+				box-sizing: border-box;
+				padding: 4rem;
+				border-radius: var(--borderRadius);
+			}
+
+			h4 {
+				display: flex;
+				flex-direction: column;
+				font-family: "GmarketSansTTFMedium";
+				font-size: 3.6rem;
+				line-height: 1.4;
+
+				strong {
+					font-family: "GmarketSansTTFBold";
+				}
+			}
+
+			p {
+				flex-grow: 1;
+				margin-bottom: 8rem;
+				font-size: 1.8rem;
+				letter-spacing: -0.5px;
+				line-height: 1.6;
+				word-break: keep-all;
+				font-weight: 400;
+				strong {
+					font-weight: 700;
+					display: block;
+					margin-top: 0.8rem;
+					&::before {
+						content: "※";
+						margin-right: 0.4rem;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+		.benefit-link1 {
+			background: #cbdff7;
+			.new-window {
+				color: var(--mainColor);
+				&::after {
+					background-color: var(--mainColor);
+				}
+			}
+		}
+		.benefit-link2 {
+			background: #e2eeae;
+			&::before {
+				background: var(--color2);
+				content: "02";
+			}
+			.new-window {
+				color: var(--color2);
+				&::after {
+					background-color: var(--color2);
+				}
+			}
+		}
+		.benefit-link3 {
+			background: #fcd7d6;
+			&::before {
+				background: #e37066;
+				content: "03";
+			}
+			.new-window {
+				color: #e37066;
+				&::after {
+					background-color: #e37066;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.supporters-benefit .benefit {
+		flex-direction: column;
+		li {
+			height: auto;
+			h4 {
+				flex-direction: row;
+				gap: 0.3em;
+			}
+		}
+	}
+}
+
+// 제코베 바로가기
+.page-link {
+	position: relative;
+	margin-bottom: 11rem;
+	padding: 5rem 4rem 12rem;
+	box-sizing: border-box;
+	background: var(--color1) url(../assets/home_link_bg.png) no-repeat right bottom;
+	border-radius: var(--borderRadius);
+	h4 {
+		font-family: "GmarketSansTTFBold";
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+	p {
+		width: 36rem;
+		line-height: 1.6;
+		letter-spacing: -0.5px;
+		word-break: keep-all;
+	}
+	a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		padding: 4rem;
+		box-sizing: border-box;
+		align-items: flex-end;
+		border-radius: var(--borderRadius);
+	}
+
+	@media (max-width: 1024px) {
+		background-position: calc(100% + 15rem) bottom;
+		background-size: 100%;
+	}
+}
+.new-window {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 1.2em;
+	color: #fff;
+	font-weight: bold;
+	padding-right: 3rem;
+	line-height: 3rem;
+	&::after {
+		content: "";
+		background: url("../assets/arrow_up_right_white.svg") no-repeat 50% 50% / 2.6rem;
+		width: 3rem;
+		height: 3rem;
+		display: block;
+		border-radius: 50%;
+	}
+}
